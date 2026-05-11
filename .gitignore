@@ -34,3 +34,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.env
+public/videos/
+
+# python venv
+.venv/
+
+# 大型字典 / 字幕原始数据（可重新生成 / 抓取）
+data/ecdict/
+data/etymonline/
+data/harry-potter/
+data/movies/

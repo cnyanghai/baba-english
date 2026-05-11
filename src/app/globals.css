@@ -1,27 +1,123 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  /* Cinema Pro 字体栈：英文 Inter 优先，中文 Noto Sans SC 优先 */
+  --font-sans:
+    var(--font-inter), var(--font-noto-sc), system-ui, -apple-system,
+    "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-mono:
+    var(--font-mono), ui-monospace, "SF Mono", "Cascadia Mono",
+    "JetBrains Mono", Menlo, Consolas, monospace;
+  /* 字幕 / 对白专用衬线（让文学是文学，不是 UI 标签）*/
+  --font-serif:
+    var(--font-serif), var(--font-serif-cn), "Source Serif Pro",
+    "Noto Serif SC", "Source Han Serif SC", "Songti SC", "PingFang SC",
+    Georgia, "Times New Roman", serif;
+  /* 魔幻 / 电影标题装饰字体 */
+  --font-display:
+    var(--font-display), "Cinzel", "Trajan Pro", "Times New Roman", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ─── 亮色（备选） ─── */
+:root {
+  --background: oklch(0.99 0 0);
+  --foreground: oklch(0.16 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.16 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.16 0 0);
+  /* Amber-500 主色 */
+  --primary: oklch(0.74 0.17 70);
+  --primary-foreground: oklch(0.16 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.5 0 0);
+  --accent: oklch(0.96 0.02 70);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.91 0 0);
+  --input: oklch(0.91 0 0);
+  --ring: oklch(0.74 0.17 70);
+  --radius: 0.75rem;
+}
+
+/* ─── 暗色（默认 Cinema Pro） ─── */
+.dark {
+  /* 深空黑 + 雾灰 */
+  --background: oklch(0.13 0.005 270);
+  --foreground: oklch(0.96 0 0);
+  --card: oklch(0.17 0.005 270);
+  --card-foreground: oklch(0.96 0 0);
+  --popover: oklch(0.17 0.005 270);
+  --popover-foreground: oklch(0.96 0 0);
+  /* Amber-400 in dark, 略亮 */
+  --primary: oklch(0.78 0.17 70);
+  --primary-foreground: oklch(0.13 0.005 270);
+  --secondary: oklch(0.24 0.005 270);
+  --secondary-foreground: oklch(0.96 0 0);
+  --muted: oklch(0.22 0.005 270);
+  --muted-foreground: oklch(0.7 0 0);
+  --accent: oklch(0.24 0.04 70);
+  --accent-foreground: oklch(0.96 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.78 0.17 70);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    color-scheme: light;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  /* 等宽数字（时间戳 / 计数） */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .font-serif {
+    font-family: var(--font-serif);
+    font-feature-settings: "ss01", "ss02";
+  }
+  .font-display {
+    font-family: var(--font-display);
+    letter-spacing: 0.02em;
   }
 }

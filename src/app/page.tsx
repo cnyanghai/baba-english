@@ -1,101 +1,143 @@
+import Link from "next/link";
 import Image from "next/image";
+import { auth } from "@/auth";
+import { prisma } from "@/lib/prisma";
+import { Button } from "@/components/ui/button";
+import { HeroVideoBackdrop } from "@/components/HeroVideoBackdrop";
+import { PlayCircle } from "lucide-react";
 
-export default function Home() {
+const TYPE_LABEL: Record<string, string> = {
+  DRAMA: "剧集",
+  MOVIE: "电影",
+  TED: "TED",
+  CARTOON: "动画",
+};
+
+export default async function HomePage() {
+  const session = await auth();
+  const userId = (session?.user as { id?: string } | undefined)?.id;
+
+  const [dramas, lastProgress] = await Promise.all([
+    prisma.drama.findMany({
+      orderBy: { createdAt: "desc" },
+      include: { _count: { select: { episodes: true } } },
+    }),
+    userId
+      ? prisma.episodeProgress.findFirst({
+          where: { userId },
+          orderBy: { updatedAt: "desc" },
+          include: {
+            episode: {
+              include: {
+                drama: { select: { slug: true, titleZh: true, titleEn: true } },
+              },
+            },
+          },
+        })
+      : Promise.resolve(null),
+  ]);
+
+  const continueHref = lastProgress
+    ? `/dramas/${lastProgress.episode.drama.slug}/episodes/${lastProgress.episode.code}/dialogues/${lastProgress.lastIdx}`
+    : "/dramas/friends/episodes/S01E01/dialogues/0";
+
+  const heroBackdrop = dramas.find((d) => d.posterUrl);
+  const continueLabel = lastProgress
+    ? `继续 ${lastProgress.episode.drama.titleZh ?? lastProgress.episode.drama.titleEn}`
+    : "打开演示";
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div>
+      {/* ─── Hero：单焦点 + 单 CTA + 活视频背景 ─── */}
+      <section className="relative isolate overflow-hidden min-h-[70vh] flex items-center">
+        <HeroVideoBackdrop
+          videoSrc="https://pub-7d05c92184cb4144a288b5e5319b2a03.r2.dev/hero/loop.mp4"
+          fallbackPoster={heroBackdrop?.posterUrl ?? null}
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="mx-auto max-w-5xl px-6 w-full">
+          <p className="text-[10px] font-mono tracking-[0.4em] text-amber-500/70 uppercase mb-6">
+            Baba · for English Learners
+          </p>
+          <h1 className="text-5xl sm:text-7xl leading-[1.1] tracking-tight max-w-3xl">
+            <span className="font-serif font-medium block">今晚我们看</span>
+            <span className="font-display font-bold block text-amber-500 my-2 sm:my-3 whitespace-nowrap">
+              Harry Potter
+            </span>
+            <span className="font-serif font-medium block">明早你听懂它</span>
+          </h1>
+
+          <div className="mt-10">
+            <Button
+              asChild
+              size="lg"
+              className="h-12 px-8 bg-primary text-primary-foreground hover:bg-primary/90 shadow-xl shadow-amber-500/30 transition-transform active:scale-[0.97]"
+            >
+              <Link href={continueHref} className="inline-flex items-center whitespace-nowrap">
+                <PlayCircle className="mr-2 h-5 w-5 shrink-0" />
+                <span>{continueLabel}</span>
+              </Link>
+            </Button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* 滚动提示 */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted-foreground/50 text-xs font-mono tracking-widest">
+          ↓
+        </div>
+      </section>
+
+      {/* ─── 内容库：海报为艺术品 ─── */}
+      <section id="library" className="mx-auto max-w-5xl px-6 pt-8 pb-24">
+        <div className="flex items-baseline justify-between mb-8">
+          <h2 className="font-serif text-2xl font-medium tracking-tight">你的故事书</h2>
+          <span className="text-xs text-muted-foreground tabular-nums font-mono">
+            {dramas.length} / 计划 700+
+          </span>
+        </div>
+
+        {dramas.length === 0 ? (
+          <div className="rounded-xl border border-dashed p-16 text-center">
+            <p className="text-sm text-muted-foreground">内容库构建中…</p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 md:grid-cols-4">
+            {dramas.map((d) => (
+              <Link
+                key={d.slug}
+                href={`/dramas/${d.slug}`}
+                className="group block transition-transform duration-300 hover:-translate-y-1.5 active:scale-[0.98]"
+              >
+                <div className="relative aspect-[2/3] overflow-hidden rounded-lg border border-border/40 shadow-lg shadow-black/30 transition-shadow group-hover:shadow-2xl group-hover:shadow-amber-500/20">
+                  {d.posterUrl ? (
+                    <Image
+                      src={d.posterUrl}
+                      alt={d.titleEn}
+                      fill
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                      className="object-cover transition duration-700 group-hover:scale-[1.04]"
+                    />
+                  ) : (
+                    <div className="flex h-full items-center justify-center bg-muted text-xs text-muted-foreground">
+                      {TYPE_LABEL[d.type] ?? "内容"}
+                    </div>
+                  )}
+                </div>
+                {/* 文字独立在卡片之外（强制单行避免错位） */}
+                <div className="mt-3 px-0.5">
+                  <h3 className="font-serif text-sm font-medium tracking-tight truncate">
+                    {d.titleZh ?? d.titleEn}
+                  </h3>
+                  <p className="mt-0.5 text-[11px] text-muted-foreground tabular-nums font-mono truncate">
+                    {d.titleEn !== (d.titleZh ?? d.titleEn) ? d.titleEn : ""}
+                    {d.year ? `${d.titleEn !== (d.titleZh ?? d.titleEn) ? " · " : ""}${d.year}` : ""}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        )}
+      </section>
     </div>
   );
 }
