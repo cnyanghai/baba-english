@@ -2,9 +2,9 @@
 type: status
 status: active
 cluster: product
-stage: 代码已全部提交；已备好洗过敏感标识的 publish 分支，等用户在 GitHub 建空仓后推送
-next: 用户建 github.com/cnyanghai/baba-english（Public、空仓）→ 推送 publish:main → 把本地 main 指到洗过的提交
-blocked_by: 等用户手动建 GitHub 空仓（当前 gh token 是 fine-grained PAT，无建仓权限）
+stage: 代码已推上 GitHub（github.com/cnyanghai/baba-english，Public），本地 main 与远端对齐
+next: 回到产品本身——确认 09-03 前后在做什么；archive/magic-school-math 分支要不要也推（含商户号，推前需同样洗）
+blocked_by:
 updated: 2026-10-17
 ---
 
@@ -16,21 +16,22 @@ updated: 2026-10-17
 - 2026-08-06 从「麦哲学院」多学院回退到 v0.1「Baba 英语」：看剧学英语（哈利波特、老友记）+ 生词本 + 付费。数学、深讲、ELA 归档在 `archive/magic-school-math` 分支
 - 2026-08-07 上线「英语绘本」书本阅读器 `/books`，首本哈利波特开篇
 - 少儿编程学习路线：CS50 九集自托管视频已上 R2，公网可播
-- **2026-10-17 推 GitHub 进行中**：
+- **2026-10-17 已推上 GitHub**：https://github.com/cnyanghai/baba-english （Public，119 个文件，HEAD `2ccfa9e`）
   - 自 2026-05-11 以来积压的改动（绘本阅读器 + 少儿编程路线 + 样式调整，38 个文件）已提交为 `1c0c66a`
   - `.gitignore` 增补 `.claude/worktrees/`（89M 本地产物）
   - 公开前扫查：`.env`（DATABASE_URL / AUTH_SECRET）从未进过任何提交；微信私钥在服务器 `/opt/baba-secrets/`，不在仓库；支付/短信凭证全走环境变量
   - 用户选 Public，并选择洗掉 `src/lib/wxpay.ts` 注释里的真实微信商户号（该号也在历史提交 58a8de5 里）
   - `filter-branch` 被安全策略拦下，改为**非破坏性重放**：新建 `publish` 分支，从 `a8c3d3c` 起重放 2 个提交并在重放时洗号 → `c247a16`、`cd90fc9`，逐提交 grep 确认历史无残留；与 `main` 的树差异只有那一行注释
   - 推送体积约 5.4 MB（node_modules / data 大字典 / .venv / .claude/worktrees 已排除）
-  - **本地 `main` 仍是旧的、带商户号的历史**，尚未动
+  - `gh repo create` 被 fine-grained PAT 挡住（无 Administration 权限），由用户手动建空仓，推送走 SSH
+  - 本地 `main` 已指到 `2ccfa9e` 并跟踪 `origin/main`，`publish` 分支已删；旧 main `1c0c66a` 留在 reflog
+  - 推后复核：远端无 `.env`／`.pem`，商户号 0 命中
 
 ## 下一步
 
-1. 用户在 https://github.com/new 建 `baba-english`，Public，不勾 README/.gitignore/license
-2. `git push -u origin publish:main`（SSH 已验证可用，`gh` 的 PAT 只缺建仓权限）
-3. 推送成功后把本地 `main` 指到 `cd90fc9`（破坏性操作，需用户批准），删掉 `publish` 分支，避免以后在 main 上开发又把带商户号的旧历史带上去
-4. 回到产品本身：确认 09-03 前后在做什么（原「下一步」遗留问题）
+1. 回到产品本身：确认 09-03 前后在做什么（原「下一步」遗留问题）
+2. `archive/magic-school-math`（10 个提交，麦哲学院/数学/深讲归档）还只在本地。要推的话得先同样洗掉 `src/lib/wxpay.ts` 里的商户号
+3. 以后在 `main` 上开发直接 push 即可，远端已就位
 
 ## 已定决策
 
@@ -45,7 +46,7 @@ updated: 2026-10-17
 
 ## 日志
 
-- 2026-10-17 积压改动全部提交；备好洗过商户号的 publish 分支；卡在等用户建 GitHub 空仓
+- 2026-10-17 代码推上 GitHub（Public），洗掉历史里的微信商户号，本地 main 与远端对齐
 - 2026-09-15 建立 STATUS.md
 - 2026-08-07 英语绘本上线
 - 2026-08-06 回退 v0.1
