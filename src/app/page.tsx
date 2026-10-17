@@ -4,7 +4,8 @@ import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 import { Button } from "@/components/ui/button";
 import { HeroVideoBackdrop } from "@/components/HeroVideoBackdrop";
-import { PlayCircle } from "lucide-react";
+import { listBooks } from "@/content/books";
+import { PlayCircle, BookOpen, ArrowRight } from "lucide-react";
 
 const TYPE_LABEL: Record<string, string> = {
   DRAMA: "剧集",
@@ -46,6 +47,8 @@ export default async function HomePage() {
     ? `继续 ${lastProgress.episode.drama.titleZh ?? lastProgress.episode.drama.titleEn}`
     : "打开演示";
 
+  const featuredBook = listBooks()[0];
+
   return (
     <div>
       {/* ─── Hero：单焦点 + 单 CTA + 活视频背景 ─── */}
@@ -86,6 +89,53 @@ export default async function HomePage() {
           ↓
         </div>
       </section>
+
+      {/* ─── 英语绘本：新模块 ─── */}
+      {featuredBook && (
+        <section className="mx-auto max-w-5xl px-6 pt-14 pb-2">
+          <div className="mb-6 flex items-baseline justify-between">
+            <h2 className="font-serif text-2xl font-medium tracking-tight">英语绘本</h2>
+            <Link
+              href="/books"
+              className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition"
+            >
+              全部绘本 <ArrowRight className="h-3 w-3" />
+            </Link>
+          </div>
+          <Link
+            href={`/books/${featuredBook.slug}`}
+            className="group grid grid-cols-[6.5rem_1fr] items-center gap-5 rounded-2xl border border-border/50 bg-card/40 p-4 backdrop-blur-sm transition hover:border-amber-500/40 hover:bg-card/60 sm:grid-cols-[9rem_1fr] sm:gap-7 sm:p-6"
+          >
+            <div className="relative aspect-[1122/1402] overflow-hidden rounded-xl border border-border/40 shadow-lg shadow-black/30">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={featuredBook.cover}
+                alt={featuredBook.titleEn}
+                className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]"
+              />
+            </div>
+            <div className="min-w-0">
+              <p className="mb-2 inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-[0.2em] text-amber-500/80">
+                <BookOpen className="h-3 w-3" />
+                Picture Book · {featuredBook.level}
+              </p>
+              <h3 className="font-serif text-xl font-medium tracking-tight sm:text-2xl">
+                {featuredBook.titleZh}
+                <span className="ml-2 font-display text-sm text-muted-foreground sm:text-base">
+                  {featuredBook.titleEn}
+                </span>
+              </h3>
+              <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground sm:mt-3">
+                {featuredBook.blurb}
+              </p>
+              <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-amber-600 dark:text-amber-400 sm:mt-4">
+                开始阅读
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              </span>
+            </div>
+          </Link>
+        </section>
+      )}
 
       {/* ─── 内容库：海报为艺术品 ─── */}
       <section id="library" className="mx-auto max-w-5xl px-6 pt-8 pb-24">

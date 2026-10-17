@@ -1,0 +1,1997 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.940
+[MUSIC PLAYING]
+[音乐播放中]
+
+00:00:17.962 --> 00:00:19.920
+BRIAN YU: Welcome, everyone, to an introduction
+布莱恩·余：欢迎大家来到《用Scratch学编程》入门课程。
+
+00:00:19.920 --> 00:00:21.255
+to Programming with Scratch.
+用Scratch学编程。
+
+00:00:21.255 --> 00:00:23.130
+My name is Brian Yu and in this course, we're
+我叫布莱恩·余，在这门课程中，我们
+
+00:00:23.130 --> 00:00:26.370
+going to be exploring Scratch, which is a visual block-based programming
+要探索Scratch，它是一种基于可视化积木的编程语言
+
+00:00:26.370 --> 00:00:29.640
+language developed by the team over at MIT's Media Lab.
+由麻省理工学院媒体实验室的团队开发。
+
+00:00:29.640 --> 00:00:32.790
+Using Scratch, by putting together little Scratch puzzle pieces,
+使用Scratch，通过把一个个Scratch积木拼起来，
+
+00:00:32.790 --> 00:00:36.840
+that we'll see shortly, you'll be able to build visual stories and animations
+我们很快就会看到，你将能够制作出可视化的故事、动画
+
+00:00:36.840 --> 00:00:40.020
+and games and other programs that you'll be able to share with others.
+还有游戏以及其他程序，并且可以和他人分享。
+
+00:00:40.020 --> 00:00:42.397
+And along the way, as we're exploring Scratch,
+在探索Scratch的过程中，
+
+00:00:42.397 --> 00:00:44.730
+you'll be introduced to the fundamentals of programming.
+你将接触到编程的基础知识。
+
+00:00:44.730 --> 00:00:48.270
+We'll take a look at concepts like functions and loops and conditions
+我们会了解函数、循环、条件
+
+00:00:48.270 --> 00:00:51.810
+and variables and other types of ideas that you'll see in programming.
+还有变量等编程中会遇到的概念。
+
+00:00:51.810 --> 00:00:55.150
+And even though the Scratch programming language looks a little bit different,
+尽管Scratch编程语言看起来有点不一样，
+
+00:00:55.150 --> 00:00:58.440
+it uses blocks instead of the more traditional text-based programming
+它用的是积木，而非更传统的基于文本的编程方式
+
+00:00:58.440 --> 00:01:01.080
+that you might see in other programming languages later,
+你之后在其他编程语言中可能会见到那种方式。
+
+00:01:01.080 --> 00:01:03.810
+really Scratch is based on the same fundamental ideas.
+实际上，Scratch基于同样的基础理念。
+
+00:01:03.810 --> 00:01:08.170
+And it's going to use the same principles of computational thinking.
+它也会运用计算思维的相同原则。
+
+00:01:08.170 --> 00:01:10.860
+So with that, let's go ahead and take a look at Scratch and dive
+那么，让我们开始看看Scratch，然后深入
+
+00:01:10.860 --> 00:01:14.900
+in to our very first Scratch project.
+了解我们的第一个Scratch项目。
+
+00:01:14.900 --> 00:01:18.490
+So once you go to Scratch's website, when you click on the Create button
+所以，当你访问Scratch网站，点击“创建”按钮
+
+00:01:18.490 --> 00:01:20.530
+to create a new project you'll end up seeing
+创建一个新项目时，你最终会看到
+
+00:01:20.530 --> 00:01:22.450
+an interface that looks like this.
+这样一个界面。
+
+00:01:22.450 --> 00:01:25.280
+And we'll be exploring this interface during this course.
+在这门课程中，我们会探索这个界面。
+
+00:01:25.280 --> 00:01:27.520
+But it's broken down into a couple of parts.
+它被分成了几个部分。
+
+00:01:27.520 --> 00:01:30.760
+Over here on the left-hand side is our block library.
+左边这里是我们的积木库。
+
+00:01:30.760 --> 00:01:33.100
+You're going to build Scratch projects, ultimately,
+你最终会通过某种顺序把积木拼起来
+
+00:01:33.100 --> 00:01:35.590
+by putting together blocks in some sequence
+来构建Scratch项目，
+
+00:01:35.590 --> 00:01:38.080
+in order to get the project to do something
+从而让项目实现你想要它做的事情。
+
+00:01:38.080 --> 00:01:39.520
+that you would like for it to do.
+你希望它做的事情。
+
+00:01:39.520 --> 00:01:42.370
+And you can assemble those blocks together from the block library,
+你可以从积木库中选取这些积木，
+
+00:01:42.370 --> 00:01:45.887
+bringing them into this middle part of the Scratch window,
+把它们拖到Scratch窗口的中间部分，
+
+00:01:45.887 --> 00:01:48.970
+which is the Block Editor, where you're going to put these blocks together
+也就是积木编辑器，在这里你要把这些积木拼在一起
+
+00:01:48.970 --> 00:01:52.010
+to decide how it is that your project should work.
+来决定你的项目该如何运行。
+
+00:01:52.010 --> 00:01:54.610
+But before we even get to those blocks and how they work
+但在我们了解这些积木及其工作原理
+
+00:01:54.610 --> 00:01:56.410
+and how to put them together, today we're
+以及如何把它们拼在一起之前，今天我们
+
+00:01:56.410 --> 00:01:59.950
+going to be mostly focusing on this part of the Scratch window.
+主要关注Scratch窗口的这个部分。
+
+00:01:59.950 --> 00:02:03.640
+This rectangle you see here is what Scratch calls the stage.
+你在这里看到的这个矩形就是Scratch所说的舞台。
+
+00:02:03.640 --> 00:02:06.340
+And it's inside of the stage that our Scratch project
+我们的Scratch项目将存在于舞台之中，
+
+00:02:06.340 --> 00:02:07.870
+will live and ultimately run.
+并最终在舞台上运行。
+
+00:02:07.870 --> 00:02:10.389
+And this is, when someone runs your Scratch project,
+当有人运行你的Scratch项目时，
+
+00:02:10.389 --> 00:02:13.150
+what that person is ultimately going to see.
+这就是那个人最终会看到的内容。
+
+00:02:13.150 --> 00:02:17.290
+We see that right now, in the Scratch stage, we just have one character,
+我们看到，目前在Scratch舞台上，只有一个角色，
+
+00:02:17.290 --> 00:02:19.480
+this default Scratch cat here.
+就是这里这个默认的Scratch猫。
+
+00:02:19.480 --> 00:02:22.690
+And each of these characters Scratch calls a sprite.
+Scratch把每个这样的角色都叫做角色（sprite）。
+
+00:02:22.690 --> 00:02:25.223
+A sprite, in the world of Scratch, is just some object.
+在Scratch的世界里，角色（sprite）就是某种对象。
+
+00:02:25.223 --> 00:02:27.140
+It could be a character, like an animal, or it
+它可以是一个角色，比如一只动物，或者
+
+00:02:27.140 --> 00:02:30.580
+could be some other object, that lives somewhere on the stage.
+也可以是其他某种存在于舞台上某个位置的对象。
+
+00:02:30.580 --> 00:02:32.920
+And ultimately, we're going to learn to have the ability
+最终，我们要学会具备
+
+00:02:32.920 --> 00:02:36.190
+to program these sprites to do what we would like for it to do.
+对这些角色（sprite）进行编程的能力，让它们按我们的意愿行事。
+
+00:02:36.190 --> 00:02:38.583
+Down below we see a listing of all of the sprites
+在下面我们可以看到所有角色（sprite）的列表，
+
+00:02:38.583 --> 00:02:40.000
+that are currently in our project.
+也就是目前项目里的所有角色。
+
+00:02:40.000 --> 00:02:43.480
+Right now it's just this default cat, which is called Sprite1.
+现在只有这只默认的猫，它叫角色1（Sprite1）。
+
+00:02:43.480 --> 00:02:46.730
+And we'll start to see other parts of this interface as well.
+我们还会开始看到这个界面的其他部分。
+
+00:02:46.730 --> 00:02:50.170
+But let's start today by exploring this stage and the sprites
+但今天我们先从探索这个舞台和舞台上的角色（sprite）开始，
+
+00:02:50.170 --> 00:02:53.540
+that live on that stage and how we can manipulate them.
+了解它们在舞台上的情况以及我们如何操控它们。
+
+00:02:53.540 --> 00:02:57.370
+So what we'll see right now is that our default Scratch cat is currently
+所以我们现在看到，默认的Scratch猫目前
+
+00:02:57.370 --> 00:03:01.660
+just in the center of this stage here, but I can move it around.
+就在这个舞台的正中央，但我可以移动它。
+
+00:03:01.660 --> 00:03:04.850
+And I can move it around just by clicking and holding on the cat.
+我只要点击并按住这只猫就能移动它。
+
+00:03:04.850 --> 00:03:06.100
+And then I can drag it around.
+然后我就可以拖动它。
+
+00:03:06.100 --> 00:03:07.960
+I can move it to one corner of the screen
+我可以把它移到屏幕的一个角落，
+
+00:03:07.960 --> 00:03:10.960
+or I could click and drag and move it to the other corner of the screen,
+或者我也可以点击并拖动，把它移到屏幕的另一个角落，
+
+00:03:10.960 --> 00:03:12.020
+for example.
+举个例子。
+
+00:03:12.020 --> 00:03:15.940
+And what you'll notice, as I start to move the Scratch cat around
+当我开始在舞台上移动Scratch猫时，你会注意到，
+
+00:03:15.940 --> 00:03:20.140
+on the stage, is that down below a couple of values are changing,
+下面有两个值在变化，
+
+00:03:20.140 --> 00:03:21.880
+the x-value and the y-value.
+也就是x值和y值。
+
+00:03:21.880 --> 00:03:27.910
+Right now, for example, the x-value is 177 and the y-value is 42.
+比如现在，x值是177，y值是42。
+
+00:03:27.910 --> 00:03:30.760
+But if I move the Scratch cat a little bit, move it somewhere else,
+但如果我把Scratch猫稍微移动一下，移到其他地方，
+
+00:03:30.760 --> 00:03:37.150
+now the x-value is negative 156 and the y-value is negative 77.
+现在x值是 -156，y值是 -77。
+
+00:03:37.150 --> 00:03:39.940
+So sprites in Scratch exist on the stage.
+所以Scratch里的角色（sprite）存在于舞台上。
+
+00:03:39.940 --> 00:03:44.240
+And in particular, they exist at a particular location on that stage,
+具体来说，它们存在于舞台上的某个特定位置，
+
+00:03:44.240 --> 00:03:47.110
+which is organized into an x,y coordinate grid.
+这个舞台被组织成了一个x,y坐标网格。
+
+00:03:47.110 --> 00:03:50.320
+And so if you imagine that this rectangle here is the stage,
+所以如果你把这里这个矩形想象成舞台，
+
+00:03:50.320 --> 00:03:53.650
+this looks similar to an x,y coordinate grid you might have seen in a geometry
+这看起来和你在几何课上可能见过的x,y坐标网格有点类似，
+
+00:03:53.650 --> 00:03:56.780
+class, for example, where we have the x-value,
+比如，这里有x值，
+
+00:03:56.780 --> 00:04:00.850
+which just represents how far to the left or to the right is our character
+它代表我们的角色在舞台上向左或向右有多远。
+
+00:04:00.850 --> 00:04:01.750
+on the stage.
+还有y值，
+
+00:04:01.750 --> 00:04:05.410
+And we have the y-value, which represents how far up or down
+它代表角色在舞台上向上或向下有多远。
+
+00:04:05.410 --> 00:04:07.750
+the sprite is on the stage as well.
+舞台的正中心是点(0,0)。
+
+00:04:07.750 --> 00:04:10.780
+The perfect center of the stage is point 0,0.
+舞台的正中心是点(0,0)。
+
+00:04:10.780 --> 00:04:14.050
+If x is equal to 0 and y is equal to 0, then our sprite
+如果x等于0且y等于0，那么我们的角色
+
+00:04:14.050 --> 00:04:16.269
+is going to be exactly at the middle of the stage.
+将会正好位于舞台中央。
+
+00:04:16.269 --> 00:04:19.269
+But if we increase the x-value, make it a positive value,
+但如果我们增大x的值，让它变成一个正值，
+
+00:04:19.269 --> 00:04:22.029
+it'll move further towards the right part of the stage.
+它就会朝着舞台右侧移动得更远。
+
+00:04:22.029 --> 00:04:24.885
+And if we decrease the x-value, make it more negative,
+如果我们减小x的值，让它变得更负，
+
+00:04:24.885 --> 00:04:27.760
+then the sprite is going to be further to the left side of the stage.
+那么角色就会朝着舞台左侧移动得更远。
+
+00:04:27.760 --> 00:04:31.210
+And likewise, the same thing goes for y but in the up and down direction.
+同样地，y也是如此，不过是在上下方向上。
+
+00:04:31.210 --> 00:04:33.460
+If I have a sprite where y is equal to 0,
+如果我有一个角色，它的y值等于0，
+
+00:04:33.460 --> 00:04:36.400
+it's going to be perfectly level at the middle vertically.
+它会正好处于垂直方向的中间位置。
+
+00:04:36.400 --> 00:04:38.505
+But if I increase the y-value, then our sprite
+但如果我增大y的值，那么我们的角色
+
+00:04:38.505 --> 00:04:40.510
+is going to move up along this stage.
+将会沿着这个舞台向上移动。
+
+00:04:40.510 --> 00:04:42.790
+And if I decrease the y-value, then our sprite
+如果我减小y的值，那么我们的角色
+
+00:04:42.790 --> 00:04:46.070
+is going to move down along that stage as well.
+也会沿着那个舞台向下移动。
+
+00:04:46.070 --> 00:04:48.187
+So we'll see those x and y values come up,
+所以我们会看到那些x和y的值出现，
+
+00:04:48.187 --> 00:04:50.020
+not only in this interface here where we see
+不仅在这个我们能看到
+
+00:04:50.020 --> 00:04:52.930
+where the sprite is on the stage but also a little bit
+角色在舞台上位置的界面里，还会在
+
+00:04:52.930 --> 00:04:55.780
+later, once we start putting blocks together to program
+稍后，当我们开始把积木组合起来编程
+
+00:04:55.780 --> 00:04:59.870
+where our sprites are going to be on the stage at any given time.
+我们的角色在任何给定时间会在舞台上的什么位置时看到。
+
+00:04:59.870 --> 00:05:01.870
+So right now if I wanted to take my sprite
+所以现在如果我想让我的角色
+
+00:05:01.870 --> 00:05:04.330
+and move it back to the perfect center of the stage,
+回到舞台的正中央，
+
+00:05:04.330 --> 00:05:07.210
+I could take it and drag it to about where I think the center is.
+我可以把它拖到我认为是中心的位置。
+
+00:05:07.210 --> 00:05:10.570
+And I might be pretty close, but if I want to be even more precise,
+我可能会很接近，但如果我想更精确一些，
+
+00:05:10.570 --> 00:05:15.550
+I can go down to the X field here and change what's right now 10 to 0.
+我可以到这里的X字段，把现在的10改成0。
+
+00:05:15.550 --> 00:05:17.920
+And I can do the same thing for y, changing what's
+我也可以对y做同样的操作，把当前的
+
+00:05:17.920 --> 00:05:20.780
+currently negative 8 to 0 as well.
+负8也改成0。
+
+00:05:20.780 --> 00:05:26.320
+And that will perfectly center the cat in the middle of the stage here.
+这样就会把猫正好放在这个舞台的中央。
+
+00:05:26.320 --> 00:05:29.650
+In addition to being able to change the position of the sprite,
+除了能够改变角色的位置之外，
+
+00:05:29.650 --> 00:05:31.720
+we also have a few other controls that are
+我们在Scratch界面的这个部分还有一些其他的控制选项。
+
+00:05:31.720 --> 00:05:34.210
+in this part of the Scratch interface.
+在Scratch界面的这部分。
+
+00:05:34.210 --> 00:05:37.120
+Over here I have the ability to give my sprite a name.
+在这里我可以给我的角色起个名字。
+
+00:05:37.120 --> 00:05:39.400
+Right now my sprite is just called Sprite1,
+现在我的角色就叫角色1，
+
+00:05:39.400 --> 00:05:42.550
+which is the default name that Scratch gives to a sprite that I create.
+这是Scratch给我创建的角色起的默认名字。
+
+00:05:42.550 --> 00:05:45.530
+But I could rename this, I could call this the Cat, for example.
+但我可以给它重命名，比如我可以叫它猫。
+
+00:05:45.530 --> 00:05:49.090
+And what you'll notice is that when I rename the sprite, call it my Cat,
+你会注意到，当我给角色重命名，叫它我的猫时，
+
+00:05:49.090 --> 00:05:52.510
+then down below in this bottom portion of the Scratch interface,
+在Scratch界面的这个底部区域，
+
+00:05:52.510 --> 00:05:55.150
+this is where I see all of the sprites in my project.
+这里能看到我项目里的所有角色。
+
+00:05:55.150 --> 00:05:57.340
+Right now there's just one, but each one is
+现在只有一个，但每个角色
+
+00:05:57.340 --> 00:05:59.800
+labeled by its name, which right now is the Cat.
+都用它的名字标注着，现在这个名字是猫。
+
+00:05:59.800 --> 00:06:01.900
+And as we start to get more and more sprites that
+随着我们开始有越来越多的角色
+
+00:06:01.900 --> 00:06:03.730
+will be added to our projects, it's going
+被添加到我们的项目里，它将会
+
+00:06:03.730 --> 00:06:06.010
+to be helpful to keep track of which sprite is which
+记录每个角色分别是什么会很有帮助
+
+00:06:06.010 --> 00:06:10.330
+by knowing what the name of any given sprite is.
+方法是了解任意给定角色的名称。
+
+00:06:10.330 --> 00:06:13.240
+Underneath the place where I can name any individual sprite,
+在我可以为单个角色命名的地方下方，
+
+00:06:13.240 --> 00:06:16.590
+I also have a toggle where I can decide whether or not that sprite should
+我还有一个开关，通过它我可以决定该角色是否应该
+
+00:06:16.590 --> 00:06:18.258
+be shown on the stage.
+显示在舞台上。
+
+00:06:18.258 --> 00:06:21.300
+Right now we are showing the cat, but I could click this button over here
+现在我们显示了这只猫，但我可以点击这边的这个按钮
+
+00:06:21.300 --> 00:06:23.280
+to hide the cat from the stage.
+让这只猫从舞台上消失。
+
+00:06:23.280 --> 00:06:25.770
+And if I want to bring it back, I can show it again.
+如果我想让它再出现，我可以再次显示它。
+
+00:06:25.770 --> 00:06:29.940
+So I can show and hide the cat to decide whether, for any particular sprite,
+所以我可以显示和隐藏这只猫，从而决定对于任何特定的角色，
+
+00:06:29.940 --> 00:06:33.480
+that sprite appears on the stage or not.
+该角色是否会出现在舞台上。
+
+00:06:33.480 --> 00:06:35.760
+I also have these other two controls.
+我还有另外两个控制项。
+
+00:06:35.760 --> 00:06:38.460
+This control here controls the size of the sprite.
+这个控制项用于控制角色的大小。
+
+00:06:38.460 --> 00:06:42.360
+Right now the size is 100, meaning it is at 100% size, which
+现在大小是 100，意味着它是 100%的大小，也就是
+
+00:06:42.360 --> 00:06:44.850
+is the normal size for any sprite.
+任何角色的正常大小。
+
+00:06:44.850 --> 00:06:45.870
+But I can change that.
+但我可以改变这个大小。
+
+00:06:45.870 --> 00:06:48.210
+If I want the sprite to be half as big, I
+如果我想让角色变成原来一半大小，我
+
+00:06:48.210 --> 00:06:50.800
+could change the size to be 50, for example.
+可以把大小改成 50，举个例子。
+
+00:06:50.800 --> 00:06:52.440
+And now the sprite is much smaller.
+现在这个角色就小多了。
+
+00:06:52.440 --> 00:06:56.680
+If I want to make my sprite larger I would change it to let's say 200,
+如果我想让我的角色变大，比如我可以把它改成 200，
+
+00:06:56.680 --> 00:06:57.610
+for example.
+举个例子。
+
+00:06:57.610 --> 00:06:59.970
+And now the sprite is going to be larger.
+现在这个角色就会变大。
+
+00:06:59.970 --> 00:07:02.187
+But for now, I'll go ahead and keep it at 100.
+但目前，我还是把它保持在 100。
+
+00:07:02.187 --> 00:07:04.020
+And over time we'll start to see that we can
+随着时间推移，我们会发现我们也可以
+
+00:07:04.020 --> 00:07:07.020
+change the size as well by way of the blocks that
+通过稍后会介绍的积木来改变大小。
+
+00:07:07.020 --> 00:07:09.640
+will be introduced a little bit later.
+最后在这些控制项里，我有一个方向控制项。
+
+00:07:09.640 --> 00:07:12.690
+And then finally in these controls, I have a direction control.
+这个方向控制项，控制着在这个例子里我的猫
+
+00:07:12.690 --> 00:07:17.070
+And the direction control, controls which way that my cat, in this case,
+碰巧朝向的方向。
+
+00:07:17.070 --> 00:07:18.390
+happens to be facing.
+现在它的值是 90，意思是 90 度。
+
+00:07:18.390 --> 00:07:21.370
+Right now it's at 90, meaning 90 degrees.
+换句话说，这只猫正朝右边。
+
+00:07:21.370 --> 00:07:23.850
+In other words, the cat is facing to the right.
+但我可以旋转这只猫，让它转起来，看着我转动这个旋钮，
+
+00:07:23.850 --> 00:07:28.290
+But I could rotate the cat, spin it around, and watch as I turn this dial,
+我可以旋转这只猫，让它朝向不同的方向
+
+00:07:28.290 --> 00:07:32.100
+I can rotate spin the cat around and have it face a different direction
+如果我想这么做的话。
+
+00:07:32.100 --> 00:07:33.030
+if I want to.
+当我这么做时，你会注意到这个方向值
+
+00:07:33.030 --> 00:07:35.670
+And when I do, you'll notice that this direction value
+会改变成某个度数。
+
+00:07:35.670 --> 00:07:38.020
+changes and to some number of degrees.
+所以现在它指向 39 度的角度，
+
+00:07:38.020 --> 00:07:40.740
+So right now it's pointing at a 39-degree angle,
+但我可以把它改回 90。
+
+00:07:40.740 --> 00:07:42.820
+but I could change that back to 90.
+当我这么做时，现在这只猫又朝右边了。
+
+00:07:42.820 --> 00:07:46.990
+And when I do that, now the cat is facing to the right as well.
+所以我有能力，通过这里的这个编辑器，
+
+00:07:46.990 --> 00:07:49.800
+So I have this ability, using this editor here,
+对角色进行很多控制。
+
+00:07:49.800 --> 00:07:51.600
+to control a lot about the sprite.
+来对角色进行诸多控制。
+
+00:07:51.600 --> 00:07:52.630
+I can change its name.
+我可以更改它的名字。
+
+00:07:52.630 --> 00:07:54.720
+I can change its position, its size, what
+我可以更改它的位置、大小、
+
+00:07:54.720 --> 00:07:58.680
+direction it's facing, whether or not it shows up on the stage or not.
+它所朝向的方向，以及它是否会出现在舞台上。
+
+00:07:58.680 --> 00:08:01.150
+But really, to make our programs more interesting,
+但实际上，为了让我们的程序更有趣，
+
+00:08:01.150 --> 00:08:04.230
+we don't just want to have a cat that lives in this environment.
+我们不只想让一只猫存在于这个环境中。
+
+00:08:04.230 --> 00:08:08.800
+I'd like to add some other sprites to my stage as well.
+我也想在我的舞台上添加一些其他角色。
+
+00:08:08.800 --> 00:08:12.990
+So let's go ahead now and try and create a new sprite.
+那么现在我们就来试试创建一个新角色。
+
+00:08:12.990 --> 00:08:15.300
+Down here at the bottom, you'll notice that inside
+在底部这里，你会注意到在
+
+00:08:15.300 --> 00:08:18.450
+of this region of the Scratch editor where all of my sprites live,
+Scratch编辑器中所有角色所在的这个区域内，
+
+00:08:18.450 --> 00:08:21.540
+right now it's just the cat, there's a little plus button.
+现在只有那只猫，有一个小加号按钮。
+
+00:08:21.540 --> 00:08:24.040
+And this is the Create a New Sprite button
+这就是创建新角色的按钮
+
+00:08:24.040 --> 00:08:26.040
+and I have a couple of options for how to do so.
+我有几种创建的方式可供选择。
+
+00:08:26.040 --> 00:08:28.498
+But if I just click on this main circular button that says,
+但如果我点击这个写着
+
+00:08:28.498 --> 00:08:29.610
+choose a Sprite.
+“选择一个角色”的主圆形按钮。
+
+00:08:29.610 --> 00:08:33.570
+I'll end up getting a whole list of different kinds of sprites
+我最终会得到一长串不同类型的角色
+
+00:08:33.570 --> 00:08:34.350
+that I can create.
+供我创建。
+
+00:08:34.350 --> 00:08:36.720
+There are animals, there are people, there's
+有动物、有人物，还有
+
+00:08:36.720 --> 00:08:38.580
+different types of sports-related sprites,
+不同类型的与体育相关的角色，
+
+00:08:38.580 --> 00:08:41.590
+or food-related sprites, and more than that.
+或者与食物相关的角色，还有更多。
+
+00:08:41.590 --> 00:08:44.580
+And I can look through this and try and find whatever I'd like.
+我可以浏览这个列表，试着找到我想要的任何角色。
+
+00:08:44.580 --> 00:08:48.720
+And let's say I want to add an animal, for example, another animal other
+比如说我想添加一个动物，例如，除了猫之外的另一种动物
+
+00:08:48.720 --> 00:08:51.360
+than the cat to my Scratch program.
+到我的Scratch程序中。
+
+00:08:51.360 --> 00:08:53.640
+Well up here at the top I can filter down
+嗯，在顶部这里我可以进行筛选
+
+00:08:53.640 --> 00:08:55.950
+what I'm looking for by a particular category,
+按特定类别查找我想要的东西，
+
+00:08:55.950 --> 00:08:59.430
+or if I knew exactly what I was looking for, I could search for a sprite
+或者如果我确切知道我要找什么，我也可以搜索一个角色。
+
+00:08:59.430 --> 00:09:00.060
+as well.
+目前，让我选择动物，只是为了看看这里可能存在的各种不同动物。
+
+00:09:00.060 --> 00:09:03.330
+But let me go to animals, for now, just to see the various different kinds
+我觉得我喜欢那条鱼，所以我们就选那条鱼
+
+00:09:03.330 --> 00:09:06.480
+of animals that can exist here.
+并把它添加到我的舞台上。
+
+00:09:06.480 --> 00:09:10.500
+And I think I like the fish, so we'll go ahead and take the fish
+所以一旦我这么做了，你会注意到有几件事发生了。
+
+00:09:10.500 --> 00:09:13.515
+and add that to my stage.
+其一，在下面这个区域，我在这里记录着项目中的所有角色，
+
+00:09:13.515 --> 00:09:16.140
+And so once I do that, you'll notice a couple of things happen.
+现在我有两个角色了。
+
+00:09:16.140 --> 00:09:19.860
+One, down below in this region, where I'm keeping track of all of the sprites
+我有猫，还有鱼。
+
+00:09:19.860 --> 00:09:22.260
+that are a part of my project, I now have two.
+你会注意到现在它们都出现在我的Scratch程序的主舞台
+
+00:09:22.260 --> 00:09:24.780
+I have the cat and I have the fish.
+区域中。
+
+00:09:24.780 --> 00:09:28.200
+And you'll notice that both now appear in the main stage
+我可以移动它们，这样它们就不会
+
+00:09:28.200 --> 00:09:29.613
+area of my Scratch program.
+相互重叠了。
+
+00:09:29.613 --> 00:09:31.530
+And I can move them around so that they're not
+所以现在我有一只猫和一条鱼。
+
+00:09:31.530 --> 00:09:32.697
+overlapping with each other.
+无论选中哪一个，下面这里会以蓝色高亮显示。
+
+00:09:32.697 --> 00:09:36.450
+So I now have one cat and one fish.
+所以我现在有了一只猫和一条鱼。
+
+00:09:36.450 --> 00:09:39.510
+Whichever one is selected, highlighted in blue down here
+不管选中的是哪一个，这里下方会以蓝色高亮显示。
+
+00:09:39.510 --> 00:09:41.970
+at the bottom, that's the one I'm currently working with,
+在底部，那就是我目前正在操作的角色。
+
+00:09:41.970 --> 00:09:43.920
+where I'll currently be able to add code to it
+我现在可以往它上面添加代码。
+
+00:09:43.920 --> 00:09:47.370
+or manipulate its position or size or any of the other attributes
+或者调整它的位置、大小，或者其他任何属性。
+
+00:09:47.370 --> 00:09:49.470
+we've seen that these sprites happen to have.
+我们已经知道这些角色有这些属性。
+
+00:09:49.470 --> 00:09:55.380
+So this fish, for example, is currently located at x equals 73 and y equals 70.
+比如说，这条鱼目前位于x坐标73、y坐标70的位置。
+
+00:09:55.380 --> 00:09:59.290
+But if I switch to the cat by clicking on the cat down at the bottom,
+但如果我通过点击底部的猫来切换到猫这个角色，
+
+00:09:59.290 --> 00:10:00.630
+now I'm selecting the cat.
+现在我选中了猫。
+
+00:10:00.630 --> 00:10:03.480
+And now I see the cat's position and the cat's name
+现在我能看到猫的位置、猫的名字。
+
+00:10:03.480 --> 00:10:07.540
+and the cat's size and the cat's direction as well.
+还有猫的大小和猫的朝向。
+
+00:10:07.540 --> 00:10:10.140
+So using that ability, we can add new characters.
+所以利用这个功能，我们可以添加新角色。
+
+00:10:10.140 --> 00:10:13.260
+We can add new objects to our Scratch project.
+我们可以往Scratch项目里添加新对象。
+
+00:10:13.260 --> 00:10:15.840
+And if we wanted multiple of a given character
+如果我们想要某个特定角色的多个副本，
+
+00:10:15.840 --> 00:10:18.060
+we can even duplicate a particular sprite.
+我们甚至可以复制某个特定的角色。
+
+00:10:18.060 --> 00:10:21.510
+So let's imagine that I want two fish, for example, inside
+比如说，我们想象一下，我想在这个场景里有两条鱼。
+
+00:10:21.510 --> 00:10:22.530
+of this environment.
+在这个环境中。
+
+00:10:22.530 --> 00:10:25.710
+I'm going to click on the fish and then I can either right-click
+我要点击这条鱼，然后我可以右键点击。
+
+00:10:25.710 --> 00:10:28.060
+or I can control-click on the fish.
+或者我可以按住Control键点击这条鱼。
+
+00:10:28.060 --> 00:10:30.990
+And when I do that a little menu will pop up where I can here say,
+当我这么做的时候，会弹出一个小菜单，我在这里可以选择。
+
+00:10:30.990 --> 00:10:32.430
+let me duplicate the fish.
+让我复制这条鱼。
+
+00:10:32.430 --> 00:10:33.840
+Let's get a second fish.
+来弄出第二条鱼。
+
+00:10:33.840 --> 00:10:36.150
+And you'll notice that it's called Fish2 by default.
+你会注意到，默认情况下它叫“Fish2”。
+
+00:10:36.150 --> 00:10:39.690
+I could change that if I wanted to but Fish2 is OK.
+如果我想改的话可以改，但“Fish2”也没问题。
+
+00:10:39.690 --> 00:10:43.800
+And I'll take the two fish and separate them a little bit on the stage
+我要把这两条鱼在舞台上稍微分开一点。
+
+00:10:43.800 --> 00:10:45.520
+just by moving them around.
+只要移动它们就行。
+
+00:10:45.520 --> 00:10:47.550
+And so now I'm starting to construct this scene.
+所以现在我开始构建这个场景了。
+
+00:10:47.550 --> 00:10:51.540
+And this is why you can use Scratch to tell stories or create animations
+这就是为什么你可以用Scratch来讲故事、制作动画。
+
+00:10:51.540 --> 00:10:53.610
+or create pieces of art, just by deciding
+或者创作艺术作品，只要决定好。
+
+00:10:53.610 --> 00:10:56.520
+what it is that you want to exist on this stage,
+你想让什么出现在这个舞台上。
+
+00:10:56.520 --> 00:11:00.190
+and then add them to the stage as well.
+然后把它们也添加到舞台上。
+
+00:11:00.190 --> 00:11:02.190
+Now one thing you might notice is that right now
+现在你可能会注意到一件事，就是现在。
+
+00:11:02.190 --> 00:11:05.920
+because I duplicated the fish, both of the fish look identical.
+因为我复制了这条鱼，两条鱼看起来一模一样。
+
+00:11:05.920 --> 00:11:07.098
+They're exactly the same.
+它们完全相同。
+
+00:11:07.098 --> 00:11:08.890
+They're both pointed in the same direction.
+它们的朝向也一样。
+
+00:11:08.890 --> 00:11:11.948
+And I could change the direction or change the size of one of the fish
+我可以改变其中一条鱼的朝向或者大小。
+
+00:11:11.948 --> 00:11:13.740
+to make it a little bit smaller, to make it
+让它小一点，让它。
+
+00:11:13.740 --> 00:11:15.730
+look a little bit different from the other fish
+看起来和另一条鱼有点不一样。
+
+00:11:15.730 --> 00:11:18.940
+if I want a variety of different types of fish in my scene.
+如果我想让场景里有不同种类的鱼的话。
+
+00:11:18.940 --> 00:11:22.670
+But what I'd really like to do is change its entire overall appearance,
+但我真正想做的是改变它的整体外观。
+
+00:11:22.670 --> 00:11:27.850
+so I have two different fish that exist on the stage instead of just two copies
+这样舞台上就有两条不同的鱼，而不是看起来一样的两个副本。
+
+00:11:27.850 --> 00:11:29.470
+of what looks like the same.
+看起来一样的两个东西。
+
+00:11:29.470 --> 00:11:32.650
+And so here's where we're going to introduce another concept in Scratch,
+接下来，我们要引入Scratch的另一个概念，
+
+00:11:32.650 --> 00:11:34.390
+which is that of costumes.
+那就是造型。
+
+00:11:34.390 --> 00:11:36.940
+Every sprite can take on different costumes.
+每个角色都可以呈现不同的造型。
+
+00:11:36.940 --> 00:11:40.910
+And a costume is just what that sprite happens to look like.
+造型就是该角色的外观样子。
+
+00:11:40.910 --> 00:11:45.130
+And so let's explore now how we can change the costume for one
+现在，让我们来探究一下如何为其中一个
+
+00:11:45.130 --> 00:11:46.690
+of these fish, for example.
+比如这些鱼，更改造型。
+
+00:11:46.690 --> 00:11:50.560
+Up at the top of the Scratch window, you'll notice a couple of tabs.
+在Scratch窗口顶部，你会注意到有几个标签。
+
+00:11:50.560 --> 00:11:53.565
+The tab that's selected by default is called the Code tab.
+默认选中的标签叫做“代码”标签。
+
+00:11:53.565 --> 00:11:55.690
+And while we haven't added any code to our projects
+虽然我们还没有为项目添加任何代码
+
+00:11:55.690 --> 00:11:59.020
+just yet, ultimately as you start to build more complex projects,
+但最终，当你开始构建更复杂的项目时，
+
+00:11:59.020 --> 00:12:01.660
+you'll be using the Code tab to take blocks of code
+你会使用“代码”标签来选取代码积木
+
+00:12:01.660 --> 00:12:04.090
+and drag them into this code editor in order
+并将它们拖到这个代码编辑器中，以便
+
+00:12:04.090 --> 00:12:08.080
+to decide what it is that you're Scratch sprites are going to do.
+确定你的Scratch角色要执行什么操作。
+
+00:12:08.080 --> 00:12:11.330
+But the tab that we're interested in now is this second tab,
+但我们现在感兴趣的是第二个标签，
+
+00:12:11.330 --> 00:12:13.480
+which is called the Costumes tab, which is
+叫做“造型”标签，它
+
+00:12:13.480 --> 00:12:16.870
+going to allow us to see and edit and modify the costumes that
+能让我们查看、编辑和修改
+
+00:12:16.870 --> 00:12:19.270
+belong to any given sprite.
+任何给定角色的造型。
+
+00:12:19.270 --> 00:12:21.430
+So let's go ahead and take one of our fish.
+那么，我们来选一条鱼。
+
+00:12:21.430 --> 00:12:25.420
+We'll go ahead and take fish2 and head over to the Costumes tab
+我们选fish2，然后点击“代码”标签旁边的
+
+00:12:25.420 --> 00:12:28.870
+by clicking on the Costumes tab, which is next to the Code tab
+“造型”标签，前往“造型”标签页
+
+00:12:28.870 --> 00:12:31.090
+up at the top of the window.
+就在窗口顶部。
+
+00:12:31.090 --> 00:12:33.760
+And when I do that, you'll see that by default the fish
+当我点击后，你会看到默认情况下这条鱼
+
+00:12:33.760 --> 00:12:40.090
+has four different costumes, fish-a, fish-b, fish-c, and fish-d.
+有四种不同的造型，分别是fish - a、fish - b、fish - c和fish - d。
+
+00:12:40.090 --> 00:12:44.152
+Right now fish-a is selected, but I could change the costume just
+现在选中的是fish - a，但我可以通过
+
+00:12:44.152 --> 00:12:45.610
+by clicking on a different costume.
+点击不同的造型来更改它。
+
+00:12:45.610 --> 00:12:48.383
+If I click on fish-b, for example, now I've
+例如，如果我点击fish - b，现在我就
+
+00:12:48.383 --> 00:12:50.050
+got a different costume that's selected.
+选中了一个不同的造型。
+
+00:12:50.050 --> 00:12:53.330
+And now you immediately see in the stage that the fish looks different.
+现在你马上就能在舞台上看到这条鱼看起来不一样了。
+
+00:12:53.330 --> 00:12:55.150
+It's taken on a different costume.
+它换上了不同的造型。
+
+00:12:55.150 --> 00:12:57.340
+Even though it's the same fish, it appears
+尽管还是同一条鱼，但它在视觉上
+
+00:12:57.340 --> 00:13:01.557
+visually to look different because we've changed what costume it has.
+看起来不同了，因为我们更改了它的造型。
+
+00:13:01.557 --> 00:13:02.890
+And I can try changing it again.
+我可以再试着换一下。
+
+00:13:02.890 --> 00:13:06.560
+Here's fish-c, and then I can try looking at fish-d as well.
+这是fish - c，然后我也可以看看fish - d。
+
+00:13:06.560 --> 00:13:09.160
+So you can experiment and take a look at what costumes
+所以你可以进行实验，看看任何给定角色
+
+00:13:09.160 --> 00:13:12.340
+happen to be built in by default into any given sprite
+默认自带了哪些造型
+
+00:13:12.340 --> 00:13:14.110
+and change them if you'd like to.
+如果你愿意，还可以更改它们。
+
+00:13:14.110 --> 00:13:16.092
+The cat also has different costumes.
+这只猫也有不同的造型。
+
+00:13:16.092 --> 00:13:18.550
+They don't look nearly as different, but what you'll notice
+它们看起来没那么大差别，但你会注意到
+
+00:13:18.550 --> 00:13:22.390
+is that the cat can be in two different costumes that
+这只猫可以呈现两种不同的造型，
+
+00:13:22.390 --> 00:13:24.340
+are just in different leg positions.
+只是腿部姿势不同。
+
+00:13:24.340 --> 00:13:29.200
+So in costume1, the legs are straight, in costume2, the legs are bent.
+所以在造型1里，腿是直的，在造型2里，腿是弯的。
+
+00:13:29.200 --> 00:13:33.283
+And if you watch this sprite carefully, as I switch between the costumes,
+如果你仔细观察这个角色，当我在不同造型间切换时，
+
+00:13:33.283 --> 00:13:35.200
+it almost looks like the cat is walking, which
+看起来这只猫就像在走路，这
+
+00:13:35.200 --> 00:13:37.150
+is why we've got those two different costumes,
+就是我们设置这两种不同造型的原因，
+
+00:13:37.150 --> 00:13:40.960
+to give the appearance of walking if we would like to.
+要是我们愿意的话，就能营造出走路的效果。
+
+00:13:40.960 --> 00:13:44.290
+But let's go back to the fish, which has four different costumes that I
+但让我们回到那条鱼上，它有四种不同的造型，我
+
+00:13:44.290 --> 00:13:47.200
+can choose from, each of which looks very different.
+可以从中选择，每种造型看起来都很不一样。
+
+00:13:47.200 --> 00:13:49.270
+And I'm not limited to just those four.
+而且我并不局限于这四种造型。
+
+00:13:49.270 --> 00:13:51.610
+If I wanted to create additional costumes
+如果我想创建更多造型，
+
+00:13:51.610 --> 00:13:55.040
+I have the ability to create additional costumes too.
+我也有能力创建更多造型。
+
+00:13:55.040 --> 00:13:56.330
+How could I do that?
+我要怎么做呢？
+
+00:13:56.330 --> 00:13:59.230
+Well, here in the costume editor, down at the bottom
+嗯，在造型编辑器这里，底部
+
+00:13:59.230 --> 00:14:01.810
+underneath where all of these costumes are,
+所有这些造型的下方，
+
+00:14:01.810 --> 00:14:05.260
+there is another plus button that looks very much like that button
+有另一个加号按钮，它看起来和我们刚才看到的
+
+00:14:05.260 --> 00:14:08.350
+for creating a new sprite that we saw a moment ago.
+创建新角色的那个按钮很像。
+
+00:14:08.350 --> 00:14:12.460
+But this time, this is the button for creating a new costume.
+但这次，这是创建新造型的按钮。
+
+00:14:12.460 --> 00:14:14.170
+And here I have a couple of choices.
+在这里我有几种选择。
+
+00:14:14.170 --> 00:14:17.740
+I could search inside of Scratch's own library of costumes
+我可以在Scratch自带的造型库中搜索，
+
+00:14:17.740 --> 00:14:20.560
+to find a costume that I might want.
+找到我可能想要的造型。
+
+00:14:20.560 --> 00:14:22.270
+I could also paint a new costume.
+我也可以绘制一个新造型。
+
+00:14:22.270 --> 00:14:25.470
+So if you're feeling artistic, you'd like to create a costume of your own,
+所以如果你有艺术细胞，想自己创建一个造型，
+
+00:14:25.470 --> 00:14:26.720
+we could try painting our own.
+我们可以试着自己绘制。
+
+00:14:26.720 --> 00:14:28.970
+So I could paint my own fish, for example.
+比如，我可以自己画一条鱼。
+
+00:14:28.970 --> 00:14:31.210
+And here I have a bunch of different tools
+这里我有一堆不同的工具，
+
+00:14:31.210 --> 00:14:32.950
+that I can use to paint the costume.
+我可以用它们来绘制造型。
+
+00:14:32.950 --> 00:14:35.530
+So I'll go ahead and use the Paintbrush tool that will just
+那我就用画笔工具，它能
+
+00:14:35.530 --> 00:14:38.950
+let me draw a new costume for my fish.
+让我为我的鱼绘制一个新造型。
+
+00:14:38.950 --> 00:14:41.450
+And I can choose what color I'd like the costume to be too.
+我也可以选择我想要的造型颜色。
+
+00:14:41.450 --> 00:14:45.190
+So I'll go ahead and choose maybe this color,
+那我就选这个颜色吧，
+
+00:14:45.190 --> 00:14:51.620
+and I can start to draw something like a fish.
+然后我可以开始画一条类似鱼的东西。
+
+00:14:51.620 --> 00:14:53.020
+We'll draw a fish.
+我们来画一条鱼。
+
+00:14:53.020 --> 00:14:54.320
+We'll give the fish an eye.
+我们给鱼画只眼睛。
+
+00:14:54.320 --> 00:14:56.987
+So if you are feeling a little more creative, a little artistic,
+所以如果你更有创意、更有艺术感，
+
+00:14:56.987 --> 00:14:58.820
+you can try and draw fish for yourself.
+你可以试着自己画鱼。
+
+00:14:58.820 --> 00:15:04.190
+I can use the Fill tool if I want to pick a different color maybe and fill
+如果我想选个不同的颜色，我可以用填充工具，然后填充
+
+00:15:04.190 --> 00:15:06.110
+in the fish with a particular color.
+用特定的颜色填充这条鱼。
+
+00:15:06.110 --> 00:15:08.630
+So you can be creative about this too.
+所以你在这方面也可以发挥创意。
+
+00:15:08.630 --> 00:15:09.270
+Now of course.
+当然。
+
+00:15:09.270 --> 00:15:11.672
+I do think that the fish that Scratch provided for me
+我确实觉得Scratch为我提供的鱼
+
+00:15:11.672 --> 00:15:14.630
+look a little bit nicer than the fish that I was able to draw on my own
+看起来比我自己画的鱼要好看一点。
+
+00:15:14.630 --> 00:15:15.680
+just now.
+刚才。
+
+00:15:15.680 --> 00:15:18.800
+But I can modify the existing costumes too.
+但我也可以修改现有的造型。
+
+00:15:18.800 --> 00:15:21.500
+Using the same costume editor, if I wanted
+使用同样的造型编辑器，如果我想
+
+00:15:21.500 --> 00:15:24.120
+to fill in part of the fish with a different color,
+用不同的颜色填充鱼的一部分，
+
+00:15:24.120 --> 00:15:26.750
+maybe I want a little bit of green in this fish.
+也许我想让这条鱼带点绿色。
+
+00:15:26.750 --> 00:15:28.730
+I could take a green that I happen to like
+我可以选一种我刚好喜欢的绿色
+
+00:15:28.730 --> 00:15:33.230
+by just adjusting these dials to specify what color I want.
+只要调节这些旋钮来确定我想要的颜色。
+
+00:15:33.230 --> 00:15:36.890
+And still using the Fill tool, I could fill in parts of the fish
+仍然使用填充工具，我可以给鱼的部分区域
+
+00:15:36.890 --> 00:15:39.680
+with a little bit of green, for example, just to make the fish
+填充一点绿色，比如，只是为了让这条鱼
+
+00:15:39.680 --> 00:15:42.120
+look exactly how I want it to look.
+看起来完全符合我的期望。
+
+00:15:42.120 --> 00:15:44.930
+So you have a lot of creative freedom in this costume editor.
+所以在这个造型编辑器里你有很大的创作自由。
+
+00:15:44.930 --> 00:15:49.130
+You have the ability to create an entirely new costume just
+你有能力完全自己绘制和上色来创建一个全新的造型，或者你也有能力
+
+00:15:49.130 --> 00:15:52.070
+by drawing it and painting it yourself, or you have the ability
+选取一个已有的造型，然后
+
+00:15:52.070 --> 00:15:54.560
+to take a costume that already exists and add
+通过在上面上色或者用不同颜色填充来对其进行修改
+
+00:15:54.560 --> 00:15:58.160
+to it by painting over it or filling it in with different colors
+如果你愿意的话。
+
+00:15:58.160 --> 00:15:59.460
+if you'd like to.
+而且如果你想的话，你甚至有能力上传一个造型。
+
+00:15:59.460 --> 00:16:02.690
+And you even have the ability, if you want, to upload a costume.
+如果你电脑里有一张照片或图片
+
+00:16:02.690 --> 00:16:04.930
+If you have a photo or an image on your computer
+你想在你的Scratch程序里把它用作造型，
+
+00:16:04.930 --> 00:16:07.430
+that you'd like to use as a costume in your Scratch program,
+你可以把它上传到那里。
+
+00:16:07.430 --> 00:16:08.690
+you can upload it there.
+或者你甚至可以用电脑的摄像头拍张照片，
+
+00:16:08.690 --> 00:16:11.148
+Or you could even take a photo with your computer's camera,
+如果电脑有摄像头的话，这样也能把那张照片作为一个造型添加进来。
+
+00:16:11.148 --> 00:16:16.820
+if it has one, in order to add that photo as a costume as well.
+除了改变这些角色的外观，
+
+00:16:16.820 --> 00:16:20.340
+In addition to changing what these sprites look like,
+我们还能给这些角色添加可以播放的声音。
+
+00:16:20.340 --> 00:16:23.567
+we also have the ability to give these sprites sounds that they can play.
+在顶部，你会注意到我们
+
+00:16:23.567 --> 00:16:25.400
+And so up at the top, you've noticed that we
+有一个代码标签页和一个造型标签页，还有
+
+00:16:25.400 --> 00:16:28.070
+have a Code tab and a Costume tab, there's
+一个声音标签页，用来存放与
+
+00:16:28.070 --> 00:16:31.388
+also a Sounds tab for the sounds that are associated
+每个不同角色相关联的声音。
+
+00:16:31.388 --> 00:16:32.930
+with each of these different sprites.
+稍后，我们会看到把这些声音
+
+00:16:32.930 --> 00:16:35.210
+And later on, we'll see ways that we can include
+融入我们项目的方法。
+
+00:16:35.210 --> 00:16:37.410
+those sounds as part of our project.
+所以现在，在Scratch里，默认情况下这条鱼
+
+00:16:37.410 --> 00:16:39.650
+So right now the fish, by default in Scratch,
+有两种不同的声音。
+
+00:16:39.650 --> 00:16:41.630
+has two different sounds that it has.
+一种叫“气泡声”，如果我愿意可以播放它。
+
+00:16:41.630 --> 00:16:44.210
+One is called bubbles and I can play that if I'd like to.
+[水下冒泡声]
+
+00:16:44.210 --> 00:16:48.590
+[UNDEWATER BUBBLING]
+还有一种叫“海浪声”
+
+00:16:48.590 --> 00:16:50.180
+And one is called ocean wave
+[海浪拍击声]
+
+00:16:50.180 --> 00:16:55.620
+[WAVES CRASHING]
+所以这些就是作为鱼这个角色自带的声音。
+
+00:16:55.620 --> 00:16:58.667
+So those are the sounds that are built-in as just part of the fish.
+稍后，当我们用它来编写故事时，也许在某些时候
+
+00:16:58.667 --> 00:17:01.500
+And later on, as we're building stories with it, maybe at some point
+我们会想播放那些声音。
+
+00:17:01.500 --> 00:17:02.833
+we'll want to play those sounds.
+在课程的后续内容中，我们会看到实现这一点的方法。
+
+00:17:02.833 --> 00:17:06.030
+And later in the course, we'll see ways that we can do just that.
+在这门课程的后续部分，我们会学到实现这一点的方法。
+
+00:17:06.030 --> 00:17:09.569
+And different sprites have different sounds built-in by default. The cat,
+不同的角色默认自带不同的声音。比如这只猫，
+
+00:17:09.569 --> 00:17:12.900
+for example, if I click on the cat, has one sound by default, which is just
+举个例子，如果我点击这只猫，它默认有一个声音，就是
+
+00:17:12.900 --> 00:17:14.520
+the meow sound, which I can play.
+猫叫的声音，我可以播放这个声音。
+
+00:17:14.520 --> 00:17:16.010
+[CAT MEOWING]
+[猫叫声]
+
+00:17:16.010 --> 00:17:18.140
+But if I wanted to, I could add more sounds
+但如果我愿意，我可以添加更多声音
+
+00:17:18.140 --> 00:17:20.810
+as by recording something myself. if I wanted
+比如自己录制一些声音。如果我想
+
+00:17:20.810 --> 00:17:23.000
+to record a sound to give to a sprite.
+录制一个声音给某个角色。
+
+00:17:23.000 --> 00:17:25.035
+And you can also upload a sound if you have
+如果你有
+
+00:17:25.035 --> 00:17:27.410
+a sound file on your computer that you'd like to include,
+电脑上有想添加的声音文件，你也可以上传声音，
+
+00:17:27.410 --> 00:17:31.350
+maybe some music you want to go along with your project, or a sound effect,
+也许是你想为你的项目搭配的音乐，或者是一个音效，
+
+00:17:31.350 --> 00:17:34.647
+you have the ability to upload those sounds too.
+你也有能力上传那些声音。
+
+00:17:34.647 --> 00:17:37.730
+But let's go back to the Code tab, which we'll look at a little bit later.
+但让我们回到代码标签页，稍后我们会再详细看看。
+
+00:17:37.730 --> 00:17:39.050
+And now we've got our stage.
+现在我们有了舞台。
+
+00:17:39.050 --> 00:17:41.930
+We've got our stage with a cat and two fish.
+我们的舞台上有一只猫和两条鱼。
+
+00:17:41.930 --> 00:17:44.810
+But right now, what's a little bit boring about my project
+但目前，我这个项目有点无趣的地方
+
+00:17:44.810 --> 00:17:45.657
+is the background.
+在于背景。
+
+00:17:45.657 --> 00:17:47.990
+Right now I'm just dealing with a plain white background
+现在我用的只是一个纯白色的背景
+
+00:17:47.990 --> 00:17:49.160
+with nothing else on it.
+上面什么都没有。
+
+00:17:49.160 --> 00:17:52.800
+And I'd like to make that background a little more creative as well.
+我也想让这个背景更有创意一些。
+
+00:17:52.800 --> 00:17:55.430
+And so this background, we've been calling the stage.
+这个背景，我们一直称之为舞台。
+
+00:17:55.430 --> 00:17:59.120
+The stage is this rectangle where our sprites live.
+舞台就是我们的角色所在的这个矩形区域。
+
+00:17:59.120 --> 00:18:01.610
+And each stage is allowed to have backdrops.
+每个舞台都可以有背景。
+
+00:18:01.610 --> 00:18:06.170
+The backdrop just decides what image appears behind all of the sprites.
+背景决定了所有角色后面显示的是什么图像。
+
+00:18:06.170 --> 00:18:09.080
+And by default when you create a Scratch project for the first time,
+当你第一次创建Scratch项目时，默认情况下，
+
+00:18:09.080 --> 00:18:12.830
+the backdrop is just going to be solid white, but we can change that.
+背景就是纯白色的，但我们可以改变它。
+
+00:18:12.830 --> 00:18:15.680
+Down at the bottom right, here we see the stage.
+在右下角，这里我们能看到舞台。
+
+00:18:15.680 --> 00:18:18.650
+And I have the ability by clicking on this button in the bottom right,
+我可以通过点击右下角的这个按钮，
+
+00:18:18.650 --> 00:18:21.900
+to choose a backdrop for my project too.
+也为我的项目选择一个背景。
+
+00:18:21.900 --> 00:18:23.810
+And so if I click Choose a Backdrop you'll
+所以如果我点击“选择背景”，你会
+
+00:18:23.810 --> 00:18:26.598
+see that I have a whole variety of different backdrops
+看到我有各种各样不同的背景
+
+00:18:26.598 --> 00:18:28.640
+that I can choose from in different environments.
+可以在不同的环境中选择。
+
+00:18:28.640 --> 00:18:31.670
+I see I have a wintry scene if I want to create a wintry scene.
+我看到如果我想创建一个冬日场景，这里有一个冬日场景。
+
+00:18:31.670 --> 00:18:35.900
+We have some indoor scenes if I want to, some outside, like city scenes.
+如果我愿意，这里有一些室内场景，还有一些室外场景，比如城市场景。
+
+00:18:35.900 --> 00:18:38.930
+And this one looks nice, it's an underwater scene, maybe.
+这个看起来不错，也许是一个水下场景。
+
+00:18:38.930 --> 00:18:42.000
+And I'll use that because I've got a bunch of fish on my stage.
+我会用这个，因为我的舞台上有一堆鱼。
+
+00:18:42.000 --> 00:18:45.320
+And so maybe it'll make sense to put my fish in an underwater scene,
+比如，把我的鱼放在水下场景可能会更合适。
+
+00:18:45.320 --> 00:18:46.380
+for example.
+举个例子。
+
+00:18:46.380 --> 00:18:47.630
+So I'll choose that backdrop.
+所以我会选择那个背景。
+
+00:18:47.630 --> 00:18:52.470
+It's called underwater1 by default, and let's use that one.
+它默认叫“underwater1”，我们就用这个吧。
+
+00:18:52.470 --> 00:18:54.830
+So I'll click underwater1 and you'll see,
+所以我会点击“underwater1”，你会看到，
+
+00:18:54.830 --> 00:18:57.380
+immediately, the backdrop now changes.
+立刻，背景就变了。
+
+00:18:57.380 --> 00:19:01.430
+And I can now have my two fish that are living inside of this underwater scene.
+现在我可以让这两条鱼生活在这个水下场景里了。
+
+00:19:01.430 --> 00:19:05.450
+And much as was the case with costumes or with sounds, if I had my own image,
+就像处理造型或声音那样，如果我有自己的图片，
+
+00:19:05.450 --> 00:19:10.760
+or I wanted to draw my own image to use as the backdrop for my Scratch project,
+或者我想自己画一张图片，用作我的Scratch项目的背景，
+
+00:19:10.760 --> 00:19:13.790
+I could certainly do that as well.
+我当然也能这么做。
+
+00:19:13.790 --> 00:19:17.900
+At this point now, the cat though is starting to feel a little out of place.
+不过到这会儿，这只猫开始显得有点格格不入了。
+
+00:19:17.900 --> 00:19:19.400
+I'm designing an underwater scene.
+我在设计一个水下场景。
+
+00:19:19.400 --> 00:19:20.840
+I've got two different fish here.
+这里有两条不同的鱼。
+
+00:19:20.840 --> 00:19:22.980
+The cat, maybe, doesn't belong here.
+这只猫，也许不该出现在这儿。
+
+00:19:22.980 --> 00:19:26.750
+And so if ever I want to remove a sprite, here's how you could do that.
+所以，如果我想移除一个角色，下面教你怎么做。
+
+00:19:26.750 --> 00:19:28.832
+I'm going to click on the cat because that's
+我要点击这只猫，因为它是
+
+00:19:28.832 --> 00:19:30.290
+the one that I'm currently editing.
+我当前正在编辑的角色。
+
+00:19:30.290 --> 00:19:33.110
+And if I don't want the cat, there's a little Trash icon
+如果我不想要这只猫了，有个小垃圾桶图标
+
+00:19:33.110 --> 00:19:36.530
+that appears next to whichever sprite happens to currently be selected.
+会出现在当前选中的角色旁边。
+
+00:19:36.530 --> 00:19:41.030
+And if I don't want the cat to be there, I can just press that Trash icon,
+如果我不想让这只猫在这儿，我只要点击那个垃圾桶图标，
+
+00:19:41.030 --> 00:19:43.340
+and that's going to remove the cat.
+这样就能移除这只猫了。
+
+00:19:43.340 --> 00:19:46.940
+And so now, I have this scene with these two fish
+所以现在，我有了一个有这两条鱼的场景
+
+00:19:46.940 --> 00:19:48.920
+that happen to be swimming around in the water.
+它们正好在水里游来游去。
+
+00:19:48.920 --> 00:19:50.810
+And I could change the scene if I wanted to.
+如果我愿意，还可以改变这个场景。
+
+00:19:50.810 --> 00:19:53.990
+Maybe I want to take fish2, this yellow and green fish,
+也许我想把这条黄绿相间的鱼，也就是fish2，
+
+00:19:53.990 --> 00:19:56.812
+and flip it around so that it's facing the other direction.
+翻转一下，让它朝另一个方向。
+
+00:19:56.812 --> 00:19:58.520
+So that one fish is swimming to the right
+比如，让一条鱼向右游
+
+00:19:58.520 --> 00:20:01.740
+and one fish is swimming to the left, for example.
+另一条鱼向左游。
+
+00:20:01.740 --> 00:20:03.390
+So how could I do that?
+那我该怎么做呢？
+
+00:20:03.390 --> 00:20:06.350
+Well, next, every fish, remember we've got a direction control
+接下来，要记住，每条鱼，任何一个角色都有一个方向控制选项，
+
+00:20:06.350 --> 00:20:10.370
+for any given sprite, that controls what direction that fish
+它能控制这条鱼
+
+00:20:10.370 --> 00:20:11.780
+happens to be facing.
+所面对的方向。
+
+00:20:11.780 --> 00:20:15.470
+So if I want to take a fish and have it face to the left, for example,
+比如，如果我想让一条鱼朝左，
+
+00:20:15.470 --> 00:20:19.230
+I could rotate, rotate, rotate, have it face towards the left,
+我可以旋转，旋转，再旋转，让它朝左，
+
+00:20:19.230 --> 00:20:23.510
+at like negative 88 or negative 90 degrees or so.
+大概像负88度或者负90度这样。
+
+00:20:23.510 --> 00:20:27.590
+But this isn't quite perfect because, as you're probably noticing,
+但这样还不太完美，因为，你可能已经注意到了，
+
+00:20:27.590 --> 00:20:29.360
+the fish is upside down now.
+现在鱼是倒着的。
+
+00:20:29.360 --> 00:20:31.970
+So normally with this direction control, when
+所以通常用这个方向控制选项时，当
+
+00:20:31.970 --> 00:20:33.860
+I'm trying to control the direction, it's
+我试图控制方向，它只是
+
+00:20:33.860 --> 00:20:38.570
+just rotating whatever the sprite is in whatever direction I tell it to rotate.
+按照我指定的方向旋转角色。
+
+00:20:38.570 --> 00:20:40.970
+But what that means is that if it starts facing the right
+但这意味着，如果它一开始朝右，
+
+00:20:40.970 --> 00:20:46.100
+and I rotated 180 degrees all the way to face the other direction, now suddenly
+我把它旋转180度让它朝另一个方向，突然之间
+
+00:20:46.100 --> 00:20:47.810
+it's going to be upside down.
+它就会倒过来。
+
+00:20:47.810 --> 00:20:50.900
+And that's maybe not what I want for it to do.
+这可能不是我想要的效果。
+
+00:20:50.900 --> 00:20:53.150
+But it turns out Scratch has a fix for this.
+但事实证明，Scratch有办法解决这个问题。
+
+00:20:53.150 --> 00:20:57.260
+And every sprite can be in a number of different rotation styles, what
+每个角色都可以有多种不同的旋转样式，也就是
+
+00:20:57.260 --> 00:21:00.320
+style it's going to use when rotating.
+它在旋转时会采用哪种样式。
+
+00:21:00.320 --> 00:21:02.720
+By default, it uses this all-around style,
+默认情况下，它使用这种全方位旋转样式，
+
+00:21:02.720 --> 00:21:06.170
+where it can be facing any direction that we want, rotating all around.
+在这种样式下，它可以朝向我们想要的任何方向，全方位旋转。
+
+00:21:06.170 --> 00:21:09.713
+But there's also the second one that's just called Left and Right
+但还有第二种样式，叫做左右旋转样式
+
+00:21:09.713 --> 00:21:12.380
+and that will just let the sprite face in one of two directions.
+这种样式只会让角色朝向两个方向之一。
+
+00:21:12.380 --> 00:21:15.630
+Either it's looking to the right or it's looking to the left.
+要么朝右看，要么朝左看。
+
+00:21:15.630 --> 00:21:17.750
+And so if I change the rotation style to Left,
+所以如果我把旋转样式改成左右旋转，
+
+00:21:17.750 --> 00:21:19.640
+Right by clicking on this middle button here
+只需点击这里中间的这个按钮
+
+00:21:19.640 --> 00:21:23.360
+that's got one arrow facing the right and one arrow facing the left,
+这个按钮上有一个箭头朝右，一个箭头朝左，
+
+00:21:23.360 --> 00:21:26.420
+now when I rotate a little bit nothing happens
+现在我稍微旋转一下，什么都不会发生
+
+00:21:26.420 --> 00:21:30.150
+because it's only ever going to face to the right or face to the left.
+因为它只会朝右或朝左。
+
+00:21:30.150 --> 00:21:33.150
+But if I rotate it all the way around to the other side,
+但如果我把它一直旋转到另一边，
+
+00:21:33.150 --> 00:21:37.190
+now I have the sprite that's facing the other direction.
+现在这个角色就朝向另一个方向了。
+
+00:21:37.190 --> 00:21:40.430
+And that's how I can get one sprite that's looking over to the right
+这样我就能让一个角色朝右看
+
+00:21:40.430 --> 00:21:43.477
+and there's one sprite that's looking over to the left.
+另一个角色朝左看。
+
+00:21:43.477 --> 00:21:44.810
+And I happen to like this scene.
+我还挺喜欢这个场景的。
+
+00:21:44.810 --> 00:21:46.940
+If I wanted to see it in full-screen there's
+如果我想全屏查看，这里有
+
+00:21:46.940 --> 00:21:50.330
+a full screen icon in the upper right, where if I click on that button
+右上角有个全屏图标，点击那个按钮
+
+00:21:50.330 --> 00:21:52.190
+I now see my stage in full screen.
+我现在就能全屏看到我的舞台了。
+
+00:21:52.190 --> 00:21:55.980
+I can see exactly what it's going to look like, which is quite nice.
+我能确切看到它最终的样子，还挺不错的。
+
+00:21:55.980 --> 00:21:58.160
+And I now have my first Scratch project.
+现在我有了我的第一个Scratch项目。
+
+00:21:58.160 --> 00:22:00.350
+I haven't added any code just yet, but I've
+我还没添加任何代码，但我
+
+00:22:00.350 --> 00:22:03.410
+added some sprites, some characters that are part of my scene.
+添加了一些角色，它们是我场景的一部分。
+
+00:22:03.410 --> 00:22:07.547
+I've added a different backdrop that I can use to my scene as well.
+我还为我的场景添加了一个不同的背景。
+
+00:22:07.547 --> 00:22:09.380
+And if I wanted to save this, because I want
+如果我想保存这个项目，因为我想
+
+00:22:09.380 --> 00:22:11.840
+to make sure I can keep this and use it a little bit later,
+确保能保留它，以后还能接着用，
+
+00:22:11.840 --> 00:22:13.590
+I have a few options.
+我有几个选择。
+
+00:22:13.590 --> 00:22:17.837
+One option in the File menu, I can save a project to my computer.
+在文件菜单里有一个选项，我可以把项目保存到我的电脑上。
+
+00:22:17.837 --> 00:22:19.920
+And that will download the project to my computer,
+这样项目就会下载到我的电脑上，
+
+00:22:19.920 --> 00:22:22.140
+such that later if I want to open it up again,
+这样以后如果我想再次打开它，
+
+00:22:22.140 --> 00:22:26.090
+I can click Load from your computer and load that file that I've just saved.
+我可以点击“从电脑加载”，加载我刚刚保存的那个文件。
+
+00:22:26.090 --> 00:22:28.550
+But also, if you create a Scratch account
+而且，如果你创建一个Scratch账号
+
+00:22:28.550 --> 00:22:31.850
+by clicking on this Join Scratch button, if you don't already have it, and then
+如果你还没有账号，点击“加入Scratch”按钮，然后
+
+00:22:31.850 --> 00:22:34.010
+sign into your account, you'll have the ability
+登录你的账号，你就有能力
+
+00:22:34.010 --> 00:22:36.290
+to save projects to Scratch's own website.
+把项目保存到Scratch自己的网站上。
+
+00:22:36.290 --> 00:22:38.090
+And once you do that if you'd like to, you
+一旦你这么做了，如果你愿意，你
+
+00:22:38.090 --> 00:22:41.570
+could share your project with the world, to send it to friends and family,
+可以把你的项目分享到全世界，发给朋友和家人，
+
+00:22:41.570 --> 00:22:44.780
+and to let other people that are using Scratch have an opportunity to see
+让其他使用Scratch的人也有机会看到
+
+00:22:44.780 --> 00:22:48.270
+your project and try it out as well.
+你的项目并试用一下。
+
+00:22:48.270 --> 00:22:51.920
+So now that we have the ability to create these sprites
+既然我们现在有能力创建这些角色了
+
+00:22:51.920 --> 00:22:55.100
+and put them onto the stage, we can create whatever environment
+并把它们放到舞台上，我们就能创建任何环境
+
+00:22:55.100 --> 00:22:58.280
+we want for the story, or for the animation, or for the game,
+无论是为故事、动画、游戏
+
+00:22:58.280 --> 00:23:02.120
+or for the other program, that we might be trying to create in Scratch.
+还是为我们可能想用Scratch创建的其他程序。
+
+00:23:02.120 --> 00:23:05.120
+But right now these sprites aren't really doing anything.
+但目前这些角色并没有真正做什么。
+
+00:23:05.120 --> 00:23:06.930
+The stage is always staying the same.
+舞台始终保持不变。
+
+00:23:06.930 --> 00:23:08.600
+The fish are always the same.
+鱼也始终不变。
+
+00:23:08.600 --> 00:23:10.670
+And, ultimately, what we're going to look at next
+接下来，我们要探讨的
+
+00:23:10.670 --> 00:23:13.760
+is about programming, how it is that we can write code.
+是编程，也就是我们如何编写代码。
+
+00:23:13.760 --> 00:23:17.210
+And in particular, by using these blocks and assembling them together
+具体来说，就是通过使用这些积木并把它们组合起来
+
+00:23:17.210 --> 00:23:21.260
+into stacks of blocks that perform various different activities and tasks,
+形成能执行各种不同活动和任务的积木堆，
+
+00:23:21.260 --> 00:23:24.830
+we're going to be programming these sprites in the backdrop and the stage,
+我们将对背景和舞台中的这些角色进行编程
+
+00:23:24.830 --> 00:23:27.140
+to do what we want them to do, to create all the more
+让它们按照我们的意愿行事，从而创造出更多
+
+00:23:27.140 --> 00:23:30.140
+interactive stories and games and animations
+互动式故事、游戏和动画
+
+00:23:30.140 --> 00:23:33.080
+that we can create all through the use of Scratch.
+这些都可以通过使用Scratch来实现。
+
+00:23:33.080 --> 00:23:34.650
+But we'll explore that next time.
+不过我们下次再深入探讨。
+
+00:23:34.650 --> 00:23:36.780
+That's it for an introduction to Scratch for today.
+今天关于Scratch的介绍就到这里。
+
+00:23:36.780 --> 00:23:39.500
+And next time, we'll take a look at how we can take that stage
+下次，我们将看看如何利用那个舞台
+
+00:23:39.500 --> 00:23:42.610
+and begin programming with it as well.
+并开始用它进行编程。

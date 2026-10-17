@@ -33,7 +33,11 @@ export function ClickableSubtitle({ text, onWordClick, vocabSet, className }: Pr
           <button
             key={i}
             type="button"
-            onClick={() => onWordClick(t.value)}
+            onClick={(e) => {
+              // 阻止冒泡：避免同时触发外层「点句看中文」等父级点击
+              e.stopPropagation();
+              onWordClick(t.value);
+            }}
             title={isVocab ? "已在生词本（点击查词）" : "点击查词"}
             className={
               isVocab

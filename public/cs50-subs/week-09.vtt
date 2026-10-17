@@ -1,0 +1,2697 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.470
+[MUSIC PLAYING]
+[音乐播放中]
+
+00:00:17.300 --> 00:00:20.840
+BRIAN YU: Welcome back, everyone, to now our final class in this Introduction
+布莱恩·余：欢迎大家回来，现在是我们《用Scratch学编程》入门课程的最后一节课。
+
+00:00:20.840 --> 00:00:22.160
+to Programming with Scratch.
+用Scratch学编程。
+
+00:00:22.160 --> 00:00:25.040
+And at this point, we've seen most of the major features
+到目前为止，我们已经了解了Scratch的大部分主要功能。
+
+00:00:25.040 --> 00:00:26.280
+that Scratch has to offer.
+Scratch所提供的内容。
+
+00:00:26.280 --> 00:00:28.670
+So today in this final class, what we thought we'd do
+所以在今天这节最后一课中，我们打算
+
+00:00:28.670 --> 00:00:31.580
+is show you a few additional features that you might find useful
+向你们展示一些额外的功能，你们可能会觉得这些功能在
+
+00:00:31.580 --> 00:00:33.380
+as you go about building your own projects
+你们自己开发项目时会很有用。
+
+00:00:33.380 --> 00:00:36.620
+and then show you how you could put the pieces together, so to speak,
+然后，这么说吧，向你们展示如何将这些功能整合起来。
+
+00:00:36.620 --> 00:00:40.430
+and use all of the tools and the ideas that we've explored during this course
+利用我们在这门课程中探索过的所有工具和理念。
+
+00:00:40.430 --> 00:00:44.510
+to see how you could put them together to create a complete game using
+看看如何将它们组合起来，用Scratch创建一个完整的游戏。
+
+00:00:44.510 --> 00:00:45.440
+Scratch.
+Scratch。
+
+00:00:45.440 --> 00:00:48.620
+So let's go ahead and begin by taking a look at a couple final features
+那我们现在就开始，来看看Scratch的几个最后要介绍的功能。
+
+00:00:48.620 --> 00:00:50.030
+of Scratch to introduce.
+介绍Scratch的相关内容。
+
+00:00:50.030 --> 00:00:54.540
+And the first involves how it is that sprites communicate with each other.
+第一个功能涉及角色之间如何相互通信。
+
+00:00:54.540 --> 00:00:56.420
+You might recall that in an earlier project,
+你们可能还记得，在之前的一个项目中，
+
+00:00:56.420 --> 00:00:59.267
+we had a cat talking to a dinosaur, for example.
+比如，我们让一只猫和一只恐龙对话。
+
+00:00:59.267 --> 00:01:01.100
+And how we did that was something like this.
+我们是这样实现的。
+
+00:01:01.100 --> 00:01:05.239
+I had a cat, and then I added the dinosaur, which
+我有一只猫，然后我添加了一只恐龙，我
+
+00:01:05.239 --> 00:01:07.430
+I'll go ahead and find and bring back.
+这就去找出来并把它弄回来。
+
+00:01:07.430 --> 00:01:10.020
+I wanted the cat and the dinosaur to be facing each other.
+我想让猫和恐龙面对面。
+
+00:01:10.020 --> 00:01:12.620
+So I took the dinosaur and I set its rotation
+所以我选中恐龙，设置它的旋转方式。
+
+00:01:12.620 --> 00:01:16.440
+to left right and then set its direction to negative 90
+为左右旋转，然后将它的方向设置为 -90。
+
+00:01:16.440 --> 00:01:18.240
+so it was facing the other way.
+这样它就朝另一个方向了。
+
+00:01:18.240 --> 00:01:21.320
+And if I wanted the cat and the dinosaur to greet each other,
+如果我想让猫和恐龙互相打招呼，
+
+00:01:21.320 --> 00:01:29.390
+then I would have the cat when the flag is clicked do something like say hello
+那么我会让猫在点击绿旗时，做类似说“你好”
+
+00:01:29.390 --> 00:01:32.330
+to the dinosaur.
+给恐龙这样的事。
+
+00:01:32.330 --> 00:01:35.810
+And then likewise for the dinosaur, if I want the dinosaur to respond
+同样地，对于恐龙，如果我想让恐龙回应
+
+00:01:35.810 --> 00:01:38.000
+to the cat saying hello, well, the cat is
+猫说的“你好”，嗯，猫会
+
+00:01:38.000 --> 00:01:40.430
+saying hello dinosaur for two seconds.
+对恐龙说“你好”两秒钟。
+
+00:01:40.430 --> 00:01:44.120
+So the dinosaur better wait two seconds before it responds.
+所以恐龙最好在回应之前等两秒钟。
+
+00:01:44.120 --> 00:01:46.700
+So the dinosaur, I did something like this.
+所以对于恐龙，我是这么做的。
+
+00:01:46.700 --> 00:01:49.850
+I said when the flag is clicked, let's go under Control.
+我说当点击绿旗时，我们到“控制”类别里看看。
+
+00:01:49.850 --> 00:02:00.050
+Let's wait two seconds and then say hello to the cat.
+等两秒钟，然后对猫说“你好”。
+
+00:02:00.050 --> 00:02:03.560
+So now when I run the project, the cat says hello dinosaur.
+所以现在当我运行这个项目时，猫会说“你好，恐龙”。
+
+00:02:03.560 --> 00:02:07.580
+And immediately after, the dinosaur says hello cat.
+紧接着，恐龙会说“你好，猫”。
+
+00:02:07.580 --> 00:02:09.270
+What if I later wanted to make a change?
+如果我之后想做些改变呢？
+
+00:02:09.270 --> 00:02:12.530
+I want the cat to only say hello dinosaur for maybe one second,
+比如，我想让猫只对恐龙说一秒钟“你好”。
+
+00:02:12.530 --> 00:02:13.490
+for example.
+例如。
+
+00:02:13.490 --> 00:02:17.450
+Well, now the cat speaks and I have this weird pause
+嗯，现在猫说完了，会有一段奇怪的停顿。
+
+00:02:17.450 --> 00:02:20.690
+before the dinosaur responds, because I forgot to change
+在恐龙做出回应之前，因为我忘了更改
+
+00:02:20.690 --> 00:02:22.610
+how long the dinosaur was waiting.
+恐龙等待的时长。
+
+00:02:22.610 --> 00:02:25.010
+I'd also have to change that from two to one
+我还得把等待时长从两秒改成一秒
+
+00:02:25.010 --> 00:02:27.650
+in order to get it to respond appropriately.
+才能让它做出合适的回应。
+
+00:02:27.650 --> 00:02:30.875
+Ultimately, this is going to start to get more complex, especially as there
+最终，这会变得越来越复杂，尤其是当
+
+00:02:30.875 --> 00:02:33.560
+are more interactions between these two sprites
+这两个角色之间有更多互动时
+
+00:02:33.560 --> 00:02:35.810
+or if later I add other sprites altogether
+或者如果之后我再添加其他角色
+
+00:02:35.810 --> 00:02:38.960
+for me to have to calculate exactly how long every sprite should
+我就得精确计算每个角色在
+
+00:02:38.960 --> 00:02:42.560
+be waiting in between one thing happening and another thing happening.
+一件事发生到另一件事发生之间应该等待多久。
+
+00:02:42.560 --> 00:02:46.460
+What would be better is if the cat when it was done speaking
+更好的办法是，当猫说完话后
+
+00:02:46.460 --> 00:02:50.870
+could somehow signal to the dinosaur that it's now the dinosaurs turn
+能以某种方式向恐龙发出信号，告诉它现在轮到它
+
+00:02:50.870 --> 00:02:51.800
+to start speaking.
+开始说话了。
+
+00:02:51.800 --> 00:02:53.930
+That way I, the programmer, don't have to do
+这样一来，作为程序员的我就不用
+
+00:02:53.930 --> 00:02:56.210
+all this math of figuring out exactly how
+做这些精确计算
+
+00:02:56.210 --> 00:02:58.430
+long these sprites should be waiting.
+这些角色应该等待多久的数学运算了。
+
+00:02:58.430 --> 00:03:00.530
+And so this brings us to one of our final topics
+这就引出了我们在Scratch里的最后一个主题
+
+00:03:00.530 --> 00:03:03.080
+in Scratch, which is called broadcasting.
+叫做广播。
+
+00:03:03.080 --> 00:03:07.370
+Broadcasting is the ability for one object in Scratch, one sprite,
+广播是指Scratch里的一个对象，比如一个角色
+
+00:03:07.370 --> 00:03:12.650
+for example, to send some message that other sprites like the dinosaur,
+能够发送某种消息，其他角色，比如这里的恐龙
+
+00:03:12.650 --> 00:03:14.660
+in this case, could receive.
+可以接收这些消息。
+
+00:03:14.660 --> 00:03:17.900
+So we have the ability to send or broadcast messages.
+所以我们有发送或广播消息的能力。
+
+00:03:17.900 --> 00:03:21.290
+And then we have the ability for other sprites to receive those messages.
+然后其他角色有接收这些消息的能力。
+
+00:03:21.290 --> 00:03:25.672
+When they receive a message, the sprites are going to respond in some way.
+当它们接收到消息时，角色会以某种方式做出回应。
+
+00:03:25.672 --> 00:03:26.880
+So what would that look like?
+那会是什么样的呢？
+
+00:03:26.880 --> 00:03:30.590
+How could we broadcast a message from the cat to the dinosaur
+我们怎样才能从猫向恐龙广播一条消息
+
+00:03:30.590 --> 00:03:34.370
+so that the dinosaur knows that it's time to greet the cat?
+让恐龙知道是时候向猫打招呼了呢？
+
+00:03:34.370 --> 00:03:36.140
+Let's go back to the cat.
+让我们回到猫这个角色。
+
+00:03:36.140 --> 00:03:41.060
+And after the cat says hello dinosaur for let's go back to two seconds,
+猫说“你好，恐龙”持续两秒后，
+
+00:03:41.060 --> 00:03:48.710
+then under Event, I'm going to use this broadcast block to broadcast a message.
+在“事件”分类下，我要用这个广播积木来广播一条消息。
+
+00:03:48.710 --> 00:03:51.080
+And I'm going to choose a new message from the dropdown.
+我要从下拉菜单里选择一条新消息。
+
+00:03:51.080 --> 00:03:52.850
+And I can just name this message.
+我可以给这条消息命名。
+
+00:03:52.850 --> 00:03:55.400
+This is any message that I'm now going to send.
+这就是我现在要发送的任意一条消息。
+
+00:03:55.400 --> 00:03:58.730
+And I'm going to call the message greet, just because it's
+我把这条消息命名为“打招呼”，只是因为它
+
+00:03:58.730 --> 00:04:01.460
+going to be a message that signals to the dinosaur
+是一条向恐龙发出信号的消息
+
+00:04:01.460 --> 00:04:03.980
+that it's time to greet the cat.
+告诉它是时候向猫打招呼了。
+
+00:04:03.980 --> 00:04:08.030
+So the cat says hello dinosaur and then broadcasts greet.
+所以猫说“你好，恐龙”，然后广播“打招呼”。
+
+00:04:08.030 --> 00:04:13.280
+And the dinosaur now instead of saying hello cat when the flag is clicked,
+现在恐龙不用在点击绿旗时说“你好，猫”了，
+
+00:04:13.280 --> 00:04:16.700
+I'm going to get rid of the when flag is clicked event entirely
+我要把点击绿旗这个事件完全去掉
+
+00:04:16.700 --> 00:04:22.670
+and replace it with this event here when I receive greet.
+用“当接收到打招呼”这个事件来替换它。
+
+00:04:22.670 --> 00:04:26.630
+So the cat is first going to say hello dinosaur for two seconds
+所以猫会先对恐龙说两秒“你好，恐龙”
+
+00:04:26.630 --> 00:04:28.680
+and then broadcast this message.
+然后广播这条消息。
+
+00:04:28.680 --> 00:04:30.650
+The message is greet.
+消息内容是“greet”。
+
+00:04:30.650 --> 00:04:34.700
+And then the dinosaur when it receives the greet message is then
+然后当恐龙收到“greet”消息时，它就会
+
+00:04:34.700 --> 00:04:36.890
+going to say hello to the cat.
+对猫说“你好”。
+
+00:04:36.890 --> 00:04:41.360
+And so now the cat says hello dinosaur, and immediately the dinosaur
+所以现在猫说“你好，恐龙”，紧接着恐龙
+
+00:04:41.360 --> 00:04:42.710
+responds hello cat.
+回应“你好，猫”。
+
+00:04:42.710 --> 00:04:46.250
+The cat broadcasted a message and the dinosaur received it.
+猫广播了一条消息，恐龙收到了它。
+
+00:04:46.250 --> 00:04:48.170
+And now it doesn't matter if there's a delay.
+现在就算有延迟也没关系了。
+
+00:04:48.170 --> 00:04:52.250
+I could add a delay of a second to the cat.
+我可以给猫加一秒的延迟。
+
+00:04:52.250 --> 00:04:55.700
+And so the cat will now wait a second before speaking,
+这样猫现在说话前会先等一秒，
+
+00:04:55.700 --> 00:04:57.830
+but the dinosaur still responds right on cue.
+但恐龙仍然能适时做出回应。
+
+00:04:57.830 --> 00:05:00.060
+I didn't have to change any of the timing,
+我不用改变任何时间设置，
+
+00:05:00.060 --> 00:05:03.290
+because the cat broadcasted a message once the cat was
+因为猫做完它正在做的任何事之后就广播了一条消息，然后恐龙就能做出回应。
+
+00:05:03.290 --> 00:05:08.130
+done doing whatever it was doing and the dinosaur was then able to respond.
+完成了它正在做的任何事情，然后恐龙就能做出回应了。
+
+00:05:08.130 --> 00:05:10.783
+So this works great for stories where you have multiple sprites
+所以对于有多个角色的故事来说，这非常有用，
+
+00:05:10.783 --> 00:05:13.700
+and they're interacting in some way and you want some sprite to signal
+它们以某种方式进行互动，你想让某个角色在轮到它说话或做事时
+
+00:05:13.700 --> 00:05:17.750
+to someone else when it's their turn to say something or do something,
+向其他角色发出信号，
+
+00:05:17.750 --> 00:05:18.590
+for example.
+举个例子。
+
+00:05:18.590 --> 00:05:22.070
+It can also be used in other ways to let one sprite control
+它还可以用其他方式让一个角色控制
+
+00:05:22.070 --> 00:05:25.130
+or influence the behavior of another sprite.
+或影响另一个角色的行为。
+
+00:05:25.130 --> 00:05:27.830
+Let's imagine that I had a duck.
+我们来想象一下我有一只鸭子。
+
+00:05:27.830 --> 00:05:34.280
+Let's add a new animal and let's go back to the duck here.
+我们添加一个新动物，回到这里选鸭子。
+
+00:05:34.280 --> 00:05:36.787
+And let's say I wanted the duck to move up and down.
+假设我想让鸭子上下移动。
+
+00:05:36.787 --> 00:05:38.120
+And we could use the arrow keys.
+我们可以用方向键。
+
+00:05:38.120 --> 00:05:40.280
+I could use the up and down arrow keys to control it.
+我可以用上下方向键来控制它。
+
+00:05:40.280 --> 00:05:42.363
+But I'd like for the user just to be able to click
+但我希望用户只需点击
+
+00:05:42.363 --> 00:05:45.620
+on up and down arrows on the screen as some user interface
+屏幕上的上下箭头，作为某种用户界面
+
+00:05:45.620 --> 00:05:48.020
+that they could use as a visual on the screen that
+他们可以在屏幕上直观地操作，
+
+00:05:48.020 --> 00:05:51.620
+lets them control if the duck is going to move up or move down.
+从而控制鸭子是向上还是向下移动。
+
+00:05:51.620 --> 00:05:53.270
+So let's add that interface.
+所以我们来添加那个界面。
+
+00:05:53.270 --> 00:05:55.070
+Here's an arrow.
+这里有一个箭头。
+
+00:05:55.070 --> 00:05:56.910
+And right now the arrow is facing the right.
+现在这个箭头朝右。
+
+00:05:56.910 --> 00:06:00.410
+But if I wanted to go up, then I'm going to rotate it instead of 90 degrees,
+但如果我想让它朝上，那我不旋转90度了，
+
+00:06:00.410 --> 00:06:02.150
+let's set it to 0 degrees.
+我们把它设置为0度。
+
+00:06:02.150 --> 00:06:04.970
+That's going to be an arrow that's facing up.
+这样箭头就朝上了。
+
+00:06:04.970 --> 00:06:10.400
+And if I want a button that lets the duck go down, let's add an arrow.
+如果我想要一个能让鸭子向下移动的按钮，我们再添加一个箭头。
+
+00:06:10.400 --> 00:06:13.530
+And this time set it to 180 degrees.
+这次把它设置为180度。
+
+00:06:13.530 --> 00:06:16.890
+And now the arrow is facing down.
+现在箭头朝下了。
+
+00:06:16.890 --> 00:06:18.680
+So now I have two arrows.
+所以现在我有两个箭头了。
+
+00:06:18.680 --> 00:06:22.140
+But clicking these arrows doesn't achieve anything.
+但点击这些箭头没有任何效果。
+
+00:06:22.140 --> 00:06:25.790
+They just do nothing right now because I haven't added any code to them.
+它们现在什么都不做，因为我还没给它们添加任何代码。
+
+00:06:25.790 --> 00:06:27.200
+But I could.
+但我可以添加。
+
+00:06:27.200 --> 00:06:32.960
+Let me add an event to the up arrow that says when this sprite is clicked,
+我给向上箭头添加一个事件，当点击这个角色时，
+
+00:06:32.960 --> 00:06:38.480
+when I click on the up arrow, well then let's broadcast a message.
+当我点击向上箭头时，那就广播一条消息。
+
+00:06:38.480 --> 00:06:41.210
+And the message is going to be up.
+这条消息是“向上”。
+
+00:06:41.210 --> 00:06:43.670
+That's the direction you should move.
+这就是你应该移动的方向。
+
+00:06:43.670 --> 00:06:46.320
+Now let's choose the down arrow.
+现在让我们选择向下箭头。
+
+00:06:46.320 --> 00:06:49.280
+This time when the sprite is clicked, let's
+这次当点击这个角色时，让我们
+
+00:06:49.280 --> 00:06:53.180
+broadcast a message not up, but this time a new message.
+广播一条消息，不是“向上”，而是一条新消息。
+
+00:06:53.180 --> 00:06:55.530
+And the message is going to be down.
+这条消息是“向下”。
+
+00:06:55.530 --> 00:06:58.700
+So now the up arrow is broadcasting a message that says up.
+所以现在向上箭头在广播一条“向上”的消息。
+
+00:06:58.700 --> 00:07:02.030
+The down arrow is broadcasting a message that says down.
+向下箭头在广播一条“向下”的消息。
+
+00:07:02.030 --> 00:07:05.120
+And now I'll have the duck respond to those broadcasts.
+现在我要让鸭子对这些广播做出响应。
+
+00:07:05.120 --> 00:07:10.010
+When the duck receives the up message, well then
+当鸭子收到“向上”的消息时，那么
+
+00:07:10.010 --> 00:07:16.220
+let's have the duck change its y value by 10 going upward in direction.
+让鸭子的y值增加10，也就是向上移动。
+
+00:07:16.220 --> 00:07:22.340
+And likewise under Events, when the duck receives the down broadcast message,
+同样在“事件”里，当鸭子收到“向下”的广播消息时，
+
+00:07:22.340 --> 00:07:28.010
+then we're going to change the y value by negative 10.
+那么我们要把y值减少10。
+
+00:07:28.010 --> 00:07:31.430
+And now these arrows, these sprites on the screen,
+现在这些箭头，屏幕上的这些角色，
+
+00:07:31.430 --> 00:07:33.230
+are controlling the behavior of the duck.
+正在控制鸭子的行为。
+
+00:07:33.230 --> 00:07:36.470
+If I click the up arrow, the duck moves up.
+如果我点击向上箭头，鸭子就向上移动。
+
+00:07:36.470 --> 00:07:39.470
+And if I click the down arrow, the duck moves down.
+如果我点击向下箭头，鸭子就向下移动。
+
+00:07:39.470 --> 00:07:41.540
+And they're doing that because of broadcasting.
+它们能这样做是因为广播机制。
+
+00:07:41.540 --> 00:07:44.720
+When I click on the arrows, those arrows are themselves
+当我点击这些箭头时，这些箭头本身
+
+00:07:44.720 --> 00:07:48.020
+sprites that are saying move up or move down.
+就是在说“向上移动”或“向下移动”的角色。
+
+00:07:48.020 --> 00:07:49.970
+They're broadcasting some message.
+它们在广播一些消息。
+
+00:07:49.970 --> 00:07:55.190
+And the duck in turn is then responding to those messages.
+而鸭子则会对这些消息做出响应。
+
+00:07:55.190 --> 00:07:59.930
+And it doesn't just have to be sprites that are broadcasting messages.
+不只是角色可以广播消息。
+
+00:07:59.930 --> 00:08:03.350
+The stage, the background can broadcast messages too.
+舞台，也就是背景也能广播消息。
+
+00:08:03.350 --> 00:08:05.090
+I'll show you an example of that.
+我给你们举个例子。
+
+00:08:05.090 --> 00:08:06.860
+I'll delete all of these sprites for now.
+我现在先把这些角色都删掉。
+
+00:08:06.860 --> 00:08:08.270
+Let's add a backdrop.
+我们添加一个背景。
+
+00:08:08.270 --> 00:08:11.270
+And let's go back to our underwater backdrop.
+让我们回到水下背景。
+
+00:08:11.270 --> 00:08:13.850
+And let's bring our fish back.
+再把我们的鱼加回来。
+
+00:08:13.850 --> 00:08:20.270
+So I'll add a new sprite and add back the fish.
+所以我要添加一个新角色，把鱼加回去。
+
+00:08:20.270 --> 00:08:23.540
+And now what I would like to do is in the backdrop,
+现在我想在背景里做些操作，
+
+00:08:23.540 --> 00:08:26.150
+I'll click on the backdrop, add some code here,
+我点击背景，在这里添加一些代码，
+
+00:08:26.150 --> 00:08:31.160
+I'll say whenever the stage is clicked, when stage clicked,
+我说每当点击舞台时，当舞台被点击，
+
+00:08:31.160 --> 00:08:34.669
+let's now broadcast a message.
+现在让我们广播一条消息。
+
+00:08:34.669 --> 00:08:38.150
+And the message is going to be visit.
+这条消息是“前往”。
+
+00:08:38.150 --> 00:08:44.870
+I would like the fish to visit wherever I click on the stage.
+我希望鱼能游到我点击舞台的任何地方。
+
+00:08:44.870 --> 00:08:49.000
+And now for the fish whenever it receives the visit message,
+现在对于这条鱼，每当它收到“访问”消息时，
+
+00:08:49.000 --> 00:08:53.530
+let's have the fish point towards the mouse pointer
+让这条鱼指向鼠标指针
+
+00:08:53.530 --> 00:08:59.060
+and then take one second to glide to the mouse pointer.
+然后花一秒钟滑向鼠标指针。
+
+00:08:59.060 --> 00:09:00.160
+So now I press the flag.
+所以现在我点击旗帜。
+
+00:09:00.160 --> 00:09:01.550
+At first, nothing happens.
+一开始，什么都没发生。
+
+00:09:01.550 --> 00:09:06.400
+But if I choose a location and then click, the fish goes there.
+但如果我选一个位置然后点击，鱼就会游过去。
+
+00:09:06.400 --> 00:09:11.380
+I choose the location and click, and the fish visits wherever I happen to click.
+我选好位置并点击，鱼就会游到我点击的地方。
+
+00:09:11.380 --> 00:09:12.130
+I click over here.
+我在这里点击。
+
+00:09:12.130 --> 00:09:13.310
+The fish goes there.
+鱼游过去了。
+
+00:09:13.310 --> 00:09:17.170
+And every time when I click, the backdrop is broadcasting a message.
+每次我点击时，背景都会广播一条消息。
+
+00:09:17.170 --> 00:09:19.990
+The stage is broadcasting this visit message
+舞台正在广播这条“访问”消息
+
+00:09:19.990 --> 00:09:23.380
+and the fish is now receiving that visit message
+而这条鱼现在正在接收那条“访问”消息
+
+00:09:23.380 --> 00:09:26.320
+and doing something in response, pointing towards the mouse pointer
+并做出相应的动作，指向鼠标指针
+
+00:09:26.320 --> 00:09:27.560
+and gliding there.
+然后滑向那里。
+
+00:09:27.560 --> 00:09:31.390
+So broadcasting allows multiple different parts of our Scratch project
+所以广播能让我们Scratch项目的多个不同部分
+
+00:09:31.390 --> 00:09:36.370
+to communicate with each other to decide when something should happen.
+相互通信，以决定何时该发生某些事情。
+
+00:09:36.370 --> 00:09:40.330
+And that's one very powerful, very useful feature within Scratch.
+这是Scratch里一个非常强大、非常有用的功能。
+
+00:09:40.330 --> 00:09:44.470
+Another feature that can be useful, and for this I'll get rid of the backdrop,
+另一个可能有用的功能，为此我要去掉这个背景，
+
+00:09:44.470 --> 00:09:47.320
+I'll go back to the default white backdrop,
+我要回到默认的白色背景，
+
+00:09:47.320 --> 00:09:50.650
+is the ability to clone a sprite.
+就是克隆角色的能力。
+
+00:09:50.650 --> 00:09:53.350
+If I have one copy of a sprite oftentimes in a game
+如果在游戏里我有一个角色的副本
+
+00:09:53.350 --> 00:09:56.320
+or in some sort of other animation, I might not just one
+或者在某种其他动画里，我可能不只要
+
+00:09:56.320 --> 00:10:00.130
+copy of a sprite on the stage, but I might want multiple copies
+舞台上有一个角色副本，而是可能想要多个副本
+
+00:10:00.130 --> 00:10:03.020
+of that sprite on the stage as well.
+也出现在舞台上。
+
+00:10:03.020 --> 00:10:04.270
+So let's add a sprite.
+所以让我们添加一个角色。
+
+00:10:04.270 --> 00:10:08.320
+Let me search for the star and let's grab the star.
+我来搜索星星，然后选中星星这个角色。
+
+00:10:08.320 --> 00:10:10.450
+And maybe what I'd like to happen is to not just
+也许我希望的情况不只是
+
+00:10:10.450 --> 00:10:15.890
+have one star but to have multiple stars inside of my project.
+有一颗星星，而是在我的项目中有多颗星星。
+
+00:10:15.890 --> 00:10:18.670
+So let's add some code here.
+所以让我们在这里添加一些代码。
+
+00:10:18.670 --> 00:10:23.740
+I'll say when this sprite is clicked, when I click on the star,
+我要说当点击这个角色时，也就是当我点击星星时，
+
+00:10:23.740 --> 00:10:30.550
+I am going to, and this is under Control, create a clone of myself.
+我要，这个在“控制”分类里，创建一个自身的克隆体。
+
+00:10:30.550 --> 00:10:34.000
+When the star is clicked, we're going to create a clone of the star.
+当点击星星时，我们要创建一个星星的克隆体。
+
+00:10:34.000 --> 00:10:36.550
+And that new clone is going to be another star that
+那个新的克隆体将是另一颗星星，它
+
+00:10:36.550 --> 00:10:39.170
+can behave on its own.
+可以自行行动。
+
+00:10:39.170 --> 00:10:40.360
+Now I'll add this new event.
+现在我要添加这个新事件。
+
+00:10:40.360 --> 00:10:44.230
+When I start as a clone, what should this clone star do?
+当我作为一个克隆体启动时，这个克隆的星星应该做什么呢？
+
+00:10:44.230 --> 00:10:50.270
+Well, let's have the cloned star just glide one second to a random position.
+嗯，让这个克隆的星星花一秒钟滑到一个随机位置吧。
+
+00:10:50.270 --> 00:10:52.730
+So I have this star, and watch what happens.
+所以我有了这颗星星，看看会发生什么。
+
+00:10:52.730 --> 00:10:58.490
+Every time I click on the star, the star creates a new clone.
+每次我点击星星，星星就会创建一个新的克隆体。
+
+00:10:58.490 --> 00:11:00.600
+Every time I click, a new clone is created.
+每次我点击，就会创建一个新的克隆体。
+
+00:11:00.600 --> 00:11:03.350
+And when the new star starts as a clone, it's
+当新的星星以克隆体形式出现时，它会
+
+00:11:03.350 --> 00:11:05.720
+going to glide to a random position.
+滑行到一个随机位置。
+
+00:11:05.720 --> 00:11:10.880
+Every time I clone a star, you'll see we create a duplicate event
+每次我克隆一颗星星，你会看到我们创建了一个重复事件
+
+00:11:10.880 --> 00:11:13.950
+and it ends up going to a random position.
+最终它会移动到一个随机位置。
+
+00:11:13.950 --> 00:11:17.930
+So if I want multiple of a particular sprite that appear on the stage,
+所以如果我想让特定角色的多个副本出现在舞台上，
+
+00:11:17.930 --> 00:11:19.350
+cloning is a great way to do that.
+克隆是个很好的办法。
+
+00:11:19.350 --> 00:11:21.920
+We can create multiple copies of a sprite
+我们可以创建角色的多个副本
+
+00:11:21.920 --> 00:11:27.470
+and then decide how it is that those clones should ultimately behave.
+然后决定这些克隆体最终应该如何表现。
+
+00:11:27.470 --> 00:11:30.140
+So now I'll go ahead and get rid of all those clones
+所以现在我要把所有那些克隆体都清除掉
+
+00:11:30.140 --> 00:11:34.870
+just by deleting the sprite and clearing the screen.
+只要删除角色并清空屏幕就行。
+
+00:11:34.870 --> 00:11:37.870
+Now we've seen a lot of features that Scratch has to offer.
+现在我们已经看到了Scratch提供的很多功能。
+
+00:11:37.870 --> 00:11:40.030
+We've seen functions and we've seen events.
+我们看到了函数，也看到了事件。
+
+00:11:40.030 --> 00:11:43.420
+We've seen variable, loops and conditions, and now the ability
+我们看到了变量、循环和条件，现在还有能力
+
+00:11:43.420 --> 00:11:45.940
+to broadcast messages and clone sprites.
+广播消息和克隆角色。
+
+00:11:45.940 --> 00:11:48.430
+Let's take all of those ideas now and put them
+现在让我们把所有这些想法整合起来
+
+00:11:48.430 --> 00:11:51.100
+together inside of a fully complete game to show you
+放进一个完整的游戏里，给你们展示
+
+00:11:51.100 --> 00:11:55.810
+how you could go about building a more complex project within Scratch.
+如何在Scratch中构建一个更复杂的项目。
+
+00:11:55.810 --> 00:11:58.010
+And what characters should I use in the game?
+我在游戏里应该用哪些角色呢？
+
+00:11:58.010 --> 00:12:02.380
+Let's start and just start building this game one piece at a time.
+让我们开始，一次一点地来构建这个游戏。
+
+00:12:02.380 --> 00:12:05.800
+Well, let's start by using the cat.
+好吧，让我们先从使用猫咪角色开始。
+
+00:12:05.800 --> 00:12:08.780
+Sort of the classic default sprite character.
+它算是经典的默认角色。
+
+00:12:08.780 --> 00:12:12.140
+And let's have the cat have some objective.
+让猫咪有个目标。
+
+00:12:12.140 --> 00:12:13.765
+What is the cat trying to do?
+猫咪要做什么呢？
+
+00:12:13.765 --> 00:12:15.640
+Well, I can just scroll through these sprites
+嗯，我可以滚动浏览这些角色
+
+00:12:15.640 --> 00:12:17.140
+and look for what seems interesting.
+看看有什么看起来有趣的。
+
+00:12:17.140 --> 00:12:18.880
+Here are the crystals.
+这里有水晶。
+
+00:12:18.880 --> 00:12:23.177
+Let's have the cat try to catch as many crystals as it can.
+让猫咪尽可能多地去抓水晶。
+
+00:12:23.177 --> 00:12:24.760
+And what are the crystals going to do?
+那水晶要做什么呢？
+
+00:12:24.760 --> 00:12:26.410
+Well, just thinking about what I want the game to do,
+嗯，想想我希望游戏怎么运行，
+
+00:12:26.410 --> 00:12:28.600
+I could decide how I would like the game to work.
+我就能决定游戏该怎么设计了。
+
+00:12:28.600 --> 00:12:31.480
+And maybe the crystals are going to fall from the sky
+也许水晶会从天上掉下来
+
+00:12:31.480 --> 00:12:35.780
+and the cat has to try to catch the crystals before they hit the ground.
+猫咪必须在水晶落地之前抓住它们。
+
+00:12:35.780 --> 00:12:37.870
+So that's ultimately what I would like to happen.
+所以这就是我最终希望发生的事情。
+
+00:12:37.870 --> 00:12:41.170
+The cat's going to try and catch crystals before they hit the ground.
+猫咪要在水晶落地之前试着抓住它们。
+
+00:12:41.170 --> 00:12:41.990
+I have a cat.
+我有一只猫咪。
+
+00:12:41.990 --> 00:12:43.120
+I have a crystal.
+我有一颗水晶。
+
+00:12:43.120 --> 00:12:48.260
+But now I need to add code to figure out how to make that work.
+但现在我需要添加代码来弄清楚如何实现这个功能。
+
+00:12:48.260 --> 00:12:50.060
+Well, what do I need?
+嗯，我需要什么呢？
+
+00:12:50.060 --> 00:12:52.540
+Well, first I need some way for the cat to move around.
+嗯，首先我需要让猫咪能四处移动。
+
+00:12:52.540 --> 00:12:55.060
+And I'll have the cat move around with the arrow keys.
+我让猫咪用方向键来移动。
+
+00:12:55.060 --> 00:12:59.240
+So let's add an event.
+那我们来添加一个事件。
+
+00:12:59.240 --> 00:13:06.920
+When the left arrow is clicked, we're going to change x by negative 10.
+当按下左箭头键时，我们要将x坐标减去10。
+
+00:13:06.920 --> 00:13:09.300
+And I'll duplicate this as well.
+我也把这个积木复制一份。
+
+00:13:09.300 --> 00:13:14.370
+And I'll say that when the right arrow is clicked, let's change x by 10.
+我要说，当按下右箭头键时，把x坐标加上10。
+
+00:13:14.370 --> 00:13:16.370
+So now I have the ability to move the cat.
+现在我就能移动这只猫了。
+
+00:13:16.370 --> 00:13:20.362
+It can move around to the left and it can move around to the right.
+它可以向左移动，也可以向右移动。
+
+00:13:20.362 --> 00:13:21.320
+And that's what I want.
+这就是我想要的效果。
+
+00:13:21.320 --> 00:13:24.163
+As the crystals are falling, the cat's going
+当水晶落下时，这只猫会
+
+00:13:24.163 --> 00:13:26.330
+to move left and right to try and catch the crystal.
+左右移动，试图接住水晶。
+
+00:13:26.330 --> 00:13:29.288
+I don't need the cat to move up and down, because really the cat's only
+我不需要猫上下移动，因为实际上这只猫只会
+
+00:13:29.288 --> 00:13:34.370
+going to exist along this bottom portion of the stage here.
+出现在舞台底部这个区域。
+
+00:13:34.370 --> 00:13:36.780
+And now when the game starts, what should happen?
+现在游戏开始时，会发生什么呢？
+
+00:13:36.780 --> 00:13:40.190
+Well, the game's going to start when the flag is clicked.
+嗯，点击旗帜时游戏就会开始。
+
+00:13:40.190 --> 00:13:43.280
+And when the flag is clicked, I'd like for the cat
+当点击旗帜时，我希望这只猫
+
+00:13:43.280 --> 00:13:47.070
+to go back to the middle of the stage just as a starting point.
+回到舞台中央作为起始点。
+
+00:13:47.070 --> 00:13:50.480
+So I'll have the cat first go to 0 for x.
+所以我先让猫的x坐标设为0。
+
+00:13:50.480 --> 00:13:53.120
+And we'll go negative 125 for y.
+然后y坐标设为 -125。
+
+00:13:53.120 --> 00:13:58.820
+So this now is the starting point for the cat at 0 for x, negative 125 for y.
+现在这就是猫的起始点，x坐标为0，y坐标为 -125。
+
+00:13:58.820 --> 00:14:04.310
+And from there, I can use the arrow keys to move back and forth.
+从这里开始，我就可以用箭头键来回移动了。
+
+00:14:04.310 --> 00:14:06.740
+And because it's a game, it's probably helpful for me
+因为这是一个游戏，对我来说
+
+00:14:06.740 --> 00:14:09.360
+to tell the user how to play the game.
+告诉玩家怎么玩这个游戏可能会有帮助。
+
+00:14:09.360 --> 00:14:13.850
+So let's add a message for the cat to say.
+那我们给猫添加一条要说的消息。
+
+00:14:13.850 --> 00:14:18.680
+And the cat's going to say something like, catch the crystals
+猫会说类似“接住水晶”这样的话
+
+00:14:18.680 --> 00:14:23.525
+without letting them hit the ground.
+“别让它们掉到地上”。
+
+00:14:23.525 --> 00:14:24.650
+Those are the instructions.
+这些就是游戏说明。
+
+00:14:24.650 --> 00:14:27.320
+Catch the crystals without letting them hit the ground.
+接住水晶，别让它们掉到地上。
+
+00:14:27.320 --> 00:14:29.480
+And I'll have the cat say that for let's say
+我让猫说这句话，比如说
+
+00:14:29.480 --> 00:14:32.480
+four seconds to give the user enough time to see that message
+说4秒钟，给玩家足够的时间看到这条消息
+
+00:14:32.480 --> 00:14:34.740
+and then respond to it.
+然后做出反应。
+
+00:14:34.740 --> 00:14:37.190
+So we're going to start.
+那么我们要开始了。
+
+00:14:37.190 --> 00:14:37.850
+The cat speaks.
+猫说话了。
+
+00:14:37.850 --> 00:14:40.250
+Catch the crystals without letting them hit the ground.
+接住水晶，别让它们掉到地上。
+
+00:14:40.250 --> 00:14:43.260
+And now we have the ability to move around.
+现在我们可以四处移动了。
+
+00:14:43.260 --> 00:14:45.210
+That's a pretty good start.
+这是个相当不错的开端。
+
+00:14:45.210 --> 00:14:48.613
+Now let's see if we can do something with this crystal.
+现在看看我们能不能对这个水晶做点什么。
+
+00:14:48.613 --> 00:14:51.530
+Now, one thing you might have noticed is that when I started the game,
+现在，你可能已经注意到，当我开始游戏时，
+
+00:14:51.530 --> 00:14:54.350
+the crystal's already just hanging around here.
+水晶已经在这里晃悠了。
+
+00:14:54.350 --> 00:14:57.187
+Maybe I'd like to not show the crystal until the cat's
+也许我想在猫
+
+00:14:57.187 --> 00:14:58.520
+done giving in the instructions.
+说完游戏说明之前都不显示水晶。
+
+00:14:58.520 --> 00:15:02.420
+I want the cat to give the instructions and then the crystal can show itself
+我想让猫说完说明，然后水晶再出现。
+
+00:15:02.420 --> 00:15:04.380
+and we can start playing the game.
+这样我们就可以开始玩游戏了。
+
+00:15:04.380 --> 00:15:05.670
+How would I do that?
+我该怎么做呢？
+
+00:15:05.670 --> 00:15:08.900
+Well, I would say for the crystal when the flag is clicked,
+嗯，我觉得对于水晶角色来说，当点击绿旗时，
+
+00:15:08.900 --> 00:15:15.710
+when this program starts running, let's go under Looks and let's hide.
+当这个程序开始运行，我们到外观模块里，把它隐藏起来。
+
+00:15:15.710 --> 00:15:19.580
+So initially when I start the program, all that we see is the cat.
+所以最初我启动程序时，我们只能看到猫角色。
+
+00:15:19.580 --> 00:15:21.630
+The cat gives the instructions.
+猫角色给出游戏说明。
+
+00:15:21.630 --> 00:15:24.110
+And now that the instructions are over, I
+现在说明已经结束了，我
+
+00:15:24.110 --> 00:15:27.650
+would like the cat to somehow signal to the crystal, all right, it's OK for you
+希望猫角色能以某种方式给水晶角色发出信号，好了，你可以
+
+00:15:27.650 --> 00:15:32.500
+to create a crystal to now start falling from the sky.
+创建一个水晶，让它从天空开始下落。
+
+00:15:32.500 --> 00:15:34.250
+And maybe eventually in my game, I'm going
+也许最终在我的游戏里，我打算
+
+00:15:34.250 --> 00:15:37.950
+to have multiple crystals moving around, but we'll start with just one.
+让多个水晶四处移动，但我们先从一个开始。
+
+00:15:37.950 --> 00:15:39.450
+And what is this going to look like?
+这会是什么样子呢？
+
+00:15:39.450 --> 00:15:43.910
+How does the cat signal to the crystal that we're done giving instructions?
+猫角色如何向水晶角色发出信号，表明说明已经说完了呢？
+
+00:15:43.910 --> 00:15:46.790
+It's time for the crystal to now appear.
+现在是水晶角色出现的时候了。
+
+00:15:46.790 --> 00:15:48.140
+Well, we can use broadcasting.
+嗯，我们可以使用广播。
+
+00:15:48.140 --> 00:15:51.170
+Remember that broadcasting allows one sprite to send
+记得广播能让一个角色向另一个角色发送
+
+00:15:51.170 --> 00:15:54.710
+a message to another sprite to indicate that it's now their turn
+一条消息，表明现在轮到对方
+
+00:15:54.710 --> 00:15:59.420
+to do something or say something or appear on the stage.
+做某事、说某事或者出现在舞台上。
+
+00:15:59.420 --> 00:16:03.170
+So I'll go to Events and we'll broadcast a message.
+所以我要去事件模块，然后广播一条消息。
+
+00:16:03.170 --> 00:16:09.900
+And the message will be a new message just called begin.
+这条消息将是一条新消息，就叫“开始”。
+
+00:16:09.900 --> 00:16:13.150
+Begin is going to mean, all right, now is the time to actually begin the game.
+“开始”的意思是，好了，现在是真正开始游戏的时候了。
+
+00:16:13.150 --> 00:16:15.050
+We're done giving the instructions.
+我们已经说完说明。
+
+00:16:15.050 --> 00:16:20.420
+And now the crystal needs to respond to that begin message.
+现在水晶角色需要对这条“开始”消息做出回应。
+
+00:16:20.420 --> 00:16:24.588
+So when I receive begin, now the crystal can decide what to do.
+所以当我接收到“开始”消息时，现在水晶角色可以决定要做什么。
+
+00:16:24.588 --> 00:16:26.380
+But as I'm thinking ahead to the way that I
+但当我提前考虑这个游戏里代码
+
+00:16:26.380 --> 00:16:28.540
+want to organize the code in this game, I'm
+的组织方式时，我
+
+00:16:28.540 --> 00:16:31.480
+realizing that I might not just want one crystal.
+意识到我可能不只想有一个水晶。
+
+00:16:31.480 --> 00:16:33.700
+I might not just have one crystal that's falling,
+可能不会只有一个水晶在下落，
+
+00:16:33.700 --> 00:16:36.100
+but I probably want to have multiple crystals falling.
+但我可能希望有多个水晶在下落。
+
+00:16:36.100 --> 00:16:39.040
+Once one crystal falls, I want another crystal to appear,
+一个水晶落下去后，我希望另一个水晶出现，
+
+00:16:39.040 --> 00:16:42.890
+and maybe there are eventually going to be multiple crystals at the same time.
+也许最终会同时有多个水晶。
+
+00:16:42.890 --> 00:16:46.090
+And so thinking ahead, when I receive begin,
+所以提前考虑一下，当我接收到“开始”消息时，
+
+00:16:46.090 --> 00:16:50.890
+let's go ahead and create a clone of the crystal.
+我们来创建一个水晶的克隆体。
+
+00:16:50.890 --> 00:16:52.600
+Just create a brand new crystal.
+就创建一个全新的水晶。
+
+00:16:52.600 --> 00:16:55.120
+And every time I create a clone of a crystal,
+每次我创建一个水晶的克隆体时，
+
+00:16:55.120 --> 00:16:59.960
+I'll get a new crystal that's going to start falling from the sky.
+我就会得到一个新的水晶，它会从天空开始下落。
+
+00:16:59.960 --> 00:17:01.330
+And so what should happen?
+那么接下来会发生什么呢？
+
+00:17:01.330 --> 00:17:09.260
+When the crystal starts as a clone, let's start now by showing the crystal.
+当水晶以克隆体的形式开始时，我们先让水晶显示出来。
+
+00:17:09.260 --> 00:17:10.329
+So how is this working?
+那么这是如何运作的呢？
+
+00:17:10.329 --> 00:17:12.640
+At first the crystal is going to hide itself.
+一开始，水晶会把自己隐藏起来。
+
+00:17:12.640 --> 00:17:15.010
+But once we receive the begin message from the cat,
+但一旦我们从猫那里收到“开始”的消息，
+
+00:17:15.010 --> 00:17:18.579
+once the cat is done giving the instructions and the cat says begin,
+一旦猫说完了指令并说“开始”，
+
+00:17:18.579 --> 00:17:21.579
+we're going to create a new clone of the crystal.
+我们就要创建一个新的水晶克隆体。
+
+00:17:21.579 --> 00:17:25.670
+And when the crystal starts as a clone, the crystal will show itself.
+当水晶以克隆体的形式启动时，水晶会显示出来。
+
+00:17:25.670 --> 00:17:28.780
+So we see the instructions from the cat.
+所以我们看到了猫给出的指令。
+
+00:17:28.780 --> 00:17:33.410
+And then after the instructions are over, we now see the crystal up here.
+然后指令结束后，我们现在能看到这里出现了水晶。
+
+00:17:33.410 --> 00:17:35.900
+We'd like for that crystal to go somewhere.
+我们希望那个水晶能移动到某个地方。
+
+00:17:35.900 --> 00:17:38.708
+So let's have the crystal go to--
+所以让水晶移动到——
+
+00:17:38.708 --> 00:17:40.000
+we'll have it centered for now.
+目前我们让它居中。
+
+00:17:40.000 --> 00:17:41.590
+We'll have it centered at 0.
+我们让它在x坐标为0的位置居中。
+
+00:17:41.590 --> 00:17:43.240
+And y should be pretty big.
+并且y坐标应该比较大。
+
+00:17:43.240 --> 00:17:45.760
+I'll make it 160 just to make it a little taller.
+我把它设为160，让它高一点。
+
+00:17:45.760 --> 00:17:48.520
+And so now the cat gives the instructions.
+现在猫给出指令。
+
+00:17:48.520 --> 00:17:51.370
+And after the instructions are over, the crystal
+指令结束后，水晶
+
+00:17:51.370 --> 00:17:54.730
+appears right at the top up high at the top of the screen.
+出现在屏幕顶部很高的位置。
+
+00:17:54.730 --> 00:17:57.130
+But now I'd like the crystal to start falling.
+但现在我希望水晶开始下落。
+
+00:17:57.130 --> 00:17:58.460
+It's up in the sky.
+它在天空中。
+
+00:17:58.460 --> 00:18:00.760
+Now I need to get it to move down.
+现在我要让它向下移动。
+
+00:18:00.760 --> 00:18:04.600
+Well, I can move down just by changing the y value.
+嗯，我可以通过改变y值来让它向下移动。
+
+00:18:04.600 --> 00:18:08.140
+If I change the y value by a negative number, like negative 1,
+如果我把y值减去一个数，比如减1，
+
+00:18:08.140 --> 00:18:10.990
+or if I wanted a little faster, negative 2 for example,
+或者如果我想让它快一点，比如减2，
+
+00:18:10.990 --> 00:18:14.050
+that's going to cause the crystal to move down.
+这会让水晶向下移动。
+
+00:18:14.050 --> 00:18:18.167
+But now I don't just want the crystal to move down once,
+但现在我不只想让水晶移动一次，
+
+00:18:18.167 --> 00:18:20.500
+but I want the crystal to move down over and over again,
+我想让水晶反复地向下移动，
+
+00:18:20.500 --> 00:18:24.730
+to move down a little bit and then keep moving down again and again and again.
+向下移动一点，然后一直不停地向下移动。
+
+00:18:24.730 --> 00:18:31.790
+So I'll put all of that under control inside of a forever loop.
+所以我要把这些操作都放在一个无限循环里。
+
+00:18:31.790 --> 00:18:33.370
+So now here's what's happening.
+现在来看看会发生什么。
+
+00:18:33.370 --> 00:18:36.790
+When we start a new crystal, the crystal is going to show itself.
+当我们创建一个新的水晶时，水晶会显示出来。
+
+00:18:36.790 --> 00:18:39.040
+It's going to go up to the top of the screen,
+它会移动到屏幕顶部，
+
+00:18:39.040 --> 00:18:42.430
+and then forever it's just going to start falling.
+然后就会一直下落。
+
+00:18:42.430 --> 00:18:44.500
+So now we can see what happens.
+现在我们可以看看会发生什么了。
+
+00:18:44.500 --> 00:18:46.450
+The cat gives the instructions.
+猫给出指令。
+
+00:18:46.450 --> 00:18:52.050
+The crystal appears, and the crystal now is falling.
+水晶出现了，现在正在下落。
+
+00:18:52.050 --> 00:18:54.230
+And so this is often what the development process
+这通常就是游戏的开发过程。
+
+00:18:54.230 --> 00:18:55.130
+is like for the game.
+游戏开发就是这样。
+
+00:18:55.130 --> 00:18:57.260
+It's not that you're going to write all of the blocks
+并不是说你要把所有的积木代码都写好，
+
+00:18:57.260 --> 00:18:59.870
+and put together all the different sprites for the entire game
+把游戏里所有不同的角色都组合起来，
+
+00:18:59.870 --> 00:19:01.903
+and then run it and see the finished product.
+然后运行程序，看到成品。
+
+00:19:01.903 --> 00:19:04.320
+It's that you're going to build it a little bit at a time.
+而是要一点一点地构建它。
+
+00:19:04.320 --> 00:19:05.300
+I need the cat to move.
+我需要让猫移动。
+
+00:19:05.300 --> 00:19:07.400
+I need the cat to speak some instructions.
+我需要让猫说出一些指令。
+
+00:19:07.400 --> 00:19:08.823
+I need the crystal to appear.
+我需要让水晶出现。
+
+00:19:08.823 --> 00:19:10.490
+Now I need the crystal to start falling.
+现在我需要让水晶开始下落。
+
+00:19:10.490 --> 00:19:12.980
+And after each time, you add just a few blocks
+每次之后，你只需添加几个积木
+
+00:19:12.980 --> 00:19:14.660
+to change the behavior a little bit.
+来稍微改变一下它的行为。
+
+00:19:14.660 --> 00:19:16.638
+You can run the project, see what happens,
+你可以运行项目，看看会发生什么，
+
+00:19:16.638 --> 00:19:18.680
+and if you need to tinker with some of the blocks
+如果你需要调整一些积木
+
+00:19:18.680 --> 00:19:21.650
+to make it work if it didn't work the way you wanted it to work.
+让它按照你想要的方式运行，要是它没按你期望的那样工作的话。
+
+00:19:21.650 --> 00:19:25.620
+And we're now just building this game slowly one piece at a time.
+现在我们只是一次一点地慢慢构建这个游戏。
+
+00:19:25.620 --> 00:19:26.780
+So what do we have so far?
+那么目前我们有什么呢？
+
+00:19:26.780 --> 00:19:28.310
+We have a cat that can move around.
+我们有一只可以四处移动的猫。
+
+00:19:28.310 --> 00:19:29.250
+That works.
+这没问题。
+
+00:19:29.250 --> 00:19:32.810
+We have a crystal that appears from the sky and starts to fall.
+我们有一颗从天空出现并开始下落的水晶。
+
+00:19:32.810 --> 00:19:36.950
+But right now nothing yet happens once the cat catches the crystal.
+但目前，当猫抓到水晶时，还没有任何事情发生。
+
+00:19:36.950 --> 00:19:39.620
+Once the crystal touches the cat.
+当水晶碰到猫时。
+
+00:19:39.620 --> 00:19:40.860
+So let's add that.
+所以让我们加上这部分。
+
+00:19:40.860 --> 00:19:42.540
+How can we do that?
+我们该怎么做呢？
+
+00:19:42.540 --> 00:19:44.630
+Well, that sounds like a condition.
+嗯，这听起来像是个条件。
+
+00:19:44.630 --> 00:19:48.770
+We're checking if the crystal is touching the cat.
+我们要检查水晶是否碰到了猫。
+
+00:19:48.770 --> 00:19:52.700
+So let's add an if statement into the loop.
+所以让我们在循环里添加一个“如果”语句。
+
+00:19:52.700 --> 00:19:58.790
+And we'll say if we're touching not the mouse pointer but the cat.
+我们要说如果碰到的不是鼠标指针，而是猫。
+
+00:19:58.790 --> 00:20:03.060
+If the crystal is touching the cat, well then what should happen?
+如果水晶碰到了猫，那么接下来该发生什么呢？
+
+00:20:03.060 --> 00:20:04.760
+Well, I want to somehow keep score.
+嗯，我想以某种方式计分。
+
+00:20:04.760 --> 00:20:08.810
+I want to keep track of how many crystals has the cat caught.
+我想记录猫抓到了多少颗水晶。
+
+00:20:08.810 --> 00:20:11.060
+And so to do that I need to store information
+所以要做到这一点，我需要存储信息。
+
+00:20:11.060 --> 00:20:12.860
+somewhere inside of my Scratch project.
+在我的Scratch项目里的某个地方。
+
+00:20:12.860 --> 00:20:15.710
+Sounds like we need a variable, some variable that's
+听起来我们需要一个变量，某个能
+
+00:20:15.710 --> 00:20:18.570
+going to keep track of this information for us.
+为我们记录这些信息的变量。
+
+00:20:18.570 --> 00:20:19.760
+So let's go to Variable.
+所以让我们转到“变量”。
+
+00:20:19.760 --> 00:20:21.230
+Let's make a new variable.
+让我们创建一个新变量。
+
+00:20:21.230 --> 00:20:24.080
+And I will call this variable catches.
+我把这个变量叫做“抓到次数”。
+
+00:20:24.080 --> 00:20:25.580
+That's going to represent the score.
+它将代表得分。
+
+00:20:25.580 --> 00:20:30.710
+It's how many catches the cat has made, how many crystals the cat has caught.
+就是猫抓到了多少次，猫抓到了多少颗水晶。
+
+00:20:30.710 --> 00:20:33.410
+You'll notice the catches right now is 0.
+你会注意到现在“抓到次数”是0。
+
+00:20:33.410 --> 00:20:38.330
+And I would like to make sure that when the game first begins that we always
+我想确保在游戏刚开始时，我们总是
+
+00:20:38.330 --> 00:20:41.480
+reset the number of catches back to 0.
+把抓到次数重置为0。
+
+00:20:41.480 --> 00:20:44.298
+So inside the cat, you'll notice that when the flag is clicked
+所以在猫这个角色里，你会注意到当点击绿旗时
+
+00:20:44.298 --> 00:20:45.590
+we're doing a lot of resetting.
+我们做了很多重置操作。
+
+00:20:45.590 --> 00:20:49.340
+We're going to this original x equals 0 position to center
+我们将猫移到初始的x等于0的位置
+
+00:20:49.340 --> 00:20:50.930
+the cat at the beginning.
+以便在游戏开始时让猫居中。
+
+00:20:50.930 --> 00:20:54.680
+At the same time, let me set catches to 0 at the beginning.
+同时，我要在一开始把捕获数设为 0。
+
+00:20:54.680 --> 00:20:58.310
+Because if I accumulate a score and I play the game again,
+因为如果我累计了分数，然后再次玩这个游戏，
+
+00:20:58.310 --> 00:20:59.690
+I want to reset the score.
+我想重置分数。
+
+00:20:59.690 --> 00:21:04.670
+I want the score to go back to 0, and then I can start adding to the score.
+我想让分数回到 0，然后我就可以开始加分了。
+
+00:21:04.670 --> 00:21:06.170
+How do I add to the score?
+我要怎么加分呢？
+
+00:21:06.170 --> 00:21:08.720
+Well, that's going to happen in the crystal sprite
+嗯，这会在水晶角色里实现。
+
+00:21:08.720 --> 00:21:10.550
+when it's touching the cat.
+当它碰到猫的时候。
+
+00:21:10.550 --> 00:21:14.120
+If we're touching the cat, we have now caught one additional crystal.
+如果我们碰到了猫，那就意味着又捕获了一颗水晶。
+
+00:21:14.120 --> 00:21:16.940
+Let's change catches by one.
+让我们把捕获数加 1。
+
+00:21:16.940 --> 00:21:19.290
+And now what should happen?
+现在应该怎么做呢？
+
+00:21:19.290 --> 00:21:21.740
+Well, now once the cat has caught a crystal,
+嗯，现在一旦猫捕获了一颗水晶，
+
+00:21:21.740 --> 00:21:26.510
+let's create a new crystal for the cat to try to catch.
+让我们为猫再创建一颗新的水晶让它去抓。
+
+00:21:26.510 --> 00:21:30.140
+To do that, I can go back to control.
+要做到这一点，我可以回到控制模块。
+
+00:21:30.140 --> 00:21:32.180
+And I can create another clone.
+我可以再创建一个克隆体。
+
+00:21:32.180 --> 00:21:36.140
+Every time I create a clone, let's go ahead and stop this for now,
+每次我创建一个克隆体，现在先暂停一下，
+
+00:21:36.140 --> 00:21:40.430
+every time I create a new clone, that is going to create a new crystal.
+每次我创建一个新的克隆体，就会产生一颗新的水晶。
+
+00:21:40.430 --> 00:21:42.680
+And whenever we start as a clone, that crystal
+每当我们以克隆体的形式开始时，那颗水晶
+
+00:21:42.680 --> 00:21:46.400
+is going to go to the top of the screen and it's going to start to fall.
+会跑到屏幕顶部然后开始下落。
+
+00:21:46.400 --> 00:21:51.950
+And after I create a clone, let's go ahead and delete the current clone.
+在我创建一个克隆体之后，让我们接着删除当前的克隆体。
+
+00:21:51.950 --> 00:21:53.070
+So what's going on here?
+那么这里发生了什么呢？
+
+00:21:53.070 --> 00:21:54.860
+Why have I added these blocks into place?
+为什么我要把这些积木块放在这里呢？
+
+00:21:54.860 --> 00:21:57.485
+Well, when we're touching the cat, that's one additional catch.
+嗯，当我们碰到猫的时候，就多捕获了一次。
+
+00:21:57.485 --> 00:21:59.780
+We're updating the variable, changing catches by one.
+我们在更新变量，把捕获数加 1。
+
+00:21:59.780 --> 00:22:05.810
+And creating a new clone, because once the cat has caught one crystal,
+并且创建一个新的克隆体，因为一旦猫捕获了一颗水晶，
+
+00:22:05.810 --> 00:22:08.900
+I'd like for a new crystal to appear at the top of the screen.
+我希望有一颗新的水晶出现在屏幕顶部。
+
+00:22:08.900 --> 00:22:12.080
+But then finally, I'm deleting this clone.
+但最后，我要删除这个克隆体。
+
+00:22:12.080 --> 00:22:14.667
+Once the cat has caught the crystal, I'm just
+一旦猫捕获了水晶，我就只是
+
+00:22:14.667 --> 00:22:17.250
+going to delete that crystal, because I don't need it anymore.
+要删除那颗水晶，因为我不再需要它了。
+
+00:22:17.250 --> 00:22:22.080
+I have a new crystal that's going to be falling from the top of the screen
+我有一颗新的水晶会从屏幕顶部落下来。
+
+00:22:22.080 --> 00:22:24.200
+instead.
+取而代之。
+
+00:22:24.200 --> 00:22:26.666
+And so now let's try this program.
+现在让我们来试试这个程序。
+
+00:22:26.666 --> 00:22:28.790
+I'll press the flag.
+我会点击旗帜。
+
+00:22:28.790 --> 00:22:32.150
+The cat gives some instructions, catches, resets back to 0,
+猫给出一些指令，捕获数重置为 0，
+
+00:22:32.150 --> 00:22:34.490
+and we see the crystal falling.
+我们看到水晶在下落。
+
+00:22:34.490 --> 00:22:37.730
+And when the cat catches it, notice the catches goes up by one.
+当猫捕获到它时，注意捕获数会加 1。
+
+00:22:37.730 --> 00:22:40.095
+The score has increased and a new crystal appears.
+分数增加了，并且一颗新的水晶出现了。
+
+00:22:40.095 --> 00:22:41.720
+And you'll notice this keeps happening.
+你会注意到这种情况会一直发生。
+
+00:22:41.720 --> 00:22:42.470
+It's in a loop.
+这是一个循环。
+
+00:22:42.470 --> 00:22:46.370
+Every time a crystal is caught, our score goes up by one.
+每次捕获一颗水晶，我们的分数就会加 1。
+
+00:22:46.370 --> 00:22:51.170
+And the crystal creates a new crystal that appears at the top of the screen.
+并且这颗水晶会创建一颗新的水晶出现在屏幕顶部。
+
+00:22:51.170 --> 00:22:56.060
+And then the crystal that the cat caught disappears and we no longer see it.
+然后猫咪抓到的水晶就会消失，我们就再也看不到它了。
+
+00:22:56.060 --> 00:22:58.850
+So we're just seeing this flow of crystals appear one at a time.
+所以我们看到这些水晶是一个接一个地出现。
+
+00:22:58.850 --> 00:23:02.420
+We're seeing our variable update and increase by one every time
+我们能看到每次猫咪抓到水晶时，
+
+00:23:02.420 --> 00:23:03.800
+the cat catches a crystal.
+我们的变量就会更新并加一。
+
+00:23:03.800 --> 00:23:07.020
+And ultimately, this seems to now work pretty well.
+最终，现在看来这个程序运行得还挺不错。
+
+00:23:07.020 --> 00:23:10.455
+The problem that I see is that the game is a little bit too easy.
+我发现的问题是，这个游戏有点太简单了。
+
+00:23:10.455 --> 00:23:12.080
+I'm not even at the computer right now.
+我现在甚至都没在操作电脑。
+
+00:23:12.080 --> 00:23:15.020
+I'm not moving the cat at all and the crystal is just
+我根本没移动猫咪，而水晶就
+
+00:23:15.020 --> 00:23:17.390
+appearing right on top of the cat and the cat
+正好出现在猫咪头顶，然后猫咪
+
+00:23:17.390 --> 00:23:20.310
+is catching it every single time.
+每次都能抓到它。
+
+00:23:20.310 --> 00:23:21.920
+So that's maybe not quite what I want.
+所以这可能不是我想要的效果。
+
+00:23:21.920 --> 00:23:25.290
+What I'd like to do is introduce a bit of randomness into a game.
+我想做的是给游戏增加一点随机性。
+
+00:23:25.290 --> 00:23:27.590
+And this is a common property of games, randomness,
+随机性是游戏的一个常见特性，
+
+00:23:27.590 --> 00:23:30.440
+because you don't want the game to be exactly the same every time.
+因为你不想每次玩游戏时情况都完全一样。
+
+00:23:30.440 --> 00:23:32.900
+You want some different choices to be made sometimes,
+你希望有时候能有不同的选择，
+
+00:23:32.900 --> 00:23:35.210
+a little bit of unpredictability so that the user
+有那么一点不可预测性，这样玩家
+
+00:23:35.210 --> 00:23:37.880
+is going to have to respond to whatever they see.
+就得对看到的情况做出反应。
+
+00:23:37.880 --> 00:23:40.850
+And in this case, the unpredictability that I want
+在这个例子中，我想要的不可预测性
+
+00:23:40.850 --> 00:23:43.340
+is the x value of the crystal.
+就是水晶的 x 坐标。
+
+00:23:43.340 --> 00:23:45.950
+That right now the x value of the crystal is always 0.
+现在水晶的 x 坐标一直是 0。
+
+00:23:45.950 --> 00:23:49.190
+It's always going to x equals 0.
+它总是会移动到 x 等于 0 的位置。
+
+00:23:49.190 --> 00:23:51.050
+And because of that, the crystal is always
+正因为如此，水晶总是
+
+00:23:51.050 --> 00:23:53.210
+just immediately on top of the cat.
+直接出现在猫咪头顶。
+
+00:23:53.210 --> 00:23:57.020
+What I'd like to happen is for the crystal to sometimes be on the left
+我希望水晶有时候出现在左边，
+
+00:23:57.020 --> 00:23:58.400
+and sometimes be on the right.
+有时候出现在右边。
+
+00:23:58.400 --> 00:24:00.920
+That way I have to move around rather than just keep
+这样我就得四处移动，而不是什么都不做
+
+00:24:00.920 --> 00:24:03.930
+increasing my score by doing nothing.
+就能不断增加分数。
+
+00:24:03.930 --> 00:24:05.610
+So let's go ahead and do that.
+那我们就来做这件事吧。
+
+00:24:05.610 --> 00:24:09.080
+I will come over here and stop my project.
+我到这里来，先停止我的项目。
+
+00:24:09.080 --> 00:24:12.290
+And instead of going to x equals 0 every time
+每次水晶出现时，不再总是移动到 x 等于 0 的位置，
+
+00:24:12.290 --> 00:24:15.200
+the crystal starts, let's add some randomness.
+我们来增加一些随机性。
+
+00:24:15.200 --> 00:24:16.550
+I go under Operators.
+我点击“运算”分类。
+
+00:24:16.550 --> 00:24:18.290
+Here's pick random.
+这里有“随机选取一个数”。
+
+00:24:18.290 --> 00:24:21.150
+And far left, that's going to be a big negative number.
+最左边会是一个很大的负数。
+
+00:24:21.150 --> 00:24:24.410
+So we'll go from negative 200 to the far right.
+所以我们让范围从负 200 到最右边。
+
+00:24:24.410 --> 00:24:26.210
+That's going to be a big positive number.
+最右边会是一个很大的正数。
+
+00:24:26.210 --> 00:24:27.710
+I'll make it positive 200.
+我把它设为正 200。
+
+00:24:27.710 --> 00:24:30.960
+But you could play around with those values for whatever you'd like.
+但你可以根据自己的喜好调整这些数值。
+
+00:24:30.960 --> 00:24:36.020
+And now when I start the game, the score resets and notice
+现在我启动游戏，分数会重置，注意看
+
+00:24:36.020 --> 00:24:38.810
+that the crystal is going to appear.
+水晶会出现了。
+
+00:24:38.810 --> 00:24:42.140
+This time it was kind of centered, but maybe it won't be that way every time.
+这次它差不多在中间，但也许不会每次都这样。
+
+00:24:42.140 --> 00:24:45.260
+Now the crystal's off to the right, and I have to move to the right
+现在水晶在右边，我得往右移动
+
+00:24:45.260 --> 00:24:47.430
+in order to catch it.
+才能抓住它。
+
+00:24:47.430 --> 00:24:49.670
+And every time I catch the crystal, the crystal
+而且每次我抓住水晶，水晶
+
+00:24:49.670 --> 00:24:54.650
+is going to generate a new random number between negative 200 and 200.
+都会生成一个 -200 到 200 之间的随机数。
+
+00:24:54.650 --> 00:24:58.140
+And that's going to tell me where I need to go in order to catch the crystal.
+这个随机数会告诉我要去哪里才能抓住水晶。
+
+00:24:58.140 --> 00:25:02.030
+This is a much more interesting game than when the crystal was just always
+这比水晶每次都
+
+00:25:02.030 --> 00:25:05.790
+appearing in the same spot every time.
+出现在同一个位置的游戏有趣多了。
+
+00:25:05.790 --> 00:25:08.270
+So this is definitely an improvement.
+所以这绝对是个改进。
+
+00:25:08.270 --> 00:25:10.700
+And now I'm curious, what happens if I miss?
+现在我很好奇，如果我没抓住会怎样？
+
+00:25:10.700 --> 00:25:14.900
+If I miss the crystal altogether and just let the crystal fall.
+如果我完全没抓住水晶，就让它掉下去。
+
+00:25:14.900 --> 00:25:17.840
+All right, the crystal hits the bottom of the screen
+好吧，水晶碰到了屏幕底部
+
+00:25:17.840 --> 00:25:20.570
+and now the game is kind of stuck.
+现在游戏有点卡住了。
+
+00:25:20.570 --> 00:25:23.930
+What I'd like to do is add some code that can handle this situation.
+我想做的是添加一些代码来处理这种情况。
+
+00:25:23.930 --> 00:25:27.380
+What happens if the crystal ever touches the edge of the screen
+如果水晶碰到了屏幕边缘
+
+00:25:27.380 --> 00:25:29.400
+and I didn't catch it?
+而我没抓住它会怎样？
+
+00:25:29.400 --> 00:25:31.260
+What should happen?
+应该怎样呢？
+
+00:25:31.260 --> 00:25:34.460
+Well, let's add another condition.
+嗯，我们再添加一个条件。
+
+00:25:34.460 --> 00:25:37.130
+I'll add a condition to the bottom here underneath the loop.
+我在循环下面这里添加一个条件。
+
+00:25:37.130 --> 00:25:40.040
+Not if we're touching the cat, but this time
+不是判断是否碰到猫，而是这次
+
+00:25:40.040 --> 00:25:43.430
+if we're touching the edge of the screen.
+判断是否碰到屏幕边缘。
+
+00:25:43.430 --> 00:25:46.280
+If ever the crystal makes it all the way down to the bottom
+如果水晶一直掉到了底部
+
+00:25:46.280 --> 00:25:50.820
+and now it's touching the edge of the screen, what should we do?
+现在它碰到了屏幕边缘，我们该怎么做？
+
+00:25:50.820 --> 00:25:51.710
+Well, we can decide.
+嗯，我们可以做个决定。
+
+00:25:51.710 --> 00:25:53.030
+We haven't really talked about what's going
+我们还没真正讨论过
+
+00:25:53.030 --> 00:25:54.530
+to happen in the game at this point.
+游戏到这一步会怎样。
+
+00:25:54.530 --> 00:25:56.840
+Maybe the game's over right away and we're just done.
+也许游戏马上就结束，就这么完了。
+
+00:25:56.840 --> 00:25:59.150
+Or maybe you get a couple of chances.
+或者也许你有几次机会。
+
+00:25:59.150 --> 00:26:00.560
+You're given like three misses.
+给你三次没抓住的机会。
+
+00:26:00.560 --> 00:26:02.900
+And after three misses, then you lose the game.
+三次没抓住之后，你就输了游戏。
+
+00:26:02.900 --> 00:26:04.640
+And let's try and do that.
+我们试试这么做。
+
+00:26:04.640 --> 00:26:07.640
+In order to make that happen, I need to keep track of how many misses
+为了实现这个，我需要记录到目前为止
+
+00:26:07.640 --> 00:26:09.300
+there have been so far.
+有多少次没抓住。
+
+00:26:09.300 --> 00:26:14.480
+So I'm going to go to variables and create a new variable called misses.
+所以我要去变量那里创建一个名为“没抓住次数”的新变量。
+
+00:26:14.480 --> 00:26:18.860
+How many times has the cat now missed the crystal?
+现在猫没抓住水晶多少次了？
+
+00:26:18.860 --> 00:26:21.200
+And just as in the beginning of the cat, we
+就像游戏开始时，我们
+
+00:26:21.200 --> 00:26:25.370
+set catches to 0 to reset the value of catches at the beginning of the game,
+把抓住次数设为 0 来重置这个值，
+
+00:26:25.370 --> 00:26:28.430
+let's also now set misses to 0.
+现在我们也把没抓住次数设为 0。
+
+00:26:28.430 --> 00:26:31.110
+When the game first begins, you haven't missed any yet.
+游戏刚开始时，你还一次都没没抓住过。
+
+00:26:31.110 --> 00:26:32.810
+So let's reset it back to 0.
+所以我们把它重置回 0。
+
+00:26:32.810 --> 00:26:37.940
+That way any previous progress in the game is erased.
+这样一来，游戏之前的所有进度就都清零了。
+
+00:26:37.940 --> 00:26:41.600
+But now if ever we're touching the edge, let's go ahead
+但现在，要是角色碰到边缘了，咱们接着
+
+00:26:41.600 --> 00:26:46.280
+and change the number of misses by one.
+把未接住的次数加一。
+
+00:26:46.280 --> 00:26:49.490
+And at that point, we can do much the same thing as we were doing before.
+在那之后，我们可以做和之前差不多的事。
+
+00:26:49.490 --> 00:26:53.432
+We're going to create a new crystal by creating a clone.
+我们要通过创建克隆体来生成一颗新的水晶。
+
+00:26:53.432 --> 00:26:55.640
+Let's go ahead and stop this for now, otherwise we're
+咱们现在先把这个停了，不然的话，我们
+
+00:26:55.640 --> 00:26:57.230
+going to get a lot of clones.
+会得到大量的克隆体。
+
+00:26:57.230 --> 00:27:02.925
+But then let's also delete this clone after that.
+然后，之后我们还要删除这个克隆体。
+
+00:27:02.925 --> 00:27:06.050
+So when we're touching the edge, we're going to change the number of misses
+所以，当角色碰到边缘时，我们要把未接住的次数
+
+00:27:06.050 --> 00:27:06.550
+by one.
+加一。
+
+00:27:06.550 --> 00:27:07.970
+We now have one additional miss.
+现在我们又多了一次未接住。
+
+00:27:07.970 --> 00:27:10.340
+We're going to create a new crystal, and then we're
+我们要生成一颗新的水晶，然后
+
+00:27:10.340 --> 00:27:13.760
+going to delete the clone to say we're done with this crystal.
+删除这个克隆体，表明这颗水晶处理完了。
+
+00:27:13.760 --> 00:27:15.750
+We've now created a new one.
+现在我们已经生成了一颗新的水晶。
+
+00:27:15.750 --> 00:27:19.220
+So now we'll see how the game behaves.
+那么现在我们来看看游戏会有什么表现。
+
+00:27:19.220 --> 00:27:20.450
+The crystals are falling.
+水晶正在下落。
+
+00:27:20.450 --> 00:27:23.278
+I can try to catch them.
+我可以试着接住它们。
+
+00:27:23.278 --> 00:27:24.320
+That's one that I caught.
+那颗我接住了。
+
+00:27:24.320 --> 00:27:27.110
+I'll catch one more.
+我再去接一颗。
+
+00:27:27.110 --> 00:27:31.175
+Now let me miss this one and see what happens.
+现在我故意接不住这颗，看看会怎样。
+
+00:27:31.175 --> 00:27:34.050
+The crystal is going to hit the bottom of the screen and I missed it.
+水晶会碰到屏幕底部，我没接住。
+
+00:27:34.050 --> 00:27:36.500
+You notice my misses goes up by one.
+你会注意到我未接住的次数增加了一次。
+
+00:27:36.500 --> 00:27:39.590
+If I miss this one as well, misses goes up again.
+如果这颗我也没接住，未接住的次数会再次增加。
+
+00:27:39.590 --> 00:27:42.440
+And now I effectively have two variables,
+现在我实际上有两个变量了，
+
+00:27:42.440 --> 00:27:47.070
+one keeping track of how many times I've caught the crystal and one keeping
+一个用来记录我接住水晶的次数，另一个用来
+
+00:27:47.070 --> 00:27:49.070
+track of how many times I've missed the crystal.
+记录我未接住水晶的次数。
+
+00:27:49.070 --> 00:27:50.778
+And there seems to be no limit right now.
+目前看来似乎没有上限。
+
+00:27:50.778 --> 00:27:54.050
+Misses can just keep going up and up and up every time I miss the crystal.
+每次我没接住水晶，未接住的次数就会一直往上增加。
+
+00:27:54.050 --> 00:27:58.400
+What I'd like to do is do something once I miss three of them.
+我想做的是，一旦我有三次未接住，就采取一些措施。
+
+00:27:58.400 --> 00:28:02.160
+Once I miss three, I want the game to be over.
+一旦有三次未接住，我希望游戏就结束。
+
+00:28:02.160 --> 00:28:05.090
+So let's add a condition to check for that.
+所以咱们添加一个条件来检查这种情况。
+
+00:28:05.090 --> 00:28:06.590
+I'm going to take this if condition.
+我要使用这个“如果”条件积木。
+
+00:28:06.590 --> 00:28:09.110
+I'll build it out here for now and then I'll drag it in,
+我先在这里把它搭建出来，之后再拖进去，
+
+00:28:09.110 --> 00:28:11.060
+just to keep it separate for now.
+目前先把它单独放着。
+
+00:28:11.060 --> 00:28:15.590
+But I'm going to say if the number of misses is equal to three,
+但我要说，如果未接住的次数等于三，
+
+00:28:15.590 --> 00:28:19.220
+so equals is an operator, and I'm going to say if the number of misses
+所以“等于”是一个运算符，我要说如果未接住的次数
+
+00:28:19.220 --> 00:28:22.350
+are now equal to three, well what should we do?
+现在等于三了，那我们该怎么做呢？
+
+00:28:22.350 --> 00:28:24.440
+Well, the game is now going to be over.
+嗯，游戏现在要结束了。
+
+00:28:24.440 --> 00:28:28.670
+So I'm going to eventually delete this clone, because I no longer need
+所以最后我要删除这个克隆体，因为游戏结束后我不再需要
+
+00:28:28.670 --> 00:28:30.930
+the crystal once the game is over.
+这颗水晶了。
+
+00:28:30.930 --> 00:28:34.250
+But at this point as well, I need some way
+但到这一步，我也需要某种方法
+
+00:28:34.250 --> 00:28:37.550
+to signal to the rest of the program that the game is over.
+来向程序的其他部分发出游戏结束的信号。
+
+00:28:37.550 --> 00:28:39.350
+I need the cat to know the game is over.
+我得让猫咪知道游戏结束了。
+
+00:28:39.350 --> 00:28:42.590
+Because maybe the cat is now going to report what my score was.
+因为也许猫咪现在要汇报我的得分了。
+
+00:28:42.590 --> 00:28:44.390
+What is my score at the end of the game?
+游戏结束时我的得分是多少？
+
+00:28:44.390 --> 00:28:46.760
+How many crystals did I catch?
+我抓到了多少颗水晶？
+
+00:28:46.760 --> 00:28:51.068
+So how can the crystal tell the cat that something has happened in the project?
+那么水晶要怎么告诉猫咪项目里发生了某些事呢？
+
+00:28:51.068 --> 00:28:52.610
+Well, that's going to be a broadcast.
+嗯，这就要用到广播了。
+
+00:28:52.610 --> 00:28:56.750
+Broadcast as a way of sending messages, again, between sprites.
+广播是一种在角色之间传递消息的方式。
+
+00:28:56.750 --> 00:28:58.590
+I'll broadcast a message.
+我要广播一条消息。
+
+00:28:58.590 --> 00:29:02.720
+But instead of begin, the message is going to be game over.
+但消息内容不是“开始”，而是“游戏结束”。
+
+00:29:02.720 --> 00:29:03.800
+The game is over.
+游戏结束了。
+
+00:29:03.800 --> 00:29:06.080
+Let's make sure the cat knows that.
+咱们得确保猫咪知道这一点。
+
+00:29:06.080 --> 00:29:12.740
+And let's drag that into this logic right after we change misses by one.
+咱们把它拖到这里的逻辑里，就在我们把“未接住次数”加 1 之后。
+
+00:29:12.740 --> 00:29:15.350
+So we increase the number of misses, and then we check.
+所以我们增加未接住的次数，然后进行检查。
+
+00:29:15.350 --> 00:29:17.270
+Is our number of misses equal to three?
+我们未接住的次数是否等于 3 次？
+
+00:29:17.270 --> 00:29:20.060
+If so we broadcast that the game is over.
+如果是，我们就广播游戏结束。
+
+00:29:20.060 --> 00:29:27.050
+And now last step here, in the cat I need to respond to that event.
+现在最后一步，在猫咪角色这里我需要对这个事件做出响应。
+
+00:29:27.050 --> 00:29:31.770
+When I receive game over, what should happen?
+当我收到“游戏结束”的消息时，应该发生什么呢？
+
+00:29:31.770 --> 00:29:35.780
+Well, when I receive game over, let's go ahead and say the score.
+嗯，当我收到“游戏结束”的消息时，咱们就报出得分。
+
+00:29:35.780 --> 00:29:39.500
+Let's say-- and I could just say the score directly.
+咱们就说——我可以直接说出得分。
+
+00:29:39.500 --> 00:29:42.200
+But to make it a little nicer, I'll join together two words.
+但为了让它更好一点，我要把两个词连起来。
+
+00:29:42.200 --> 00:29:47.810
+I'll say your score is and then a space and then
+我说“你的得分是”，然后空一格，接着
+
+00:29:47.810 --> 00:29:50.900
+I'll drag in the number of catches.
+我把“接住次数”拖进来。
+
+00:29:50.900 --> 00:29:53.030
+And I'll say that for five seconds.
+我会把这句话说 5 秒钟。
+
+00:29:53.030 --> 00:29:55.790
+So when the game is over, when I receive that message,
+所以当游戏结束，当我收到那条消息时，
+
+00:29:55.790 --> 00:29:59.420
+the cat is going to say your score is this for five seconds
+猫咪会在 5 秒钟内说出“你的得分是这个”
+
+00:29:59.420 --> 00:30:01.933
+and then the game will be over.
+然后游戏就结束了。
+
+00:30:01.933 --> 00:30:02.600
+So let's try it.
+那咱们试试看。
+
+00:30:02.600 --> 00:30:03.308
+I start the game.
+我开始游戏。
+
+00:30:03.308 --> 00:30:06.920
+Catches and misses go back to 0, I get some instructions from the cat
+接住次数和未接住次数都归零，我从猫咪那里得到一些提示
+
+00:30:06.920 --> 00:30:09.290
+and I can start catching.
+然后我就可以开始抓水晶了。
+
+00:30:09.290 --> 00:30:10.830
+I'll catch one.
+我抓到一颗。
+
+00:30:10.830 --> 00:30:12.680
+I'll catch a second one.
+我又抓到一颗。
+
+00:30:12.680 --> 00:30:14.180
+My catches are now two.
+我现在的接住次数是 2 次。
+
+00:30:14.180 --> 00:30:18.620
+But now I'm going to let the crystals just keep falling.
+但现在我要让水晶一直往下掉。
+
+00:30:18.620 --> 00:30:19.370
+We missed one.
+我们漏接了一颗。
+
+00:30:22.992 --> 00:30:24.450
+We're going to miss the second one.
+我们还要漏接第二颗。
+
+00:30:24.450 --> 00:30:25.500
+And I'll miss a third one.
+我还会漏接第三颗。
+
+00:30:25.500 --> 00:30:27.375
+I'll get out of the way just to test out what
+我让开一下，就为了测试一下
+
+00:30:27.375 --> 00:30:29.520
+happens when I actually lose the game.
+当我真的输掉游戏时就会发生这种情况。
+
+00:30:29.520 --> 00:30:30.690
+That's my third miss.
+那是我第三次没接住了。
+
+00:30:30.690 --> 00:30:35.700
+We broadcast that the game is over, and the cat reports that my score is two.
+我们广播游戏结束，然后猫咪显示我的得分是两分。
+
+00:30:35.700 --> 00:30:38.250
+So at this point, we now have a completed game that
+所以到现在，我们有了一个完成的游戏，它
+
+00:30:38.250 --> 00:30:40.020
+does sort of what we wanted it to do.
+基本能实现我们想要的功能。
+
+00:30:40.020 --> 00:30:41.400
+The cat can move around.
+猫咪可以四处移动。
+
+00:30:41.400 --> 00:30:43.230
+Crystals are falling from the sky.
+水晶从天上掉落。
+
+00:30:43.230 --> 00:30:46.680
+The cat's able to try and catch as many of those crystals as we can.
+猫咪能够尽可能多地去尝试接住那些水晶。
+
+00:30:46.680 --> 00:30:49.345
+And you could now play this game, share it with others.
+现在你可以玩这个游戏，还能和其他人分享。
+
+00:30:49.345 --> 00:30:51.720
+And the nice thing is that you can always add to the game
+好的地方在于，你随时可以给游戏添加新内容。
+
+00:30:51.720 --> 00:30:54.660
+if you think of new things you'd like to try inside of the game
+如果你想到了想在游戏里尝试的新点子。
+
+00:30:54.660 --> 00:30:56.040
+just to experiment with it.
+只是为了做些实验。
+
+00:30:56.040 --> 00:31:00.190
+Maybe, for example, right now I think the game is maybe a little too easy.
+比如，现在我觉得这个游戏可能有点太简单了。
+
+00:31:00.190 --> 00:31:02.670
+There's always just one crystal falling from the sky
+天上总是只有一颗水晶掉落。
+
+00:31:02.670 --> 00:31:04.570
+and I know how to move around to catch it.
+而且我知道怎么移动去接住它。
+
+00:31:04.570 --> 00:31:05.920
+So let's try something.
+所以我们来试试做点改变。
+
+00:31:05.920 --> 00:31:10.420
+Let's make the game a little bit more challenging.
+让这个游戏更有挑战性一点。
+
+00:31:10.420 --> 00:31:13.060
+Where am I creating crystals in the game?
+我在游戏里是在哪里创建水晶的呢？
+
+00:31:13.060 --> 00:31:15.400
+Well, I'm creating crystals here.
+嗯，我在这里创建水晶。
+
+00:31:15.400 --> 00:31:18.430
+When I receive begin, we're creating a clone of the crystal
+当我收到“开始”的信号时，我们会克隆一个水晶。
+
+00:31:18.430 --> 00:31:21.010
+to create a brand new crystal.
+来创建一颗全新的水晶。
+
+00:31:21.010 --> 00:31:24.160
+But let's make that a little more exciting.
+但让这变得更刺激一点。
+
+00:31:24.160 --> 00:31:27.670
+I'm going to put this in a forever loop, meaning we're always
+我要把这个放到一个无限循环里，这意味着我们会一直
+
+00:31:27.670 --> 00:31:29.260
+going to be creating crystals.
+创建水晶。
+
+00:31:29.260 --> 00:31:33.340
+Now, if I just did that to create lots and lots of crystals, what you'll see
+现在，如果我只是这样做来创建大量的水晶，你会看到
+
+00:31:33.340 --> 00:31:37.600
+is something like this where suddenly hundreds of crystals
+像这样的情况，突然成百颗水晶
+
+00:31:37.600 --> 00:31:40.220
+are falling from the sky all at the same time.
+同时从天上掉落。
+
+00:31:40.220 --> 00:31:43.180
+That's maybe a little bit too challenging.
+这可能有点太有挑战性了。
+
+00:31:43.180 --> 00:31:47.080
+But let's add a wait here and say create a crystal
+但是我们在这里加一个等待指令，然后说创建一颗水晶。
+
+00:31:47.080 --> 00:31:49.900
+and then wait 15 seconds or so.
+然后等大概15秒。
+
+00:31:49.900 --> 00:31:52.450
+We're going to wait 15 seconds and then create
+我们要等15秒，然后再创建
+
+00:31:52.450 --> 00:31:56.110
+a new crystal so that a new crystal appears every 15 seconds.
+一颗新水晶，这样每15秒就会出现一颗新水晶。
+
+00:31:56.110 --> 00:31:58.917
+Every 15 seconds, the game gets a little bit harder.
+每15秒，游戏就会变得难一点。
+
+00:31:58.917 --> 00:32:00.250
+And so now I could try it again.
+所以现在我可以再试一次。
+
+00:32:00.250 --> 00:32:02.667
+And you could play with that number to see what it's like.
+你可以调整那个时间数字，看看效果如何。
+
+00:32:02.667 --> 00:32:04.960
+But let's try playing this game.
+那我们来试试玩这个游戏。
+
+00:32:04.960 --> 00:32:10.020
+I'm going to catch a crystal and keep doing this a few times.
+我要去接住一颗水晶，然后多做几次。
+
+00:32:10.020 --> 00:32:14.020
+And after 15 seconds or so, which should be in just a couple of seconds now,
+大概15秒后，现在再过几秒就到时间了。
+
+00:32:14.020 --> 00:32:17.890
+we'll see what happens, it should create a second clone.
+我们看看会发生什么，应该会创建出第二个克隆体。
+
+00:32:17.890 --> 00:32:20.890
+And now you'll notice there are two crystals that have to try and catch.
+现在你会注意到有两颗水晶要去尝试接住了。
+
+00:32:20.890 --> 00:32:21.515
+I'll catch one.
+我来抓一个。
+
+00:32:21.515 --> 00:32:22.740
+Can I get the other one?
+我能抓到另一个吗？
+
+00:32:22.740 --> 00:32:25.400
+All right, I caught the other one.
+好啦，我抓到另一个了。
+
+00:32:25.400 --> 00:32:29.110
+And in another 15 seconds, we're going to see the game get even harder.
+再过15秒，我们会看到游戏变得更难。
+
+00:32:32.470 --> 00:32:34.540
+Now if you notice, there are three crystals that
+现在如果你注意看，有三颗水晶
+
+00:32:34.540 --> 00:32:36.667
+are all out there at the same time.
+同时都在那里。
+
+00:32:36.667 --> 00:32:38.750
+And maybe I'm going to start to miss some of them.
+也许我会开始漏抓一些了。
+
+00:32:38.750 --> 00:32:42.130
+I missed one already, and I'm probably going to miss a couple more now.
+我已经漏抓了一个，现在可能还会再漏抓几个。
+
+00:32:42.130 --> 00:32:48.190
+And now I missed three, and it's telling me that my score is 14.
+现在我漏抓了三个，它显示我的得分是14分。
+
+00:32:48.190 --> 00:32:50.390
+And the crystals are still falling.
+而水晶还在往下掉。
+
+00:32:50.390 --> 00:32:53.560
+And so what could I do to stop everything after the game is over?
+那么游戏结束后，我要怎么做才能让一切停下来呢？
+
+00:32:53.560 --> 00:32:56.770
+Well, after the game is over, after I say your score is something,
+嗯，游戏结束后，在我显示你的得分之后，
+
+00:32:56.770 --> 00:33:01.300
+I can go onto this block, stop all, and that's just going to stop everything.
+我可以使用这个积木，全部停止，这样就能让一切停下来。
+
+00:33:01.300 --> 00:33:03.550
+Every sprite is just going to stop operating
+所有角色都会停止运作
+
+00:33:03.550 --> 00:33:07.630
+after I say stop all so that the sprites don't continue to try to behave.
+在我说全部停止之后，这样角色就不会继续行动了。
+
+00:33:07.630 --> 00:33:09.850
+Since I have multiple clones of the crystals,
+因为我有多个水晶克隆体，
+
+00:33:09.850 --> 00:33:13.400
+stop all will just now stop all of them.
+全部停止现在就能让它们都停下来。
+
+00:33:13.400 --> 00:33:15.852
+So hopefully you can start to see now that by combining
+希望你现在能开始明白，通过组合
+
+00:33:15.852 --> 00:33:18.310
+these various different pieces, these different components,
+这些不同的部分，这些不同的组件，
+
+00:33:18.310 --> 00:33:21.430
+these different tools and programming from different parts of Scratch,
+这些不同的工具，以及Scratch不同部分的编程方法，
+
+00:33:21.430 --> 00:33:25.910
+we can start to create some creative and exciting projects as well.
+我们也能开始创作出一些有创意又有趣的项目。
+
+00:33:25.910 --> 00:33:27.760
+So now as we wrap up this course, you now
+那么现在，在我们结束这门课程时，你现在
+
+00:33:27.760 --> 00:33:30.280
+have the tools you need to build projects of your own
+已经拥有了自己构建项目所需的工具
+
+00:33:30.280 --> 00:33:33.820
+that are interesting to you by taking advantage of functions and loops
+利用函数、循环
+
+00:33:33.820 --> 00:33:36.490
+and conditions and values and variables and events
+条件、数值、变量和事件
+
+00:33:36.490 --> 00:33:39.848
+and more to create interesting and exciting programs of your own.
+以及更多元素，来创作出属于你自己的有趣又刺激的程序。
+
+00:33:39.848 --> 00:33:41.140
+And I'd encourage you to do so.
+我鼓励你这么做。
+
+00:33:41.140 --> 00:33:43.120
+Play around with this Scratch interface.
+多玩玩这个Scratch界面。
+
+00:33:43.120 --> 00:33:47.095
+Try and create a story or an animation or a game that's exciting to you.
+试着创作一个让你觉得兴奋的故事、动画或游戏。
+
+00:33:47.095 --> 00:33:48.220
+Share it with your friends.
+和你的朋友分享它。
+
+00:33:48.220 --> 00:33:49.303
+Share it with your family.
+和你的家人分享它。
+
+00:33:49.303 --> 00:33:51.100
+And we look forward to what you create.
+我们期待着你创作出的东西。
+
+00:33:51.100 --> 00:33:52.580
+Thank you so much for joining us.
+非常感谢你参与我们的课程。
+
+00:33:52.580 --> 00:33:56.310
+This was an introduction to Programming with Scratch.
+这是用Scratch学编程的入门课程。

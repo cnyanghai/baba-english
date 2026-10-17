@@ -1,0 +1,1981 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.458
+[MUSIC PLAYING]
+[音乐播放中]
+
+00:00:17.155 --> 00:00:19.280
+SPEAKER: Welcome back, everyone, to an introduction
+讲解人：欢迎大家回到《用Scratch学编程》入门课程。
+
+00:00:19.280 --> 00:00:20.600
+to Programming with Scratch.
+到目前为止，我们已经了解了Scratch的许多主要特性，
+
+00:00:20.600 --> 00:00:23.720
+And at this point, we've seen many of the major features of Scratch,
+知道如何使用循环、变量和条件语句
+
+00:00:23.720 --> 00:00:26.510
+how we can use loops and variables and conditions
+来组合出一些有趣的项目。
+
+00:00:26.510 --> 00:00:28.800
+to put together some interesting projects.
+所以今天，让我们退一步，思考一下如何在项目中使用这些积木，
+
+00:00:28.800 --> 00:00:32.420
+So today, let's take a step back, think about how we might use these blocks
+以及如何改进我们在Scratch项目中设计积木的方式。
+
+00:00:32.420 --> 00:00:36.140
+inside of our projects, and how we might be able to improve upon the way
+那么，让我们从一个可能想创建的示例应用程序或项目开始。
+
+00:00:36.140 --> 00:00:40.110
+that we've designed the blocks inside of our Scratch projects.
+我们打开Scratch。
+
+00:00:40.110 --> 00:00:42.800
+So let's start with a sample application or project
+比如说，我想制作一个包含恐龙的游戏，
+
+00:00:42.800 --> 00:00:44.160
+that we might want to create.
+例如让恐龙四处移动。
+
+00:00:44.160 --> 00:00:45.620
+Let's open up Scratch.
+为此，我先去掉小猫角色，添加一个新角色。
+
+00:00:45.620 --> 00:00:49.010
+And let's say I want to make a game that involves the dinosaur
+我这就去找恐龙角色。
+
+00:00:49.010 --> 00:00:51.570
+and moving the dinosaur around, for example.
+然后把恐龙添加到我们的Scratch项目中。
+
+00:00:51.570 --> 00:00:55.800
+So to do that, I'll start by getting rid of the cat and adding a new sprite.
+我希望能够通过按方向键来控制恐龙。
+
+00:00:55.800 --> 00:00:58.590
+I'll go ahead and find the dinosaur.
+要做到这一点，我需要对各种不同的事件做出响应。
+
+00:00:58.590 --> 00:01:01.890
+And we'll bring the dinosaur into our Scratch project.
+例如，我可以使用“当按下上方向键”这个积木。
+
+00:01:01.890 --> 00:01:05.820
+And I'd like to be able to control the dinosaur by moving the arrow keys.
+然后让恐龙通过改变它的y坐标值来做出响应——
+
+00:01:05.820 --> 00:01:09.400
+And so to do that, I'll need to respond to various different events.
+也就是上下方向的值——比如改变10。
+
+00:01:09.400 --> 00:01:14.020
+I can use the when Up Arrow key is pressed, for example.
+然后我对其他方向键做类似的操作。
+
+00:01:14.020 --> 00:01:18.510
+And then have the dinosaur respond by changing its y-value--
+我为下方向键添加一个积木。
+
+00:01:18.510 --> 00:01:21.460
+the up and down value-- by 10, for example.
+当按下下方向键时，
+
+00:01:21.460 --> 00:01:25.050
+And then I'll do similar things for the other arrow keys.
+我们把y坐标值减去10，让恐龙向下移动。
+
+00:01:25.050 --> 00:01:27.580
+I'll add one for the Down Arrow key.
+我们为右方向键添加一个事件。
+
+00:01:27.580 --> 00:01:29.790
+And when the Down Arrow key is pressed, let's
+当按下右方向键时，不改变y坐标值，
+
+00:01:29.790 --> 00:01:35.820
+go ahead and change the y-value by negative 10 to move the dinosaur down.
+而是改变x坐标值，这是恐龙左右方向的值。
+
+00:01:35.820 --> 00:01:40.250
+Let's add one event for the Right Arrow key.
+最后，我们也让恐龙
+
+00:01:40.250 --> 00:01:43.250
+When the Right Arrow key is pressed, instead of changing y,
+对按下左方向键做出响应。
+
+00:01:43.250 --> 00:01:48.230
+we'll instead change x, which is the left or right value for the dinosaur.
+这时，我们同样要改变x坐标值。
+
+00:01:48.230 --> 00:01:50.450
+And then finally, we'll also allow the dinosaur
+但不是加10，而是减10。
+
+00:01:50.450 --> 00:01:54.560
+to respond to when the Left Arrow key is pressed.
+我们之前见过这样的积木。
+
+00:01:54.560 --> 00:01:56.810
+At which point, we'll also change x.
+它们能让恐龙对我在键盘上按键做出响应。
+
+00:01:56.810 --> 00:01:59.835
+But instead of positive 10, it's going to be negative 10.
+如果我按右方向键，恐龙向右移动。
+
+00:01:59.835 --> 00:02:01.460
+And we've seen blocks like this before.
+如果我按左方向键，恐龙向左移动。
+
+00:02:01.460 --> 00:02:04.220
+And what they allow the dinosaur to do is respond
+如果我按上方向键，恐龙向上移动。
+
+00:02:04.220 --> 00:02:05.840
+to me pressing keys on the keyboard.
+如果我按下方向键，恐龙向下移动。
+
+00:02:05.840 --> 00:02:08.690
+If I press the Right Arrow, the dinosaur moves right.
+如果我按下右方向键，恐龙就会向右移动。
+
+00:02:08.690 --> 00:02:11.120
+If I press the Left Arrow, the dinosaur moves left.
+如果我按下左方向键，恐龙就会向左移动。
+
+00:02:11.120 --> 00:02:13.160
+If I press Up, the dinosaur moves up.
+如果我按下上方向键，恐龙就会向上移动。
+
+00:02:13.160 --> 00:02:16.920
+And if I press Down, the dinosaur moves down.
+如果我按下下方向键，恐龙就会向下移动。
+
+00:02:16.920 --> 00:02:18.920
+But let's not give this game away to win,
+但咱们别让这个游戏轻易就能赢，
+
+00:02:18.920 --> 00:02:22.370
+some way that we can-- goal that we can try to accomplish.
+得设定个我们可以去努力达成的目标。
+
+00:02:22.370 --> 00:02:24.230
+And I'll add a new sprite.
+我要添加一个新角色。
+
+00:02:24.230 --> 00:02:27.230
+And let's look through the sprites and see what might make sense here.
+咱们来浏览一下角色，看看这里选什么合适。
+
+00:02:27.230 --> 00:02:29.420
+I'm going to go with the star.
+我选星星。
+
+00:02:29.420 --> 00:02:31.190
+So here's the star sprite.
+这就是星星角色。
+
+00:02:31.190 --> 00:02:34.700
+And I would like the dinosaur to try to chase after the star
+我希望恐龙能去追星星，
+
+00:02:34.700 --> 00:02:36.890
+as by moving around using the arrow keys.
+用方向键来移动。
+
+00:02:36.890 --> 00:02:39.830
+And maybe once the dinosaur is touching the star,
+也许等恐龙碰到星星的时候，
+
+00:02:39.830 --> 00:02:42.368
+well, then we'll say that we've won the game.
+那我们就说游戏赢了。
+
+00:02:42.368 --> 00:02:44.910
+And there are multiple ways that I could go about doing this.
+实现这个目标有很多种方法。
+
+00:02:44.910 --> 00:02:46.010
+But here's one way.
+下面介绍一种方法。
+
+00:02:46.010 --> 00:02:48.220
+I could say that every time I move--
+我可以设定每次移动时——
+
+00:02:48.220 --> 00:02:52.820
+every time I change y by some amount or change x by some amount, let's go ahead
+每次让y坐标改变一定数值或者让x坐标改变一定数值时，咱们接着
+
+00:02:52.820 --> 00:02:56.570
+and check to see if we're touching the star.
+检查一下是否碰到了星星。
+
+00:02:56.570 --> 00:03:00.770
+So for example, when the Up Arrow is pressed, we change the y by 10.
+比如，按下上方向键时，y坐标增加10。
+
+00:03:00.770 --> 00:03:02.960
+But we've now moved the dinosaur, so we better now
+但现在恐龙已经移动了，所以我们最好
+
+00:03:02.960 --> 00:03:06.140
+check to see if the dinosaur is touching the star.
+检查一下恐龙是否碰到了星星。
+
+00:03:06.140 --> 00:03:07.750
+So what can I do?
+那我能怎么做呢？
+
+00:03:07.750 --> 00:03:12.770
+I could go into control here and ask a question with IF.
+我可以到控制模块这里，用“如果”来问个问题。
+
+00:03:12.770 --> 00:03:15.290
+And I'll move these other scripts out of the way for now
+我先把其他脚本移开，
+
+00:03:15.290 --> 00:03:17.180
+just by dragging them around.
+直接拖动它们就行。
+
+00:03:17.180 --> 00:03:21.830
+And what I'd like to check for is if the dinosaur is touching the star.
+我想检查的是恐龙是否碰到了星星。
+
+00:03:21.830 --> 00:03:23.720
+Touching, that's under Sensing.
+“碰到”这个功能在“侦测”模块里。
+
+00:03:23.720 --> 00:03:27.980
+And here is a touching block that I'll drag out and change
+这里有个“碰到”积木，我把它拖出来并修改，
+
+00:03:27.980 --> 00:03:30.570
+mouse pointer to star.
+把鼠标指针改成星星。
+
+00:03:30.570 --> 00:03:33.650
+So now, when I press the Up Arrow, y will change by 10,
+现在，按下上方向键时，y坐标会增加10，
+
+00:03:33.650 --> 00:03:37.460
+and then the dinosaur will check to see if it's touching the star.
+然后恐龙会检查是否碰到了星星。
+
+00:03:37.460 --> 00:03:45.210
+And if it is, let's go ahead and let the dinosaur report
+如果碰到了，咱们就让恐龙报告，
+
+00:03:45.210 --> 00:03:47.190
+how long it took to find the star.
+找到星星用了多长时间。
+
+00:03:47.190 --> 00:03:49.260
+So maybe it's going to say something.
+也许它会说点什么。
+
+00:03:49.260 --> 00:03:53.090
+And it's going to say the timer.
+它会说出计时器的数值。
+
+00:03:53.090 --> 00:03:55.520
+The timer under Sensing [INAUDIBLE] is just how many
+“侦测”模块里的计时器（听不清）显示的是
+
+00:03:55.520 --> 00:04:00.380
+seconds has it been since we started this program.
+从程序启动到现在过了多少秒。
+
+00:04:00.380 --> 00:04:02.330
+So we'll go ahead and start my project.
+那咱们开始我的项目吧。
+
+00:04:02.330 --> 00:04:05.150
+And I'll press the green flag.
+我点击绿色小旗。
+
+00:04:05.150 --> 00:04:07.130
+I'll move the dinosaur to the right.
+我把恐龙向右移动。
+
+00:04:07.130 --> 00:04:08.900
+And then move the dinosaur up.
+然后把恐龙向上移动。
+
+00:04:08.900 --> 00:04:11.930
+And notice that as soon as it's touching the star, it reports.
+注意看，一旦碰到星星，它就会报告。
+
+00:04:11.930 --> 00:04:13.880
+It's been 4.82 seconds.
+过去了4.82秒。
+
+00:04:13.880 --> 00:04:17.390
+And that's how long it took the dinosaur to find the star.
+这就是恐龙找到星星所花费的时间。
+
+00:04:17.390 --> 00:04:19.310
+Now, this doesn't work perfectly all the time.
+现在，这并不总是能完美运行。
+
+00:04:19.310 --> 00:04:21.050
+I can try this again, for example.
+比如，我可以再试一次。
+
+00:04:21.050 --> 00:04:22.250
+Press the flag.
+点击绿旗。
+
+00:04:22.250 --> 00:04:25.160
+This time if I move up first-- move all the way up, and now
+这次如果我先向上移动——一直向上移动，现在
+
+00:04:25.160 --> 00:04:28.470
+start moving to the right, well, I'm touching the star,
+开始向右移动，嗯，我碰到星星了，
+
+00:04:28.470 --> 00:04:30.750
+but no time was reported.
+但没有显示时间。
+
+00:04:30.750 --> 00:04:31.542
+Why not?
+为什么呢？
+
+00:04:31.542 --> 00:04:33.750
+Well, if you notice, we can take a look at the blocks
+嗯，如果你注意到的话，我们可以看看
+
+00:04:33.750 --> 00:04:35.730
+that I have inside of this project.
+这个项目里的积木。
+
+00:04:35.730 --> 00:04:38.850
+My condition-- this condition here, if we're touching the star,
+我的条件——就是这个条件，如果我们碰到星星，
+
+00:04:38.850 --> 00:04:40.980
+then say the timer for two seconds--
+那就显示计时器两秒钟——
+
+00:04:40.980 --> 00:04:44.070
+it appears here when the Up Arrow key is pressed.
+当按下上箭头键时，它会在这里出现。
+
+00:04:44.070 --> 00:04:46.920
+But really, I should be checking this all the time, whenever I move.
+但实际上，我每次移动时都应该检查这个条件。
+
+00:04:46.920 --> 00:04:49.920
+Whether I'm moving to the right or to the left or moving down.
+不管我是向右、向左还是向下移动。
+
+00:04:49.920 --> 00:04:52.140
+Every time the dinosaur moves, I would like
+每次恐龙移动时，我希望
+
+00:04:52.140 --> 00:04:56.280
+for the dinosaur to check to see if the dinosaur is touching the star.
+恐龙去检查是否碰到了星星。
+
+00:04:56.280 --> 00:04:59.130
+So what I'm going to need to do to make this project work is
+所以要让这个项目正常运行，我需要做的是
+
+00:04:59.130 --> 00:05:01.650
+take this same condition, if we're touching the star,
+采用同样的条件，如果我们碰到星星，
+
+00:05:01.650 --> 00:05:03.480
+say the time say the timer.
+显示计时器。
+
+00:05:03.480 --> 00:05:07.860
+And I'll have to include that in each of the other scripts in my project
+而且我得把这个条件也加到项目里的其他脚本中。
+
+00:05:07.860 --> 00:05:08.550
+as well.
+也是一样。
+
+00:05:08.550 --> 00:05:11.850
+That way it's going to check regardless of what key on the keyboard
+这样无论玩游戏的人按键盘上的哪个键，
+
+00:05:11.850 --> 00:05:15.420
+the person playing the game is actually pressing.
+它都会进行检查。
+
+00:05:15.420 --> 00:05:18.460
+And so I could add this to the Down Arrow, for example.
+比如，我可以把这个加到下箭头脚本里。
+
+00:05:18.460 --> 00:05:23.010
+And the way that I would do that is by adding a condition and saying,
+我要做的就是添加一个条件并说，
+
+00:05:23.010 --> 00:05:29.070
+if we are touching the star, then go ahead
+如果我们碰到星星，那就继续
+
+00:05:29.070 --> 00:05:34.230
+and say the timer for two seconds.
+显示计时器两秒钟。
+
+00:05:34.230 --> 00:05:35.898
+And that took a fair bit of time.
+这花了不少时间。
+
+00:05:35.898 --> 00:05:38.940
+So you might also know that you can duplicate some of the blocks instead.
+所以你可能也知道你可以复制一些积木。
+
+00:05:38.940 --> 00:05:42.120
+Since these are really just the same blocks, I can just copy them again.
+因为这些其实就是同样的积木，我可以再复制它们。
+
+00:05:42.120 --> 00:05:44.550
+To get them to work for Left Arrow, I'll go ahead
+为了让它们在左箭头脚本中起作用，我会
+
+00:05:44.550 --> 00:05:48.540
+and Control or Right Click on the IF block and just say Duplicate.
+按下Ctrl键或者右键点击“如果”积木，然后选择“复制”。
+
+00:05:48.540 --> 00:05:50.370
+I want to copy this whole section.
+我想复制这一整部分。
+
+00:05:50.370 --> 00:05:52.920
+And I'll drag it underneath the Left Arrow.
+然后我把它拖到左箭头脚本下面。
+
+00:05:52.920 --> 00:05:55.590
+And I'll do that one more time for the Right Arrow.
+我会对右箭头脚本再做一次同样的操作。
+
+00:05:55.590 --> 00:05:58.620
+Duplicate, drag it underneath Right Arrow.
+复制，把它拖到右箭头脚本下面。
+
+00:05:58.620 --> 00:06:01.860
+And now, regardless of which Arrow key is pressed,
+现在，不管按下哪个箭头键，
+
+00:06:01.860 --> 00:06:04.080
+whether it's Up or Down or Left or Right,
+无论是上、下、左还是右，
+
+00:06:04.080 --> 00:06:07.697
+we're still going to be able to check if we're touching the star.
+我们仍然能够检查是否碰到了星星。
+
+00:06:07.697 --> 00:06:09.780
+And just to make things a little more interesting,
+为了让事情更有趣一点，
+
+00:06:09.780 --> 00:06:11.940
+let's add some code to the star too.
+我们也给星星添加一些代码。
+
+00:06:11.940 --> 00:06:14.830
+Let's say when I press the green flag to start the program,
+比如说，当我按下绿色旗帜启动程序时，
+
+00:06:14.830 --> 00:06:17.910
+let's have the star go to a random position.
+让星星移动到一个随机位置。
+
+00:06:17.910 --> 00:06:20.850
+Just so that it chooses somewhere on the stage to go to
+这样它就能在舞台上选个地方移动过去，
+
+00:06:20.850 --> 00:06:24.890
+so that the game is a little bit different every time.
+让每次游戏都有点不一样。
+
+00:06:24.890 --> 00:06:26.660
+Now I press the flag.
+现在我按下旗帜。
+
+00:06:26.660 --> 00:06:27.680
+The program started.
+程序启动了。
+
+00:06:27.680 --> 00:06:29.610
+You see the star moved a little bit.
+你看星星移动了一点。
+
+00:06:29.610 --> 00:06:34.520
+And now I can use the arrows to try and make my way to the star.
+现在我可以用箭头键试着朝星星移动。
+
+00:06:34.520 --> 00:06:38.330
+And once I get to the star, you'll notice that the dinosaur reported
+一旦我碰到星星，你会注意到恐龙会告诉我
+
+00:06:38.330 --> 00:06:39.710
+to me how long it took.
+用了多长时间。
+
+00:06:39.710 --> 00:06:42.740
+In this case, it was 9.70 seconds.
+在这个例子中，是9.70秒。
+
+00:06:42.740 --> 00:06:45.200
+And 9.70, that's very precise.
+9.70，这很精确。
+
+00:06:45.200 --> 00:06:47.240
+Maybe I decide a little bit later, I'd like
+也许过一会儿，我想
+
+00:06:47.240 --> 00:06:49.280
+to improve upon this program a little bit.
+对这个程序做些改进。
+
+00:06:49.280 --> 00:06:53.510
+And what I'd really like to do is I would like to not say 9.70,
+我真正想做的是不显示9.70，
+
+00:06:53.510 --> 00:06:55.100
+just rounded to 10 seconds.
+只显示四舍五入后的10秒。
+
+00:06:55.100 --> 00:06:57.110
+Round to the nearest number of seconds.
+四舍五入到最接近的秒数。
+
+00:06:57.110 --> 00:06:59.930
+And we've seen before, there's a block under Operators
+我们之前见过，“运算”分类下有个
+
+00:06:59.930 --> 00:07:03.990
+called Round that can round a number to the nearest whole number.
+叫“四舍五入”的积木，可以将一个数四舍五入到最接近的整数。
+
+00:07:03.990 --> 00:07:06.140
+And so that might be what I would want to do here.
+所以这可能就是我在这里想做的。
+
+00:07:06.140 --> 00:07:09.480
+And what would I have to change in this project to get that to work?
+为了实现这个功能，我要在这个项目里改些什么呢？
+
+00:07:09.480 --> 00:07:13.910
+Well, I'd have to add Round to this say block and to this say block
+嗯，我得把“四舍五入”积木加到这个“说”积木里，还有这个“说”积木里
+
+00:07:13.910 --> 00:07:16.130
+and to this say block, and the one down below too.
+以及这个“说”积木里，下面那个也要加。
+
+00:07:16.130 --> 00:07:18.410
+I'd have to add it to all four directions.
+我得把它加到所有四个方向的代码里。
+
+00:07:18.410 --> 00:07:22.670
+Because effectively, I've copied myself again and again and again and again.
+实际上，我一直在反复复制代码。
+
+00:07:22.670 --> 00:07:26.270
+And whenever you find yourself copying a lot of code in your project
+当你在项目里多次复制大量代码时，
+
+00:07:26.270 --> 00:07:29.450
+multiple times, oftentimes, that's an indication
+很多时候，这表明
+
+00:07:29.450 --> 00:07:33.310
+that there might be a better way to try to solve that problem.
+可能有更好的方法来解决这个问题。
+
+00:07:33.310 --> 00:07:34.730
+And in this case, there is.
+在这个例子中，确实有。
+
+00:07:34.730 --> 00:07:38.990
+And what we can do is create an entirely new block of our own.
+我们可以做的是创建一个我们自己的全新积木。
+
+00:07:38.990 --> 00:07:41.310
+Instead of repeat all of these--
+而不是重复所有这些——
+
+00:07:41.310 --> 00:07:44.420
+this combination of multiple blocks, the IF and the touching
+多个积木的组合，“如果”、“碰到”
+
+00:07:44.420 --> 00:07:48.170
+and the say and the timer and repeating that set of blocks multiple times,
+“说”、“计时器”，并且多次重复那组积木，
+
+00:07:48.170 --> 00:07:50.840
+I'm going to write the set of blocks once.
+我只写一次那组积木。
+
+00:07:50.840 --> 00:07:54.800
+And then just refer back to that collection of blocks by a name
+然后用我选的一个名字来引用那组积木。
+
+00:07:54.800 --> 00:07:55.400
+that I choose.
+我马上给你详细解释我的意思。
+
+00:07:55.400 --> 00:07:57.920
+And I'll show you exactly what I mean by that right now.
+我们现在要看看Scratch界面的一个新区域，
+
+00:07:57.920 --> 00:08:01.160
+We're going to look at a new section of the Scratch interface,
+我们要看看Scratch界面的一个新区域。
+
+00:08:01.160 --> 00:08:03.740
+which is here called My Blocks.
+这里叫做“我的积木”。
+
+00:08:03.740 --> 00:08:06.890
+And this is a place where you can create blocks of your own.
+这是一个你可以创建自己的积木的地方。
+
+00:08:06.890 --> 00:08:11.270
+Scratch has blocks that say something, that change the y-value of the x-value
+Scratch 有一些积木可以用来做某些操作，比如改变 x 值或 y 值。
+
+00:08:11.270 --> 00:08:12.050
+by something.
+改变一定的数值。
+
+00:08:12.050 --> 00:08:14.990
+But we can create a new block, if we would like to.
+但如果我们愿意，也可以创建一个新的积木。
+
+00:08:14.990 --> 00:08:17.720
+And I can click Make a Block to make a new block.
+我可以点击“制作新的积木”来创建一个新积木。
+
+00:08:17.720 --> 00:08:19.520
+And I have to give the block a name.
+我得给这个积木取个名字。
+
+00:08:19.520 --> 00:08:23.960
+And I'll call the block Check If Won, because that's
+我把这个积木叫做“检查是否获胜”，因为
+
+00:08:23.960 --> 00:08:25.220
+what I want the block to do.
+这就是我想让这个积木做的事情。
+
+00:08:25.220 --> 00:08:27.800
+I would like the block to just take care of checking
+我希望这个积木能负责检查
+
+00:08:27.800 --> 00:08:29.330
+if the dinosaur has won the game.
+恐龙是否赢得了游戏。
+
+00:08:29.330 --> 00:08:31.370
+Meaning checking if we're touching the star.
+也就是检查我们是否碰到了星星。
+
+00:08:31.370 --> 00:08:35.299
+And if so, go ahead and report how long it took.
+如果是，就报告用了多长时间。
+
+00:08:35.299 --> 00:08:38.120
+So I've defined this Check If Won block.
+所以我定义了这个“检查是否获胜”的积木。
+
+00:08:38.120 --> 00:08:41.130
+And what you'll notice here, up at the top of my screen,
+你会注意到，在我屏幕顶部，
+
+00:08:41.130 --> 00:08:45.620
+I now have a block that says, define check if one.
+现在有一个积木写着“定义检查是否获胜”。
+
+00:08:45.620 --> 00:08:48.620
+Everything beneath this block now are going
+这个积木下面的所有内容
+
+00:08:48.620 --> 00:08:51.230
+to be the blocks that run every time I want
+将会是每次我想要
+
+00:08:51.230 --> 00:08:57.000
+to check if won-- every time I want to check if the dinosaur has won the game.
+检查是否获胜时运行的积木——也就是每次我想检查恐龙是否赢得了游戏时运行的积木。
+
+00:08:57.000 --> 00:08:58.100
+So what should I do?
+那么我该怎么做呢？
+
+00:08:58.100 --> 00:09:01.610
+Well, I'll take this same condition, if touching star,
+嗯，我会使用同样的条件，即如果碰到星星，
+
+00:09:01.610 --> 00:09:03.740
+then say the timer for two seconds.
+就显示计时器两秒钟。
+
+00:09:03.740 --> 00:09:08.150
+And I'm going to put that underneath this definition for check if won.
+我要把这个放在“检查是否获胜”的定义下面。
+
+00:09:08.150 --> 00:09:11.030
+What does it mean to check if the dinosaurs won the game?
+检查恐龙是否赢得游戏是什么意思呢？
+
+00:09:11.030 --> 00:09:14.690
+Well, it means check if the dinosaur is touching the star then
+嗯，意思是检查恐龙是否碰到了星星，然后
+
+00:09:14.690 --> 00:09:18.050
+say the timer for two seconds.
+显示计时器两秒钟。
+
+00:09:18.050 --> 00:09:21.020
+And now, underneath this event here, when the Up Arrow key
+现在，在这个事件下面，当按下上箭头键时，
+
+00:09:21.020 --> 00:09:23.900
+is pressed, rather than change y by 10 and then
+不用再先将 y 坐标加 10，然后
+
+00:09:23.900 --> 00:09:27.540
+this complicated condition with multiple blocks that I had to put together,
+用多个积木组合成一个复杂的条件，
+
+00:09:27.540 --> 00:09:29.570
+I can just change y by 10.
+我可以直接将 y 坐标加 10。
+
+00:09:29.570 --> 00:09:32.660
+And then drag out this new block that I created and I
+然后拖出我创建的这个新积木，我
+
+00:09:32.660 --> 00:09:36.890
+picked a name for called check if won.
+给它取名叫“检查是否获胜”。
+
+00:09:36.890 --> 00:09:40.490
+So the logic for that script now, when the upper deck is pressed,
+所以现在这个脚本的逻辑，当按下上箭头键时，
+
+00:09:40.490 --> 00:09:41.580
+is much simpler.
+就简单多了。
+
+00:09:41.580 --> 00:09:42.830
+It's only two blocks.
+只有两个积木。
+
+00:09:42.830 --> 00:09:44.480
+Change y by 10.
+将 y 坐标加 10。
+
+00:09:44.480 --> 00:09:46.190
+And then check if won.
+然后检查是否获胜。
+
+00:09:46.190 --> 00:09:47.900
+And what does it mean to check if won?
+检查是否获胜是什么意思呢？
+
+00:09:47.900 --> 00:09:50.270
+Well, I defined what that means up here.
+嗯，我在这里已经定义了它的意思。
+
+00:09:50.270 --> 00:09:52.310
+The definition of the check if one block-- what
+“检查是否获胜”积木的定义——是什么
+
+00:09:52.310 --> 00:09:54.710
+should happen when I run that block, is we
+当我运行那个积木时，应该发生的是，我们
+
+00:09:54.710 --> 00:09:59.850
+want to check if we're touching the star then say the timer for two seconds.
+要检查是否碰到了星星，然后说出计时器的时间，持续两秒。
+
+00:09:59.850 --> 00:10:02.870
+And now, I can do the same thing for all of the other scripts as well.
+现在，我也可以对其他所有脚本做同样的事情。
+
+00:10:02.870 --> 00:10:06.080
+Replace this complicated condition with four different blocks
+用四个不同的积木替换这个复杂的条件
+
+00:10:06.080 --> 00:10:07.230
+that I've put together.
+这是我组合起来的。
+
+00:10:07.230 --> 00:10:11.640
+And instead, just use a single block, the Check If Won block.
+相反，只用一个积木，即“检查是否获胜”积木。
+
+00:10:11.640 --> 00:10:15.860
+So I'm going to delete this condition and just replace it with this one Check
+所以我要删除这个条件，只用这一个“检查
+
+00:10:15.860 --> 00:10:16.940
+If Won block.
+是否获胜”积木来替换它。
+
+00:10:16.940 --> 00:10:19.970
+And I'll do the same for the Left Arrow, getting rid of the condition,
+我对左箭头也做同样的操作，去掉这个条件，
+
+00:10:19.970 --> 00:10:21.650
+adding back Check If Won.
+重新添加“检查是否获胜”。
+
+00:10:21.650 --> 00:10:25.130
+And the same for the Right Arrow, getting rid of the condition,
+右箭头也一样，去掉这个条件，
+
+00:10:25.130 --> 00:10:27.590
+cutting back Check If Won.
+重新添加“检查是否获胜”。
+
+00:10:27.590 --> 00:10:31.700
+And now the logic for these arrow keys is much simpler to read
+现在，这些箭头键的逻辑读起来简单多了
+
+00:10:31.700 --> 00:10:36.082
+and it's organized more nicely into just a single block, Check If Won.
+而且它被很好地组织到了一个积木里，即“检查是否获胜”。
+
+00:10:36.082 --> 00:10:37.790
+And the program will behave the same way.
+程序的运行方式还是一样的。
+
+00:10:37.790 --> 00:10:39.450
+I can try again.
+我可以再试一次。
+
+00:10:39.450 --> 00:10:41.430
+I can still move the arrow keys around.
+我仍然可以用箭头键移动。
+
+00:10:41.430 --> 00:10:45.450
+And the dinosaur will still report to me when it's touching the star.
+恐龙碰到星星时还是会告诉我。
+
+00:10:45.450 --> 00:10:47.230
+But I'm not repeating myself as much.
+但我没那么多重复操作了。
+
+00:10:47.230 --> 00:10:51.770
+So I'm using fewer blocks and being more efficient about my use of blocks.
+所以我用的积木更少了，使用积木也更高效了。
+
+00:10:51.770 --> 00:10:56.090
+And it's also now easier for me to modify the behavior of this program
+而且现在我修改这个程序的行为也更容易了
+
+00:10:56.090 --> 00:10:57.200
+too.
+也是如此。
+
+00:10:57.200 --> 00:11:00.350
+If instead of saying the timer, I would now like around the timer--
+如果我现在不想说出计时器的时间，而是想对计时器的时间取整——
+
+00:11:00.350 --> 00:11:01.970
+as I talked about wanting to do--
+就像我之前说想做的那样——
+
+00:11:01.970 --> 00:11:04.850
+instead of needing to add round to four different places for four
+不用在四个不同的地方，为四个
+
+00:11:04.850 --> 00:11:08.790
+different arrow keys, I can just change it in one place.
+不同的箭头键都加上取整操作，我只需要在一个地方修改就行。
+
+00:11:08.790 --> 00:11:11.420
+I can say, OK, let's go to Operators.
+我说，好，我们去“运算”分类。
+
+00:11:11.420 --> 00:11:17.930
+Let's take this Round operator and let's around the timer for two seconds.
+我们拿这个“取整”运算，对计时器的时间取整，持续两秒。
+
+00:11:17.930 --> 00:11:20.590
+And since I've modified what it means to check if won,
+因为我修改了“检查是否获胜”的含义，
+
+00:11:20.590 --> 00:11:24.550
+now all of these other arrow keys that use the Check If Won block
+现在所有使用“检查是否获胜”积木的其他箭头键
+
+00:11:24.550 --> 00:11:28.120
+will be taking advantage of this updated definition of what it
+都会利用这个更新后的“检查是否获胜”的定义
+
+00:11:28.120 --> 00:11:30.880
+means to check if we've won the game.
+即检查我们是否赢得了游戏。
+
+00:11:30.880 --> 00:11:31.810
+Press the green flag.
+点击绿旗。
+
+00:11:31.810 --> 00:11:33.100
+We'll start the game.
+我们开始游戏。
+
+00:11:33.100 --> 00:11:35.710
+I'll move the dinosaur around.
+我来移动恐龙。
+
+00:11:35.710 --> 00:11:39.730
+And once I'm touching the star, you'll see that it now reports a number.
+一旦我碰到星星，你会看到它现在显示一个数字。
+
+00:11:39.730 --> 00:11:43.030
+But it's been rounded to the nearest integer.
+但它已经被四舍五入到最接近的整数了。
+
+00:11:43.030 --> 00:11:46.630
+We're now just say six seconds instead of like 6.28 seconds or something
+比如，我们现在只会说六秒，而不是像6.28秒之类的
+
+00:11:46.630 --> 00:11:48.580
+like that, for example.
+这样的时间。
+
+00:11:48.580 --> 00:11:51.870
+So the ability to create your own block opens up a lot of doors
+所以，创建你自己的积木的能力为你打开了很多扇门
+
+00:11:51.870 --> 00:11:55.710
+for trying to improve the overall design and the overall readability
+也是为了尝试改进你项目的整体设计和整体可读性
+
+00:11:55.710 --> 00:11:56.910
+of your project as well.
+也是你项目的一部分。
+
+00:11:56.910 --> 00:11:58.660
+And I'll give you another example of that.
+我再给你们举个例子。
+
+00:11:58.660 --> 00:12:02.550
+Let's delete the dinosaur and the star and bring back our familiar balloon
+咱们把恐龙和星星删掉，把我们熟悉的气球角色再弄回来
+
+00:12:02.550 --> 00:12:05.760
+that we've been inflating and deflating a couple of times
+我们在这门课程里已经给它充过气、放过气好几次了
+
+00:12:05.760 --> 00:12:07.960
+throughout this course.
+在整个课程中。
+
+00:12:07.960 --> 00:12:13.440
+And so let's try now to inflate and then deflate the balloon.
+现在咱们来试试给气球充气，然后再放气。
+
+00:12:13.440 --> 00:12:18.270
+I'll say, when the flag is clicked, what should the balloon do?
+我要说，当点击绿旗时，气球应该做什么呢？
+
+00:12:18.270 --> 00:12:22.960
+Well, let's start by giving the balloon a size of 50%.
+嗯，咱们先把气球的大小设为50%。
+
+00:12:22.960 --> 00:12:24.540
+Start it at half size.
+让它从一半大小开始。
+
+00:12:24.540 --> 00:12:26.290
+And then what I would like for the balloon
+然后我希望气球
+
+00:12:26.290 --> 00:12:30.610
+to do in order to inflate itself is to repeatedly change its size.
+为了给自己充气要做的事，就是反复改变它的大小。
+
+00:12:30.610 --> 00:12:33.670
+Increase the size by 10, increase the size by 10 again.
+把大小增加10，再把大小增加10。
+
+00:12:33.670 --> 00:12:36.290
+And repeat that a couple of times.
+把这个操作重复几次。
+
+00:12:36.290 --> 00:12:39.320
+So here is change size by 10.
+所以这里是将大小改变10。
+
+00:12:39.320 --> 00:12:42.160
+But if I wanted to repeat that process a number of times,
+但如果我想把这个过程重复若干次，
+
+00:12:42.160 --> 00:12:45.600
+then I would go under Control and say, repeat 10 times.
+那我就到“控制”分类里，选择“重复执行10次”。
+
+00:12:45.600 --> 00:12:46.780
+That seems reasonable.
+这似乎挺合理。
+
+00:12:46.780 --> 00:12:50.480
+Let's repeat 10 times and change size by 10.
+咱们重复执行10次，每次将大小改变10。
+
+00:12:50.480 --> 00:12:52.330
+So now, when I press the green flag, you'll
+所以现在，当我点击绿旗时，你们会
+
+00:12:52.330 --> 00:12:55.600
+see the balloon starts at 50% size, and then it grows--
+看到气球从50%的大小开始，然后它变大了——
+
+00:12:55.600 --> 00:12:58.690
+it inflates very quickly up to full size.
+它很快就充到了最大尺寸。
+
+00:12:58.690 --> 00:13:00.530
+And now just for fun, let's go backwards.
+现在只是为了好玩，咱们反过来操作。
+
+00:13:00.530 --> 00:13:01.900
+Let's deflate the balloon.
+咱们给气球放气。
+
+00:13:01.900 --> 00:13:04.480
+We'll have our balloon wait one second.
+我们让气球等待1秒。
+
+00:13:04.480 --> 00:13:09.310
+And then I want to deflate it-- decrease its size, which I can
+然后我想给它放气——减小它的大小，我可以
+
+00:13:09.310 --> 00:13:12.580
+do by changing its size by negative 10.
+通过将大小改变 -10 来实现。
+
+00:13:12.580 --> 00:13:14.230
+And I'll have to repeat that as well.
+我也得把这个操作重复执行。
+
+00:13:14.230 --> 00:13:20.280
+I'll repeat that 10 times by going into Control, repeat 10 times,
+我要通过进入“控制”分类，选择“重复执行10次”来重复10次，
+
+00:13:20.280 --> 00:13:23.350
+change the size by negative 10.
+将大小改变 -10。
+
+00:13:23.350 --> 00:13:25.800
+So now, watch what happens when I run this balloon.
+所以现在，看看我运行这个气球程序时会发生什么。
+
+00:13:25.800 --> 00:13:29.230
+It inflates, waits a second, and then it deflates.
+它先充气，等待1秒，然后放气。
+
+00:13:29.230 --> 00:13:31.260
+It goes back down to 50% size.
+它又回到了50%的大小。
+
+00:13:31.260 --> 00:13:32.190
+I'll run it again.
+我再运行一次。
+
+00:13:32.190 --> 00:13:36.300
+It inflates, it waits a second, and it deflates.
+它充气，等待1秒，然后放气。
+
+00:13:36.300 --> 00:13:36.992
+And this works.
+这样行得通。
+
+00:13:36.992 --> 00:13:38.700
+This certainly achieves the effect that I
+这确实达到了我想要的效果，也就是
+
+00:13:38.700 --> 00:13:40.680
+want of increasing the size of the balloon,
+增大气球的大小，
+
+00:13:40.680 --> 00:13:42.450
+waiting, and then deflating it.
+等待一下，然后给它放气。
+
+00:13:42.450 --> 00:13:45.017
+But it might be a little bit hard for someone to read.
+但对有些人来说，这代码可能有点难读懂。
+
+00:13:45.017 --> 00:13:47.850
+If I just showed this code to someone and ask them, what does it do,
+如果我把这段代码给别人看，然后问他们，这代码是干什么的，
+
+00:13:47.850 --> 00:13:49.590
+you'd have to pay very careful attention.
+那他们就得非常仔细地看。
+
+00:13:49.590 --> 00:13:51.510
+We're starting to size at 50%.
+我们一开始的大小是50%。
+
+00:13:51.510 --> 00:13:55.210
+We're repeating 10 times, changing the size by 10 each time.
+我们重复10次，每次把大小改变10。
+
+00:13:55.210 --> 00:13:56.320
+So that's 10 times 10.
+所以就是10乘以10。
+
+00:13:56.320 --> 00:13:59.850
+We're increasing the size by 100, waiting a second,
+我们把大小增加100，等一秒，
+
+00:13:59.850 --> 00:14:01.083
+and then doing it in reverse.
+然后再反过来做。
+
+00:14:01.083 --> 00:14:03.000
+You'd have to do a lot of processing, thinking
+你得做很多思考和计算，
+
+00:14:03.000 --> 00:14:05.208
+about what are the numbers, what are the loops doing,
+想想这些数字是多少，循环在做什么，
+
+00:14:05.208 --> 00:14:07.350
+how many times is everything happening, just to get
+每个操作发生了多少次，才能
+
+00:14:07.350 --> 00:14:09.540
+a sense for what the project is doing.
+明白这个项目在做什么。
+
+00:14:09.540 --> 00:14:11.970
+It's not necessarily wrong, but we might be
+这不一定有错，但我们也许可以
+
+00:14:11.970 --> 00:14:16.780
+able to make it a little bit easier to read as by creating some new blocks.
+通过创建一些新的积木，让代码更易读。
+
+00:14:16.780 --> 00:14:20.280
+These blocks right here, ultimately, the changing size by 10 over and over
+这里的这些积木，归根结底，就是一遍又一遍地把大小改变10，
+
+00:14:20.280 --> 00:14:23.858
+again, what they're doing is they're inflating the balloon.
+它们所做的就是给气球充气。
+
+00:14:23.858 --> 00:14:25.650
+But of course, Scratch doesn't have a block
+但当然，Scratch没有一个
+
+00:14:25.650 --> 00:14:30.392
+called inflate to increase the size of the balloon 10 times.
+叫“充气”的积木来把气球的大小增加10次。
+
+00:14:30.392 --> 00:14:31.350
+But we could create it.
+但我们可以创建一个。
+
+00:14:31.350 --> 00:14:36.010
+We could add a new block called Inflate that does exactly that.
+我们可以添加一个叫“充气”的新积木，让它专门做这件事。
+
+00:14:36.010 --> 00:14:37.290
+So let's try it.
+那我们试试吧。
+
+00:14:37.290 --> 00:14:39.590
+I'll go into my blocks.
+我要进入我的积木区。
+
+00:14:39.590 --> 00:14:41.180
+I'll create a new block.
+我要创建一个新积木。
+
+00:14:41.180 --> 00:14:44.120
+And I'll call it Inflate.
+我把它叫做“充气”。
+
+00:14:44.120 --> 00:14:49.040
+And the definition of inflation will be this loop right here, repeat 10 times
+“充气”的定义就是这个循环，重复10次，
+
+00:14:49.040 --> 00:14:52.420
+and change the size by 10.
+然后把大小改变10。
+
+00:14:52.420 --> 00:14:56.550
+And let me create another new block called Deflate.
+我再创建一个新积木，叫“放气”。
+
+00:14:56.550 --> 00:15:01.770
+And the definition of deflate will be the opposite, repeat 10 times,
+“放气”的定义则相反，重复10次，
+
+00:15:01.770 --> 00:15:05.370
+change the size by negative 10.
+把大小改变 -10。
+
+00:15:05.370 --> 00:15:07.900
+And now, instead of using these repeat and change
+现在，不用在这个脚本里用这些重复和改变大小的积木了，
+
+00:15:07.900 --> 00:15:10.980
+size by blocks inside of this script here,
+通过这里这个脚本内的积木来调整大小
+
+00:15:10.980 --> 00:15:17.600
+I'll just drag out my new blocks-- my Inflate block and my Deflate block.
+我直接拖出我的新积木——“充气”积木和“放气”积木。
+
+00:15:17.600 --> 00:15:20.960
+And now, first, notice that this program does exactly the same thing.
+现在，首先要注意，这个程序做的事情和之前完全一样。
+
+00:15:20.960 --> 00:15:24.860
+The balloon increases in size, waits a second, and then decreases.
+气球变大，等一秒，然后变小。
+
+00:15:24.860 --> 00:15:28.490
+But look how much easier to read this code now it
+但看看现在这段代码有多容易读，
+
+00:15:28.490 --> 00:15:31.280
+is, especially right underneath this when flag clicked.
+尤其是在“当绿旗被点击”下面这里。
+
+00:15:31.280 --> 00:15:33.680
+I've simplified the logic by making it easier
+我通过利用这些自定义积木让代码更易读，从而简化了逻辑，
+
+00:15:33.680 --> 00:15:37.160
+to read by taking advantage of these custom blocks, which we can now
+我们现在可以把这些自定义积木叫做抽象。
+
+00:15:37.160 --> 00:15:38.540
+call abstractions.
+抽象就是把看起来很不一样或者在程序不同部分的东西——
+
+00:15:38.540 --> 00:15:42.308
+Abstraction is all about taking things that look very different or that are
+抽象就是把看起来非常不同或者在你程序不同部分的东西——就像我在四个地方都有那个IF条件，
+
+00:15:42.308 --> 00:15:45.350
+in different parts of your program-- like I had that IF condition in four
+在你程序的不同部分——就像我在四处都设置了那个“如果”条件
+
+00:15:45.350 --> 00:15:46.880
+different places in my program--
+在我的程序里的不同地方——
+
+00:15:46.880 --> 00:15:50.570
+and realizing that they're all just the same idea that I could give a name to.
+然后意识到它们其实都是同一个概念，我可以给它取个名字。
+
+00:15:50.570 --> 00:15:53.660
+And here, I can give a name to inflate and deflate.
+在这里，我可以给“充气”和“放气”取个名字。
+
+00:15:53.660 --> 00:15:57.210
+And now just refer to those actions by their name.
+现在就可以通过名字来指代这些动作了。
+
+00:15:57.210 --> 00:16:00.530
+So when the flag is clicked, we're going to set the size to 50%.
+所以当点击旗帜时，我们要把大小设置为50%。
+
+00:16:00.530 --> 00:16:04.520
+We're going to inflate the balloon, wait one second, and deflate the balloon.
+我们要给气球充气，等待一秒，然后给气球放气。
+
+00:16:04.520 --> 00:16:08.970
+You can just read exactly what it is that this project should do.
+你可以直接看出这个项目应该做什么。
+
+00:16:08.970 --> 00:16:11.120
+And if in other places inside of my project
+如果在我的项目的其他地方
+
+00:16:11.120 --> 00:16:14.960
+I later wanted to inflate or deflate the balloon, I could do that too.
+之后我想给气球充气或放气，我也能做到。
+
+00:16:14.960 --> 00:16:17.180
+I could add other blocks and other scripts
+我可以添加其他积木和脚本
+
+00:16:17.180 --> 00:16:20.420
+and just use inflate and deflate multiple times,
+然后多次使用“充气”和“放气”，
+
+00:16:20.420 --> 00:16:23.450
+rather than need to repeat myself by saying repeat 10 times,
+而不是每次想给气球充气时都要重复说“重复10次”，
+
+00:16:23.450 --> 00:16:27.590
+change size by 10 every time that I wanted to inflate the balloon.
+每次改变大小10。
+
+00:16:27.590 --> 00:16:29.960
+So these blocks really helped to organize your code,
+所以这些积木真的有助于组织你的代码，
+
+00:16:29.960 --> 00:16:32.930
+help to reduce repetition and help make it clearer to someone
+有助于减少重复，还能让看代码的人更清楚
+
+00:16:32.930 --> 00:16:36.230
+reading the code what it is the code is doing.
+代码在做什么。
+
+00:16:36.230 --> 00:16:38.630
+Now one thing is true, that these blocks are always
+有一点是真的，这些积木总是
+
+00:16:38.630 --> 00:16:40.850
+going to do the same thing every time.
+每次都做同样的事情。
+
+00:16:40.850 --> 00:16:43.940
+They're always going to repeat 10 times and change the size
+它们总是会重复10次并改变大小
+
+00:16:43.940 --> 00:16:46.640
+by 10, which will have the effect of increasing
+每次改变10，这会使气球的整体大小
+
+00:16:46.640 --> 00:16:50.450
+the overall size of the balloon by 100, 10 times 10.
+增加100，也就是10乘以10。
+
+00:16:50.450 --> 00:16:52.550
+But maybe I'd like a little bit more control.
+但也许我想要更多的控制权。
+
+00:16:52.550 --> 00:16:55.910
+Maybe sometimes I just want to inflate the balloon a little bit,
+也许有时候我只想给气球充一点气，
+
+00:16:55.910 --> 00:16:59.540
+and other times I would like to inflate the balloon a little bit more
+而其他时候我想给气球多充一点气
+
+00:16:59.540 --> 00:17:01.100
+or a little bit less.
+或者少充一点气。
+
+00:17:01.100 --> 00:17:03.530
+So how could I do that?
+那么我该怎么做呢？
+
+00:17:03.530 --> 00:17:07.960
+Well, let's go ahead and Control Click or Right Click on the Inflate block
+好吧，我们继续，按住Control键点击或者右键点击“充气”积木
+
+00:17:07.960 --> 00:17:09.763
+and now edit it.
+然后现在编辑它。
+
+00:17:09.763 --> 00:17:11.430
+You'll notice that I've named the block.
+你会注意到我已经给这个积木取了名字。
+
+00:17:11.430 --> 00:17:14.352
+And I could change the name of the block now if I wanted to.
+如果我想的话，现在也可以更改这个积木的名字。
+
+00:17:14.352 --> 00:17:16.560
+But when you make a block or when you edit the block,
+但是当你创建一个积木或者编辑一个积木时，
+
+00:17:16.560 --> 00:17:20.280
+you also have the ability to add input to that block as well.
+你也可以给那个积木添加输入。
+
+00:17:20.280 --> 00:17:22.089
+This block is now a function.
+这个积木现在是一个函数。
+
+00:17:22.089 --> 00:17:23.849
+And we've discussed before that functions
+我们之前讨论过函数
+
+00:17:23.849 --> 00:17:29.110
+can accept inputs, information that tells that function how to behave.
+可以接受输入，也就是告诉函数如何运行的信息。
+
+00:17:29.110 --> 00:17:34.180
+And so here, for example, I could add an input that would just be some number.
+所以在这里，例如，我可以添加一个输入，它就是一个数字。
+
+00:17:34.180 --> 00:17:36.720
+I'll call that number n, for example, which
+例如，我把那个数字叫做n，
+
+00:17:36.720 --> 00:17:39.690
+is just a convention for some number and for number.
+这只是表示某个数字的一种惯例。
+
+00:17:39.690 --> 00:17:41.280
+And let's add a label.
+我们来添加一个标签。
+
+00:17:41.280 --> 00:17:43.920
+We're going to inflate n times.
+我们要充气n次。
+
+00:17:43.920 --> 00:17:46.170
+This is just words that will describe what
+这只是用来描述
+
+00:17:46.170 --> 00:17:48.690
+it is the block is now going to do.
+这个积木现在要做什么的文字。
+
+00:17:48.690 --> 00:17:50.310
+And now I'll press, OK.
+现在我要点击“确定”。
+
+00:17:50.310 --> 00:17:53.880
+And what you'll notice now is that the Inflate block is now changed.
+你现在会注意到，“放大”积木现在变了。
+
+00:17:53.880 --> 00:17:57.540
+It's now Inflate and then a blank value times.
+现在它是“放大”，然后有一个空白值和“次”。
+
+00:17:57.540 --> 00:18:01.200
+And that blank volume looks much like the blink value and change size
+那个空白值看起来很像“改变大小”里的
+
+00:18:01.200 --> 00:18:04.590
+by or move some number of steps, for example.
+空白值，或者像“移动若干步”里的数值。
+
+00:18:04.590 --> 00:18:10.580
+This is now a place where I can provide input into this function
+现在这里是我可以给这个函数提供输入的地方
+
+00:18:10.580 --> 00:18:12.260
+to tell it how to behave.
+来告诉它该如何运行。
+
+00:18:12.260 --> 00:18:14.960
+And you'll notice now that under Define Inflate,
+你现在会注意到，在“定义放大”下面，
+
+00:18:14.960 --> 00:18:18.470
+it doesn't just say Define Inflate, but Define Inflate n times,
+它不只是写着“定义放大”，而是“定义放大n次”，
+
+00:18:18.470 --> 00:18:22.730
+where I have access to this block here called n.
+在这里我可以使用这个叫n的积木。
+
+00:18:22.730 --> 00:18:28.400
+So what I'm going to do is take n and drag it inside of this repeat.
+所以我要做的是把n拖到这个循环里面。
+
+00:18:28.400 --> 00:18:33.690
+Instead of repeating 10 times every time, let's repeat n times every time.
+不要每次都重复10次，让我们每次重复n次。
+
+00:18:33.690 --> 00:18:38.690
+Whatever n is, where n is going to be the input to this function.
+不管n是多少，n将是这个函数的输入值。
+
+00:18:38.690 --> 00:18:40.550
+And I'll do the same thing with Deflate.
+我对“缩小”也做同样的操作。
+
+00:18:40.550 --> 00:18:41.930
+I'll edit it.
+我来编辑它。
+
+00:18:41.930 --> 00:18:47.700
+And it will be deflate n and then add a label times.
+它会变成“缩小n”，然后加上标签“次”。
+
+00:18:47.700 --> 00:18:49.500
+And I'll say, OK to that.
+我点击“确定”。
+
+00:18:49.500 --> 00:18:52.560
+And now instead of repeating 10 times and deflate,
+现在不要每次缩小都重复10次，
+
+00:18:52.560 --> 00:18:56.590
+let's repeat n times as well.
+我们也重复n次。
+
+00:18:56.590 --> 00:18:59.100
+Now these functions have the ability to take some input.
+现在这些函数有能力接受一些输入了。
+
+00:18:59.100 --> 00:19:02.130
+And you'll notice down below under the Inflate block,
+你会注意到在“放大”积木下面，
+
+00:19:02.130 --> 00:19:03.880
+I need to type a number into this space.
+我需要在这个空格中输入一个数字。
+
+00:19:03.880 --> 00:19:07.830
+So I can say inflate 10 times and then deflate 10 times.
+所以我可以说放大10次，然后缩小10次。
+
+00:19:07.830 --> 00:19:10.230
+And now, if I run the project, it works the same way.
+现在，如果我运行这个项目，它的运行方式和之前一样。
+
+00:19:10.230 --> 00:19:12.450
+It inflates and then it deflates.
+先放大然后缩小。
+
+00:19:12.450 --> 00:19:17.490
+But if I just change these inputs, inflate 20 times and deflate 20 times,
+但如果我改变这些输入值，放大20次，缩小20次，
+
+00:19:17.490 --> 00:19:20.610
+well, now the project's going to behave differently.
+那么，现在这个项目的运行方式就不同了。
+
+00:19:20.610 --> 00:19:23.190
+Inflate and deflate.
+放大和缩小。
+
+00:19:23.190 --> 00:19:25.200
+It gets much bigger and then much smaller,
+它会变得大很多，然后又小很多，
+
+00:19:25.200 --> 00:19:29.050
+because I'm inflating and deflating it more often.
+因为我放大和缩小的次数更多了。
+
+00:19:29.050 --> 00:19:30.970
+And then I'll change these back to 10 for now
+现在我把这些值改回10
+
+00:19:30.970 --> 00:19:32.470
+so we go back to the usual behavior.
+这样我们就回到了原来的运行方式。
+
+00:19:32.470 --> 00:19:34.310
+Inflate and then deflate.
+放大然后缩小。
+
+00:19:34.310 --> 00:19:36.490
+But I could use these blocks in other places too.
+但我也可以在其他地方使用这些积木。
+
+00:19:36.490 --> 00:19:39.340
+I could say, for example, that any time I
+比如说，任何时候我
+
+00:19:39.340 --> 00:19:42.880
+click on the balloon, when this sprite clicked, well, let's
+点击这个气球，当这个角色被点击时，那么，让我们
+
+00:19:42.880 --> 00:19:47.860
+like clicking inflate the balloon two times.
+像点击一样，把气球放大两次。
+
+00:19:47.860 --> 00:19:49.690
+So not 10, a little bit fewer.
+所以不是10次，次数少一点。
+
+00:19:49.690 --> 00:19:51.910
+So I press the flag and it inflates a lot.
+所以我点击绿旗，它会大幅膨胀。
+
+00:19:51.910 --> 00:19:54.280
+Inflates by 10 and then deflates.
+膨胀10次，然后再收缩。
+
+00:19:54.280 --> 00:19:58.090
+But every time I click on the balloon, it's just going to inflate by a little.
+但每次我点击气球，它只会稍微膨胀一点。
+
+00:19:58.090 --> 00:20:00.610
+It's going to inflate two times.
+它会膨胀两次。
+
+00:20:00.610 --> 00:20:02.770
+And we were able to achieve all of that just
+而我们能够做到所有这些，仅仅是
+
+00:20:02.770 --> 00:20:05.230
+by giving our functions some inputs.
+通过给我们的函数一些输入。
+
+00:20:05.230 --> 00:20:08.860
+We defined and inflate block, gave it an input n,
+我们定义了一个“膨胀”积木，给它一个输入n，
+
+00:20:08.860 --> 00:20:13.000
+and then use that n inside of the definition of the block.
+然后在积木的定义里使用那个n。
+
+00:20:13.000 --> 00:20:15.910
+When we run the block, we're going to look at what is the value of n.
+当我们运行这个积木时，我们会查看n的值是多少。
+
+00:20:15.910 --> 00:20:19.030
+And that's going to tell us how many times to repeat, such
+这会告诉我们要重复多少次，这样
+
+00:20:19.030 --> 00:20:23.080
+that now when we use that block, I can decide how much to inflate
+现在当我们使用那个积木时，我可以决定要让气球膨胀多少
+
+00:20:23.080 --> 00:20:25.700
+the balloon by just by saying, well, in this case,
+只需要说，嗯，在这种情况下，
+
+00:20:25.700 --> 00:20:27.520
+I want to inflate it 10 times.
+我想让它膨胀10次。
+
+00:20:27.520 --> 00:20:31.760
+But down here, I only want to inflate it two times for example.
+但在这里，比如我只想让它膨胀两次。
+
+00:20:31.760 --> 00:20:36.770
+So you can make your blocks very customizable, very flexible as well.
+所以你可以让你的积木非常可定制，也非常灵活。
+
+00:20:36.770 --> 00:20:39.850
+And these blocks don't just need to take one input.
+而且这些积木不只是需要一个输入。
+
+00:20:39.850 --> 00:20:42.620
+They could also take multiple inputs as well.
+它们也可以有多个输入。
+
+00:20:42.620 --> 00:20:44.630
+So let's see an example of that.
+那么让我们来看一个这样的例子。
+
+00:20:44.630 --> 00:20:49.870
+Let's go back to our bear, which we've had around before.
+让我们回到之前用过的小熊角色。
+
+00:20:49.870 --> 00:20:52.053
+And you might recall that before, we've had a walk
+你可能还记得，之前我们让它
+
+00:20:52.053 --> 00:20:53.470
+in a couple of different costumes.
+用几种不同的造型走动。
+
+00:20:53.470 --> 00:20:56.410
+If you go to Costumes, you see that we have this costume where
+如果你打开“造型”，你会看到我们有这个造型，其中
+
+00:20:56.410 --> 00:20:57.915
+the bear is on four legs.
+小熊是四脚着地的。
+
+00:20:57.915 --> 00:21:01.340
+And I'll go ahead and call that costume 4.
+我接下来把那个造型叫做“4”。
+
+00:21:01.340 --> 00:21:04.010
+And here, the bear is on two legs.
+在这里，小熊是两脚站立的。
+
+00:21:04.010 --> 00:21:05.720
+And I'll rename that costume--
+我要给那个造型重命名——
+
+00:21:05.720 --> 00:21:08.270
+up in the name section, I'll call it 2.
+在名称栏里，我把它叫做“2”。
+
+00:21:08.270 --> 00:21:11.960
+So I have a costume called 4 and a costume called 2.
+所以我有一个叫“4”的造型和一个叫“2”的造型。
+
+00:21:11.960 --> 00:21:14.840
+I just renamed those two default costumes.
+我只是给那两个默认造型重命名了。
+
+00:21:14.840 --> 00:21:16.850
+But now let me make a new block.
+但现在让我创建一个新积木。
+
+00:21:16.850 --> 00:21:18.950
+And here's what we'll call this block.
+这就是我们要给这个积木起的名字。
+
+00:21:18.950 --> 00:21:21.950
+The block will be Walk.
+这个积木叫“走动”。
+
+00:21:21.950 --> 00:21:24.750
+Then I'll add an input, which will be a number.
+然后我要添加一个输入，它会是一个数字。
+
+00:21:24.750 --> 00:21:27.070
+And I'm going to call it m for now.
+目前我把它叫做m。
+
+00:21:27.070 --> 00:21:28.570
+You can call this whatever you want.
+你可以随意给它命名。
+
+00:21:28.570 --> 00:21:30.420
+This is just a name of an input.
+这只是一个输入的名称。
+
+00:21:30.420 --> 00:21:36.390
+And it's going to be a Walk m, and then I'll add some next, steps.
+它会是“走动m”，然后我会添加一些后续步骤。
+
+00:21:36.390 --> 00:21:39.870
+And then I'm going to say, on, and then I'm going to add a second input--
+然后我要说“在……上”，接着我要添加第二个输入——
+
+00:21:39.870 --> 00:21:42.510
+a second input that I'll call n.
+我把第二个输入叫做n。
+
+00:21:42.510 --> 00:21:46.440
+And then I'll add some text, feet.
+然后我会添加一些文字“英尺”。
+
+00:21:46.440 --> 00:21:49.350
+So I added two inputs and two additional labels.
+所以我添加了两个输入框和两个额外的标签。
+
+00:21:49.350 --> 00:21:55.630
+But this block is now called Walk m Steps on n Feet.
+但现在这个积木块叫做“用n只脚走m步”。
+
+00:21:55.630 --> 00:21:57.480
+So what this is going to do is it's going
+那么这个积木块要做的是
+
+00:21:57.480 --> 00:22:01.810
+to control how far the bear is going to walk on a certain number of feet.
+控制熊用特定数量的脚要走多远。
+
+00:22:01.810 --> 00:22:03.930
+So what do I do about the number of feet?
+那么对于脚的数量我该怎么做呢？
+
+00:22:03.930 --> 00:22:04.920
+Well, that's a costume.
+嗯，这和造型有关。
+
+00:22:04.920 --> 00:22:08.220
+There's a costume for four feet and a costume for two feet.
+有四脚造型和两脚造型。
+
+00:22:08.220 --> 00:22:11.970
+So let's switch the costume to m or n.
+所以让我们把造型切换到m或n。
+
+00:22:11.970 --> 00:22:14.610
+Well, n is the number of feet, and that's the costume.
+嗯，n是脚的数量，也就是对应的造型。
+
+00:22:14.610 --> 00:22:15.810
+So n is going to go here.
+所以n要放在这里。
+
+00:22:15.810 --> 00:22:19.920
+We're going to switch to the costume to n, representing how many feet should
+我们要把造型切换到n，以此表示熊现在应该用几只脚走路。
+
+00:22:19.920 --> 00:22:21.540
+the bear now be walking on.
+现在熊要在上面走动。
+
+00:22:21.540 --> 00:22:24.090
+And now let's walk m steps.
+现在让我们走m步。
+
+00:22:24.090 --> 00:22:28.450
+Well, I can walk one step just by saying, move one step.
+嗯，我可以通过说“移动一步”来走一步。
+
+00:22:28.450 --> 00:22:32.350
+And if I want to do that multiple times, I can put that in a repeat block.
+如果我想多次执行这个操作，我可以把它放在一个重复积木块里。
+
+00:22:32.350 --> 00:22:36.540
+So let's go under Control and repeat the process of moving one step.
+所以让我们到“控制”分类下，重复“移动一步”的过程。
+
+00:22:36.540 --> 00:22:43.800
+But instead of repeating 10 times every time, let's instead repeat m times.
+但不要每次都重复10次，而是重复m次。
+
+00:22:43.800 --> 00:22:46.890
+So this then is our definition of what does it mean
+所以这就是我们对于
+
+00:22:46.890 --> 00:22:50.640
+for the bear to walk m steps on n feet.
+熊用n只脚走m步是什么意思的定义。
+
+00:22:50.640 --> 00:22:53.550
+We first switched the costume to n, where is the number of feet.
+我们首先把造型切换到n，n代表脚的数量。
+
+00:22:53.550 --> 00:22:56.130
+n is either going to be four or two to determine
+n要么是四，要么是二，以此来决定
+
+00:22:56.130 --> 00:22:58.170
+which costume we should switch to.
+我们应该切换到哪个造型。
+
+00:22:58.170 --> 00:23:00.700
+And then we're walking m steps.
+然后我们走m步。
+
+00:23:00.700 --> 00:23:04.920
+So let's repeat m times this move one step block.
+所以让我们把“移动一步”这个积木块重复m次。
+
+00:23:04.920 --> 00:23:07.920
+We've organized the logic for what it means for the bear
+我们已经整理好了熊
+
+00:23:07.920 --> 00:23:09.990
+to walk on a certain number of feet.
+用特定数量的脚走路的逻辑。
+
+00:23:09.990 --> 00:23:13.500
+And now I can use that block inside of my project.
+现在我可以在我的项目里使用那个积木块了。
+
+00:23:13.500 --> 00:23:18.270
+I can say that whenever the flag is clicked, what should the bear do?
+我可以说，每当点击旗帜时，熊应该做什么呢？
+
+00:23:18.270 --> 00:23:19.920
+Well, let's first have the block--
+嗯，让我们先使用这个积木块——
+
+00:23:19.920 --> 00:23:25.650
+or have the bear walk 30 steps on four feet
+让熊用四只脚走30步
+
+00:23:25.650 --> 00:23:32.450
+and then walk 30 more steps on two feet.
+然后再用两只脚走30步。
+
+00:23:32.450 --> 00:23:36.590
+So it's going to start on four feet, walk for 30 steps, then go to two feet,
+所以它会先用四只脚开始，走30步，然后换成两只脚，
+
+00:23:36.590 --> 00:23:37.400
+walk 30 steps.
+再走30步。
+
+00:23:37.400 --> 00:23:38.650
+And we can watch what happens.
+我们可以看看会发生什么。
+
+00:23:38.650 --> 00:23:39.560
+I'll press the flag.
+我来点击旗帜。
+
+00:23:39.560 --> 00:23:42.335
+It walks on four feet, and then on two.
+它先用四只脚走，然后用两只脚走。
+
+00:23:42.335 --> 00:23:45.500
+I'll try it again and it does the same thing.
+我再试一次，它还是一样的。
+
+00:23:45.500 --> 00:23:49.410
+And this code right underneath the When Flag Clicked is now very easy to read.
+现在“当旗帜被点击”下面的这段代码非常容易读懂。
+
+00:23:49.410 --> 00:23:52.370
+I can very easily see exactly what the bear is going to do.
+我能很容易地确切知道熊要做什么。
+
+00:23:52.370 --> 00:23:54.530
+And it might have been harder to see that if I
+如果我……可能就没那么容易看出来了
+
+00:23:54.530 --> 00:23:56.900
+was using all of these every single time,
+每次都要用到所有这些，
+
+00:23:56.900 --> 00:23:59.480
+switch costume and repeat this movement process.
+切换造型并重复这个移动过程。
+
+00:23:59.480 --> 00:24:01.640
+And I can use this block now multiple times,
+现在我可以多次使用这个积木，
+
+00:24:01.640 --> 00:24:06.120
+as I have here, to avoid repeating myself as well.
+就像我这里这样，也能避免重复操作。
+
+00:24:06.120 --> 00:24:08.360
+So Scratch offers a number of different blocks
+所以Scratch提供了许多不同的积木，
+
+00:24:08.360 --> 00:24:11.210
+that you can use to achieve a variety of different things inside
+你可以用它们在你的项目里实现各种各样的功能。
+
+00:24:11.210 --> 00:24:12.050
+of your project.
+在你的项目中。
+
+00:24:12.050 --> 00:24:14.780
+But we now have the ability to add our own blocks.
+但现在我们有能力添加自己的积木了。
+
+00:24:14.780 --> 00:24:17.900
+If there's additional behavior that we want our sprites
+如果我们希望我们的角色
+
+00:24:17.900 --> 00:24:20.090
+to have inside of our Scratch projects, we
+在Scratch项目中有额外的行为，我们
+
+00:24:20.090 --> 00:24:24.530
+can create our own blocks to define some custom behaviors that we can use inside
+可以创建自己的积木来定义一些自定义行为，以便在
+
+00:24:24.530 --> 00:24:26.690
+of our project to make them more complex,
+我们的项目中使用，让它们更复杂，
+
+00:24:26.690 --> 00:24:30.510
+more interesting, and ultimately, better organized and more exciting as well.
+更有趣，最终，也能让项目组织得更好，更精彩。
+
+00:24:30.510 --> 00:24:33.510
+That's it for an introduction to Programming with Scratch for today.
+今天关于用Scratch编程的介绍就到这里。
+
+00:24:33.510 --> 00:24:35.560
+We'll see you next time.
+下次再见。

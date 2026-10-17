@@ -24,7 +24,8 @@ type Props = {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   rawWord: string | null;
-  sourceDialogueId: number;
+  /** 来源句 id（看剧场景传 dialogue.id；绘本等无 dialogue 的场景可省略，服务端存 null） */
+  sourceDialogueId?: number | null;
   /** 加入生词本成功后回调（lemma 是 server 返回的标准化形式） */
   onVocabAdded?: (lemma: string) => void;
   /** 从生词本移除成功后回调 */

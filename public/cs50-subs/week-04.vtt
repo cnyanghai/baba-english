@@ -1,0 +1,2277 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.458
+[MUSIC PLAYING]
+[音乐播放中]
+
+00:00:16.993 --> 00:00:19.160
+BRIAN YU: Welcome back, everyone, to an introduction
+布莱恩·余：欢迎大家回到用Scratch学编程的课程。
+
+00:00:19.160 --> 00:00:20.510
+to programming with Scratch.
+上次我们了解了事件，也就是可能发生的事情——
+
+00:00:20.510 --> 00:00:24.050
+And last time we took a look at Events, things that can happen--
+比如我们点击绿色旗帜，或者点击按钮，
+
+00:00:24.050 --> 00:00:26.660
+like us pressing the green flag, or clicking a button,
+又或者按下键盘上的某个键——然后让
+
+00:00:26.660 --> 00:00:28.730
+or pressing a key on the keyboard-- and letting
+我们的Scratch项目对这些事件做出响应。
+
+00:00:28.730 --> 00:00:31.670
+our Scratch project respond to those events.
+它们是如何响应的呢？
+
+00:00:31.670 --> 00:00:32.930
+And how do they respond?
+嗯，它们通过函数来响应，就是那些
+
+00:00:32.930 --> 00:00:34.970
+Well, they respond with Functions, those blocks
+我们相互堆叠起来的积木，让我们的角色或舞台
+
+00:00:34.970 --> 00:00:38.480
+that we stacked on top of each other to let our sprites or the stage
+以某种方式做出响应。
+
+00:00:38.480 --> 00:00:40.590
+respond in some way.
+所以今天让我们更深入地了解一下这些函数——
+
+00:00:40.590 --> 00:00:43.970
+And so let's take a closer look today at those Functions--
+我们已经看到，比如我们可以让猫移动，
+
+00:00:43.970 --> 00:00:47.600
+we've seen already that we can have the cat move, for example,
+只需要使用这样一个积木——
+
+00:00:47.600 --> 00:00:49.040
+just by using a block like this--
+“移动10步”——这样当我点击这个积木时，
+
+00:00:49.040 --> 00:00:52.940
+Move 10 Steps-- such that when I click on this block,
+猫就会移动10步。
+
+00:00:52.940 --> 00:00:55.580
+the cat moves by 10 steps.
+之前我们讨论过，这些函数，也就是这些积木，
+
+00:00:55.580 --> 00:00:59.090
+And we discussed before that these Functions, these blocks,
+可以接受输入。
+
+00:00:59.090 --> 00:01:00.470
+can accept input.
+输入的形式就是填入这个椭圆里的内容，
+
+00:01:00.470 --> 00:01:02.750
+Input in the form of whatever goes in this oval
+这里默认是10——但我们可以更改它。
+
+00:01:02.750 --> 00:01:05.630
+here, which is 10 by default-- but we were able to change that.
+如果我们想让猫移动更多或更少的步数，
+
+00:01:05.630 --> 00:01:09.470
+If we wanted the cat to move more steps or fewer steps,
+我们可以更改这里的数字，来控制猫最终
+
+00:01:09.470 --> 00:01:14.450
+we were able to change the number here to control how many steps the cat was
+要移动多少步。
+
+00:01:14.450 --> 00:01:15.530
+ultimately going to move.
+这又被称为输入，而填入这个输入的实际信息
+
+00:01:15.530 --> 00:01:19.730
+That, again, was called an input, and the actual information that goes inside
+我们可以称之为值。
+
+00:01:19.730 --> 00:01:22.160
+of that input we might call a value.
+值只是一些信息——在这种情况下，
+
+00:01:22.160 --> 00:01:24.733
+A value is just some piece of information-- in this case,
+它可以是像数字这样的东西，比如要移动的步数——
+
+00:01:24.733 --> 00:01:26.900
+it could be something like a number, like the number
+就像数字10。
+
+00:01:26.900 --> 00:01:28.760
+of steps to move-- like the number 10.
+但值也可以是文字，例如——
+
+00:01:28.760 --> 00:01:31.590
+But a value could also be words, for example--
+你可能还记得，我们可以让我们的角色说话，
+
+00:01:31.590 --> 00:01:34.340
+you might recall that we were able to make our sprite speak up
+如果我们进入“外观”板块并选择
+
+00:01:34.340 --> 00:01:36.710
+if we go into the Look section and choose
+像“说你好2秒”这样的积木。
+
+00:01:36.710 --> 00:01:39.830
+a block like Say Hello For 2 Seconds.
+在这里，“你好”这个词也是一个值——值只是
+
+00:01:39.830 --> 00:01:43.640
+Here, the word "Hello" is a value as well-- values are just
+我们的程序可能会用到的信息片段。
+
+00:01:43.640 --> 00:01:48.030
+pieces of information that our program might be able to use.
+事实证明，除了我们可以直接在Scratch函数的这些椭圆形空间中输入值之外，
+
+00:01:48.030 --> 00:01:51.950
+And it turns out, in addition to us just being able to type values
+Scratch中还有一些积木本身就是值，
+
+00:01:51.950 --> 00:01:55.940
+into these oval-shaped spaces inside of our Scratch functions,
+今天我们就要来探索这些。
+
+00:01:55.940 --> 00:02:00.170
+there are some blocks in Scratch that are themselves values,
+所以如果你注意到这里“运动”板块的积木，大多数这些积木
+
+00:02:00.170 --> 00:02:03.030
+and today we're going to be exploring those.
+形状都非常相似。
+
+00:02:03.030 --> 00:02:07.130
+So if you notice here in the Motion section of blocks, most of these blocks
+所以如果你留意这里运动类积木，大部分这些积木
+
+00:02:07.130 --> 00:02:08.690
+are all a very similar shape.
+形状都非常相似。
+
+00:02:08.690 --> 00:02:12.048
+Some might be longer or shorter, but they're all kind of rectangular,
+有些可能长些或短些，但它们大体都是矩形的，
+
+00:02:12.048 --> 00:02:14.090
+and they have these indentations so that they can
+而且它们有这些凹槽，这样它们就能
+
+00:02:14.090 --> 00:02:16.730
+stack on top of each other visually.
+在视觉上相互堆叠。
+
+00:02:16.730 --> 00:02:21.110
+But you'll notice that down here, at the bottom of the Motion section,
+但你会注意到，在“运动”板块的底部这里，
+
+00:02:21.110 --> 00:02:24.180
+we have a few blocks that are a different shape.
+有几个积木的形状不同。
+
+00:02:24.180 --> 00:02:26.760
+This one's called X Position, this one's called Y Position,
+这个叫“X坐标”，这个叫“Y坐标”，
+
+00:02:26.760 --> 00:02:29.390
+this one's called Direction-- they're not rectangular,
+这个叫“方向”——它们不是矩形的，
+
+00:02:29.390 --> 00:02:31.020
+they don't stack on top of each other.
+它们不能相互堆叠。
+
+00:02:31.020 --> 00:02:32.990
+And in fact, we wouldn't be able to just drag
+事实上，我们不能直接把
+
+00:02:32.990 --> 00:02:36.590
+this underneath the existing blocks and expect them to snap together.
+这个拖到现有积木下面，还指望它们能拼接在一起。
+
+00:02:36.590 --> 00:02:38.660
+Scratch is a little bit smart, and it's only
+Scratch 有点智能，它只会
+
+00:02:38.660 --> 00:02:40.890
+going to allow blocks to connect to each other
+允许那些在逻辑上能相互连接的积木连接在一起。
+
+00:02:40.890 --> 00:02:44.510
+if it makes logical sense for those blocks to connect to each other.
+相反，这三个积木是椭圆形的——
+
+00:02:44.510 --> 00:02:47.910
+Instead, these three blocks are oval shaped--
+它们不再是函数了，而是值。
+
+00:02:47.910 --> 00:02:50.420
+they're not functions anymore, they're values.
+它们是代表当前正在运行的 Scratch 项目相关信息的片段。
+
+00:02:50.420 --> 00:02:54.470
+They're pieces of information that represent something about the Scratch
+这个积木是一个值，它代表
+
+00:02:54.470 --> 00:02:56.060
+project that we're currently running.
+当前角色的 X 坐标是多少——也就是这个角色在左右方向上有多远。
+
+00:02:56.060 --> 00:02:58.310
+This block is a value that represents what
+这个积木代表当前角色的 X 坐标——也就是这个角色在左右方向上有多远。
+
+00:02:58.310 --> 00:03:02.300
+is the x position of a current sprite-- how far to the left or to the right
+这个角色在左右方向上的位置。
+
+00:03:02.300 --> 00:03:03.350
+is that sprite.
+这个积木代表 Y 坐标，也就是
+
+00:03:03.350 --> 00:03:05.510
+This block represents the y position, how far
+这个角色在上下方向上有多远。
+
+00:03:05.510 --> 00:03:07.740
+up or down that sprite happens to be.
+这个角色在上下方向上的位置。
+
+00:03:07.740 --> 00:03:11.540
+And this block represents the direction-- what direction that sprite
+这个积木代表方向——也就是这个角色
+
+00:03:11.540 --> 00:03:12.920
+happens to be facing.
+正朝向哪个方向。
+
+00:03:12.920 --> 00:03:15.170
+And because they're oval-shaped, we can't just
+因为它们是椭圆形的，我们不能直接
+
+00:03:15.170 --> 00:03:19.490
+add them above or below the script, but we can put them inside
+把它们添加到脚本的上方或下方，但我们可以把它们放到
+
+00:03:19.490 --> 00:03:21.140
+of these oval-shaped inputs.
+这些椭圆形的输入框里。
+
+00:03:21.140 --> 00:03:24.170
+Notice the inputs to all of the functions are oval-shaped--
+注意所有函数的输入框都是椭圆形的——
+
+00:03:24.170 --> 00:03:27.320
+and therefore, because these values are also oval-shaped,
+因此，由于这些值也是椭圆形的，
+
+00:03:27.320 --> 00:03:29.960
+they can snap together that way instead.
+它们可以以这种方式拼接在一起。
+
+00:03:29.960 --> 00:03:34.590
+We're going to be putting a block inside of the input to another block,
+我们要把一个积木放到另一个积木的输入框里，
+
+00:03:34.590 --> 00:03:36.750
+so let's see what that looks like.
+那我们来看看这会是什么样子。
+
+00:03:36.750 --> 00:03:41.270
+I'll go ahead and get rid of the Move 10 Steps-- we'll just keep the Say Hello.
+我先把“移动10步”删掉——我们只保留“说你好”。
+
+00:03:41.270 --> 00:03:43.910
+But instead of saying hello for two seconds,
+但不是让角色说两秒“你好”，
+
+00:03:43.910 --> 00:03:49.820
+let's have the sprite say it's x position for two seconds--
+让角色说两秒它的 X 坐标——
+
+00:03:49.820 --> 00:03:56.210
+meaning how far to the left or to the right is the cat right now.
+也就是这只猫现在在左右方向上有多远。
+
+00:03:56.210 --> 00:03:59.150
+And I'll have this happen when the flag is clicked, so add an Event--
+我想让这个操作在点击绿旗时执行，所以添加一个“事件”——
+
+00:03:59.150 --> 00:04:03.980
+when the flag is clicked, go ahead and say your x position for two seconds,
+当点击绿旗时，就说你的 X 坐标两秒，
+
+00:04:03.980 --> 00:04:06.330
+and now when I click the flag to start the program--
+现在我点击绿旗来启动程序——
+
+00:04:06.330 --> 00:04:08.360
+let's see what happens.
+看看会发生什么。
+
+00:04:08.360 --> 00:04:10.100
+The cat says 10--
+这只猫说10——
+
+00:04:10.100 --> 00:04:12.380
+it's saying its current x position, which we can
+它在说出它当前的x坐标，我们可以
+
+00:04:12.380 --> 00:04:14.840
+see down here it's exposition is 10.
+在这里看到它的坐标值是10。
+
+00:04:14.840 --> 00:04:18.547
+And if we drag the cat far to the right, for example, now click the green flag,
+例如，如果我们把猫往右边拖很远，现在点击绿色旗帜，
+
+00:04:18.547 --> 00:04:20.630
+and you'll see it's going to say a bigger number--
+你会看到它会说出一个更大的数字——
+
+00:04:20.630 --> 00:04:22.250
+175.
+175。
+
+00:04:22.250 --> 00:04:24.620
+And if we drag the cat far to the left, now it's
+如果我们把猫往左边拖很远，现在它
+
+00:04:24.620 --> 00:04:26.300
+going to say a smaller number--
+会说出一个更小的数字——
+
+00:04:26.300 --> 00:04:30.140
+negative 161.
+负161。
+
+00:04:30.140 --> 00:04:34.610
+And if we want, we can have it say both its x position and its y position.
+如果我们愿意，我们可以让它同时说出它的x坐标和y坐标。
+
+00:04:34.610 --> 00:04:38.870
+I'll add another Say block, and instead of saying the x position,
+我要再添加一个“说”积木，而且不说x坐标了，
+
+00:04:38.870 --> 00:04:44.390
+let's go back into Motion, and let's choose y position.
+我们回到“运动”分类，选择y坐标。
+
+00:04:44.390 --> 00:04:47.180
+Now it's going to say it's x value for two seconds,
+现在它会先说两秒它的x坐标值，
+
+00:04:47.180 --> 00:04:49.300
+and then it's y value for two seconds.
+然后再说两秒它的y坐标值。
+
+00:04:49.300 --> 00:04:51.330
+I'll click the green flag--
+我点击绿色旗帜——
+
+00:04:51.330 --> 00:04:55.730
+it says negative 161, negative 13.
+它说负161，负13。
+
+00:04:55.730 --> 00:05:00.140
+And so these values, these oval-shaped x position and y position blocks,
+所以这些值，这些椭圆形的x坐标和y坐标积木，
+
+00:05:00.140 --> 00:05:02.090
+they're no longer functions-- these are just
+它们不再是函数了——这些只是
+
+00:05:02.090 --> 00:05:06.500
+values that we can put in any spot inside of our functions
+我们可以放在函数里任何有椭圆形输入框位置的值
+
+00:05:06.500 --> 00:05:08.210
+where they have an oval-shaped input.
+也就是我们可以往那个椭圆形框里添加内容的地方。
+
+00:05:08.210 --> 00:05:11.960
+Where we could add something into that oval to describe how what
+在这里我们可以往那个椭圆形框里添加内容来描述我们
+
+00:05:11.960 --> 00:05:15.320
+we want the cat, in this case, to say.
+希望这只猫，在这个例子里，要说什么。
+
+00:05:15.320 --> 00:05:18.030
+And right now, it's saying the x position for two seconds
+现在，它先说两秒x坐标值，
+
+00:05:18.030 --> 00:05:21.130
+and then it's y value for two seconds, which is fine,
+然后再说两秒y坐标值，这没问题，
+
+00:05:21.130 --> 00:05:23.490
+but maybe I'd like the cat to say them together.
+但也许我希望这只猫把它们一起说出来。
+
+00:05:23.490 --> 00:05:26.170
+To say, like, here's where I am right now.
+比如说，像这样：这就是我现在的位置。
+
+00:05:26.170 --> 00:05:29.280
+And to do that, I need some way of combining these values--
+要做到这一点，我需要某种方法来组合这些值——
+
+00:05:29.280 --> 00:05:33.932
+I need to combine the x location and the y location of this cat.
+我需要把这只猫的x坐标和y坐标组合起来。
+
+00:05:33.932 --> 00:05:35.640
+And here's where we're going to introduce
+接下来我们要引入
+
+00:05:35.640 --> 00:05:39.180
+another new concept within Scratch, and within programming more generally--
+Scratch里的另一个新概念，也是编程里更普遍的概念——
+
+00:05:39.180 --> 00:05:41.640
+and those are Operators.
+那就是运算符。
+
+00:05:41.640 --> 00:05:46.170
+An Operator is going to accept values as its own input,
+运算符会接受值作为它自己的输入，
+
+00:05:46.170 --> 00:05:49.590
+and the Operator is going to produce a new value for us.
+然后运算符会为我们生成一个新的值。
+
+00:05:49.590 --> 00:05:53.580
+And so one Operator, for example, this very first one is +.
+比如说，有一个运算符，第一个就是“+”。
+
+00:05:53.580 --> 00:05:57.120
+It will take two values, maybe like 1 and 2 and we add them together
+它会接受两个值，比如1和2，然后我们把它们加起来
+
+00:05:57.120 --> 00:05:58.500
+and it's going to give us 3.
+它会得到3。
+
+00:05:58.500 --> 00:05:59.970
+So, what would that look like?
+那么，这会是什么样子呢？
+
+00:05:59.970 --> 00:06:03.450
+I'll disconnect these for now just so we can try something a little different.
+我先把这些积木断开，这样我们可以试试有点不一样的东西。
+
+00:06:03.450 --> 00:06:07.140
+I'll go into Looks, have it say something for 2 seconds,
+我进入“外观”分类，让它说两秒内容，
+
+00:06:07.140 --> 00:06:12.990
+but instead of saying hello for two seconds, let's have it say 1 plus 2
+但不是说两秒“你好”，让它说“1加2”
+
+00:06:12.990 --> 00:06:15.240
+for two seconds.
+持续两秒。
+
+00:06:15.240 --> 00:06:19.380
+Now I press the green flag to start the program and the cat says 3--
+现在我点击绿色旗帜来启动程序，然后猫会说3——
+
+00:06:19.380 --> 00:06:24.190
+this operator, this green block here, is performing the task of addition.
+这个运算符，就是这里这个绿色积木，它的任务是进行加法运算。
+
+00:06:24.190 --> 00:06:29.640
+It accepts two inputs, two values of its own as inputs, the 1 and the 2--
+它接受两个输入，也就是它自身的两个值作为输入，1和2——
+
+00:06:29.640 --> 00:06:33.660
+and then this entire oval block is going to calculate what is 1 plus 2,
+然后整个椭圆形积木会计算1加2等于多少，
+
+00:06:33.660 --> 00:06:34.920
+it's going to be 3.
+结果会是3。
+
+00:06:34.920 --> 00:06:37.440
+And because that's inside of the Say block,
+因为这个结果在“说”积木里面，
+
+00:06:37.440 --> 00:06:42.820
+now the cat is going to say the number 3 for two seconds.
+现在猫会在两秒内说出数字3。
+
+00:06:42.820 --> 00:06:45.730
+And so we have blocks to perform math like addition, subtraction,
+所以我们有用于进行数学运算的积木，比如加法、减法，
+
+00:06:45.730 --> 00:06:47.500
+multiplication, and division.
+乘法和除法。
+
+00:06:47.500 --> 00:06:50.250
+We have other blocks, as well, and the one I'm interested in right
+我们还有其他的积木，而我现在感兴趣的是
+
+00:06:50.250 --> 00:06:52.920
+now is this one down here called Join.
+下面这个叫“连接”的积木。
+
+00:06:52.920 --> 00:06:55.710
+Right now, it says Join Apple and Banana--
+现在，它显示的是连接“苹果”和“香蕉”——
+
+00:06:55.710 --> 00:06:59.340
+you could use this for any characters we might want to join together.
+你可以用它来连接任何我们想要组合在一起的字符。
+
+00:06:59.340 --> 00:07:03.960
+And what it's going to do is it's going to take two different values,
+它要做的就是接收两个不同的值，
+
+00:07:03.960 --> 00:07:07.440
+and it's just going to combine them together into one.
+然后把它们组合成一个。
+
+00:07:07.440 --> 00:07:12.180
+And so I would like to combine together the x location of the cat in addition
+所以我想把猫的x坐标位置和
+
+00:07:12.180 --> 00:07:13.890
+to the y location of the cat--
+猫的y坐标位置组合在一起——
+
+00:07:13.890 --> 00:07:18.930
+and so let's use the Join operator to do just that.
+那我们就用“连接”运算符来实现这个功能。
+
+00:07:18.930 --> 00:07:21.630
+I'll get rid of this block that was just doing some math
+我把这个只是做了些数学运算的积木删掉，
+
+00:07:21.630 --> 00:07:25.980
+and instead take this Join block, and I want to join together
+然后用这个“连接”积木，我想把
+
+00:07:25.980 --> 00:07:29.550
+the X Position and the Y Position.
+x坐标位置和y坐标位置连接起来。
+
+00:07:29.550 --> 00:07:33.450
+Notice that these ovals snap into place because the two inputs in the join
+注意，这些椭圆形积木能准确拼接，因为“连接”积木的两个输入也是椭圆形的——
+
+00:07:33.450 --> 00:07:36.150
+block are also oval-shaped--
+现在我不需要两个“说”积木了，只需要一个。
+
+00:07:36.150 --> 00:07:38.640
+now I don't need two Says, I only need one.
+我们把这个“连接”积木放到“说”积木里面——
+
+00:07:38.640 --> 00:07:42.960
+And let's take this Join block and put it inside of the Say block--
+注意，“说”积木也会变大，以便为现在放在里面的积木腾出空间。
+
+00:07:42.960 --> 00:07:46.650
+and notice the Say block too will grow in order to make room
+现在我有一个积木套着一个积木，又套着另一个积木——
+
+00:07:46.650 --> 00:07:48.330
+for the block that's inside of it now.
+“说”积木里面有“连接”积木，
+
+00:07:48.330 --> 00:07:51.690
+And now I have a block inside of a block inside of another block--
+“连接”积木里面还有x和y的值。
+
+00:07:51.690 --> 00:07:54.240
+the same block has this Join block in it,
+所以现在当我点击绿色旗帜时，注意会发生什么——
+
+00:07:54.240 --> 00:07:59.680
+and inside the Join block are the x and y values as well.
+它会说“负161 负13”，而且它们都挤在一起，
+
+00:07:59.680 --> 00:08:03.810
+And so now when I press the green flag, notice what happens--
+我可能都不知道那个坐标具体在哪里。
+
+00:08:03.810 --> 00:08:09.600
+it says negative 161 negative 13, and it was all kind of mashed together,
+所以如果我愿意，我可以更换背景——给我自己弄个网格，
+
+00:08:09.600 --> 00:08:12.220
+and I might not even know exactly where that coordinate is.
+我觉得如果我搜索“网格”，应该会有一个网格背景。
+
+00:08:12.220 --> 00:08:18.073
+So if I wanted to, I could change the backdrop-- let's give myself a grid,
+没错，这里有个xy网格——
+
+00:08:18.073 --> 00:08:20.490
+I think there's a grid backdrop if I do a search for grid.
+这样我就能在xy网格上大致看到猫在这个平面上的位置。
+
+00:08:20.490 --> 00:08:22.140
+Yeah, here's an xy grid--
+我再点击一次——
+
+00:08:22.140 --> 00:08:26.910
+so I can see on an xy grid kind of where the cat is on this plane.
+负161 负13。
+
+00:08:26.910 --> 00:08:28.800
+I'll press it again--
+我再按一次——
+
+00:08:28.800 --> 00:08:30.679
+minus 161 minus 13.
+减161再减13。
+
+00:08:30.679 --> 00:08:32.429
+That's fine, but maybe if you've used math
+没问题，但如果你之前学过数学
+
+00:08:32.429 --> 00:08:36.502
+before, you're more used to x comma y, you see one value comma
+你可能更习惯用 x，y 这种形式，也就是一个值，逗号
+
+00:08:36.502 --> 00:08:39.210
+another value instead of them just being right next to each other
+另一个值，而不是它们紧挨着
+
+00:08:39.210 --> 00:08:41.870
+without even a space in between them.
+中间连个空格都没有。
+
+00:08:41.870 --> 00:08:42.870
+So how could we do that?
+那我们该怎么做呢？
+
+00:08:42.870 --> 00:08:47.160
+How could we add a comma just to separate the x value from the y value
+怎样才能加个逗号，把 x 值和 y 值
+
+00:08:47.160 --> 00:08:48.840
+a little bit more?
+分得更开一点呢？
+
+00:08:48.840 --> 00:08:52.282
+Well, I can use another Join--
+嗯，我可以再用一个“连接”积木——
+
+00:08:52.282 --> 00:08:54.240
+this is going to look a little bit complicated,
+这看起来会有点复杂，
+
+00:08:54.240 --> 00:08:55.680
+but here's what I'm going to do.
+但我接下来要这么做。
+
+00:08:55.680 --> 00:09:00.030
+Instead of joining together the X Position and the Y Position,
+我不直接把 x 坐标和 y 坐标连接起来，
+
+00:09:00.030 --> 00:09:06.720
+let me first take a comma and a space, and join that with the Y Position.
+我先拿一个逗号和一个空格，把它们和 y 坐标连接起来。
+
+00:09:06.720 --> 00:09:11.185
+And then put that Join inside of the input to the other Join--
+然后把这个“连接”积木放到另一个“连接”积木的输入框里——
+
+00:09:11.185 --> 00:09:13.560
+so this is starting to get a little bit more complicated,
+所以这开始变得有点复杂了，
+
+00:09:13.560 --> 00:09:15.480
+but let's try and break down exactly what's happening here.
+但我们试着仔细分析一下这里到底在做什么。
+
+00:09:15.480 --> 00:09:18.300
+I've got a lot of blocks nested inside of other blocks,
+我有很多积木嵌套在其他积木里面，
+
+00:09:18.300 --> 00:09:20.520
+but here I'm saying something-- what am I saying?
+但我在这里表达了一个意思——我在表达什么呢？
+
+00:09:20.520 --> 00:09:22.560
+Well, I'm joining together these two things--
+嗯，我在把这两样东西连接起来——
+
+00:09:22.560 --> 00:09:27.152
+I'm joining the x value of the cat and this block here.
+我在把猫的 x 坐标和这里这个积木连接起来。
+
+00:09:27.152 --> 00:09:28.110
+And what is this block?
+那这个积木是做什么的呢？
+
+00:09:28.110 --> 00:09:32.640
+Well, that block is joining together a comma and the y value
+嗯，那个积木是把一个逗号和猫所在位置的 y 坐标连接起来。
+
+00:09:32.640 --> 00:09:34.720
+of wherever the cat happens to be.
+不管猫碰巧在哪里。
+
+00:09:34.720 --> 00:09:38.570
+So taken all together, what does this big oval now do?
+那么综合起来，这个大椭圆积木现在有什么作用呢？
+
+00:09:38.570 --> 00:09:42.330
+Well, it's going to take the X Position, and then take a comma, and then
+嗯，它会获取 x 坐标，然后加一个逗号，接着
+
+00:09:42.330 --> 00:09:45.600
+the Y Position, and that all together is going to be
+获取 y 坐标，所有这些合起来会是
+
+00:09:45.600 --> 00:09:48.945
+what goes inside of the Say block.
+显示在“说”积木里的内容。
+
+00:09:48.945 --> 00:09:51.570
+So we're starting to nest a lot of blocks inside of each other,
+所以我们开始把很多积木嵌套在一起了，
+
+00:09:51.570 --> 00:09:54.240
+but the net result is that, if I take the cat
+但最终的结果是，如果我移动这只猫
+
+00:09:54.240 --> 00:09:59.400
+and move it to near the middle of the stage, for example--
+比如把它移到舞台中间附近——
+
+00:09:59.400 --> 00:10:00.750
+press the green flag--
+点击绿色小旗——
+
+00:10:00.750 --> 00:10:05.040
+it's going to say 4 comma 3, that's where in the world it happens to be.
+它会显示 4，3，这就是它在舞台上的位置。
+
+00:10:05.040 --> 00:10:08.140
+If I move its location somewhere else and press the flag again,
+如果我把它移到其他地方，再点击小旗，
+
+00:10:08.140 --> 00:10:10.720
+it's going to give me some different numbers.
+它会显示不同的数字。
+
+00:10:10.720 --> 00:10:15.580
+But now it's saying it all at once, one value comma another value.
+但现在它会一次性显示出来，一个值，逗号，另一个值。
+
+00:10:15.580 --> 00:10:17.820
+And if I wanted to make this a complete sentence,
+如果我想把它变成一个完整的句子，
+
+00:10:17.820 --> 00:10:23.430
+I can even add one more Join n-- let me say, I am at--
+我甚至可以再用一个“连接”积木——比如说，我在——
+
+00:10:23.430 --> 00:10:27.570
+and then take this whole big Join block that Says position, and put that
+然后把这个显示位置的大“连接”积木，放到
+
+00:10:27.570 --> 00:10:32.340
+on the other side of the Join, and now have the cat say all of this.
+“连接”积木的另一边，现在让猫说出所有这些内容。
+
+00:10:32.340 --> 00:10:39.000
+"I am at x comma y," and so now if I drag it down here, it says,
+“我在 x，y 处”，所以现在如果我把它拖到这里，它会显示，
+
+00:10:39.000 --> 00:10:44.700
+"I am at negative 30 comma negative 96. " If I drag it here, the cat says,
+“我在 -30，-96 处”。如果我把它拖到这里，猫会说，
+
+00:10:44.700 --> 00:10:51.300
+"I am at 49 comma 61," and so using these values and operators we can start
+“我在坐标（49, 61）处”，所以利用这些值和运算符，我们可以开始
+
+00:10:51.300 --> 00:10:56.100
+to combine values together and start to make some more interesting projects
+将值组合起来，并且也能开始制作一些更有趣的项目。
+
+00:10:56.100 --> 00:10:57.730
+as well.
+同样。
+
+00:10:57.730 --> 00:11:00.930
+And we did this just now with the X Position and the Y Position,
+我们刚才在处理X坐标和Y坐标时就是这么做的，
+
+00:11:00.930 --> 00:11:04.140
+but there's also this Direction block that we could do this with too.
+但还有这个方向积木，我们也可以用它来做类似的事。
+
+00:11:04.140 --> 00:11:06.870
+If we wanted the cat to, not only say where it is,
+如果我们想让猫不仅说出它在哪里，
+
+00:11:06.870 --> 00:11:10.620
+but also what direction it's facing, you could imagine using that Direction
+还说出它面朝哪个方向，你可以想象使用那个方向
+
+00:11:10.620 --> 00:11:14.260
+block-- so the cat could say, "I am pointing at 90 degree angle,"
+积木——这样猫就可以说：“我正指向90度角的方向”，
+
+00:11:14.260 --> 00:11:17.230
+or "I'm pointing at a 45 degree angle" for example--
+或者比如说“我正指向45度角的方向”——
+
+00:11:17.230 --> 00:11:22.983
+and we could have it use that value inside of its blocks as well.
+而且我们也可以让它在积木里使用那个值。
+
+00:11:22.983 --> 00:11:24.900
+So let's try something a little different now,
+那么现在让我们尝试点有点不一样的东西，
+
+00:11:24.900 --> 00:11:27.460
+we've taken a look at these motion values--
+我们已经看过这些移动相关的值了——
+
+00:11:27.460 --> 00:11:29.490
+let's look at what other values we might have.
+让我们看看还有哪些其他的值。
+
+00:11:29.490 --> 00:11:32.340
+I'll keep scrolling down inside of Scratch's interface,
+我会继续在Scratch的界面里往下滚动，
+
+00:11:32.340 --> 00:11:35.430
+and under the Look section we have a whole bunch of other functions
+在外观板块下，我们有一大堆之前用过的其他功能，
+
+00:11:35.430 --> 00:11:37.620
+that we've used before-- we've used the Say block,
+我们用过说积木，
+
+00:11:37.620 --> 00:11:40.920
+we've used the Switch Costume, and Switch Backdrop blocks,
+我们用过切换造型和切换背景积木，
+
+00:11:40.920 --> 00:11:42.940
+we've used Change Size.
+我们用过改变大小积木。
+
+00:11:42.940 --> 00:11:44.910
+Notice down below though--
+不过注意下面——
+
+00:11:44.910 --> 00:11:49.500
+we also have a couple of blocks that are not the shape of the normal Functions,
+我们还有几个积木不是普通功能积木的形状，
+
+00:11:49.500 --> 00:11:52.770
+they're instead oval-shaped meaning they are values.
+它们是椭圆形的，这意味着它们是值。
+
+00:11:52.770 --> 00:11:56.520
+We have one for the Costume number, we have one for the Backdrop number,
+我们有一个是造型编号的，有一个是背景编号的，
+
+00:11:56.520 --> 00:11:58.800
+and we have one just called Size--
+还有一个就叫大小——
+
+00:11:58.800 --> 00:12:02.580
+and Size in this case is going to represent how big or small
+在这种情况下，大小将表示我们的角色
+
+00:12:02.580 --> 00:12:03.360
+our sprite is.
+有多大或多小。
+
+00:12:03.360 --> 00:12:06.180
+Remember that our sprites start out at 100% size,
+记得我们的角色一开始大小是100%，
+
+00:12:06.180 --> 00:12:08.790
+but we have already seen how we can make them smaller
+但我们已经知道如何让它们变小，
+
+00:12:08.790 --> 00:12:10.720
+or we can make them bigger.
+或者让它们变大。
+
+00:12:10.720 --> 00:12:13.350
+So, when might we want to use something like the Size block
+那么，我们什么时候会想使用像大小积木这样的东西，
+
+00:12:13.350 --> 00:12:17.220
+to know how big or small a particular sprite is?
+来了解某个特定角色的大小呢？
+
+00:12:17.220 --> 00:12:18.520
+Well, let's take an example--
+嗯，让我们举个例子——
+
+00:12:18.520 --> 00:12:20.760
+let's imagine we're not using the cat anymore,
+让我们想象我们不再用猫这个角色了，
+
+00:12:20.760 --> 00:12:24.630
+I'll go ahead and delete the cat, and I'll change the backdrop back
+我这就把猫删掉，然后我把背景换回
+
+00:12:24.630 --> 00:12:27.090
+to our plain white backdrop.
+我们的纯白色背景。
+
+00:12:27.090 --> 00:12:33.570
+Let's pick out a new sprite, go into Animals, and let's grab the hedgehog.
+让我们选一个新角色，进入动物类别，然后选刺猬这个角色。
+
+00:12:33.570 --> 00:12:36.060
+And if I wanted the hedgehog to move, I want
+如果我想让刺猬移动，我希望
+
+00:12:36.060 --> 00:12:39.480
+the hedgehog to move every time I press the right arrow, for example--
+比如说每次我按右方向键时刺猬就移动——
+
+00:12:39.480 --> 00:12:41.100
+we saw last time how we could do that.
+我们上次已经知道该怎么做了。
+
+00:12:41.100 --> 00:12:44.310
+I add an Event saying, not when the Space key is pressed,
+我添加一个事件，不是当按下空格键时，
+
+00:12:44.310 --> 00:12:46.500
+but when the Right arrow is pressed.
+而是当按下右方向键时。
+
+00:12:46.500 --> 00:12:51.810
+Now I want the hedgehog to move 10 steps, so drag it over to the left,
+现在我想让刺猬移动10步，所以把它拖到左边，
+
+00:12:51.810 --> 00:12:55.380
+I press the right arrow, and it's moving.
+我按右箭头，它就移动了。
+
+00:12:55.380 --> 00:12:59.340
+And that seems like a reasonable pace for a hedgehog of about that size,
+对于那么大的刺猬来说，这个速度似乎挺合适的，
+
+00:12:59.340 --> 00:13:03.570
+but if I made the hedgehog much smaller and sprite 50%.
+但如果我把刺猬缩小到原来的50%。
+
+00:13:03.570 --> 00:13:05.812
+And now have it move--
+现在让它移动——
+
+00:13:05.812 --> 00:13:07.770
+notice that it's moving-- because it's smaller,
+注意它在移动——因为它变小了，
+
+00:13:07.770 --> 00:13:09.810
+it's still moving 10 steps every time.
+它每次还是移动10步。
+
+00:13:09.810 --> 00:13:12.960
+It's moving maybe a little bit fast for how big it is--
+就它的大小而言，它移动得可能有点快了——
+
+00:13:12.960 --> 00:13:15.540
+I might like to change this so that my program's
+我可能想改一下，这样我的程序
+
+00:13:15.540 --> 00:13:20.010
+a little bit more responsive to how big or small a sprite happens to be.
+能更根据角色的大小做出相应调整。
+
+00:13:20.010 --> 00:13:23.070
+If a sprite is bigger, then it's probably taking bigger steps,
+如果一个角色更大，那它可能迈的步子更大，
+
+00:13:23.070 --> 00:13:24.980
+so I want it to move more every time.
+所以我想让它每次移动得更多。
+
+00:13:24.980 --> 00:13:26.730
+And if a sprite a smaller, well, then it's
+如果一个角色更小，那么它
+
+00:13:26.730 --> 00:13:32.110
+probably taking smaller steps, so I want it to move less every time.
+可能迈的步子更小，所以我想让它每次移动得更少。
+
+00:13:32.110 --> 00:13:34.560
+And so instead of moving 10 steps--
+所以，不要每次移动10步——
+
+00:13:34.560 --> 00:13:39.360
+I'll change the size back to 100, but instead of moving 10 steps,
+我把大小改回100，但不移动10步，
+
+00:13:39.360 --> 00:13:43.320
+let's have it move Size steps.
+让它移动“大小”步数。
+
+00:13:43.320 --> 00:13:48.090
+Size is a value representing how big or small the hedgehog is,
+“大小”是一个代表刺猬大小的值，
+
+00:13:48.090 --> 00:13:51.600
+and I'll drag it inside this oval shape input-- it snaps right into place
+我把它拖到这个椭圆形输入框里——它正好卡进去了
+
+00:13:51.600 --> 00:13:53.310
+because it is oval-sized.
+因为它是椭圆形大小的。
+
+00:13:53.310 --> 00:13:55.990
+And now, instead of moving 10 steps every time,
+现在，它不再每次移动10步，
+
+00:13:55.990 --> 00:13:59.040
+it's going to move a number of steps dependent upon the size
+而是要根据刺猬的大小移动相应步数。
+
+00:13:59.040 --> 00:14:00.300
+of the hedgehog.
+因为这只刺猬大小是100%，所以现在我按右箭头时，
+
+00:14:00.300 --> 00:14:05.460
+And so because this hedgehog is 100% size, now when I press the Right arrow,
+它每次移动100步。
+
+00:14:05.460 --> 00:14:08.050
+it's moving 100 steps every time.
+这可能太快了，我想稍微减慢一点——
+
+00:14:08.050 --> 00:14:11.380
+That's probably too fast, I want to cut down on this a little bit--
+这时我们就可以开始做点儿数学运算了。
+
+00:14:11.380 --> 00:14:14.950
+and here is where we can start to do maybe a little bit of math.
+我们进入“运算”模块，用“除法”——
+
+00:14:14.950 --> 00:14:18.300
+Let's go into Operators and let's use Division--
+我可以用除法来减小某个数值
+
+00:14:18.300 --> 00:14:20.760
+Division I can use to cut down on the size of something
+让数字变小。
+
+00:14:20.760 --> 00:14:22.200
+make the numbers smaller.
+我们用“大小”除以10，你可以多试试
+
+00:14:22.200 --> 00:14:26.070
+Let's do Size divided by 10, you could play around with this
+然后决定你想要的数值。
+
+00:14:26.070 --> 00:14:28.122
+and decide what you want it to be.
+那么，现在会发生什么呢？
+
+00:14:28.122 --> 00:14:29.580
+And so, now what's going to happen?
+我们来稍微分析一下这里的数学运算——
+
+00:14:29.580 --> 00:14:32.070
+Let's try and analyze the math of this a little bit--
+如果刺猬的大小是100，也就是它一开始是完整大小，
+
+00:14:32.070 --> 00:14:36.540
+if the size of the hedgehog is 100, meaning it's full size to begin with,
+那么每次我按右箭头键——
+
+00:14:36.540 --> 00:14:38.820
+then every time I press the Right arrow key--
+我们要移动“大小”除以10步。
+
+00:14:38.820 --> 00:14:41.700
+we're going to move Size divided by 10 steps.
+大小是100，除以10就是10，
+
+00:14:41.700 --> 00:14:45.640
+The size is 100 divided by 10 is just 10,
+所以刺猬会移动10步。
+
+00:14:45.640 --> 00:14:49.013
+and so the hedgehog is going to move 10 steps.
+如果刺猬更小会怎样呢？
+
+00:14:49.013 --> 00:14:50.430
+What if the hedgehog were smaller?
+如果刺猬更小会怎样呢？
+
+00:14:50.430 --> 00:14:52.230
+What if the size was 50?
+如果大小设为50会怎样？
+
+00:14:52.230 --> 00:14:55.677
+Well, then the hedgehog is going to move 50 divided by 10 steps,
+那么，刺猬会移动50除以10步，
+
+00:14:55.677 --> 00:14:57.510
+meaning it's only going to move five steps--
+也就是说它只会移动5步——
+
+00:14:57.510 --> 00:14:59.795
+smaller steps for a smaller hedgehog.
+小刺猬移动的步数更少。
+
+00:14:59.795 --> 00:15:01.170
+What if the hedgehog were bigger?
+如果刺猬更大呢？
+
+00:15:01.170 --> 00:15:03.090
+What if it was size of 200?
+如果它的大小是200会怎样？
+
+00:15:03.090 --> 00:15:06.310
+Well, then it's going to move at 200 divided by 10 steps--
+那么，它会移动200除以10步——
+
+00:15:06.310 --> 00:15:09.630
+in other words, it's going to move 20 steps every time
+换句话说，每次我们按下右箭头，它会移动20步。
+
+00:15:09.630 --> 00:15:10.620
+we hit the Right arrow.
+每次我们按下右箭头。
+
+00:15:10.620 --> 00:15:14.970
+It's moving more steps because it's a bigger animal.
+它移动的步数更多，因为它是更大的动物。
+
+00:15:14.970 --> 00:15:19.640
+And so now when I press Right arrow, it's moving 10 steps every time.
+所以现在当我按下右箭头时，它每次移动10步。
+
+00:15:19.640 --> 00:15:23.750
+If I change the size of the hedgehog and make it a little bit smaller, size 15,
+如果我改变刺猬的大小，把它变小一点，设为大小15，
+
+00:15:23.750 --> 00:15:28.140
+now it's moving only five steps every time I press the Right arrow.
+现在每次我按下右箭头，它只移动5步。
+
+00:15:28.140 --> 00:15:31.700
+And if I make it bigger, make it size 200,
+如果我把它变大，设为大小200，
+
+00:15:31.700 --> 00:15:39.240
+now it's going to be moving 20 steps every time I press the arrow as well.
+现在每次我按下箭头，它也会移动20步。
+
+00:15:39.240 --> 00:15:43.220
+And so we can start to use these values to get information about our sprite--
+所以我们可以开始利用这些值来获取关于我们角色的信息——
+
+00:15:43.220 --> 00:15:45.020
+where it is in the world, how big or small
+它在场景中的位置，它的大小
+
+00:15:45.020 --> 00:15:48.500
+it is, and use that to affect the way that our program behaves.
+然后用这些信息来影响我们程序的运行方式。
+
+00:15:48.500 --> 00:15:50.840
+By using, not just values that we type in,
+不仅要利用我们输入的值，
+
+00:15:50.840 --> 00:15:57.660
+but by using values that are given to us as part of Scratch to make it work too.
+也要利用Scratch提供给我们的值来让程序运行。
+
+00:15:57.660 --> 00:16:00.500
+And so, I'll go ahead and change the size back to 100.
+所以，我要把大小改回100。
+
+00:16:00.500 --> 00:16:04.100
+I'll go ahead and center the hedgehog again so it's back in the middle,
+我要再次把刺猬移到中心，让它回到中间位置，
+
+00:16:04.100 --> 00:16:06.650
+and let's try something else fun in these Operators.
+让我们在这些运算积木里试试其他有趣的东西。
+
+00:16:06.650 --> 00:16:09.080
+One thing I'm noticing in these Operators
+我在这些运算积木里注意到一件事
+
+00:16:09.080 --> 00:16:11.750
+is that we can do math-- we've seen like addition, and division,
+我们可以做数学运算——我们已经看到了加法和除法，
+
+00:16:11.750 --> 00:16:14.390
+and there's also subtraction, and multiplication.
+还有减法和乘法。
+
+00:16:14.390 --> 00:16:17.300
+We've seen how we can join two words together
+我们已经看到如何用这个“连接苹果和香蕉”积木把两个单词连在一起。
+
+00:16:17.300 --> 00:16:19.973
+with this Join Apple and Banana block.
+用这个“连接苹果和香蕉”积木把两个单词连在一起。
+
+00:16:19.973 --> 00:16:21.890
+There's another block that looks interesting--
+还有另一个看起来很有趣的积木——
+
+00:16:21.890 --> 00:16:25.310
+Pick Random 1 To 10.
+随机选取1到10。
+
+00:16:25.310 --> 00:16:27.290
+Pick Random 1 To 10 is a type of block that's
+“随机选取1到10”是一种积木，
+
+00:16:27.290 --> 00:16:30.680
+going to let us add a little bit of randomness into our project.
+它能让我们在项目中加入一点随机性。
+
+00:16:30.680 --> 00:16:34.520
+Right now, most of our projects are just doing the same thing every time--
+目前，我们的大多数项目每次运行都做同样的事情——
+
+00:16:34.520 --> 00:16:36.990
+unless we use the Random Position movement,
+除非我们使用“随机位置”移动，
+
+00:16:36.990 --> 00:16:38.540
+which we used a couple of times.
+我们用过几次这个。
+
+00:16:38.540 --> 00:16:41.600
+But Pick Random will just pick a random number for us
+但是“随机选取”会为我们随机选一个数字，
+
+00:16:41.600 --> 00:16:44.060
+so that we can let the project do something
+这样我们就能让项目每次运行时做不同的事情。
+
+00:16:44.060 --> 00:16:47.280
+different each time we run the project.
+这样我们就能让项目每次运行时做不同的事情。
+
+00:16:47.280 --> 00:16:50.810
+And so just for fun I might say, when the flag is clicked--
+所以只是为了好玩，我可以说，当点击绿旗时——
+
+00:16:50.810 --> 00:16:53.000
+let's go ahead and go to Motion--
+我们直接去“运动”板块——
+
+00:16:53.000 --> 00:16:57.020
+and have the hedgehog point in a particular direction.
+并让刺猬朝向特定的方向。
+
+00:16:57.020 --> 00:16:59.970
+And instead of always pointing in direction 90,
+而不是一直朝向90度方向，
+
+00:16:59.970 --> 00:17:05.660
+let's have the hedgehog pick a random number between 0 and 90.
+让刺猬选取一个0到90之间的随机数。
+
+00:17:05.660 --> 00:17:10.010
+And we've put that value inside of this Point In Direction block--
+我们把这个值放到了“朝向”积木里——
+
+00:17:10.010 --> 00:17:13.530
+and so, now every time I press the green flag, what's going to happen?
+那么，现在每次我点击绿旗，会发生什么呢？
+
+00:17:13.530 --> 00:17:16.460
+We're going to pick a random number between 0 and 90,
+我们会选取一个0到90之间的随机数，
+
+00:17:16.460 --> 00:17:19.832
+and the hedgehog is then going to point in that direction.
+然后刺猬就会朝向那个方向。
+
+00:17:19.832 --> 00:17:20.540
+So I can try it--
+所以我来试试——
+
+00:17:20.540 --> 00:17:24.530
+I'll press the green flag, and the hedgehog tilts slightly.
+我点击绿旗，刺猬稍微倾斜了。
+
+00:17:24.530 --> 00:17:27.502
+I'll press it again, now it's facing a totally different direction--
+我再点击一次，现在它朝向了完全不同的方向——
+
+00:17:27.502 --> 00:17:29.960
+I'll press it again, now it's facing a different direction.
+我再点击一次，现在它又朝向了另一个不同的方向。
+
+00:17:29.960 --> 00:17:32.450
+And every time I press the flag, it's going
+每次我点击绿旗，它都会
+
+00:17:32.450 --> 00:17:35.330
+to calculate a random number between 0 and 90,
+计算一个0到90之间的随机数，
+
+00:17:35.330 --> 00:17:40.110
+and the hedgehog is then going to point in that direction.
+然后刺猬就会朝向那个方向。
+
+00:17:40.110 --> 00:17:42.737
+And so randomness can add a little bit of fun to your projects
+所以随机性可以为你的项目增添一些乐趣
+
+00:17:42.737 --> 00:17:44.570
+as well so that there's something surprising
+这样每次运行项目时都会有惊喜
+
+00:17:44.570 --> 00:17:47.090
+every time you run the project-- where it's not always going
+不会每次都是一样的情况。
+
+00:17:47.090 --> 00:17:51.650
+to be the same thing every single time.
+好的，我们已经看到了一些可以在“运动”模块里使用的值，
+
+00:17:51.650 --> 00:17:55.520
+All right, so we've seen some values that we can use inside of Motion,
+还有“外观”模块里的，并且我们也看到了一些“运算”模块
+
+00:17:55.520 --> 00:17:57.680
+and inside of Looks, and we've seen some Operators
+我们可以用它们来做一些数学运算、把东西组合起来，
+
+00:17:57.680 --> 00:18:00.320
+we can use to do some math to join things together,
+选取一些随机数。
+
+00:18:00.320 --> 00:18:01.980
+to pick some random numbers.
+如果我们继续寻找其他的值——
+
+00:18:01.980 --> 00:18:04.372
+If we keep looking around for other values--
+我接着往下滚动，我在找
+
+00:18:04.372 --> 00:18:06.080
+I'll go ahead and scroll, and I'm looking
+任何可能是椭圆形的东西，
+
+00:18:06.080 --> 00:18:08.060
+for anything that might be shaped like an oval,
+有可能是我想用的。
+
+00:18:08.060 --> 00:18:10.530
+potentially, that I might want to use.
+有个引起我注意的值是这个——
+
+00:18:10.530 --> 00:18:15.200
+One thing that catches my attention is this value here--
+它叫“计时器”。
+
+00:18:15.200 --> 00:18:16.478
+it's called Timer.
+你可能还记得上次我们已经用过计时器了——
+
+00:18:16.478 --> 00:18:19.520
+And you might recall from last time that we have used the Timer already--
+每个Scratch项目都有一个内置的计时器，
+
+00:18:19.520 --> 00:18:22.130
+every Scratch project has a built-in timer that's
+它会计算自项目开始运行以来过去了多少秒。
+
+00:18:22.130 --> 00:18:27.770
+counting how many seconds have passed since we started running the project.
+我们之前用它来控制项目里不同角色的时间。
+
+00:18:27.770 --> 00:18:31.040
+And we used that before to control the timing of our different sprites
+但如果我们只是想知道自项目开始以来过去了多久，也可以用它。
+
+00:18:31.040 --> 00:18:33.240
+that existed in this project as well.
+我先把这些积木删掉，
+
+00:18:33.240 --> 00:18:36.290
+But we can also use this if we just want to know how long it's
+让我们用“计时器”的值来做点什么，比如说——我们到“事件”模块——
+
+00:18:36.290 --> 00:18:38.790
+been since we started the project.
+当角色被点击时，当我点击刺猬时——我们接着
+
+00:18:38.790 --> 00:18:42.080
+I'll go ahead and get rid of these blocks here,
+让刺猬说出“计时器”的当前值。
+
+00:18:42.080 --> 00:18:45.500
+let's use the Timer value for something, let's say-- let's go to Events--
+我把刺猬的朝向改回90度。
+
+00:18:45.500 --> 00:18:48.770
+when the sprite is clicked, when I click on the hedgehog-- let's go ahead
+当角色被点击时，当我点击这只刺猬时——我们接着来
+
+00:18:48.770 --> 00:18:54.080
+and have the hedgehog say whatever the value of the Timer is.
+让这只刺猬说出计时器的当前数值。
+
+00:18:54.080 --> 00:18:57.170
+I'll go ahead and change the hedgehog's direction back to 90
+我接着把刺猬的方向改回90度
+
+00:18:57.170 --> 00:19:00.320
+so it's still facing the right again, and now I'll
+所以它又朝右了，现在我要
+
+00:19:00.320 --> 00:19:04.160
+press the green flag to start the project-- the project's now started.
+点击绿色旗帜来启动项目——项目现在已启动。
+
+00:19:04.160 --> 00:19:06.710
+And now when I click on the hedgehog, it says,
+现在当我点击刺猬角色时，它会说
+
+00:19:06.710 --> 00:19:10.730
+"it's been 4.45 seconds since we started the project. "
+“自项目启动以来已经过了4.45秒。”
+
+00:19:10.730 --> 00:19:15.530
+And I'll press it again, "it's been 9.90 seconds since we started the project, "
+我再点击一次，“自项目启动以来已经过了9.90秒。”
+
+00:19:15.530 --> 00:19:18.820
+and honestly now I don't really need to know that number in all that much
+说实话，现在我并不真的需要知道那个数字的
+
+00:19:18.820 --> 00:19:19.320
+detail.
+具体细节。
+
+00:19:19.320 --> 00:19:24.350
+I don't care if it's 9.90 versus 9.91 for example I just want to know has it
+比如，我不在乎是9.90还是9.91，我只想知道
+
+00:19:24.350 --> 00:19:27.780
+been nine seconds or 10 seconds or 11 seconds, for example.
+例如，是过了9秒、10秒还是11秒。
+
+00:19:27.780 --> 00:19:31.730
+And so what I could do in this case is go back to Operators,
+所以在这种情况下，我可以回到“运算”类别，
+
+00:19:31.730 --> 00:19:35.000
+and there's an Operator here called Round.
+这里有个叫“取整”的运算积木。
+
+00:19:35.000 --> 00:19:38.270
+And Round, If you're familiar with it for math, just takes a number
+如果你熟悉数学里的取整，“取整”就是取一个数字
+
+00:19:38.270 --> 00:19:40.890
+and rounds it to a whole number.
+并把它四舍五入成整数。
+
+00:19:40.890 --> 00:19:43.280
+So if I have 9.9, it's just going to say,
+所以如果我有9.9，它就会说
+
+00:19:43.280 --> 00:19:47.480
+you know what, let's call that 10-- it rounds up to 10 seconds.
+这样吧，就把它当成10——四舍五入到10秒。
+
+00:19:47.480 --> 00:19:51.230
+So we'll take the Timer, put it inside of the Round Operator,
+所以我们把“计时器”积木放到“取整”运算积木里，
+
+00:19:51.230 --> 00:19:54.590
+and we'll take the Round Operator and put it inside of the Say block.
+再把“取整”运算积木放到“说”积木里。
+
+00:19:54.590 --> 00:19:58.490
+Now we're saying the rounded version of the timer for two seconds.
+现在我们要说的是计时器取整后的数值，持续2秒。
+
+00:19:58.490 --> 00:20:03.140
+Now I click on it and it's been 58 seconds now, not 58 point something,
+现在我点击它，显示已经过了58秒，而不是58点几，
+
+00:20:03.140 --> 00:20:03.740
+for example.
+比如这样。
+
+00:20:03.740 --> 00:20:07.580
+I wait a few more seconds, now it's been 63 seconds
+我再等几秒，现在自项目启动以来
+
+00:20:07.580 --> 00:20:09.930
+since the start of the project.
+已经过了63秒。
+
+00:20:09.930 --> 00:20:12.050
+And so these values give you a lot ability
+所以这些数值能让你
+
+00:20:12.050 --> 00:20:15.050
+to know something about what's going on inside of the project.
+了解项目内部的运行情况。
+
+00:20:15.050 --> 00:20:18.180
+And Scratch just figures out what each of these values
+Scratch会自动算出这些数值
+
+00:20:18.180 --> 00:20:21.180
+should be-- it knows what the x position and y position
+应该是多少——它知道任意角色的x坐标和y坐标
+
+00:20:21.180 --> 00:20:22.960
+and size is for any given sprite.
+以及大小。
+
+00:20:22.960 --> 00:20:26.140
+It knows how long it's been since we started running the project,
+它知道自项目开始运行以来过了多久，
+
+00:20:26.140 --> 00:20:28.560
+so it knows what the value of the timer should be.
+所以它知道计时器的值应该是多少。
+
+00:20:28.560 --> 00:20:32.760
+But there are some other values that the user can have a little bit more control
+但还有一些其他的数值，用户也能有更多的
+
+00:20:32.760 --> 00:20:35.850
+over as well, and that's where our projects can get even more
+控制权，这就是我们的项目能变得更加
+
+00:20:35.850 --> 00:20:38.500
+interactive and even more interesting.
+互动性更强、更有趣的地方。
+
+00:20:38.500 --> 00:20:39.990
+Let's take a look now--
+现在让我们来看看——
+
+00:20:39.990 --> 00:20:45.060
+I'll go ahead and get rid of the hedgehog and we'll bring back the cat.
+我先把刺猬角色去掉，然后把猫角色再拿出来。
+
+00:20:45.060 --> 00:20:48.510
+Let's take a look now at the Sensing section of blocks, which
+现在让我们看看“侦测”类的积木，我们
+
+00:20:48.510 --> 00:20:50.460
+we haven't really looked at just yet.
+还没仔细看过呢。
+
+00:20:50.460 --> 00:20:52.470
+But notice this block here--
+但注意看这个积木——
+
+00:20:52.470 --> 00:20:55.652
+Ask What's Your Name And Wait--
+“询问 你叫什么名字 并等待”——
+
+00:20:55.652 --> 00:20:56.860
+this is an interesting block.
+这是个很有趣的积木。
+
+00:20:56.860 --> 00:21:00.120
+It is a function, it's shaped like all of those other function blocks,
+它是个函数，它的形状和其他函数积木一样，
+
+00:21:00.120 --> 00:21:02.880
+and it seems to be asking the user a question.
+而且它似乎在向用户提问。
+
+00:21:02.880 --> 00:21:05.640
+It's asking something like, what's your name?
+它问的好像是“你叫什么名字？”
+
+00:21:05.640 --> 00:21:08.040
+And What's Your Name here, this, if you'll recall,
+这里的“你叫什么名字”，如果你还记得的话，
+
+00:21:08.040 --> 00:21:09.570
+is the input to the function.
+是这个函数的输入。
+
+00:21:09.570 --> 00:21:11.880
+Anything in this oval shape in a function
+函数积木中任何这种椭圆形的部分
+
+00:21:11.880 --> 00:21:13.920
+block-- that's an input to the function.
+——那就是函数的输入。
+
+00:21:13.920 --> 00:21:16.800
+It's telling this function what question should you ask--
+它在告诉这个函数你应该问什么问题——
+
+00:21:16.800 --> 00:21:18.810
+by default, the question is, what's your name?
+默认情况下，问题是“你叫什么名字？”
+
+00:21:18.810 --> 00:21:22.860
+But the question might be different, we could ask whatever question we want,
+但问题可能不同，我们可以问任何我们想问的问题，
+
+00:21:22.860 --> 00:21:25.270
+but the user is going to type in an answer.
+但用户会输入一个答案。
+
+00:21:25.270 --> 00:21:29.460
+And that answer is going to then be the output of this function,
+那个答案随后将成为这个函数的输出，
+
+00:21:29.460 --> 00:21:32.340
+and we haven't really seen outputs too much just yet.
+目前我们还没怎么看到过输出。
+
+00:21:32.340 --> 00:21:35.130
+These outputs, also called return values,
+这些输出，也叫返回值，
+
+00:21:35.130 --> 00:21:39.280
+are values that come back after we run a function.
+是我们运行一个函数后得到的值。
+
+00:21:39.280 --> 00:21:41.430
+And it turns out this Ask What's Your Name and Wait
+结果发现“询问你叫什么名字并等待”
+
+00:21:41.430 --> 00:21:43.620
+block has a return value--
+积木有一个返回值——
+
+00:21:43.620 --> 00:21:48.180
+and the return value is this value here, which is called answer.
+这个返回值就是这里这个叫“答案”的值。
+
+00:21:48.180 --> 00:21:51.030
+This block here, answer, is going to be a value that
+这里的“答案”积木将是一个存储
+
+00:21:51.030 --> 00:21:57.790
+stores whatever it is the user typed in in response to that question.
+用户针对那个问题输入的任何内容的值。
+
+00:21:57.790 --> 00:22:01.170
+So we can ask the user a question, and based on what the user answers,
+所以我们可以问用户一个问题，根据用户的回答，
+
+00:22:01.170 --> 00:22:05.830
+we can use that answer later on in our program somewhere.
+我们可以在程序的某个地方稍后使用那个答案。
+
+00:22:05.830 --> 00:22:11.490
+So let's give that a try, let's try that out and see what we can do.
+所以让我们试试看，看看能做些什么。
+
+00:22:11.490 --> 00:22:14.640
+I want to say that, when the green flag is clicked when I first
+我想说，当绿色旗帜被点击，当我第一次
+
+00:22:14.640 --> 00:22:19.560
+start this project, let's go to something
+启动这个项目时，让我们来操作一下
+
+00:22:19.560 --> 00:22:23.970
+and choose the Ask What's Your Name and Wait block.
+并选择“询问你叫什么名字并等待”积木。
+
+00:22:23.970 --> 00:22:27.870
+And when you do that, let's go ahead and just say it back to them.
+当你这么做的时候，让我们直接把答案说给他们听。
+
+00:22:27.870 --> 00:22:30.547
+I'll go to Say, Say Hello for 2 Seconds.
+我要选择“说 你好 2 秒”。
+
+00:22:30.547 --> 00:22:32.880
+I don't want you to say "hello" for two seconds though--
+不过我不想让你说“你好”两秒——
+
+00:22:32.880 --> 00:22:36.750
+I want you to say the answer for two seconds.
+我想让你把答案说两秒。
+
+00:22:36.750 --> 00:22:40.140
+Whatever it is the user typed in when they were asked that question,
+用户在被问到那个问题时输入的任何内容，
+
+00:22:40.140 --> 00:22:43.620
+that's going to be this return value called Answer.
+那将是这个叫“答案”的返回值。
+
+00:22:43.620 --> 00:22:46.350
+And we're now using Answer later in the project
+现在我们在项目的后面使用“答案”
+
+00:22:46.350 --> 00:22:51.360
+to say the answer for two seconds-- so now when I run this program,
+来说出答案两秒——所以现在当我运行这个程序时，
+
+00:22:51.360 --> 00:22:54.270
+the cat asks the question "what's your name?"
+猫会问“你叫什么名字？”
+
+00:22:54.270 --> 00:22:57.420
+And we haven't moved on in the program yet-- the program is waiting,
+而且我们的程序还没有继续执行——程序在等待，
+
+00:22:57.420 --> 00:22:59.430
+and it's waiting for me to answer the question.
+它在等我回答问题。
+
+00:22:59.430 --> 00:23:05.760
+It's waiting for me to type in my name, I'll type in Brian, I'll press Return,
+它在等我输入我的名字，我输入布莱恩，然后按回车键，
+
+00:23:05.760 --> 00:23:08.613
+and the cat now says my name back to me.
+现在猫把我的名字说给我听。
+
+00:23:08.613 --> 00:23:11.280
+And if I wanted to, I could make it a little bit more friendly--
+如果我愿意，我可以让它显得更友好一些——
+
+00:23:11.280 --> 00:23:14.190
+I can go into Operators and let's use that Join again.
+我可以进入“运算符”，然后再次使用“连接”。
+
+00:23:14.190 --> 00:23:21.820
+Instead of saying answer, let's have it say Hello comma and then the answer.
+别让它说“answer”了，让它说“Hello,” 然后再加上答案。
+
+00:23:21.820 --> 00:23:25.110
+So I'm using that Join Operator to combine two values together
+所以我用那个连接运算符把两个值组合在一起。
+
+00:23:25.110 --> 00:23:27.970
+and I'm using that inside of the Say block.
+我是在“说”积木里用的这个运算符。
+
+00:23:27.970 --> 00:23:33.270
+Now, when I press the green flag, "what's your name? " I say, Brian,
+现在，我按下绿色小旗，它问“你叫什么名字？” 我回答“Brian”。
+
+00:23:33.270 --> 00:23:37.210
+and the cat says, "hello, Brian," for example.
+然后这只猫就会说“hello, Brian”，举个例子。
+
+00:23:37.210 --> 00:23:41.760
+And so we can ask the user questions and use their answer inside of the program,
+这样我们就能问用户问题，还能在程序里用上他们的答案。
+
+00:23:41.760 --> 00:23:44.070
+and that opens up a lot of interesting doors
+这就为我们用Scratch项目能做的事打开了很多有趣的大门。
+
+00:23:44.070 --> 00:23:46.770
+for what it is that we can do with our Scratch project.
+对于我们能用Scratch项目做什么而言。
+
+00:23:46.770 --> 00:23:51.360
+Remember, before, we'd been using Move to move a certain number of steps,
+还记得吧，之前我们用“移动”积木让角色移动一定的步数。
+
+00:23:51.360 --> 00:23:54.720
+and we can say move 10 steps, or move 20 steps for example.
+比如我们可以说移动10步，或者移动20步。
+
+00:23:54.720 --> 00:24:00.510
+Let's ask the user how far we want to move, let's ask, how many steps?
+咱们问问用户想让角色移动多远，就问“移动多少步？”
+
+00:24:00.510 --> 00:24:04.410
+And then instead of moving 10 steps, we'll go into Sensing,
+然后别写移动10步了，我们到“侦测”分类里找。
+
+00:24:04.410 --> 00:24:05.550
+we'll grab the answer--
+把答案拿过来。
+
+00:24:05.550 --> 00:24:08.590
+that return value, and let's Move Answer Steps.
+就是那个返回值，然后用 “移动（答案）步”。
+
+00:24:08.590 --> 00:24:12.810
+Whatever the user typed in, that's how many steps I want to move.
+用户输入多少，我就让角色移动多少步。
+
+00:24:12.810 --> 00:24:16.600
+So I'll drag the cat back to the left hand side, I'll press the flag--
+我把猫拖回舞台左边，按下小旗。
+
+00:24:16.600 --> 00:24:21.600
+"how many steps? " Or if I type in 10, we move 10 steps.
+它问“移动多少步？” 如果我输入10，它就移动10步。
+
+00:24:21.600 --> 00:24:22.690
+Let's try it again--
+咱们再试一次。
+
+00:24:22.690 --> 00:24:25.860
+"how many steps? " I'll type in 50, something bigger.
+“移动多少步？” 我输入个大点儿的数，比如50。
+
+00:24:25.860 --> 00:24:27.540
+Now we move 50 steps.
+现在它移动了50步。
+
+00:24:27.540 --> 00:24:30.240
+Press it again-- "how many steps? " Let's try 200,
+再按一次小旗，它问“移动多少步？” 试试200。
+
+00:24:30.240 --> 00:24:33.340
+and the cat moves 200 steps when I type in that number.
+我输入这个数后，猫就移动了200步。
+
+00:24:33.340 --> 00:24:37.200
+So whatever number I type in, that's the Return value of the Function
+所以我输入的任何数字，就是这个函数的返回值。
+
+00:24:37.200 --> 00:24:38.910
+that becomes the Answer.
+这个返回值就成了答案。
+
+00:24:38.910 --> 00:24:42.510
+And because I'm using the Answer inside of this Move some number of steps
+因为我在 “移动（）步” 这个积木里用了答案。
+
+00:24:42.510 --> 00:24:45.150
+block, that's going to result in me-- the user--
+这就意味着我——也就是用户。
+
+00:24:45.150 --> 00:24:48.420
+being able to control as by typing it into my keyboard
+可以通过键盘输入来控制。
+
+00:24:48.420 --> 00:24:51.750
+how far I actually want the cat to move.
+我到底想让猫移动多远。
+
+00:24:51.750 --> 00:24:54.210
+And I can use this for other blocks too--
+我也能把这方法用在其他积木上。
+
+00:24:54.210 --> 00:24:57.030
+we've seen before that we have the ability
+我们之前看到过。
+
+00:24:57.030 --> 00:25:01.260
+to set the x value to something, to make it go somewhere,
+我们可以把x坐标设成某个值，让角色移到某个地方。
+
+00:25:01.260 --> 00:25:03.930
+and we've also seen that we can set the y value to something
+我们也看到过可以把y坐标设成某个值。
+
+00:25:03.930 --> 00:25:05.470
+to have it go somewhere else.
+让角色移到另一个地方。
+
+00:25:05.470 --> 00:25:13.680
+So I can ask Pick x, and then let's set x to that answer.
+所以我可以问 “选个x坐标”，然后把x坐标设成那个答案。
+
+00:25:13.680 --> 00:25:21.910
+Then ask Pick y and set y to the new answer--
+再问 “选个y坐标”，把y坐标设成新的答案。
+
+00:25:21.910 --> 00:25:25.030
+so now I press the green flag, Pick x.
+现在我按下绿色小旗，它问 “选个x坐标”。
+
+00:25:25.030 --> 00:25:31.290
+Let's pick 50, Pick y--
+选50，然后它问 “选个y坐标”。
+
+00:25:31.290 --> 00:25:35.530
+let's pick negative 100--
+选 -100。
+
+00:25:35.530 --> 00:25:38.170
+and the cat goes to 50 and negative 100.
+然后猫就移到了坐标（50， -100）的位置。
+
+00:25:38.170 --> 00:25:42.850
+If I wanted to go back to the center, Pick x or Pick 0, Pick Y or Pick 0,
+如果我想让它回到舞台中心，选x坐标为0，选y坐标也为0。
+
+00:25:42.850 --> 00:25:45.210
+and the cat goes back to the center.
+然后猫回到中心位置。
+
+00:25:45.210 --> 00:25:47.620
+And so you can ask multiple questions too-- each time
+所以你也可以问多个问题——每次
+
+00:25:47.620 --> 00:25:51.970
+Answer is whatever the answer was to the most recent question.
+答案就是最近那个问题的回答内容。
+
+00:25:51.970 --> 00:25:54.220
+And using the answers to those questions,
+通过这些问题的答案，
+
+00:25:54.220 --> 00:25:57.340
+we can start to do some interesting things.
+我们可以开始做一些有趣的事情了。
+
+00:25:57.340 --> 00:26:00.580
+We can have the cat move around to various different places,
+我们可以让猫移动到不同的地方，
+
+00:26:00.580 --> 00:26:04.940
+and we can even use this in other blocks to control our project as well.
+我们甚至还能在其他积木里用它来控制我们的项目。
+
+00:26:04.940 --> 00:26:07.360
+Let's get rid of the cat for now and bring back
+现在我们先把猫去掉，然后把
+
+00:26:07.360 --> 00:26:10.870
+another animal we've used before-- we'll bring back the bear.
+之前用过的另一个角色请回来——我们把熊请回来。
+
+00:26:10.870 --> 00:26:14.140
+And the bear has a few costumes you might remember--
+你们可能还记得，这只熊有好几种造型——
+
+00:26:14.140 --> 00:26:17.320
+if we go into costumes for the bear, we see that there's this one costume
+如果我们进入熊的造型界面，会看到有一个造型
+
+00:26:17.320 --> 00:26:19.730
+called Bear A-- where the bear looks like this--
+叫“熊A”——熊看起来是这样的——
+
+00:26:19.730 --> 00:26:25.450
+and there's another costume called Bear B where the bear looks like that.
+还有另一个叫“熊B”的造型，熊看起来是那样的。
+
+00:26:25.450 --> 00:26:28.420
+I'm going to go ahead and rename these costumes-- it turns out
+我要接着给这些造型重新命名——结果发现
+
+00:26:28.420 --> 00:26:31.120
+you can name costumes whatever you want to call them,
+你可以随意给造型命名，
+
+00:26:31.120 --> 00:26:34.090
+but I'm going to call this costume 4.
+但我要把这个造型命名为4。
+
+00:26:34.090 --> 00:26:37.420
+Just the number 4 because the bear is on four legs--
+就叫数字4，因为熊是四脚着地的——
+
+00:26:37.420 --> 00:26:39.475
+and I'll give this costume a name too, I'll
+我也给这个造型起个名字，我
+
+00:26:39.475 --> 00:26:44.260
+give it the name 2 because the bear is on two legs.
+把它命名为2，因为熊是两脚站立的。
+
+00:26:44.260 --> 00:26:45.560
+Now, why am I doing this?
+现在，我为什么要这么做呢？
+
+00:26:45.560 --> 00:26:49.750
+Well, it's because of what I'm about to show you, which is let's add an event--
+嗯，这是因为我接下来要给你们展示的内容，也就是添加一个事件——
+
+00:26:49.750 --> 00:26:53.920
+when the flag is clicked, I want to ask a question,
+当点击绿旗时，我要问一个问题，
+
+00:26:53.920 --> 00:26:59.380
+and the question I'm going to ask is, "how many legs? "
+我要问的问题是：“有几条腿？”
+
+00:26:59.380 --> 00:27:04.570
+And now what I'll do is I'll go into Looks and I'll say Switch Costume To.
+现在我要做的是，进入外观模块，然后选择“换成造型”。
+
+00:27:04.570 --> 00:27:09.610
+And notice that Switch Costume To also has an oval-shaped input next to it.
+注意，“换成造型”旁边也有一个椭圆形的输入框。
+
+00:27:09.610 --> 00:27:12.820
+This oval-shaped input is a dropdown where I could choose which costume I
+这个椭圆形输入框是个下拉菜单，我可以从中选择我想让
+
+00:27:12.820 --> 00:27:14.950
+want the bear to use--
+熊使用的造型——
+
+00:27:14.950 --> 00:27:20.050
+but because it's oval-shaped, I can just put my own value inside of that oval
+但因为它是椭圆形的，如果我愿意，
+
+00:27:20.050 --> 00:27:21.790
+if I want to.
+可以直接在椭圆形里输入自己的值。
+
+00:27:21.790 --> 00:27:24.250
+And let's, instead of using the dropdown,
+我们不使用下拉菜单了，
+
+00:27:24.250 --> 00:27:28.250
+let's just have it go to the answer.
+让它直接切换到答案对应的造型。
+
+00:27:28.250 --> 00:27:30.250
+And so now I press the green flag--
+现在我点击绿旗——
+
+00:27:30.250 --> 00:27:36.340
+the bear asks "how many legs? " Let's say four legs for the bear--
+熊问“有几条腿？” 假设熊有四条腿——
+
+00:27:36.340 --> 00:27:38.113
+and now the bear's on four legs.
+现在熊就四脚着地了。
+
+00:27:38.113 --> 00:27:40.780
+If I want the bear to stand up, I'll press the green flag again,
+如果我想让熊站起来，我再点击一次绿旗，
+
+00:27:40.780 --> 00:27:45.340
+it says "how many legs? " I press 2, and the bear stands up.
+它问“有几条腿？” 我输入2，熊就站起来了。
+
+00:27:45.340 --> 00:27:48.700
+And, again, the reason that's happening is because when it asks how many legs,
+再次说明，会出现这种情况的原因是，当它问有几条腿时，
+
+00:27:48.700 --> 00:27:51.590
+I type in something like 2 as my answer.
+我输入了像2这样的答案。
+
+00:27:51.590 --> 00:27:55.120
+And so this block runs, we're going to Switch Costume To--
+于是这个积木运行，我们要换成——
+
+00:27:55.120 --> 00:27:57.070
+in this case, 2--
+在这种情况下，换成2——
+
+00:27:57.070 --> 00:28:00.160
+and because I named my costumes after those answers--
+因为我用那些答案来命名我的造型——
+
+00:28:00.160 --> 00:28:02.620
+you'll remember that if I go back to the Costumes tab,
+你应该还记得，如果我回到“造型”标签页，
+
+00:28:02.620 --> 00:28:05.170
+I had given those costumes particular names.
+我给那些造型起了特定的名字。
+
+00:28:05.170 --> 00:28:08.230
+I called one of the costumes 4, for the four leg version,
+我把其中一个造型命名为4，代表四条腿的版本，
+
+00:28:08.230 --> 00:28:11.410
+and one of the costumes 2 for the two leg version.
+把另一个造型命名为2，代表两条腿的版本。
+
+00:28:11.410 --> 00:28:15.610
+Well then I can use those blocks to control how many legs the bear is
+那么我就可以用这些积木来控制熊最终
+
+00:28:15.610 --> 00:28:17.170
+ultimately going to be standing on.
+要站在几条腿上。
+
+00:28:17.170 --> 00:28:18.970
+And that works for costumes, and it works
+这对造型适用，而且
+
+00:28:18.970 --> 00:28:22.460
+for other parts of Scratch's interface, like backdrops, for example.
+对Scratch界面的其他部分也适用，比如背景。
+
+00:28:22.460 --> 00:28:23.710
+So we could try that out too--
+所以我们也可以试试看——
+
+00:28:23.710 --> 00:28:26.560
+I'll go ahead and get rid of the--
+我先把……去掉
+
+00:28:26.560 --> 00:28:30.200
+we'll keep the bear for now, but I'll get rid of the question.
+目前我们先保留这只熊，但我要把问题去掉。
+
+00:28:30.200 --> 00:28:34.150
+Let's add some backdrops, let's add Colorful City.
+我们来添加一些背景，添加“多彩城市”。
+
+00:28:34.150 --> 00:28:37.540
+I like the look of that, the colorful city during the day,
+我喜欢这个样子，白天的多彩城市，
+
+00:28:37.540 --> 00:28:39.070
+and let's add one more backdrop.
+我们再添加一个背景。
+
+00:28:39.070 --> 00:28:45.310
+Let's add the Night City, so we have a couple different backdrops
+我们添加“夜间城市”，这样我们就有几个不同的背景了
+
+00:28:45.310 --> 00:28:47.800
+and I'm going to change their names.
+我要给它们改个名字。
+
+00:28:47.800 --> 00:28:51.490
+This Colorful city, I'm going to call it Day--
+这个“多彩城市”，我要叫它“白天”——
+
+00:28:51.490 --> 00:28:55.450
+and again, just up at the top here, I can change the name of this backdrop.
+同样，就在这里的顶部，我可以更改这个背景的名字。
+
+00:28:55.450 --> 00:29:00.100
+And for the Night City, I'm going to call it Night.
+对于“夜间城市”，我要叫它“夜晚”。
+
+00:29:00.100 --> 00:29:07.540
+So I have one backdrop called Day and one backdrop that I've called Night--
+所以我有一个叫“白天”的背景和一个叫“夜晚”的背景——
+
+00:29:07.540 --> 00:29:10.270
+and let's go back into the code.
+我们回到代码区。
+
+00:29:10.270 --> 00:29:12.460
+And now for the bear--
+现在对于这只熊——
+
+00:29:12.460 --> 00:29:15.460
+when the flag is clicked, I want the bear to ask a question.
+当点击绿旗时，我希望这只熊问一个问题。
+
+00:29:19.250 --> 00:29:22.080
+"What time? " Like, what time of day is it?
+“什么时间？” 比如，现在是一天中的什么时间？
+
+00:29:22.080 --> 00:29:28.752
+And let's go ahead and switch the backdrop to whatever the answer is.
+我们接着把背景切换成答案对应的背景。
+
+00:29:28.752 --> 00:29:30.710
+So the bear is going to ask me what time of day
+所以这只熊会问我想要什么时间
+
+00:29:30.710 --> 00:29:34.280
+do I want-- if I say day, that's one possible answer, if I say night, that's
+如果我说白天，那是一种可能的答案，如果我说夜晚，那是
+
+00:29:34.280 --> 00:29:35.672
+another possible answer.
+另一种可能的答案。
+
+00:29:35.672 --> 00:29:36.380
+So we'll try it--
+我们来试试看——
+
+00:29:36.380 --> 00:29:39.380
+I'll press the flag, "what time? " I'll say night--
+我点击绿旗，“什么时间？” 我回答夜晚——
+
+00:29:39.380 --> 00:29:43.130
+I'll press Return, and now it's nighttime.
+我按回车键，现在是夜晚了。
+
+00:29:43.130 --> 00:29:44.480
+I'll try it again--
+我再试一次——
+
+00:29:44.480 --> 00:29:49.760
+"what time of day? " I'll say day, and now it's daytime.
+“一天中的什么时间？” 我回答白天，现在是白天了。
+
+00:29:49.760 --> 00:29:52.610
+And so using this ability now to have Return values,
+现在利用这种获取返回值的能力，
+
+00:29:52.610 --> 00:29:55.520
+we can create much more interactive and much more exciting
+我们可以通过让用户告诉我们一些信息
+
+00:29:55.520 --> 00:29:58.280
+programs by letting the user tell us something
+并在项目中运用这些答案，创建出更具交互性、更有趣的
+
+00:29:58.280 --> 00:30:00.080
+and using that answer in the project.
+程序。
+
+00:30:00.080 --> 00:30:02.780
+Letting them type in their name and responding to them by name,
+让他们输入自己的名字，然后用名字回应他们，
+
+00:30:02.780 --> 00:30:05.540
+or letting them type in what backdrop or costume they want,
+或者让他们输入想要的背景或造型，
+
+00:30:05.540 --> 00:30:07.670
+or letting them type in how they want to control--
+或者让他们输入自己想要的控制方式——
+
+00:30:07.670 --> 00:30:11.150
+how sprite moves, or where it's pointing, or in what direction
+比如角色如何移动、指向哪里，或者朝哪个方向移动。
+
+00:30:11.150 --> 00:30:12.420
+it's going for example.
+举个例子。
+
+00:30:12.420 --> 00:30:14.570
+And so you give the user a lot more control
+所以，仅仅通过利用这些数值，你就能让用户对正在发生的事情有更多的控制权。
+
+00:30:14.570 --> 00:30:18.677
+over what's happening just by taking advantage of these values.
+通过利用这些数值来了解正在发生的事情。
+
+00:30:18.677 --> 00:30:21.510
+That's it for an Introduction to Programming with Scratch for today.
+今天的Scratch编程入门就讲到这里。
+
+00:30:21.510 --> 00:30:23.240
+Next time, we'll continue this discussion
+下次，我们将继续这个讨论。
+
+00:30:23.240 --> 00:30:25.130
+and to take a look at some other features
+并看看Scratch编程世界中的其他一些特性。
+
+00:30:25.130 --> 00:30:28.780
+that we get in this world of programming with Scratch.
+这是我们在Scratch编程世界中所获得的。

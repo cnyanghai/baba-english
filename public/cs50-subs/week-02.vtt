@@ -1,0 +1,2649 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.465
+[MUSIC PLAYING]
+[音乐播放中]
+
+00:00:17.553 --> 00:00:19.720
+BRIAN YU: Welcome back, everyone, to an introduction
+布莱恩·余：欢迎大家回来，继续学习
+
+00:00:19.720 --> 00:00:21.130
+to programming with Scratch.
+使用Scratch编程入门课程。
+
+00:00:21.130 --> 00:00:23.950
+And last time, we introduced the world of Scratch--
+上节课，我们初步了解了Scratch——
+
+00:00:23.950 --> 00:00:27.220
+introducing the stage and the sprites that can live on that stage.
+介绍了舞台以及可以出现在舞台上的角色。
+
+00:00:27.220 --> 00:00:29.380
+And saw how we could change the way the sprites
+还了解了如何改变角色的外观
+
+00:00:29.380 --> 00:00:31.960
+looked by giving them costumes, and giving them some sounds,
+可以给它们设置造型，还能添加声音，
+
+00:00:31.960 --> 00:00:34.660
+and also add some backdrops to our stage to make
+也可以给舞台添加一些背景，让
+
+00:00:34.660 --> 00:00:36.610
+it look a little bit more interesting.
+它看起来更有趣。
+
+00:00:36.610 --> 00:00:40.420
+But everything we were doing last time had to be done manually by ourselves--
+但上节课我们所做的一切都得手动完成——
+
+00:00:40.420 --> 00:00:44.590
+if we wanted to move the sprite, I had to change the x and y values and drag
+比如，如果我想移动角色，就得改变它的x和y坐标值，然后拖动
+
+00:00:44.590 --> 00:00:47.060
+the sprite around to a different position, for example--
+角色到不同的位置——
+
+00:00:47.060 --> 00:00:50.320
+if I wanted to change the costume, I had to click on a different costume
+如果我想更换造型，就得点击我想要的另一个造型
+
+00:00:50.320 --> 00:00:51.580
+that I wanted to do.
+才能实现。
+
+00:00:51.580 --> 00:00:54.730
+This time we're going to start programming our Scratch projects,
+这次我们要开始为Scratch项目编写程序了，
+
+00:00:54.730 --> 00:00:57.790
+adding some code so that we can let that code run
+添加一些代码，让代码运行起来
+
+00:00:57.790 --> 00:01:01.880
+and manipulate what happens inside of our Scratch projects as well.
+同时操控Scratch项目里发生的事情。
+
+00:01:01.880 --> 00:01:05.440
+So let's start to take a look at how we might be able to do that by opening up
+那么，我们来看看该怎么做，先打开
+
+00:01:05.440 --> 00:01:07.570
+a new blank Scratch project.
+一个新的空白Scratch项目。
+
+00:01:07.570 --> 00:01:09.710
+And when we do so, we'll see the stage--
+打开后，我们会看到舞台——
+
+00:01:09.710 --> 00:01:11.080
+which is pure white by default--
+默认情况下它是纯白色的——
+
+00:01:11.080 --> 00:01:13.880
+and the default Scratch Cat that's here as well.
+还有默认的Scratch猫角色也在这儿。
+
+00:01:13.880 --> 00:01:16.960
+Now, remember from last time, if I wanted to move the Scratch Cat,
+现在回想一下上节课的内容，如果我想移动Scratch猫，
+
+00:01:16.960 --> 00:01:18.560
+I had two ways of doing it.
+有两种方法。
+
+00:01:18.560 --> 00:01:22.510
+One was to click and drag on the cat and move it around the stage
+一种是点击并拖动这只猫，在舞台上把它移到
+
+00:01:22.510 --> 00:01:24.670
+to wherever I want the Scratch Cat to be--
+我想让Scratch猫待的任何位置——
+
+00:01:24.670 --> 00:01:27.820
+or secondly, I could use these x and y values down here.
+另一种方法是，我可以使用这里下方的x和y坐标值。
+
+00:01:27.820 --> 00:01:31.270
+I could change the x value to 0, and the y value to 0
+比如，我可以把x值改成0，y值也改成0
+
+00:01:31.270 --> 00:01:36.010
+for example to perfectly center the cat inside of the stage.
+这样就能把猫完美地放在舞台正中央。
+
+00:01:36.010 --> 00:01:39.520
+But this time, we're going to start to introduce these blocks that
+但这次，我们要开始了解这些积木了，它们
+
+00:01:39.520 --> 00:01:42.790
+have been living on this left side of our Scratch window for some time now,
+已经在Scratch窗口的左侧存在一段时间了，
+
+00:01:42.790 --> 00:01:45.610
+but we haven't really done very much with just yet.
+但我们还没怎么用过它们。
+
+00:01:45.610 --> 00:01:47.590
+And each of these blocks is going to perform
+每个积木都能执行
+
+00:01:47.590 --> 00:01:52.480
+some tasks, some action that's happening on the stage of our Scratch program--
+一些任务，也就是在Scratch程序的舞台上会发生的一些动作——
+
+00:01:52.480 --> 00:01:55.310
+and we're going to start to call these blocks functions.
+我们开始把这些积木称作函数。
+
+00:01:55.310 --> 00:01:58.060
+A function, in the context of Scratch, is just
+在Scratch的语境中，函数就是
+
+00:01:58.060 --> 00:02:00.940
+some block that performs some task.
+能执行某种任务的积木。
+
+00:02:00.940 --> 00:02:03.620
+And we might look at this very first block, for example,
+比如说，我们来看看第一个积木，
+
+00:02:03.620 --> 00:02:05.830
+which just says Move 10 Steps--
+上面写着“移动10步”——
+
+00:02:05.830 --> 00:02:08.050
+and that is a block which, as you might guess,
+正如你可能猜到的，这是一个……
+
+00:02:08.050 --> 00:02:11.890
+has the effect of moving the cat 10 steps.
+能让猫移动10步。
+
+00:02:11.890 --> 00:02:14.590
+And so, let's give it a try-- how could we use that block?
+那么，让我们试试看——我们该怎么用这个积木呢？
+
+00:02:14.590 --> 00:02:17.410
+Well, if I want to use a block as part of my project,
+嗯，如果我想在我的项目里用一个积木，
+
+00:02:17.410 --> 00:02:20.500
+I'm going to start by taking that block and dragging it
+我要先把那个积木拿起来，然后拖动它
+
+00:02:20.500 --> 00:02:24.610
+into the Code Editor in the center part of the Scratch interface.
+到Scratch界面中间的代码编辑器里。
+
+00:02:24.610 --> 00:02:26.860
+So on the left hand side is, really, just this library
+所以在左边，实际上就是这么一个库
+
+00:02:26.860 --> 00:02:29.150
+where all of the blocks live to begin with,
+所有的积木一开始都存放在这里，
+
+00:02:29.150 --> 00:02:31.450
+but if I want to use a block in my project--
+但如果我想在我的项目里用一个积木——
+
+00:02:31.450 --> 00:02:33.520
+I'm going to take the Move 10 Steps block,
+我要拿起“移动10步”这个积木，
+
+00:02:33.520 --> 00:02:36.580
+and drag it out into the main part of the Scratch interface
+然后把它拖到Scratch界面的主要区域
+
+00:02:36.580 --> 00:02:38.410
+and just drop it off.
+再松开鼠标。
+
+00:02:38.410 --> 00:02:42.940
+And so now, I've added my first block of code, my first function,
+现在，我已经把我的第一块代码、第一个函数
+
+00:02:42.940 --> 00:02:44.620
+into my Scratch project--
+添加到我的Scratch项目里了——
+
+00:02:44.620 --> 00:02:47.060
+and to run it, I can just click on it.
+要运行它，我只要点击它就行。
+
+00:02:47.060 --> 00:02:49.600
+So watch what happens when I click on the Move 10 Steps--
+那么看看我点击“移动10步”时会发生什么——
+
+00:02:49.600 --> 00:02:53.500
+notice that right now the Scratch Cat is right in the middle of the stage,
+注意，现在Scratch猫正好在舞台中央，
+
+00:02:53.500 --> 00:02:56.080
+but as soon as I click the button the cat moves.
+但我一点击这个按钮，猫就会移动。
+
+00:02:56.080 --> 00:02:58.810
+Just a little bit, you'll notice it moves slightly to the right,
+你会注意到它只移动了一点点，稍微向右移了一点，
+
+00:02:58.810 --> 00:03:01.810
+and you'll notice too that the position of the cat changed.
+你还会注意到猫的位置变了。
+
+00:03:01.810 --> 00:03:05.650
+Originally it was at 0, 0, now x is 10 and y
+原来它的位置是(0, 0)，现在x是10，y
+
+00:03:05.650 --> 00:03:07.970
+is 0-- we've moved the Scratch Cat a little bit.
+是0——我们让Scratch猫移动了一点。
+
+00:03:07.970 --> 00:03:11.150
+And if I click it again, I can keep moving that cat--
+如果我再点击一次，我可以让猫继续移动——
+
+00:03:11.150 --> 00:03:16.200
+and every time I click it, the cat moves 10 steps to the right.
+每次我点击它，猫都会向右移动10步。
+
+00:03:16.200 --> 00:03:21.360
+Notice too that in this Move 10 Steps block there's a bit of an empty gap
+还要注意，在“移动10步”这个积木里有一个小空白处
+
+00:03:21.360 --> 00:03:24.270
+here where we filled in the number 10, this
+我们在这里填入了数字10，这
+
+00:03:24.270 --> 00:03:26.740
+is what we can call an input to a function.
+就是我们所说的函数的输入。
+
+00:03:26.740 --> 00:03:29.070
+Functions are allowed to take inputs, information
+函数可以接受输入，也就是
+
+00:03:29.070 --> 00:03:31.560
+that those function use in order to decide
+函数用来决定
+
+00:03:31.560 --> 00:03:33.330
+how it is that they're going to behave.
+它该如何运行的信息。
+
+00:03:33.330 --> 00:03:36.390
+And the input that this function takes is a number
+这个函数接受的输入是一个数字
+
+00:03:36.390 --> 00:03:40.150
+indicating how many steps we would like to move-- so in this case,
+表示我们想让它移动多少步——所以在这个例子里，
+
+00:03:40.150 --> 00:03:44.700
+the input is 10, meaning I would like to move 10 steps, but I could change that.
+输入是10，意思是我想让它移动10步，但我可以改变这个数字。
+
+00:03:44.700 --> 00:03:47.970
+I'll drag the cat back out to give it a little more space to move,
+我把猫拖回去一点，给它多留一点移动的空间，
+
+00:03:47.970 --> 00:03:51.940
+but I could change this input, for example, to 30.
+但我可以改变这个输入，比如改成30。
+
+00:03:51.940 --> 00:03:55.470
+And now, when I click on this block, the cat moves further.
+现在，当我点击这个积木时，猫会移动得更远。
+
+00:03:55.470 --> 00:03:57.570
+You'll notice every time I click on it, the cat's
+你会注意到，每次我点击它，猫
+
+00:03:57.570 --> 00:04:00.910
+moving 30 steps instead of 10 steps.
+会移动30步而不是10步。
+
+00:04:00.910 --> 00:04:04.560
+So I can control, based on this input, how far the cat's going to move.
+所以我可以根据这个输入来控制猫要移动多远。
+
+00:04:04.560 --> 00:04:07.300
+And if I make it negative-- say negative 20--
+如果我把它改成负数——比如负20——
+
+00:04:07.300 --> 00:04:10.880
+now every time I click on the cat, the cat's going to move backwards.
+现在每次我点击猫，猫就会向后移动。
+
+00:04:10.880 --> 00:04:13.350
+So you can decide, based on what number you write here,
+所以你可以根据你在这里输入的数字来决定
+
+00:04:13.350 --> 00:04:17.519
+in what direction that cat is going to move.
+那只猫要往哪个方向移动。
+
+00:04:17.519 --> 00:04:21.420
+So this is just one block, one function that we can use inside of our Scratch
+所以这只是一个积木，是我们可以在Scratch项目中使用的一个功能，
+
+00:04:21.420 --> 00:04:23.590
+project, but there are others as well.
+但还有其他的功能。
+
+00:04:23.590 --> 00:04:27.910
+Here's one that, it says Turn 15 Degrees to the Right--
+这里有一个，上面写着“右转15度”——
+
+00:04:27.910 --> 00:04:31.210
+Turn to the Right, or Clockwise 15 Degrees.
+向右转，也就是顺时针转15度。
+
+00:04:31.210 --> 00:04:34.050
+So if I want to use that one, let me try dragging that out
+所以如果我想用这个，我来试着把它拖出来
+
+00:04:34.050 --> 00:04:35.340
+into my Block Editor--
+到我的积木编辑器里——
+
+00:04:35.340 --> 00:04:38.550
+I now have two blocks the move 30 steps one, and the turn 15 degrees
+现在我有两个积木了，一个是移动30步的，另一个是右转15度的
+
+00:04:38.550 --> 00:04:39.970
+to the right one.
+那个。
+
+00:04:39.970 --> 00:04:44.550
+And if I click this one, the Turn block, you'll notice the Scratch Cat turns--
+如果我点击这个“旋转”积木，你会注意到Scratch猫会转动——
+
+00:04:44.550 --> 00:04:48.990
+every time I click on it, it rotates, changes direction by 15 degrees,
+每次我点击它，它就会旋转，方向改变15度，
+
+00:04:48.990 --> 00:04:52.080
+and I can keep clicking on it turning it little by little
+我可以一直点击它，让它一点一点地转动
+
+00:04:52.080 --> 00:04:57.250
+until we get back to the original 90 degrees.
+直到它回到原来的90度。
+
+00:04:57.250 --> 00:05:01.530
+So now I have two different blocks, one block that causes the cat to move,
+所以现在我有两个不同的积木，一个积木能让猫移动，
+
+00:05:01.530 --> 00:05:04.980
+and one block that causes the cat to rotate--
+另一个积木能让猫旋转——
+
+00:05:04.980 --> 00:05:07.420
+and it turns out I can combine these blocks together.
+结果发现我可以把这些积木组合在一起。
+
+00:05:07.420 --> 00:05:09.420
+Often when you're writing programs it's not just
+通常在你编写程序时，不只是
+
+00:05:09.420 --> 00:05:12.580
+going to be one instruction that you want your program to follow,
+让程序遵循一条指令，
+
+00:05:12.580 --> 00:05:14.910
+but it's going to be some sequence of instructions
+而是要让程序遵循一系列的指令
+
+00:05:14.910 --> 00:05:16.390
+that you want your code to follow.
+这是你希望代码遵循的。
+
+00:05:16.390 --> 00:05:19.530
+And so, these blocks can snap together, watch what happens--
+所以，这些积木可以拼接在一起，看看会发生什么——
+
+00:05:19.530 --> 00:05:23.910
+if I take this Turn 15 Degrees block, and I drag it close to the Move 30
+如果我拿起这个“右转15度”的积木，把它拖到“移动30步”的
+
+00:05:23.910 --> 00:05:24.720
+Steps block--
+积木旁边——
+
+00:05:24.720 --> 00:05:26.910
+you'll notice that it starts to highlight,
+你会注意到它开始高亮显示，
+
+00:05:26.910 --> 00:05:31.440
+and then when I release my cursor, the block just snaps into place.
+然后当我松开鼠标指针时，积木就会自动拼接到位。
+
+00:05:31.440 --> 00:05:34.860
+These few blocks are now connected to each other inside of a stack which
+这几个积木现在在一个堆栈里相互连接起来了，我们
+
+00:05:34.860 --> 00:05:39.360
+we can call a script, and now these two blocks together
+可以把它叫做一个脚本，现在这两个积木放在一起
+
+00:05:39.360 --> 00:05:42.360
+will run together-- when we run at this stack of blocks,
+会一起运行——当我们运行这一堆积木时，
+
+00:05:42.360 --> 00:05:45.720
+it's going to run from top to bottom running the first block, which
+它会从上到下依次运行，先运行第一个积木，也就是
+
+00:05:45.720 --> 00:05:48.480
+is Move 30 Steps, and then the second block, which
+“移动30步”，然后运行第二个积木，也就是
+
+00:05:48.480 --> 00:05:50.830
+is Turn to the Right 15 Degrees.
+“右转15度”。
+
+00:05:50.830 --> 00:05:53.070
+So when I click on it, watch what happens--
+所以当我点击它时，看看会发生什么——
+
+00:05:53.070 --> 00:05:57.480
+the cat moves 30 steps, but it also turns by 15 degrees.
+猫会移动30步，同时还会右转15度。
+
+00:05:57.480 --> 00:06:00.250
+And I can click it again, and that'll happen again--
+我可以再点击一次，同样的事情会再次发生——
+
+00:06:00.250 --> 00:06:02.250
+and if I keep clicking it, now you'll see we've
+如果我一直点击它，现在你会看到我们让
+
+00:06:02.250 --> 00:06:04.170
+got this cat moving in a nice circle.
+这只猫画出了一个漂亮的圆圈。
+
+00:06:04.170 --> 00:06:06.660
+It's moving forward and it's rotating every time,
+它每次都会向前移动并旋转，
+
+00:06:06.660 --> 00:06:10.050
+and I'm doing so by every time I click on this stack running
+我每次点击这个堆栈，就会让
+
+00:06:10.050 --> 00:06:14.860
+both of these blocks of our code.
+代码里的这两个积木都运行一次。
+
+00:06:14.860 --> 00:06:17.460
+And so by combining together these various different blocks,
+所以，通过将这些不同的积木组合在一起，
+
+00:06:17.460 --> 00:06:21.180
+we have the ability to create more interesting programs just by deciding
+我们就有能力创建更有趣的程序，只需决定
+
+00:06:21.180 --> 00:06:22.920
+in what sequence-- top to bottom--
+以怎样的顺序——从上到下——
+
+00:06:22.920 --> 00:06:25.530
+we would like for these blocks to ultimately run in.
+我们希望这些积木最终按此运行。
+
+00:06:25.530 --> 00:06:28.380
+And there are all sorts of other different motion blocks
+还有各种各样其他不同的运动积木，
+
+00:06:28.380 --> 00:06:30.810
+that we can use-- notice that the Scratch blocks are all
+我们可以使用——注意，Scratch 积木都
+
+00:06:30.810 --> 00:06:34.170
+organized into categories, and those categories are color coded.
+按类别组织，而且这些类别有颜色编码。
+
+00:06:34.170 --> 00:06:36.540
+And all of these first set of blue blocks,
+所有这些第一组蓝色积木，
+
+00:06:36.540 --> 00:06:40.410
+they're all related to motion-- the movement of the cat.
+它们都与运动相关——也就是这只猫的移动。
+
+00:06:40.410 --> 00:06:43.830
+So there's one block called go to random position-- that one looks fun,
+有一个叫“移到随机位置”的积木——看起来挺有趣，
+
+00:06:43.830 --> 00:06:44.460
+I'll try it.
+我来试试。
+
+00:06:44.460 --> 00:06:47.760
+And now, every time I click on this block, the cat
+现在，每次我点击这个积木，这只猫
+
+00:06:47.760 --> 00:06:52.902
+just moves to a different random position every time.
+每次都会移到一个不同的随机位置。
+
+00:06:52.902 --> 00:06:54.610
+And maybe that's interesting, but maybe I
+也许这挺有趣，但也许我
+
+00:06:54.610 --> 00:06:57.693
+don't really want the go to a random position block as part of my program.
+并不真的想让“移到随机位置”积木成为我程序的一部分。
+
+00:06:57.693 --> 00:06:59.235
+So if ever you decide, you know what?
+所以，如果你决定了，你知道吗？
+
+00:06:59.235 --> 00:07:01.100
+I have a block and I really don't want it--
+我有一个积木，但我真的不想要它了——
+
+00:07:01.100 --> 00:07:03.910
+there are a couple of ways to delete a block in Scratch.
+在 Scratch 里有几种删除积木的方法。
+
+00:07:03.910 --> 00:07:07.270
+One way is you can Control-click, or right-click on the block,
+一种方法是你可以按住 Ctrl 键点击，或者右键点击这个积木，
+
+00:07:07.270 --> 00:07:08.710
+and you can just click Delete--
+然后点击“删除”——
+
+00:07:08.710 --> 00:07:10.280
+that's one way.
+这是一种方法。
+
+00:07:10.280 --> 00:07:13.480
+The other way is I can take the block, and just drag it off to the left,
+另一种方法是我可以拿起这个积木，然后把它拖到左边，
+
+00:07:13.480 --> 00:07:15.280
+put it back into the Library--
+把它放回积木库——
+
+00:07:15.280 --> 00:07:20.140
+and then when I release, the block goes away there as well.
+然后当我松开鼠标，这个积木也就消失了。
+
+00:07:20.140 --> 00:07:23.760
+So using this ability to now move our sprites around
+所以，现在我们有能力通过
+
+00:07:23.760 --> 00:07:27.270
+just by writing a little bit of code, by putting some blocks together--
+编写一点代码，把一些积木组合起来，让角色移动——
+
+00:07:27.270 --> 00:07:30.210
+let's now try and create a program that does something.
+现在让我们试着创建一个能实现某些功能的程序。
+
+00:07:30.210 --> 00:07:32.910
+I'm going to use a different sprite, let's not use the cat--
+我打算用一个不同的角色，咱们不用这只猫了——
+
+00:07:32.910 --> 00:07:35.550
+I'll go ahead and delete the cat by pressing the Trashcan
+我要通过点击猫旁边的垃圾桶图标
+
+00:07:35.550 --> 00:07:37.650
+icon next to the cat.
+来删除这只猫。
+
+00:07:37.650 --> 00:07:40.280
+But I'll choose a new sprite, let's go to animals--
+但我要选一个新角色，咱们选动物类的——
+
+00:07:40.280 --> 00:07:42.870
+so I have a few different options, and I think I
+我有几个不同的选项，我觉得我
+
+00:07:42.870 --> 00:07:45.540
+like the hedgehog-- we'll go ahead and use the hedgehog.
+喜欢刺猬——我们就用刺猬吧。
+
+00:07:45.540 --> 00:07:50.250
+And what I want for the hedgehog to do is just walk around the entire stage,
+我希望这只刺猬做的是在整个舞台上走动，
+
+00:07:50.250 --> 00:07:52.390
+to walk in a rectangle, effectively.
+实际上就是绕着舞台走一个矩形。
+
+00:07:52.390 --> 00:07:54.540
+And so, let's assemble together some blocks
+所以，让我们把一些积木组合起来，
+
+00:07:54.540 --> 00:07:57.300
+to let the hedgehog do just that.
+让刺猬实现这个功能。
+
+00:07:57.300 --> 00:08:01.590
+I want the hedgehog to start in the upper left portion of the stage,
+我希望刺猬从舞台的左上角开始，
+
+00:08:01.590 --> 00:08:05.460
+and so that's about this x value and about that y value--
+也就是大概这个 x 值和那个 y 值的位置——
+
+00:08:05.460 --> 00:08:07.200
+and I can be even more precise.
+我还可以更精确些。
+
+00:08:07.200 --> 00:08:09.540
+You'll notice that the Go To block, which
+你会注意到“移动到”积木，它
+
+00:08:09.540 --> 00:08:12.090
+is a block that just goes to a particular position,
+是一个能让角色移动到特定位置的积木，
+
+00:08:12.090 --> 00:08:16.820
+will def by default include the values for wherever the sprite is currently.
+默认情况下会包含角色当前所在位置的坐标值。
+
+00:08:16.820 --> 00:08:20.890
+So right now it's negative 168 and 120--
+所以现在坐标是 -168 和 120 ——
+
+00:08:20.890 --> 00:08:23.110
+I'm going to change this slightly, negative 180
+我稍微改一下，改成 -180
+
+00:08:23.110 --> 00:08:24.910
+just to make the number a little cleaner--
+只是为了让数字看着更整齐一些 ——
+
+00:08:24.910 --> 00:08:27.960
+but now this block will move this hedgehog
+现在这个积木会把这只刺猬
+
+00:08:27.960 --> 00:08:31.030
+to the upper left portion of the stage.
+移动到舞台的左上角。
+
+00:08:31.030 --> 00:08:34.890
+And now if I wanted to go to the upper right portion of the stage,
+现在如果我想让它移动到舞台的右上角，
+
+00:08:34.890 --> 00:08:36.900
+I'll use the Go To block again.
+我会再次使用“移动到”积木。
+
+00:08:36.900 --> 00:08:40.590
+And remember that, to control the left or right position of any given sprite,
+记住，要控制任意角色的左右位置，
+
+00:08:40.590 --> 00:08:41.940
+I can change the x value.
+我可以改变 x 坐标的值。
+
+00:08:41.940 --> 00:08:45.240
+The x value controls whether it's to the left or to the right--
+x 坐标的值决定角色是在左边还是右边 ——
+
+00:08:45.240 --> 00:08:48.370
+negative means to the left, positive will mean to the right.
+负值表示在左边，正值表示在右边。
+
+00:08:48.370 --> 00:08:52.930
+So we'll go ahead and change it to positive 180 and then y equals 120.
+所以我们直接把它改成 180，y 坐标等于 120。
+
+00:08:52.930 --> 00:08:56.430
+So it starts with the upper left, and then goes to the upper right,
+这样它就从左上角开始，然后移动到右上角，
+
+00:08:56.430 --> 00:08:58.110
+and I'll add one more after that.
+之后我再添加一个。
+
+00:08:58.110 --> 00:09:00.960
+And I want to move it now to the lower right--
+现在我想把它移动到右下角 ——
+
+00:09:00.960 --> 00:09:03.632
+I want to sort of make a rectangle all around the stage--
+我想让它在舞台周围绕一圈，形成一个矩形 ——
+
+00:09:03.632 --> 00:09:06.340
+in the lower right, well, that's going to be a positive x value--
+在右下角，那 x 坐标是正值 ——
+
+00:09:06.340 --> 00:09:08.130
+so we'll do positive 180.
+所以我们设为 180。
+
+00:09:08.130 --> 00:09:13.290
+But now a negative y value-- y control is how far up or down the hedgehog
+但现在 y 坐标要设为负值 —— y 坐标控制刺猬
+
+00:09:13.290 --> 00:09:14.430
+is going to move.
+向上或向下移动的距离。
+
+00:09:14.430 --> 00:09:19.800
+And I'll do one more with negative for both-- negative 180, negative 120.
+我再添加一个，两个坐标都设为负值 —— -180， -120。
+
+00:09:19.800 --> 00:09:23.040
+That's going to be the bottom left because the x is very negative,
+那会是左下角，因为 x 坐标是很大的负值，
+
+00:09:23.040 --> 00:09:24.670
+and the y is very negative.
+而且 y 坐标也是很大的负值。
+
+00:09:24.670 --> 00:09:27.630
+And so what I hope this will do is cause the hedgehog
+我希望这样能让刺猬
+
+00:09:27.630 --> 00:09:32.880
+to just move in a rectangle, go to all four corners of the stage.
+沿着矩形移动，到达舞台的四个角。
+
+00:09:32.880 --> 00:09:37.740
+So I'll try it, I'll go ahead and click on this block and see what happens.
+所以我来试试看，我直接点击这个积木，看看会发生什么。
+
+00:09:37.740 --> 00:09:40.290
+All right, it didn't do exactly what I expected for it to do.
+好吧，它并没有完全按照我预期的那样运行。
+
+00:09:40.290 --> 00:09:43.197
+The hedgehog just jumped immediately to the lower left,
+刺猬直接跳到了左下角，
+
+00:09:43.197 --> 00:09:45.780
+even though the lower left one is this last instruction here--
+尽管左下角的这个指令是最后一个 ——
+
+00:09:45.780 --> 00:09:48.420
+it seems to have skipped these two in the middle that
+它好像跳过了中间的两条指令，
+
+00:09:48.420 --> 00:09:51.790
+tell it to go to the upper right and then to the lower right.
+那两条指令是让它先到右上角，再到右下角。
+
+00:09:51.790 --> 00:09:53.400
+So, what's going on?
+那么，这是怎么回事呢？
+
+00:09:53.400 --> 00:09:55.920
+Well, it turns out that when a program is running,
+原来，当程序运行时，
+
+00:09:55.920 --> 00:09:59.050
+the computer can run our programs very, very, very quickly.
+计算机能以非常非常快的速度运行我们的程序。
+
+00:09:59.050 --> 00:10:02.130
+So even though our program was going through each of these four lines one
+所以，尽管我们的程序是一次执行这四行代码中的一行，
+
+00:10:02.130 --> 00:10:05.370
+at a time, it happened so quickly-- it went to one location,
+但执行得太快了 —— 它移动到一个位置，
+
+00:10:05.370 --> 00:10:08.340
+then a second location, then a third location, then a fourth location--
+接着是第二个位置，然后是第三个位置，最后是第四个位置 ——
+
+00:10:08.340 --> 00:10:11.100
+that we, the human looking at this project, only
+我们，也就是看着这个项目的人，只能
+
+00:10:11.100 --> 00:10:13.060
+ever saw the final location.
+看到最终的位置。
+
+00:10:13.060 --> 00:10:17.213
+We missed all three of those locations that were in between.
+我们错过了中间的那三个位置。
+
+00:10:17.213 --> 00:10:19.380
+And so sometimes, if I want to be able to see what's
+所以有时候，如果我想知道
+
+00:10:19.380 --> 00:10:21.600
+actually happening in a project, I need to tell
+项目里实际发生了什么，我得告诉
+
+00:10:21.600 --> 00:10:23.310
+Scratch to slow down a little bit.
+Scratch稍微慢一点。
+
+00:10:23.310 --> 00:10:26.430
+Don't just immediately go to a particular position,
+不要立刻就跳到某个特定的位置，
+
+00:10:26.430 --> 00:10:28.590
+but take some time in getting there.
+而是花点时间移动过去。
+
+00:10:28.590 --> 00:10:32.130
+And Scratch's word for this is to glide, and so what you'll notice is that--
+Scratch里管这个叫滑行，你会注意到——
+
+00:10:32.130 --> 00:10:35.940
+in addition to just the Go To block that immediately jumps to a particular
+除了能立刻跳到特定
+
+00:10:35.940 --> 00:10:40.080
+location, I have another motion block called Glide--
+位置的“移到”积木，我还有另一个运动类积木叫“滑行”——
+
+00:10:40.080 --> 00:10:42.750
+and this one takes three different inputs.
+这个积木需要三个不同的输入值。
+
+00:10:42.750 --> 00:10:48.180
+This one by default says Glide 1 second to this x value and that y value--
+这个积木默认显示“滑行1秒到这个x值和那个y值”——
+
+00:10:48.180 --> 00:10:51.270
+and I can use that to say, take some amount of time
+我可以用它来表示，花点时间
+
+00:10:51.270 --> 00:10:55.170
+to go to a particular position, and let's try that out.
+移动到某个特定的位置，咱们来试试看。
+
+00:10:55.170 --> 00:10:58.440
+I'll head over back to my Block Editor, and I no longer
+我回到积木编辑器，我不再
+
+00:10:58.440 --> 00:11:01.177
+want these bottom three blocks--
+需要下面这三个积木了——
+
+00:11:01.177 --> 00:11:03.510
+I'd like my starting position, but these other three I'm
+我想要起始位置，但另外这三个
+
+00:11:03.510 --> 00:11:04.680
+going to need to change.
+我得改一下。
+
+00:11:04.680 --> 00:11:08.910
+So I'll take them, drag them over into the Block Library to delete them,
+所以我把它们拖到积木库删掉，
+
+00:11:08.910 --> 00:11:12.730
+and let me now bring out a Glide block.
+现在我拿出一个“滑行”积木。
+
+00:11:12.730 --> 00:11:18.930
+Let's take one second to glide to x equals 180, y equals 120--
+咱们花1秒滑行到x等于180，y等于120——
+
+00:11:18.930 --> 00:11:23.710
+both positive-- that's going to be in the upper right portion of my stage.
+都是正数——那会是舞台的右上角。
+
+00:11:23.710 --> 00:11:29.520
+Let's take one more second to go to positive 180 for x, and negative 120
+咱们再花1秒移动到x为正180，y为负120
+
+00:11:29.520 --> 00:11:34.650
+for y-- that's to the right and down, so the bottom right portion of the stage.
+的位置——也就是向右再向下，舞台的右下角。
+
+00:11:34.650 --> 00:11:37.800
+And let's take one more second to glide to negative 180,
+咱们再花1秒滑行到x为负180，
+
+00:11:37.800 --> 00:11:40.980
+negative 120, which as you can see here where the hedgehog is now,
+y为负120的位置，就像你现在看到刺猬所在的位置，
+
+00:11:40.980 --> 00:11:43.603
+that's the lower left corner of the stage.
+那是舞台的左下角。
+
+00:11:43.603 --> 00:11:46.770
+And if ever you're confused about what those numbers mean and where you are,
+如果你搞不清那些数字是什么意思，自己在什么位置，
+
+00:11:46.770 --> 00:11:50.050
+you can just drag the hedgehog to the location where you want it to be--
+你可以直接把刺猬拖到你想让它去的位置——
+
+00:11:50.050 --> 00:11:53.310
+and you'll be able to see what the x and y values for that
+这样你就能看到那个位置的x和y值
+
+00:11:53.310 --> 00:11:55.080
+are actually going to be.
+实际上是多少。
+
+00:11:55.080 --> 00:11:58.430
+So now let's try to run the script--
+现在咱们来运行一下脚本——
+
+00:11:58.430 --> 00:12:01.180
+I can do that, again, just by clicking on the script I want to run
+我还是只要点击我想运行的脚本就行
+
+00:12:01.180 --> 00:12:02.610
+and it will run them in sequence.
+它会按顺序运行。
+
+00:12:02.610 --> 00:12:06.930
+We start in one corner, and we work our way in a rectangle back to the other
+我们从一个角开始，沿着一个矩形移动到另一个
+
+00:12:06.930 --> 00:12:09.630
+corner-- and if I wanted to end up back at the starting point,
+角——如果我想最后回到起始点，
+
+00:12:09.630 --> 00:12:14.580
+I can add one more Glide, and let's glide back to negative 180 and positive
+我可以再添加一个“滑行”积木，咱们滑行回x为负180，y为正
+
+00:12:14.580 --> 00:12:16.140
+120-- that's moving up--
+120的位置——也就是向上移动——
+
+00:12:16.140 --> 00:12:20.670
+and so now when I click on the hedgehog it moves in a rectangle
+所以现在我点击刺猬，它就会沿着矩形移动
+
+00:12:20.670 --> 00:12:23.408
+all around the stage.
+在舞台的四周。
+
+00:12:23.408 --> 00:12:25.200
+And so we've been writing programs now just
+到现在为止，我们编写程序只是
+
+00:12:25.200 --> 00:12:28.950
+by putting these blocks in sequence, deciding what we want our sprite to do,
+通过按顺序摆放这些积木，决定我们想让角色做什么，
+
+00:12:28.950 --> 00:12:34.020
+and then clicking on those blocks to run them and to see our project in action.
+然后点击这些积木来运行它们，看看我们的项目如何运作。
+
+00:12:34.020 --> 00:12:35.888
+And now at this point our project starting
+现在，我们的项目开始
+
+00:12:35.888 --> 00:12:38.680
+to get a little more complicated, and if I come back to this later,
+变得有点复杂了，如果我之后再回来看这个项目，
+
+00:12:38.680 --> 00:12:41.790
+I might not remember exactly what I was trying to do with these blocks.
+我可能不记得我用这些积木到底想实现什么功能了。
+
+00:12:41.790 --> 00:12:44.590
+I might not remember what all these numbers represent,
+我可能不记得所有这些数字代表什么，
+
+00:12:44.590 --> 00:12:47.910
+and so Scratch gives you the ability to leave comments on your project--
+所以Scratch让你可以在项目中添加注释——
+
+00:12:47.910 --> 00:12:50.190
+just little sentences, short descriptions
+就是简短的句子、简短的描述
+
+00:12:50.190 --> 00:12:53.330
+of what it is you were thinking, and that's helpful for two reasons.
+记录下你当时的想法，这有两个好处。
+
+00:12:53.330 --> 00:12:56.310
+It's helpful, number one, if you come back to your project a little bit
+首先，如果过了一段时间
+
+00:12:56.310 --> 00:12:58.890
+later and might not remember exactly what you were thinking--
+你再回来看项目，可能不记得当时的想法了——
+
+00:12:58.890 --> 00:13:00.330
+you can use it as a reminder.
+你可以用注释来提醒自己。
+
+00:13:00.330 --> 00:13:03.805
+And it's also helpful if someone else is reading your project--
+如果别人在看你的项目，注释也很有用——
+
+00:13:03.805 --> 00:13:06.930
+they're looking at the blocks that you used and they want to understand why
+他们看着你用的积木，想弄明白你
+
+00:13:06.930 --> 00:13:08.700
+did you create the project this way--
+为什么要这样创建项目——
+
+00:13:08.700 --> 00:13:11.800
+you can use comments to explain as well.
+你也可以用注释来解释。
+
+00:13:11.800 --> 00:13:14.820
+I can add a comment just by Right-clicking or Control-clicking
+我只要右键点击或者按住Control键点击
+
+00:13:14.820 --> 00:13:17.610
+on my stack, and I'll add a comment.
+我的积木堆，就能添加一条注释。
+
+00:13:17.610 --> 00:13:22.080
+And here in my comment window I'll just say these blocks
+在这个注释窗口里，我就写这些积木
+
+00:13:22.080 --> 00:13:25.950
+move the sprite in a rectangle--
+能让角色按矩形轨迹移动——
+
+00:13:25.950 --> 00:13:28.560
+this doesn't affect how the program actually runs,
+这不会影响程序实际的运行方式，
+
+00:13:28.560 --> 00:13:32.160
+it's just a little comment that I can collapse the offers a reminder--
+这只是一条我可以折叠起来的小注释，能起到提醒作用——
+
+00:13:32.160 --> 00:13:34.260
+some text that you can read a little bit later
+你之后可以读一下这些文字
+
+00:13:34.260 --> 00:13:38.670
+to understand what exactly was going on.
+来弄清楚到底是怎么回事。
+
+00:13:38.670 --> 00:13:41.670
+So that then is what we can do with motion blocks,
+这就是我们能用运动类积木做的事，
+
+00:13:41.670 --> 00:13:44.040
+and there are other motion blocks too for changing
+还有其他运动类积木可以用来改变
+
+00:13:44.040 --> 00:13:46.590
+what direction the sprite happens to be pointing in,
+角色的朝向，
+
+00:13:46.590 --> 00:13:49.200
+or moving only in the x, or only in the y direction.
+或者让角色只沿x轴或只沿y轴移动。
+
+00:13:49.200 --> 00:13:51.240
+And you can explore some of those options
+你可以探索一下用运动类积木能实现的其他功能，不过现在
+
+00:13:51.240 --> 00:13:53.910
+for what you can do with motion blocks, but let's now
+让我们来看看其他类别的积木。
+
+00:13:53.910 --> 00:13:56.280
+take a look at some of the other categories of blocks
+我现在要切换到外观板块——
+
+00:13:56.280 --> 00:13:57.970
+that we have access to as well.
+我们也可以使用这些板块的积木。
+
+00:13:57.970 --> 00:14:00.300
+I'll go now to the Looks section--
+注意，不同类别的积木颜色不同——
+
+00:14:00.300 --> 00:14:04.090
+notice that these are in a different color for a different category--
+这里，我把这个“说 你好”积木拖出来，看起来挺有趣的。
+
+00:14:04.090 --> 00:14:08.730
+and here, let me drag out this Say Hello block which looks interesting.
+我把它拖出来——
+
+00:14:08.730 --> 00:14:09.880
+I'll drag it out--
+我不再用这些运动类积木了，所以我要把它们删掉，
+
+00:14:09.880 --> 00:14:13.088
+and I'm not going to use these motion blocks anymore, so I'll get rid of them
+只要把它们拖走就行——
+
+00:14:13.088 --> 00:14:14.440
+just by dragging them away--
+只要把它们拖走就行——
+
+00:14:14.440 --> 00:14:17.220
+so now I just have this one Say Hello block.
+现在我就只有这一个“说你好”积木。
+
+00:14:17.220 --> 00:14:19.350
+And let me move the hedgehog to the center
+我把刺猬角色移到舞台中央
+
+00:14:19.350 --> 00:14:22.500
+just so we can see it a little more easily-- we'll move it to x equals 0
+这样我们能更容易看到它——我们把它移到 x 坐标等于 0 的位置
+
+00:14:22.500 --> 00:14:24.660
+and y equals 0.
+以及 y 坐标等于 0 的位置。
+
+00:14:24.660 --> 00:14:27.990
+If I click on Say Hello, watch what happens--
+我点击“说你好”，看看会发生什么——
+
+00:14:27.990 --> 00:14:31.410
+a little speech bubble appears next to the hedgehog
+刺猬旁边会出现一个小对话框
+
+00:14:31.410 --> 00:14:33.780
+and the hedgehog is saying hello.
+刺猬在说你好。
+
+00:14:33.780 --> 00:14:37.140
+If I want it to say multiple things, I could stack multiple of these blocks
+如果我想让它说好几句话，我可以把多个这样的积木堆叠起来
+
+00:14:37.140 --> 00:14:42.113
+together-- let's say hello and then say goodbye, for example,
+比如说，先说你好，然后说再见，
+
+00:14:42.113 --> 00:14:43.030
+and see what happens--
+看看会怎样——
+
+00:14:43.030 --> 00:14:48.020
+I'll click on it now, I'll click on it again.
+我现在点击它，再点击一次。
+
+00:14:48.020 --> 00:14:50.833
+Notice that, again, we seem to have run into a similar bug,
+注意，我们似乎又遇到了类似的问题，
+
+00:14:50.833 --> 00:14:53.750
+a bug-- some problem with our program that we're going to need to fix.
+一个问题——我们的程序有个问题，得把它修复。
+
+00:14:53.750 --> 00:14:58.850
+I wanted for my program to first say hello and then say goodbye,
+我希望我的程序先问好，然后说再见，
+
+00:14:58.850 --> 00:15:01.760
+but every time I click on it, it's just saying goodbye.
+但每次我点击它，它只说再见。
+
+00:15:01.760 --> 00:15:04.070
+And the reason is exactly the same thing that we
+原因和我们刚才
+
+00:15:04.070 --> 00:15:06.830
+saw a moment ago with the hedgehog moving around the stage--
+看到的刺猬在舞台上移动的情况完全一样——
+
+00:15:06.830 --> 00:15:08.840
+it's that Scratch's running through these blocks
+就是 Scratch 运行这些积木的速度太快了，
+
+00:15:08.840 --> 00:15:11.510
+so quickly that we don't get time to see the hello,
+我们根本来不及看到“你好”，
+
+00:15:11.510 --> 00:15:14.240
+we just immediately see the goodbye.
+就直接看到“再见”了。
+
+00:15:14.240 --> 00:15:16.560
+So if we want to see the hello for some time,
+所以，如果我们想让“你好”显示一会儿，
+
+00:15:16.560 --> 00:15:20.690
+we're going to need to tell Scratch to stay there for some number of seconds
+就得告诉 Scratch 在执行下一个动作之前停留几秒
+
+00:15:20.690 --> 00:15:22.348
+before moving on to something else--
+再继续执行其他操作——
+
+00:15:22.348 --> 00:15:24.140
+and there's a block, fortunately, that will
+幸运的是，有个积木可以
+
+00:15:24.140 --> 00:15:25.970
+do that for us, which is this one here.
+帮我们实现这个功能，就是这个。
+
+00:15:25.970 --> 00:15:28.760
+Say Hello for 2 Seconds will have the effect
+“说你好 2 秒”会有这样的效果
+
+00:15:28.760 --> 00:15:32.300
+of saying hello, but rather than immediately move on to the next block,
+就是先说你好，但不会马上跳到下一个积木，
+
+00:15:32.300 --> 00:15:34.520
+it'll stay there for some amount of time that
+它会停留一段时间，
+
+00:15:34.520 --> 00:15:39.020
+will give us a chance to read what it is that the hedgehog is actually saying.
+这样我们就有时间看清刺猬到底在说什么。
+
+00:15:39.020 --> 00:15:42.830
+So let me delete these blocks dragging them off into the editor,
+我把这些积木拖进编辑区删掉，
+
+00:15:42.830 --> 00:15:46.640
+and replace it with Say Hello for 2 Seconds.
+然后用“说你好 2 秒”来替换。
+
+00:15:46.640 --> 00:15:49.640
+And then if I want another one, I'll drag another block out--
+如果我还需要一个，我再拖一个积木出来——
+
+00:15:49.640 --> 00:15:51.930
+this one will be Say Goodbye for 2 Seconds,
+这个是“说再见 2 秒”，
+
+00:15:51.930 --> 00:15:53.730
+these are stacked on top of each other.
+把它们堆叠在一起。
+
+00:15:53.730 --> 00:15:58.190
+So now, when I click on these blocks, the hedgehog says hello,
+现在，我点击这些积木，刺猬会说你好，
+
+00:15:58.190 --> 00:16:01.620
+and then the hedgehog says goodbye for two seconds as well.
+然后刺猬也会说两秒再见。
+
+00:16:01.620 --> 00:16:07.010
+So we've been able to fix the bug that we've been able to create here.
+这样我们就修复了这里出现的问题。
+
+00:16:07.010 --> 00:16:11.260
+So now, Looks can affect-- not just what the character is saying,
+现在，外观不仅能影响角色说什么，
+
+00:16:11.260 --> 00:16:13.067
+you can get a speech bubble to appear, you
+你可以让对话框出现，
+
+00:16:13.067 --> 00:16:15.400
+can get a thought bubble to appear with the Think blocks
+用“思考”积木还能让思想泡泡出现
+
+00:16:15.400 --> 00:16:17.740
+instead of with the Say blocks, but Looks also
+不是用“说”积木，而是“外观”类别
+
+00:16:17.740 --> 00:16:19.960
+have to do with the costume for a sprite.
+还和角色的造型有关。
+
+00:16:19.960 --> 00:16:22.630
+Remember that last time we explored costumes and sprites,
+记得上次我们探索了造型和角色，
+
+00:16:22.630 --> 00:16:26.050
+and how we could change the different costumes that a sprite might have.
+以及我们如何改变角色可能拥有的不同造型。
+
+00:16:26.050 --> 00:16:29.440
+We did that before just by manually clicking on which costume
+之前我们只是通过手动点击
+
+00:16:29.440 --> 00:16:31.090
+we want the sprite to take on--
+我们想让角色呈现的造型来实现——
+
+00:16:31.090 --> 00:16:33.370
+now, we can start to program it using blocks
+现在，我们可以开始用积木编程
+
+00:16:33.370 --> 00:16:35.860
+to decide what's going to happen in our project,
+来决定我们的项目中会发生什么，
+
+00:16:35.860 --> 00:16:38.905
+and when our sprites are going to change their costumes.
+以及我们的角色何时会改变它们的造型。
+
+00:16:38.905 --> 00:16:40.780
+So let's try a different character, I'm going
+那么让我们试试另一个角色，我打算
+
+00:16:40.780 --> 00:16:44.440
+to delete my hedgehog sprite by clicking that Trash icon,
+通过点击那个垃圾桶图标删除我的刺猬角色，
+
+00:16:44.440 --> 00:16:46.720
+and let's create a new sprite.
+然后让我们创建一个新角色。
+
+00:16:46.720 --> 00:16:50.470
+Go into Animals, and let's choose the bear this time.
+进入“动物”类别，这次我们选熊。
+
+00:16:50.470 --> 00:16:55.450
+And I'm curious as to what costumes the bear has, so I can click on the bear.
+我很好奇这只熊有哪些造型，所以我可以点击这只熊。
+
+00:16:55.450 --> 00:16:58.600
+I go into the Costumes tab and I see that the bear has
+我进入“造型”标签页，看到这只熊有
+
+00:16:58.600 --> 00:17:02.830
+two costumes-- there's one called Bear A that's just the bear as it
+两个造型——有一个叫“熊A”，就是这只熊现在
+
+00:17:02.830 --> 00:17:05.680
+is right now, and there's also Bear B where
+的样子，还有一个“熊B”，在这个造型里
+
+00:17:05.680 --> 00:17:07.970
+the bear is standing up a little bit.
+熊稍微站起来了一点。
+
+00:17:07.970 --> 00:17:12.760
+So we got Bear A and Bear B, and I can toggle between them in the Costumes tab
+所以我们有“熊A”和“熊B”，我可以在“造型”标签页中切换它们
+
+00:17:12.760 --> 00:17:18.490
+to decide what costume the character will take on, but I can program this
+来决定角色会呈现什么造型，但我也可以通过组合一些积木来编程实现
+
+00:17:18.490 --> 00:17:20.780
+as well by assembling some blocks together.
+这一效果。
+
+00:17:20.780 --> 00:17:25.569
+So let me start with a block called Switch Costume to.
+那么让我从一个叫“换成造型”的积木开始。
+
+00:17:25.569 --> 00:17:27.819
+Let's start with costume bear A, with the bear
+我们先从“熊A”造型开始，就是这只熊
+
+00:17:27.819 --> 00:17:32.120
+normally the way that it is right now, and let's give it a starting position.
+现在正常的样子，然后给它设定一个起始位置。
+
+00:17:32.120 --> 00:17:38.530
+When I start, I would like for it to go to let's say, x equals--
+当程序开始时，我希望它移动到，比如说，x坐标等于——
+
+00:17:38.530 --> 00:17:41.770
+negative 131's OK, let's go negative 120 and negative 50,
+-131也行，我们就用 -120 和 -50 吧，
+
+00:17:41.770 --> 00:17:43.390
+just to use some cleaner numbers.
+就用些更规整的数字。
+
+00:17:43.390 --> 00:17:46.390
+And that's going to be the starting position and the starting
+那将是这只熊的起始位置和起始
+
+00:17:46.390 --> 00:17:50.870
+costume for the bear-- every time we click on this script,
+造型——每次我们点击这个脚本，
+
+00:17:50.870 --> 00:17:55.120
+it's going to switch to this costume, it's going to move to this location.
+它就会切换到这个造型，移动到这个位置。
+
+00:17:55.120 --> 00:17:58.640
+But now what I'd like for it to do is I want the bear to walk across the stage,
+但现在我希望它做的是让这只熊走过舞台，
+
+00:17:58.640 --> 00:18:00.640
+and when it gets to the other side of the stage,
+当它走到舞台的另一边时，
+
+00:18:00.640 --> 00:18:02.053
+the bear is going to stand up--
+这只熊会站起来——
+
+00:18:02.053 --> 00:18:03.970
+that's maybe what I'd like for the bear to do,
+这也许就是我想让这只熊做的，
+
+00:18:03.970 --> 00:18:05.840
+and so let's do that in two steps.
+所以让我们分两步来实现。
+
+00:18:05.840 --> 00:18:08.320
+First, I want the bear to walk across the stage,
+首先，我想让这只熊走过舞台，
+
+00:18:08.320 --> 00:18:10.330
+and then I want the bear to stand up.
+然后我想让这只熊站起来。
+
+00:18:10.330 --> 00:18:11.590
+Walking across the stage?
+走过舞台？
+
+00:18:11.590 --> 00:18:12.730
+That sounds like motion--
+这听起来像是移动——
+
+00:18:12.730 --> 00:18:15.430
+so it's going to be in the Motion section of my blocks.
+所以它会在我的积木的“移动”类别里。
+
+00:18:15.430 --> 00:18:18.500
+And I'll use this block, we've seen it before,
+我要用这个积木，我们之前见过它，
+
+00:18:18.500 --> 00:18:25.930
+let's take 2 seconds to glide 2 x equals 120 and y equals negative 50.
+让角色花2秒滑行到x等于120，y等于负50的位置。
+
+00:18:25.930 --> 00:18:28.963
+So it's going to-- the y is not changing, it's not going up or down--
+所以它会——y坐标不会改变，它不会上下移动——
+
+00:18:28.963 --> 00:18:30.880
+the only thing that's changing is the x, we're
+唯一改变的是x坐标，我们
+
+00:18:30.880 --> 00:18:34.480
+moving to the right along the stage.
+沿着舞台向右移动。
+
+00:18:34.480 --> 00:18:37.720
+And after you glide there, after you take two seconds to glide there,
+当你滑行到那里后，当你花两秒滑行到那里后，
+
+00:18:37.720 --> 00:18:39.400
+now I want it to stand up--
+现在我想让它站起来——
+
+00:18:39.400 --> 00:18:41.560
+that's going to be Looks, it's what it looks like--
+这属于外观类别，就是它看起来的样子——
+
+00:18:41.560 --> 00:18:43.360
+what costume it's taking on--
+它要换成什么造型——
+
+00:18:43.360 --> 00:18:48.670
+and here let's go ahead and switch the costume to Bear B, so we'll try it now.
+这里我们直接把造型换成熊B，现在我们来试试看。
+
+00:18:48.670 --> 00:18:53.080
+I'll click on this script, and we start on the left-- the bear walks across,
+我点击这个脚本，我们从左边开始——熊走过去，
+
+00:18:53.080 --> 00:18:56.352
+and when it gets to the right side of the stage, it stands up.
+当它走到舞台右侧时，它就站起来。
+
+00:18:56.352 --> 00:18:58.060
+And I can click it again, everything will
+我可以再点击一次，一切都会
+
+00:18:58.060 --> 00:19:01.190
+reset because if we go back to costume A, we go back to the left--
+重置，因为如果我们换回造型A，我们就回到左边——
+
+00:19:01.190 --> 00:19:04.210
+and every time I click it, the bear goes to one side,
+每次我点击它，熊就走到一边，
+
+00:19:04.210 --> 00:19:07.090
+and then it stands up at the end of that.
+然后在那之后它会站起来。
+
+00:19:07.090 --> 00:19:09.190
+So we can combine Motion and Looks blocks
+所以我们可以把运动和外观积木结合起来
+
+00:19:09.190 --> 00:19:12.730
+to start to create stories just by using these sprites
+通过使用这些角色
+
+00:19:12.730 --> 00:19:16.177
+and changing where they are and what costumes they're taking on.
+并改变它们的位置和造型，来开始创作故事。
+
+00:19:16.177 --> 00:19:18.010
+And we can make our stories more interesting
+我们还可以让我们的故事更有趣
+
+00:19:18.010 --> 00:19:21.230
+by adding some backdrops to our stage as well,
+方法是也给我们的舞台添加一些背景，
+
+00:19:21.230 --> 00:19:24.430
+so let's add a couple of backdrops where we might want for our bear
+所以比如说，让我们添加几个背景，让我们的熊
+
+00:19:24.430 --> 00:19:27.080
+to be walking through, for example.
+可以在里面走动。
+
+00:19:27.080 --> 00:19:29.650
+So I'll go ahead and choose a new backdrop,
+所以我直接去选一个新背景，
+
+00:19:29.650 --> 00:19:34.330
+and I think I'll choose the forest--
+我想我会选森林——
+
+00:19:34.330 --> 00:19:36.430
+I'll have the bear walking through the forest.
+我要让熊在森林里走动。
+
+00:19:36.430 --> 00:19:39.130
+So that's one possible backdrop of the bear could be in--
+所以这是熊可能身处的一种背景——
+
+00:19:39.130 --> 00:19:41.380
+I want to pick another one, though, just have a couple of options
+不过，我想再选一个，就多几个选择
+
+00:19:41.380 --> 00:19:42.255
+that I can work with.
+这样我就可以有不同玩法。
+
+00:19:42.255 --> 00:19:45.220
+So I'll go back to the bottom right, choose a new backdrop,
+所以我回到右下角，选一个新背景，
+
+00:19:45.220 --> 00:19:47.260
+and this time I would like--
+这次我想要——
+
+00:19:47.260 --> 00:19:49.150
+I'll scroll down near to the bottom.
+我往下滚动到接近底部的位置。
+
+00:19:49.150 --> 00:19:52.300
+There is this one, which is called Woods and Bench, which
+有这个，它叫“树林和长凳”，这个
+
+00:19:52.300 --> 00:19:54.560
+I'll go ahead and click on as well.
+我也直接点击选用。
+
+00:19:54.560 --> 00:19:59.150
+And so now I have the bear in the woods where there's a bench as well.
+所以现在熊在有长凳的树林里了。
+
+00:19:59.150 --> 00:20:01.750
+So I've got these various different backdrops
+所以我有了这些不同的背景
+
+00:20:01.750 --> 00:20:05.710
+that I now have as part of my project, and now I'd
+它们现在是我项目的一部分了，现在我
+
+00:20:05.710 --> 00:20:09.640
+like to construct a story that involves the bear moving
+想构建一个故事，让熊在
+
+00:20:09.640 --> 00:20:11.800
+through these various different backdrops--
+这些不同的背景中移动——
+
+00:20:11.800 --> 00:20:15.670
+and so let's try and build this story one piece at a time
+所以让我们试着一次构建故事的一部分
+
+00:20:15.670 --> 00:20:18.940
+I want the story to start in the forest, so I'll get rid of these blocks
+我想让故事在森林里开始，所以我要把这些积木块删掉
+
+00:20:18.940 --> 00:20:21.160
+for now-- we can add them back later--
+暂时先删了——之后我们还能把它们加回来——
+
+00:20:21.160 --> 00:20:25.180
+but there's a block here called Switch Backdrop To, and Switch Backdrop
+这里有个叫“切换背景为”的积木块，“切换背景为”
+
+00:20:25.180 --> 00:20:29.240
+To will let me choose what backdrop I want the story to have.
+能让我选择故事要用什么背景。
+
+00:20:29.240 --> 00:20:31.060
+So let's start in the forest--
+那咱们就从森林开始吧——
+
+00:20:31.060 --> 00:20:33.430
+I'm going to choose the backdrop called Forest,
+我要选那个叫“森林”的背景，
+
+00:20:33.430 --> 00:20:35.920
+that's where I want the story to begin.
+我希望故事从那里开始。
+
+00:20:35.920 --> 00:20:41.050
+And I want the bear to begin off to the left, so I can move it to where I want,
+我希望熊一开始在左边，所以我可以把它移到我想要的位置，
+
+00:20:41.050 --> 00:20:44.680
+and I can look at the x and y values to see about what the x and y values
+我可以看看x和y的值，了解一下x和y的值
+
+00:20:44.680 --> 00:20:48.940
+should be, and I'm going to have it go to let's say
+应该是多少，我打算让它移到，比如说
+
+00:20:48.940 --> 00:20:52.620
+negative 120 and negative 50 again--
+再次设为负120和负50——
+
+00:20:52.620 --> 00:20:54.540
+so just a choice of x and y value.
+就是选个x和y的值。
+
+00:20:54.540 --> 00:20:57.440
+Now when I click on this block, the bear goes to the forest,
+现在我点击这个积木块，熊就到了森林里，
+
+00:20:57.440 --> 00:20:59.990
+and it goes to a particular location.
+而且到了一个特定的位置。
+
+00:20:59.990 --> 00:21:02.840
+And I want for it to also not be standing up--
+我还希望它不要站着——
+
+00:21:02.840 --> 00:21:04.550
+and so that's its costume.
+这就涉及它的造型了。
+
+00:21:04.550 --> 00:21:09.215
+So we're going to switch its costume to Bear A,
+所以我们要把它的造型切换为“熊A”，
+
+00:21:09.215 --> 00:21:11.840
+and these all happened so quickly that it doesn't really matter
+这些动作发生得太快了，所以这三个积木块的顺序
+
+00:21:11.840 --> 00:21:13.880
+what order these three blocks are in.
+其实没什么关系。
+
+00:21:13.880 --> 00:21:15.900
+But it is still going to run one at a time--
+但它们还是会一个接一个地执行——
+
+00:21:15.900 --> 00:21:19.580
+it just happens so quickly that it looks like everything's just happening all
+只是发生得太快了，看起来就好像所有动作
+
+00:21:19.580 --> 00:21:22.760
+at once-- where we go to the forest, we go to a particular location,
+是同时发生的——我们到了森林，到了一个特定的位置，
+
+00:21:22.760 --> 00:21:28.670
+we switch the costume to Bear A. And now what I want is for the bear to walk off
+我们把造型切换为“熊A”。现在我希望熊走出
+
+00:21:28.670 --> 00:21:32.630
+the stage in this forest, and enter the other backdrop that we had--
+这片森林的舞台，进入我们之前有的另一个背景——
+
+00:21:32.630 --> 00:21:35.250
+the woods with the bench there as well.
+有长椅的那片树林。
+
+00:21:35.250 --> 00:21:36.560
+And so I want it to walk--
+所以我希望它走动——
+
+00:21:36.560 --> 00:21:40.230
+to do that, I can use the Glide block that we saw before.
+要做到这一点，我可以用之前见过的“滑行”积木块。
+
+00:21:40.230 --> 00:21:43.423
+So let me have the bear take maybe 3 seconds to glide--
+那我让熊滑行大概3秒钟——
+
+00:21:43.423 --> 00:21:46.590
+I don't want the y value to change, it's just going to walk left and right--
+我不希望y值改变，它就左右走动——
+
+00:21:46.590 --> 00:21:48.837
+but the x value, I want it to walk off the stage,
+但x值，我希望它走出舞台，
+
+00:21:48.837 --> 00:21:50.420
+so I'm going to make this a big value.
+所以我要把这个值设大一点。
+
+00:21:50.420 --> 00:21:54.410
+Something like 300 just to try and get it close to the edge of the screen--
+比如设成300，试着让它靠近屏幕边缘——
+
+00:21:54.410 --> 00:21:59.510
+and after it walks off stage, now I want to switch the backdrop.
+等它走出舞台后，我现在想切换背景。
+
+00:21:59.510 --> 00:22:02.720
+So I'm going to go back to Looks, let's switch the backdrop--
+所以我要回到“外观”，咱们切换背景——
+
+00:22:02.720 --> 00:22:06.930
+instead of going to the forest, let's now go to the woods with the bench--
+别去森林了，咱们现在去有长椅的那片树林——
+
+00:22:06.930 --> 00:22:09.590
+so Switch Backdrop to Woods and Bench.
+所以“切换背景为 树林和长椅”。
+
+00:22:09.590 --> 00:22:12.258
+And now, as I'm thinking about this story,
+现在，我在构思这个故事的时候，
+
+00:22:12.258 --> 00:22:14.300
+I'm going to have the bear move off to the right,
+我要让熊向右移动，
+
+00:22:14.300 --> 00:22:16.220
+the backdrop is going to change, and then
+背景会改变，然后
+
+00:22:16.220 --> 00:22:18.970
+I want the bear to come out from the left side-- sort of like it's
+我希望熊从左边出来——有点像它是
+
+00:22:18.970 --> 00:22:21.090
+moving from one scene into another.
+从一个场景过渡到另一个场景。
+
+00:22:21.090 --> 00:22:26.960
+So I need to go back to the far left of my program,
+所以我需要回到程序的最左端，
+
+00:22:26.960 --> 00:22:32.270
+I'll have it go to negative 300 in terms of x, which is really far to the left.
+我会让它在x轴上移动到负300的位置，那可是非常靠左了。
+
+00:22:32.270 --> 00:22:37.400
+And then let's take maybe 3 seconds to glide to the middle--
+然后让它花大概3秒钟滑到中间——
+
+00:22:37.400 --> 00:22:40.760
+x equals zero, that's going to be right at the middle of the stage.
+x等于0，那就是舞台的正中间。
+
+00:22:40.760 --> 00:22:43.550
+So it's a whole bunch of blocks now, but it's telling a story.
+现在有一大堆积木了，但它们在讲述一个故事。
+
+00:22:43.550 --> 00:22:47.210
+We start in the forest, start on the left side of the stage,
+我们从森林场景开始，从舞台的左侧开始，
+
+00:22:47.210 --> 00:22:51.110
+start with costume Bear A. We're going to walk for 3 seconds
+以造型“熊A”开始。我们会花3秒钟
+
+00:22:51.110 --> 00:22:55.550
+to the right side of the stage, then switch the backdrop, go to the far left
+走到舞台的右侧，然后切换背景，再到最左端
+
+00:22:55.550 --> 00:22:57.822
+again, and then walk back out to the middle.
+接着再走回到中间。
+
+00:22:57.822 --> 00:22:59.780
+And you can try this one block at a time to get
+你可以一次尝试一个积木，来
+
+00:22:59.780 --> 00:23:02.863
+a sense for how it's going to work, but when you run it all together now--
+了解它是如何运作的，但现在当你把它们都一起运行时——
+
+00:23:02.863 --> 00:23:04.490
+I'll go ahead and click on this block--
+我这就点击这个积木——
+
+00:23:04.490 --> 00:23:08.450
+you see the bear move off to the right, and then it sort of shows up
+你会看到熊移到了右边，然后它好像出现在了
+
+00:23:08.450 --> 00:23:10.090
+in another environment.
+另一个环境中。
+
+00:23:10.090 --> 00:23:13.340
+We can try it again, and pay attention to which block might be happening when.
+我们可以再试一次，留意一下每个积木大概在什么时候起作用。
+
+00:23:13.340 --> 00:23:15.440
+We start in the forest on the far left, we're
+我们从最左端的森林场景开始，我们
+
+00:23:15.440 --> 00:23:17.270
+gliding three seconds to the right.
+向右滑行3秒钟。
+
+00:23:17.270 --> 00:23:19.730
+The scene changes, we go to the far left,
+场景改变了，我们到了最左端，
+
+00:23:19.730 --> 00:23:22.053
+and we walk back out to the center.
+然后走回到中心。
+
+00:23:22.053 --> 00:23:25.220
+So by putting these blocks together-- and really by playing around with it--
+所以把这些积木组合起来——实际上就是不断摆弄它们——
+
+00:23:25.220 --> 00:23:28.140
+you might not have gotten to exactly that on the first try--
+你第一次尝试可能不会完全达到预期效果——
+
+00:23:28.140 --> 00:23:31.550
+but you can run the project, and if you don't like where the sprite ended up,
+但你可以运行项目，如果你不喜欢角色最终停留的位置，
+
+00:23:31.550 --> 00:23:33.530
+you could tinker with the x and the y values,
+你可以调整x和y的值，
+
+00:23:33.530 --> 00:23:36.320
+or how long it takes to glide from one place to another.
+或者调整它从一个地方滑到另一个地方所需的时间。
+
+00:23:36.320 --> 00:23:38.390
+But by assembling those blocks together, you
+但通过把这些积木组合起来，你
+
+00:23:38.390 --> 00:23:41.960
+have the ability to start to tell a story
+就有能力开始讲述一个故事了
+
+00:23:41.960 --> 00:23:45.132
+by creating some interesting blocks.
+通过创建一些有趣的积木。
+
+00:23:45.132 --> 00:23:47.840
+And there are other blocks that you can use too inside of Looks--
+在“外观”分类里，你还可以使用其他积木——
+
+00:23:47.840 --> 00:23:49.520
+so I'll go ahead and delete these for now--
+所以我现在先把这些删掉——
+
+00:23:49.520 --> 00:23:51.500
+but in the Looks section, we have the ability
+但在“外观”分类中，我们可以
+
+00:23:51.500 --> 00:23:55.700
+to change the size of the sprite if we want to make them bigger or smaller.
+根据需要改变角色的大小，让它们变大或变小。
+
+00:23:55.700 --> 00:23:58.760
+We also have these blocks Show and Hide--
+我们还有“显示”和“隐藏”这些积木——
+
+00:23:58.760 --> 00:24:01.620
+Show and Hide just control this toggle here,
+“显示”和“隐藏”只是控制这里的开关，
+
+00:24:01.620 --> 00:24:05.240
+which is whether or not the sprite is actually visible on the stage.
+也就是角色在舞台上是否实际可见。
+
+00:24:05.240 --> 00:24:08.580
+If I click on Hide, the bear goes away--
+如果我点击“隐藏”，熊就消失了——
+
+00:24:08.580 --> 00:24:11.990
+if I click on Show, the bear appears.
+如果我点击“显示”，熊就出现了。
+
+00:24:11.990 --> 00:24:14.900
+So we've taken a look at how we can have the sprite move around,
+我们已经了解了如何让角色移动，
+
+00:24:14.900 --> 00:24:16.580
+we've seen how it can change its looks.
+也看到了它如何改变外观。
+
+00:24:16.580 --> 00:24:18.890
+There's a third section here called Sound
+这里还有第三个分类叫做“声音”
+
+00:24:18.890 --> 00:24:21.900
+that can play some sound for a sprite as well.
+它也能为角色播放一些声音。
+
+00:24:21.900 --> 00:24:25.708
+So for example here, there's a block called Play Sound Until Done.
+举个例子，这里有个积木叫“播放声音直到播放完毕”。
+
+00:24:25.708 --> 00:24:27.500
+And here, if I had multiple sounds, I could
+如果我有多种声音，我可以
+
+00:24:27.500 --> 00:24:30.620
+choose from those different sounds, or I could record a new sound
+从那些不同的声音中选择，或者我也可以录制一个新声音
+
+00:24:30.620 --> 00:24:31.640
+if I wanted to.
+如果我想这么做的话。
+
+00:24:31.640 --> 00:24:35.450
+And by clicking on this block, you'll hear a sound--
+点击这个积木，你会听到一个声音——
+
+00:24:35.450 --> 00:24:37.610
+the sound plays.
+声音就播放了。
+
+00:24:37.610 --> 00:24:39.770
+And so those Sound blocks can be useful too
+所以如果想在项目里播放声音，那些声音积木也会很有用。
+
+00:24:39.770 --> 00:24:42.080
+if you want to play sounds inside of your project.
+如果你想在你的项目里播放声音。
+
+00:24:42.080 --> 00:24:46.100
+And one other block that I'll show now inside of Control
+现在我要展示控制分类里的另一个积木。
+
+00:24:46.100 --> 00:24:48.200
+is this one called Wait.
+就是这个叫“等待”的积木。
+
+00:24:48.200 --> 00:24:50.280
+Sometimes in your project you just want nothing
+有时候在你的项目里，你只是想让
+
+00:24:50.280 --> 00:24:52.280
+to happen for a little bit of time, a little bit
+在一小段时间内什么都不发生，在项目里正在发生的事情之间
+
+00:24:52.280 --> 00:24:55.820
+of a pause between things that are happening on the project.
+有一小段停顿。
+
+00:24:55.820 --> 00:24:58.900
+And here, the Wait 1 Second block will wait one second,
+这里，“等待1秒”积木会等待1秒，
+
+00:24:58.900 --> 00:25:01.400
+and I can change the input to change how long it's waiting--
+我可以更改输入值来改变等待的时长——
+
+00:25:01.400 --> 00:25:03.120
+and then it will move on.
+然后它会继续执行。
+
+00:25:03.120 --> 00:25:05.840
+So if I put these together with the Wait 1 Second block
+所以如果我把“等待1秒”积木放在上面，
+
+00:25:05.840 --> 00:25:09.290
+on top and then the Sound, well, then what will happen when I click
+然后下面放声音积木，那么当我点击时会发生什么呢？
+
+00:25:09.290 --> 00:25:14.150
+is I won't hear the pop right away, but it will be one second--
+我不会立刻听到“砰”的一声，而是会等1秒——
+
+00:25:14.150 --> 00:25:17.090
+and then you hear the pop after the end of the second.
+然后在这1秒结束后你会听到“砰”的一声。
+
+00:25:17.090 --> 00:25:20.810
+And so that too can give you a little bit more control over your project
+这样也能让你对你的项目有更多的控制
+
+00:25:20.810 --> 00:25:22.700
+and how it's working.
+以及它的运行方式。
+
+00:25:22.700 --> 00:25:27.560
+And so, let's try and create a project that uses some of those blocks.
+那么，让我们试着创建一个使用其中一些积木的项目。
+
+00:25:27.560 --> 00:25:30.950
+I am not going to use the bear, so I'll go ahead and delete the bear.
+我不打算用那只熊了，所以我要把熊删掉。
+
+00:25:30.950 --> 00:25:33.230
+And I'll go ahead and change my backdrop-- if I click
+我要去更改我的背景——如果我点击
+
+00:25:33.230 --> 00:25:36.170
+on Backdrops, back to backdrop one-- which is just
+“背景”，改回背景1——目前它只是
+
+00:25:36.170 --> 00:25:39.260
+this default white backdrop for now.
+这个默认的白色背景。
+
+00:25:39.260 --> 00:25:42.770
+But let's add a new sprite just to have a little bit of fun with this, let's
+但让我们添加一个新角色来增添点乐趣，让我们
+
+00:25:42.770 --> 00:25:43.910
+pick a different animal.
+选一个不同的动物。
+
+00:25:43.910 --> 00:25:47.330
+And this time I will pick the duck--
+这次我选鸭子——
+
+00:25:47.330 --> 00:25:48.440
+so we got our duck.
+这样我们就有了鸭子。
+
+00:25:48.440 --> 00:25:51.550
+I want to center the duck, so I'll move it to x equals 0
+我想把鸭子放到舞台中央，所以我要把它移到x等于0，
+
+00:25:51.550 --> 00:25:54.540
+and y equals zero-- just to move it to the center of the stage.
+y也等于0的位置——就是把它移到舞台中央。
+
+00:25:54.540 --> 00:25:56.290
+But here's what I'm going to do, I'm going
+但我接下来要做的是，我打算
+
+00:25:56.290 --> 00:25:59.380
+to combine some of the blocks we've just been using.
+把我们刚用过的一些积木组合起来。
+
+00:25:59.380 --> 00:26:03.940
+I'm going to go to Looks and hide the duck,
+我要去“外观”分类把鸭子隐藏起来，
+
+00:26:03.940 --> 00:26:07.360
+then I want to wait one second-- that's under Control.
+然后我想等待1秒——这在“控制”分类里。
+
+00:26:07.360 --> 00:26:10.540
+So Control in the project, I would like it to wait one second--
+所以在项目的“控制”分类中，我希望它等待1秒——
+
+00:26:10.540 --> 00:26:15.820
+and then back to Looks, now I want to show the duck.
+然后回到“外观”分类，现在我想把鸭子显示出来。
+
+00:26:15.820 --> 00:26:18.820
+And after it shows, let's play a sound--
+等它显示出来后，咱们播放一个声音——
+
+00:26:18.820 --> 00:26:22.327
+let's play the duck sound until it's done.
+咱们播放鸭子的声音，直到播放完为止。
+
+00:26:22.327 --> 00:26:24.910
+And so this is going to let our duck play a little bit of hide
+这样一来，咱们的鸭子就能玩点捉迷藏的游戏了——
+
+00:26:24.910 --> 00:26:27.660
+and seek-- it's going to disappear, and then it's going to appear.
+它会消失，然后又会出现。
+
+00:26:27.660 --> 00:26:31.810
+So when I click on this, watch what happens on the stage--
+所以当我点击这个时，看看舞台上会发生什么——
+
+00:26:31.810 --> 00:26:36.130
+it hides, it waits one second, and after one second it shows up
+它会隐藏起来，等待一秒钟，一秒钟后它会出现
+
+00:26:36.130 --> 00:26:38.413
+and it plays the duck sound as well.
+同时还会播放鸭子的声音。
+
+00:26:38.413 --> 00:26:41.080
+And so you could have a lot of fun with these sounds-- right now
+所以你可以用这些声音玩得很开心——现在
+
+00:26:41.080 --> 00:26:44.320
+the duck just has one sound, but you could add other sounds to it as well.
+这只鸭子只有一种声音，但你也可以给它添加其他声音。
+
+00:26:44.320 --> 00:26:48.320
+You could record new sounds, you could upload a sound from your computer
+你可以录制新的声音，也可以从你的电脑上传声音
+
+00:26:48.320 --> 00:26:51.790
+if you'd like to, and we even have the ability
+如果你愿意的话，而且我们甚至有能力
+
+00:26:51.790 --> 00:26:55.090
+to have other blocks to play sounds-- in particular, musical notes.
+使用其他积木来播放声音——特别是音符。
+
+00:26:55.090 --> 00:26:57.580
+There are extensions to Scratch-- extra blocks
+Scratch 有扩展功能——额外的积木
+
+00:26:57.580 --> 00:27:01.240
+that you can add into your Block library that give your Scratch
+你可以把它们添加到你的积木库中，让你的 Scratch
+
+00:27:01.240 --> 00:27:03.768
+projects a few extra features.
+项目具备一些额外的功能。
+
+00:27:03.768 --> 00:27:06.310
+And let's try that out now, I'll go ahead and delete the duck
+现在咱们来试试看，我先把鸭子删掉
+
+00:27:06.310 --> 00:27:08.440
+and we'll go back to the usual cat.
+然后回到咱们常用的猫角色。
+
+00:27:08.440 --> 00:27:13.690
+So I'll choose a sprite and I'll just go ahead and pick the cat again,
+所以我要选一个角色，我就再选一次猫，
+
+00:27:13.690 --> 00:27:17.350
+and move the cat back to the center.
+然后把猫移回舞台中央。
+
+00:27:17.350 --> 00:27:20.590
+But notice down here in the bottom left there's this blue block
+但注意左下角这里有个蓝色的积木
+
+00:27:20.590 --> 00:27:22.460
+icon with a plus next to it.
+图标，旁边还有个加号。
+
+00:27:22.460 --> 00:27:25.233
+This is where I can get to the extensions for Scratch,
+在这里我可以找到 Scratch 的扩展功能，
+
+00:27:25.233 --> 00:27:28.400
+and there are all sorts of different extensions for Scratch that we can use.
+Scratch 有各种各样不同的扩展功能可供我们使用。
+
+00:27:28.400 --> 00:27:30.130
+We'll take a look at a few of them today,
+今天我们会看其中几个，
+
+00:27:30.130 --> 00:27:33.040
+but we'll start with the Music extension--
+但我们先从音乐扩展功能开始——
+
+00:27:33.040 --> 00:27:38.480
+and the Music extension really lets you play music using Scratch box.
+音乐扩展功能真的能让你用 Scratch 积木来播放音乐。
+
+00:27:38.480 --> 00:27:45.160
+So here's one called Play Note, and it's saying Play Note 60 for 0.25 beats.
+这里有一个叫“播放音符”的积木，它显示的是以 0.25 拍的时长播放音符 60。
+
+00:27:45.160 --> 00:27:48.280
+The number of beats, that's how long the notes going to be played for,
+拍数就是音符要播放的时长，
+
+00:27:48.280 --> 00:27:51.555
+60 is just a number corresponding to what note we're playing--
+60 只是对应我们要播放的音符的一个数字——
+
+00:27:51.555 --> 00:27:54.430
+and if you don't happen to know what note corresponds to what number,
+如果你刚好不知道哪个数字对应哪个音符，
+
+00:27:54.430 --> 00:27:55.000
+that's OK.
+没关系。
+
+00:27:55.000 --> 00:27:58.442
+If you click on the 60, what you'll see is a little piano up here--
+如果你点击 60，你会看到这里出现一个小钢琴——
+
+00:27:58.442 --> 00:28:01.150
+and if you've never played the piano, what I'm going to try to do
+如果你从没弹过钢琴，我打算试着
+
+00:28:01.150 --> 00:28:03.370
+is just play a scale where I'm just playing
+弹奏一个音阶，也就是依次弹奏
+
+00:28:03.370 --> 00:28:06.222
+a whole bunch of notes in sequence that'll sound nice together.
+一连串组合起来很好听的音符。
+
+00:28:06.222 --> 00:28:07.930
+And I'm going to do that just by clicking
+我只要通过点击
+
+00:28:07.930 --> 00:28:14.830
+on each of these different keys of the keyboard,
+键盘上这些不同的键来完成，
+
+00:28:14.830 --> 00:28:18.520
+and I noticed that every time I click on a different key, the note changes.
+我注意到每次我点击不同的键，音符就会改变。
+
+00:28:18.520 --> 00:28:22.700
+Every note has a different number, and so if I want to play all of them--
+每个音符都有不同的数字，所以如果我想把它们都弹奏一遍——
+
+00:28:22.700 --> 00:28:32.440
+let me drag out eight of these blocks 1, 2, 3, 4, 5, 6, 7, and 8.
+我来拖出八个这样的积木，1、2、3、4、5、6、7、8。
+
+00:28:32.440 --> 00:28:34.510
+And for each one, I'll select a different key--
+对于每一个，我会选择不同的按键——
+
+00:28:34.510 --> 00:28:38.800
+this will be the second white key, this will be the third one,
+这会是第二个白键，这会是第三个，
+
+00:28:38.800 --> 00:28:44.080
+this will be the fourth one, this one will be the fifth one,
+这会是第四个，这个会是第五个，
+
+00:28:44.080 --> 00:28:49.995
+this one will be six, seven, and eight.
+这个会是第六、第七和第八个。
+
+00:28:49.995 --> 00:28:52.120
+So I've got eight blocks in sequence, each of which
+所以我按顺序有了八个积木，每个
+
+00:28:52.120 --> 00:28:57.910
+is playing a different note, and now when I click on this block
+都在演奏不同的音符，现在当我点击这个积木
+
+00:28:57.910 --> 00:28:59.827
+you can hear that sort of scale.
+你能听到那种音阶。
+
+00:28:59.827 --> 00:29:02.410
+And there are other blocks too to change the way this sounds--
+还有其他积木可以改变声音的效果——
+
+00:29:02.410 --> 00:29:04.930
+I can set the instrument to change to something else
+如果我想的话，我可以把乐器设置成其他的
+
+00:29:04.930 --> 00:29:07.970
+if I want it to be a guitar playing for example.
+比如我想让它听起来像吉他演奏。
+
+00:29:07.970 --> 00:29:12.880
+I can set the instrument to Guitar, and now the instrument
+我可以把乐器设置成吉他，现在乐器
+
+00:29:12.880 --> 00:29:13.970
+sounds a bit different.
+听起来有点不一样了。
+
+00:29:13.970 --> 00:29:16.030
+If I want it to go faster or slower, that's
+如果我想让它演奏得更快或更慢，这在音乐里
+
+00:29:16.030 --> 00:29:19.330
+something called tempo in music-- how quickly or slowly the music
+叫做节奏——音乐演奏的快慢程度。
+
+00:29:19.330 --> 00:29:20.350
+is going to play.
+也就是音乐播放的快慢。
+
+00:29:20.350 --> 00:29:25.045
+I can change it to 80, for example, and try that.
+比如说，我可以把它改成80，然后试试看。
+
+00:29:25.045 --> 00:29:26.170
+Plays a little bit faster--
+演奏速度快了一点——
+
+00:29:26.170 --> 00:29:31.890
+I could change it to something smaller like 40
+我也可以把它改成更小的值，比如40
+
+00:29:31.890 --> 00:29:33.872
+and then it plays a little bit more slowly.
+然后它就会演奏得慢一点。
+
+00:29:33.872 --> 00:29:35.580
+So there are a lot of blocks that you can
+所以有很多积木你可以
+
+00:29:35.580 --> 00:29:37.920
+use to change the way your project behaves
+用来改变你的项目的表现方式
+
+00:29:37.920 --> 00:29:40.230
+to add features and interesting activities
+为你的角色在舞台上的动作
+
+00:29:40.230 --> 00:29:43.500
+to what it is that you're sprites are doing on the stage.
+添加功能和有趣的活动。
+
+00:29:43.500 --> 00:29:46.080
+And I'll show you one other extension that's quite fun--
+我再给你们展示一个很有趣的扩展——
+
+00:29:46.080 --> 00:29:48.420
+I'll drag the music away for now.
+我先把音乐相关的积木移开。
+
+00:29:48.420 --> 00:29:52.170
+But let's now try the Pen extension-- the Pen extension is
+现在让我们试试画笔扩展——画笔扩展可以
+
+00:29:52.170 --> 00:29:55.050
+going to let us draw with our sprite.
+让我们用角色来画画。
+
+00:29:55.050 --> 00:29:56.760
+And so here's how that's going to work--
+下面来看看它是怎么工作的——
+
+00:29:56.760 --> 00:30:00.840
+I'm going to start the cat over on the left hand side,
+我要让猫从舞台左侧开始，
+
+00:30:00.840 --> 00:30:06.540
+and I'm going to use this Pen Down block and the Pen Up block
+我会使用落笔积木和抬笔积木
+
+00:30:06.540 --> 00:30:07.730
+which we'll see in a moment.
+我们马上就能看到它们。
+
+00:30:07.730 --> 00:30:11.370
+And the idea of this now is that I can draw on the stage
+现在的思路是，我可以在舞台上画画
+
+00:30:11.370 --> 00:30:14.340
+just by putting a virtual pen down on the stage,
+只要把虚拟的笔放在舞台上，
+
+00:30:14.340 --> 00:30:17.370
+moving the sprite across the stage, and then picking
+让角色在舞台上移动，然后在最后
+
+00:30:17.370 --> 00:30:20.170
+the pen back up at the end of it.
+把笔抬起来。
+
+00:30:20.170 --> 00:30:23.250
+And so I'm going to put the Pen Down, go into the Motion
+所以我要落笔，然后进入运动
+
+00:30:23.250 --> 00:30:26.670
+section of blocks-- and this time, let's try moving some number of steps.
+类积木区——这次，我们试试移动一定的步数。
+
+00:30:26.670 --> 00:30:31.437
+Maybe I'll move 30 steps, and then we'll lift the Pen Up--
+也许我移动30步，然后抬笔——
+
+00:30:31.437 --> 00:30:32.520
+and so let's try this now.
+现在我们来试试看。
+
+00:30:32.520 --> 00:30:37.320
+A click on this block, the pen goes down, we move 30 steps
+点击这个积木，笔落下，我们移动30步
+
+00:30:37.320 --> 00:30:39.490
+and we move, and the pen goes back up.
+然后我们移动，笔又抬起来了。
+
+00:30:39.490 --> 00:30:42.270
+And what you notice is that, as I do this,
+你会注意到，当我这么做的时候，
+
+00:30:42.270 --> 00:30:47.180
+the cat is still moving 30 steps every time, but it's leaving behind this line
+猫每次仍然移动30步，但它身后留下了这条
+
+00:30:47.180 --> 00:30:48.180
+that the pen is drawing.
+笔绘制的线。
+
+00:30:48.180 --> 00:30:50.670
+The pen's going down, we're drawing this line,
+笔落下去，我们在绘制这条线，
+
+00:30:50.670 --> 00:30:52.300
+and then it's picking back up again.
+然后笔又抬起来了。
+
+00:30:52.300 --> 00:30:55.980
+And the result is that you can draw shapes, you can create works of art
+结果就是，你可以绘制形状，你可以创作艺术作品
+
+00:30:55.980 --> 00:30:59.550
+just by drawing, using a sprite and moving the sprite around and making
+只需要通过绘制，使用一个角色并移动这个角色，并且确保
+
+00:30:59.550 --> 00:31:01.627
+sure the pen is down while you're doing so.
+在移动过程中笔是落下的。
+
+00:31:01.627 --> 00:31:04.710
+And when the pen is up, then it doesn't matter where you move the sprite--
+当笔抬起来时，那么你把角色移到哪里都无所谓了——
+
+00:31:04.710 --> 00:31:05.970
+it's not going to drop--
+它不会留下痕迹——
+
+00:31:05.970 --> 00:31:10.170
+you're only going to be drawing when that pen is actually down.
+只有当笔真正落下时你才会进行绘制。
+
+00:31:10.170 --> 00:31:12.630
+But you don't have to just create straight lines--
+但你不必只绘制直线——
+
+00:31:12.630 --> 00:31:15.360
+before, when we were first doing motion with the cat,
+之前，当我们最初让猫做移动操作时，
+
+00:31:15.360 --> 00:31:16.950
+we had the cat move in a circle.
+我们让猫绕圈移动。
+
+00:31:16.950 --> 00:31:18.780
+Remember, when we were having it move a little bit,
+记得吗，当时我们让它移动一点，
+
+00:31:18.780 --> 00:31:21.072
+and then rotate a little bit, and then move and rotate,
+然后旋转一点，接着再移动再旋转，
+
+00:31:21.072 --> 00:31:22.870
+ultimately move in a circle.
+最终绕圈移动。
+
+00:31:22.870 --> 00:31:26.520
+So if we wanted to draw a circle on the Scratch stage,
+所以如果我们想在Scratch舞台上画一个圆，
+
+00:31:26.520 --> 00:31:28.890
+we could do that by combining our code that we
+我们可以通过结合我们
+
+00:31:28.890 --> 00:31:32.190
+use to move the cat in a circle along with the code
+用来让猫绕圈移动的代码以及
+
+00:31:32.190 --> 00:31:35.550
+for bringing the pen up, and bringing the pen back down.
+让笔抬起和落下的代码来实现。
+
+00:31:35.550 --> 00:31:41.100
+And the way we did that is by moving, but then-- before the pen goes up--
+我们的做法是先移动，但是在笔抬起之前——
+
+00:31:41.100 --> 00:31:48.480
+let's also have the cat turn by 15 degrees and then lift the pen back up.
+我们也让猫旋转15度，然后再把笔抬起来。
+
+00:31:48.480 --> 00:31:51.715
+And it'll have the cat start around the top of the circle,
+这样会让猫从圆的顶部附近开始移动，
+
+00:31:51.715 --> 00:31:53.590
+and that's probably where I want it to begin.
+那可能就是我想让它开始的位置。
+
+00:31:53.590 --> 00:31:55.680
+But before I begin, I want to erase what's
+但在我开始之前，我想擦除
+
+00:31:55.680 --> 00:31:58.050
+currently been drawn onto the stage, and that's
+当前舞台上已经绘制的内容，而这
+
+00:31:58.050 --> 00:31:59.940
+back in the Pen section of the blocks.
+在积木的“笔”板块里。
+
+00:31:59.940 --> 00:32:02.460
+There's one block just called Erase All, that's
+有一个名为“全部擦除”的积木，它
+
+00:32:02.460 --> 00:32:05.700
+going to erase anything that's been drawn onto the stage.
+会擦除舞台上已经绘制的任何东西。
+
+00:32:05.700 --> 00:32:07.710
+So I'll click that, that erases the pen--
+所以我点击它，它会擦除笔迹——
+
+00:32:07.710 --> 00:32:10.080
+and you'll notice there are other different Pen
+你会注意到还有其他不同的“笔”
+
+00:32:10.080 --> 00:32:12.900
+blocks I can use to change what color the pen is drawing in,
+积木，我可以用它们来改变笔的绘制颜色，
+
+00:32:12.900 --> 00:32:16.560
+to change the size of the pen, the thickness with which I'm drawing.
+改变笔的大小，也就是我绘制的粗细。
+
+00:32:16.560 --> 00:32:18.870
+But I'll just stick with the default for now,
+但目前我就用默认设置，
+
+00:32:18.870 --> 00:32:23.250
+and we'll put the pen down, move 30 steps and rotate, move 30 steps
+然后我们把笔落下，移动30步并旋转，移动30步
+
+00:32:23.250 --> 00:32:24.300
+and rotate--
+并旋转——
+
+00:32:24.300 --> 00:32:29.460
+and as I do this over and over again, the cat's moving, and moving.
+当我一遍又一遍地这样做时，猫在不断移动。
+
+00:32:29.460 --> 00:32:33.090
+And what you see is that we end up drawing a circle on the stage
+你会看到我们最终在舞台上画出了一个圆。
+
+00:32:33.090 --> 00:32:34.500
+just by putting the pen down--
+只要放下画笔——
+
+00:32:34.500 --> 00:32:37.260
+and every time we move, we rotate a little bit,
+每次移动时，我们都稍微旋转一下，
+
+00:32:37.260 --> 00:32:42.270
+and the effect is that we can use the Pen tool to draw out this circle.
+这样的效果是，我们可以用画笔工具画出这个圆。
+
+00:32:42.270 --> 00:32:45.690
+And so those are just some of the blocks that you can use in Scratch.
+这些只是你可以在Scratch中使用的部分积木。
+
+00:32:45.690 --> 00:32:49.380
+We saw blocks in the Motion category for moving the sprite around
+我们看到了“运动”类别中的积木，用于移动角色
+
+00:32:49.380 --> 00:32:52.650
+in order to move it left, right, up, or down, or rotate it, for example.
+例如，让它向左、向右、向上或向下移动，或者旋转它。
+
+00:32:52.650 --> 00:32:57.353
+The Looks section of blocks we can use to change the costume of a sprite
+我们可以使用“外观”部分的积木来改变角色的造型
+
+00:32:57.353 --> 00:32:59.520
+to make it look a little bit different, or to change
+让它看起来有点不同，或者改变
+
+00:32:59.520 --> 00:33:03.600
+the backdrop that we see in the stage inside of our Scratch program.
+我们在Scratch程序舞台中看到的背景。
+
+00:33:03.600 --> 00:33:06.990
+Or even to make our sprites speak up by saying something or thinking
+甚至可以让我们的角色通过说些什么或思考
+
+00:33:06.990 --> 00:33:09.570
+something inside of a speech, or a thought bubble.
+以对话气泡或思考气泡的形式表达内容。
+
+00:33:09.570 --> 00:33:12.480
+We took a look at some Control blocks-- the ability
+我们看了一些“控制”积木——具备
+
+00:33:12.480 --> 00:33:16.470
+to wait some number of seconds, the ability to play sounds, the ability
+等待若干秒的能力、播放声音的能力、
+
+00:33:16.470 --> 00:33:20.820
+to make music, and use the pen in order to draw images and create works of art.
+制作音乐的能力，还能使用画笔来绘制图像和创作艺术作品。
+
+00:33:20.820 --> 00:33:23.880
+And we can do all of that just by taking these blocks
+我们只需拿起这些积木
+
+00:33:23.880 --> 00:33:27.240
+and putting them together in the sequence we want them to be in.
+并按照我们想要的顺序将它们组合起来，就能完成所有这些操作。
+
+00:33:27.240 --> 00:33:30.810
+And, ultimately using that, you can create some really interesting programs
+最终，利用这些，你可以用Scratch创建一些非常有趣的程序。
+
+00:33:30.810 --> 00:33:31.830
+with Scratch.
+使用Scratch。
+
+00:33:31.830 --> 00:33:34.720
+That's it for an introduction to programming with Scratch for today.
+今天关于用Scratch编程的介绍就到这里。
+
+00:33:34.720 --> 00:33:37.553
+Next time, we'll take a look at how we can use these sorts of blocks
+下次，我们将看看如何使用这些类型的积木
+
+00:33:37.553 --> 00:33:39.930
+and take our Scratch Block projects even further.
+并将我们的Scratch积木项目推进得更远。
+
+00:33:39.930 --> 00:33:42.000
+We'll see you next time.
+下次再见。

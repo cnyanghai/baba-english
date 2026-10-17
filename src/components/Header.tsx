@@ -3,7 +3,7 @@ import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { BookMarked, User, LogIn, BarChart3, Sparkles, Crown } from "lucide-react";
+import { BookMarked, BookOpen, User, LogIn, BarChart3, Sparkles, Crown, Code2 } from "lucide-react";
 
 export async function Header() {
   const session = await auth();
@@ -76,6 +76,18 @@ export async function Header() {
               </Link>
             </Button>
           )}
+          <Button asChild variant="ghost" size="sm">
+            <Link href="/books">
+              <BookOpen className="mr-1 h-4 w-4" />
+              <span className="hidden sm:inline">绘本</span>
+            </Link>
+          </Button>
+          <Button asChild variant="ghost" size="sm">
+            <Link href="/learn/coding">
+              <Code2 className="mr-1 h-4 w-4" />
+              <span className="hidden sm:inline">编程</span>
+            </Link>
+          </Button>
           <Button asChild variant="ghost" size="sm">
             <Link href="/vocabulary">
               <BookMarked className="mr-1 h-4 w-4" />

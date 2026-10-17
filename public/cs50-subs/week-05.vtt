@@ -1,0 +1,2273 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.455
+[MUSIC PLAYING]
+[音乐播放中]
+
+00:00:17.033 --> 00:00:19.200
+BRIAN YU: Welcome back, everyone, to an introduction
+布莱恩·余：欢迎大家回来，继续学习
+
+00:00:19.200 --> 00:00:20.520
+to programming with Scratch.
+用Scratch编程入门课程。
+
+00:00:20.520 --> 00:00:24.030
+And last time, we took a look at values, pieces of information
+上节课，我们了解了数值，也就是信息片段
+
+00:00:24.030 --> 00:00:26.460
+that are stored inside of our Scratch programs
+它们存储在我们的Scratch程序里
+
+00:00:26.460 --> 00:00:29.190
+that we could use inside of those programs.
+我们可以在这些程序中使用它们。
+
+00:00:29.190 --> 00:00:31.950
+Today we'll take that idea one step further and take a look
+今天，我们要把这个概念再推进一小步，来看看
+
+00:00:31.950 --> 00:00:35.280
+at how we can use information inside of our Scratch programs
+我们如何在Scratch程序中利用信息
+
+00:00:35.280 --> 00:00:39.360
+to make decisions by asking questions, and then deciding what to do
+通过提出问题来做决策，然后决定该怎么做
+
+00:00:39.360 --> 00:00:42.000
+based on the answer to those questions.
+根据这些问题的答案来行动。
+
+00:00:42.000 --> 00:00:45.300
+And people do this type of thing all the time, asking a question
+人们一直都在做这类事情，提出一个问题
+
+00:00:45.300 --> 00:00:46.560
+and then making a decision.
+然后做出决策。
+
+00:00:46.560 --> 00:00:48.977
+When you're deciding when you're trying to leave the home,
+当你决定什么时候出门时，
+
+00:00:48.977 --> 00:00:51.270
+you might look outside and ask, is it cold outside?
+你可能会看看窗外，问问自己，外面冷吗？
+
+00:00:51.270 --> 00:00:53.353
+And if it's cold outside, you might wear a jacket.
+如果外面冷，你可能会穿件夹克。
+
+00:00:53.353 --> 00:00:55.090
+Or you might ask, is it raining today?
+或者你可能会问，今天下雨吗？
+
+00:00:55.090 --> 00:00:56.923
+And if it's raining, well, then you're going
+如果下雨，那么你就会
+
+00:00:56.923 --> 00:00:59.710
+to take the action of bringing an umbrella with you, for example.
+采取行动，比如带上一把伞。
+
+00:00:59.710 --> 00:01:03.170
+And you can think of this type of logic as having two parts.
+你可以把这种逻辑看作由两部分组成。
+
+00:01:03.170 --> 00:01:04.800
+There's a question that you're asking.
+有一个你要问的问题。
+
+00:01:04.800 --> 00:01:05.850
+Is it raining outside?
+外面在下雨吗？
+
+00:01:05.850 --> 00:01:07.020
+Is it cold outside?
+外面冷吗？
+
+00:01:07.020 --> 00:01:09.450
+And then there's the logic, the decision that you make
+然后还有逻辑，也就是你做出的决策
+
+00:01:09.450 --> 00:01:11.830
+based on the answer to that question.
+基于那个问题的答案。
+
+00:01:11.830 --> 00:01:13.320
+And computers do the same thing.
+计算机也做同样的事情。
+
+00:01:13.320 --> 00:01:16.710
+Computers ask questions like, is the computer low on battery?
+计算机也会问问题，比如，计算机电量低吗？
+
+00:01:16.710 --> 00:01:18.480
+Is the computer connected to the internet?
+计算机连上网了吗？
+
+00:01:18.480 --> 00:01:20.920
+And based on the answers to those questions,
+然后根据这些问题的答案，
+
+00:01:20.920 --> 00:01:22.380
+the computer makes a decision.
+计算机做出决策。
+
+00:01:22.380 --> 00:01:25.950
+And today we'll try to do exactly that sort of thing inside of our Scratch
+今天，我们也要在Scratch程序里
+
+00:01:25.950 --> 00:01:28.290
+programs as well-- asking a question and then
+做同样的事情——提出一个问题，然后
+
+00:01:28.290 --> 00:01:32.200
+making a decision based on the answer to that question.
+根据那个问题的答案做出决策。
+
+00:01:32.200 --> 00:01:35.760
+So let's go ahead and open up Scratch, and we see the familiar Scratch cat
+那么，我们现在就打开Scratch，我们看到了熟悉的Scratch猫
+
+00:01:35.760 --> 00:01:36.690
+here.
+在这儿。
+
+00:01:36.690 --> 00:01:41.490
+And let's make something happen whenever the Space key is pressed.
+让我们设定每当按下空格键时就发生点什么。
+
+00:01:41.490 --> 00:01:42.580
+That's one of our events.
+这是我们的一个事件。
+
+00:01:42.580 --> 00:01:47.640
+So I'll drag that when Space key press event out into my code editor.
+所以我要把“当按下空格键”这个事件积木拖到我的代码编辑器里。
+
+00:01:47.640 --> 00:01:50.940
+And when the Space is pressed, let's play a sound.
+当按下空格键时，让我们播放一个声音。
+
+00:01:50.940 --> 00:01:53.330
+And we'll play the meow sound.
+我们来播放猫叫的声音。
+
+00:01:53.330 --> 00:01:55.080
+So now, every time I press the Space key--
+所以现在，每当我按下空格键——
+
+00:01:55.080 --> 00:01:57.540
+[MEOWING]
+[猫叫声]
+
+00:01:57.540 --> 00:01:59.790
+You'll hear the cat meow.
+你会听到猫叫。
+
+00:01:59.790 --> 00:02:02.350
+But now, to make this a little bit more interesting,
+但现在，为了让它更有趣一点，
+
+00:02:02.350 --> 00:02:06.120
+let's introduce a new block-- which you can find under the Control section
+我们来引入一个新的积木——你可以在积木的“控制”板块里找到它
+
+00:02:06.120 --> 00:02:07.380
+of the blocks--
+的积木——
+
+00:02:07.380 --> 00:02:10.169
+and that's this if block.
+就是这个“如果”积木。
+
+00:02:10.169 --> 00:02:12.300
+And what you'll notice in this if block is
+在这个“如果”积木里你会注意到
+
+00:02:12.300 --> 00:02:16.330
+that there are two places where we can add additional blocks into this if
+有两个地方可以往这个“如果”
+
+00:02:16.330 --> 00:02:16.980
+block.
+积木里添加额外的积木。
+
+00:02:16.980 --> 00:02:22.680
+You'll notice that next to the word if is a little hexagonal shaped region
+你会注意到“如果”这个词旁边有一个小六边形区域
+
+00:02:22.680 --> 00:02:24.502
+where I could drop a block in there.
+我可以把一个积木放到那里。
+
+00:02:24.502 --> 00:02:25.960
+And we'll do that in just a moment.
+我们马上就这么做。
+
+00:02:25.960 --> 00:02:29.490
+And this hexagon is going to represent the question that we're asking.
+这个六边形将代表我们要问的问题。
+
+00:02:29.490 --> 00:02:32.640
+We're going to ask a question inside of our Scratch program.
+我们要在Scratch程序里问一个问题。
+
+00:02:32.640 --> 00:02:34.140
+It's going to be a yes/no question.
+这将是一个是非问题。
+
+00:02:34.140 --> 00:02:36.630
+Is the answer to the question yes or no?
+这个问题的答案是“是”还是“否”？
+
+00:02:36.630 --> 00:02:40.410
+Or equivalently, is this question true or false?
+或者等价地说，这个问题是“真”还是“假”？
+
+00:02:40.410 --> 00:02:42.390
+And based on the answer to that question,
+根据那个问题的答案，
+
+00:02:42.390 --> 00:02:44.880
+we might run some additional blocks that are
+我们可能会运行一些额外的积木，这些积木
+
+00:02:44.880 --> 00:02:48.630
+contained inside of this if block here.
+包含在这个“如果”积木里面。
+
+00:02:48.630 --> 00:02:50.820
+You see this block has a top and a bottom,
+你看这个积木有顶部和底部，
+
+00:02:50.820 --> 00:02:54.510
+and what that's going to allow us to do is enclose other blocks
+这将允许我们把其他积木
+
+00:02:54.510 --> 00:02:58.190
+inside of this if block right here.
+放在这个“如果”积木里面。
+
+00:02:58.190 --> 00:02:59.940
+So let's take a look at an example of that
+所以让我们来看一个例子
+
+00:02:59.940 --> 00:03:04.350
+and see how we can fill in those two different parts of the if block.
+看看我们如何填充“如果”积木的那两个不同部分。
+
+00:03:04.350 --> 00:03:07.080
+The first thing we need is a question, and for that, we
+我们首先需要一个问题，为此，我们
+
+00:03:07.080 --> 00:03:10.230
+can go down into the Sensing section of blocks.
+可以到积木的“感知”板块里去找。
+
+00:03:10.230 --> 00:03:14.350
+And you'll notice there are a couple of blocks that have this hexagon shape.
+你会注意到有几个积木是六边形的。
+
+00:03:14.350 --> 00:03:16.050
+These are questions that we can ask.
+这些是我们可以问的问题。
+
+00:03:16.050 --> 00:03:20.040
+In computer science, we often call these questions Boolean expressions.
+在计算机科学里，我们经常把这些问题叫做布尔表达式。
+
+00:03:20.040 --> 00:03:24.180
+A Boolean expression is a fancy way of saying anything that is either true--
+布尔表达式是一种很专业的说法，意思是任何要么为“真”——
+
+00:03:24.180 --> 00:03:27.690
+meaning yes-- or false, meaning no.
+也就是“是”——要么为“假”，也就是“否”的东西。
+
+00:03:27.690 --> 00:03:30.660
+And the very first one here in the Sensing category
+“感知”类别里的第一个
+
+00:03:30.660 --> 00:03:34.650
+is a Boolean expression called touching mouse pointer.
+是一个叫做“碰到鼠标指针”的布尔表达式。
+
+00:03:34.650 --> 00:03:38.258
+So I'll go ahead and drag that into the hexagon here, in the if statement.
+所以我要把它拖到“如果”语句里的这个六边形区域。
+
+00:03:38.258 --> 00:03:40.050
+And you'll notice that it snaps into place.
+你会注意到它会自动对齐位置。
+
+00:03:40.050 --> 00:03:42.510
+It fits right inside of that if statement,
+它正好能放进那个“如果”语句里，
+
+00:03:42.510 --> 00:03:45.760
+which grows to fit the size of the hexagon block.
+“如果”语句会变大以适应六边形积木的大小。
+
+00:03:45.760 --> 00:03:49.240
+And then I'll take the play sound meow until done block,
+然后我要拿“播放声音 喵 直到播放完”积木，
+
+00:03:49.240 --> 00:03:54.850
+and drag it inside of the if statement, and connect all of that
+把它拖到“如果”语句里面，然后把它们都连接起来
+
+00:03:54.850 --> 00:03:58.300
+to the event when the Space key is pressed.
+对应“当空格键被按下”这个事件。
+
+00:03:58.300 --> 00:03:59.920
+So now the logic is this.
+所以现在逻辑是这样的。
+
+00:03:59.920 --> 00:04:03.760
+When I press the space key, the if block is going to ask that question.
+当我按下空格键时，“如果”积木就会提出那个问题。
+
+00:04:03.760 --> 00:04:07.880
+Is the cat touching the mouse pointer, the cursor on the screen?
+猫是否碰到了鼠标指针，也就是屏幕上的光标？
+
+00:04:07.880 --> 00:04:10.360
+And if the answer is yes, then we're going
+如果答案是肯定的，那么我们就要
+
+00:04:10.360 --> 00:04:12.040
+to play the sound meow until done.
+播放“喵”的声音直到结束。
+
+00:04:12.040 --> 00:04:16.779
+But that's only going to happen if this condition is true, if we are actually
+但这只有在这个条件为真时才会发生，也就是我们实际上
+
+00:04:16.779 --> 00:04:18.430
+touching the mouse pointer.
+碰到了鼠标指针。
+
+00:04:18.430 --> 00:04:21.339
+So if I put my mouse pointer somewhere other than the cat
+所以如果我把鼠标指针放在猫以外的地方
+
+00:04:21.339 --> 00:04:26.620
+and I press the Spacebar, you'll notice that I don't hear anything.
+然后按下空格键，你会注意到我什么声音都听不到。
+
+00:04:26.620 --> 00:04:29.880
+But if I move my cursor over the cat and now press the Spacebar--
+但如果我把光标移到猫上面，然后按下空格键——
+
+00:04:29.880 --> 00:04:32.772
+[MEOWING]
+[猫叫声]
+
+00:04:34.220 --> 00:04:39.320
+Now, every time I press the Spacebar, you do, in fact, hear the cat meow.
+现在，每次我按下空格键，实际上你都会听到猫叫。
+
+00:04:39.320 --> 00:04:43.730
+So our programs using these conditions now have the ability to make decisions,
+所以我们使用这些条件的程序现在有了做决策的能力，
+
+00:04:43.730 --> 00:04:47.730
+to ask a question and then make a decision based on the answer.
+提出一个问题，然后根据答案做出决策。
+
+00:04:47.730 --> 00:04:50.090
+And this touching mouse pointer block can
+这个“碰到鼠标指针”积木可以
+
+00:04:50.090 --> 00:04:53.240
+be used to check if the sprite is touching the mouse pointer,
+用来检查角色是否碰到了鼠标指针，
+
+00:04:53.240 --> 00:04:56.120
+but also if it's touching another sprite, for example.
+例如，也可以检查它是否碰到了另一个角色。
+
+00:04:56.120 --> 00:04:58.820
+Let's say the cat is playing with a balloon.
+假设猫正在和一个气球玩耍。
+
+00:04:58.820 --> 00:05:00.410
+I can drag a balloon out.
+我可以拖出一个气球。
+
+00:05:00.410 --> 00:05:02.360
+So we've got the cat and the balloon.
+所以我们有了猫和气球。
+
+00:05:02.360 --> 00:05:07.460
+And I'll say, for the cat, now, if you're touching the balloon,
+我要说，对于猫而言，现在，如果你碰到了气球，
+
+00:05:07.460 --> 00:05:09.170
+then play the meow sound.
+那么就播放“喵”的声音。
+
+00:05:09.170 --> 00:05:14.505
+So right now I press the Spacebar, and nothing happens,
+所以现在我按下空格键，什么都没发生，
+
+00:05:14.505 --> 00:05:16.880
+but if I move the cat so that it's touching the balloon--
+但如果我移动猫，让它碰到气球——
+
+00:05:16.880 --> 00:05:18.680
+[MEOWING]
+[猫叫声]
+
+00:05:18.680 --> 00:05:23.230
+Well, now we're able to detect that.
+嗯，现在我们能够检测到了。
+
+00:05:23.230 --> 00:05:26.090
+We're able to sense that the cat is touching the balloon,
+我们能够感知到猫碰到了气球，
+
+00:05:26.090 --> 00:05:29.350
+and because of that we're able to make some decisions.
+正因为如此，我们能够做出一些决策。
+
+00:05:29.350 --> 00:05:31.630
+And these sensing blocks give you the ability
+这些感知类积木赋予你能力
+
+00:05:31.630 --> 00:05:35.440
+to allow your sprites to sense the things around it, figure out how close
+让你的角色感知周围的事物，弄清楚其他角色[听不清]或光标离它
+
+00:05:35.440 --> 00:05:37.960
+or how far away are other rights [INAUDIBLE] the cursor,
+有多近或多远，
+
+00:05:37.960 --> 00:05:41.290
+figure out what it's touching, whether it's touching a particular sprite
+弄清楚它碰到了什么，是碰到了某个特定的角色
+
+00:05:41.290 --> 00:05:44.020
+or even touching a particular color.
+还是甚至碰到了某种特定的颜色。
+
+00:05:44.020 --> 00:05:47.680
+This block here lets you check if the sprite is touching something
+这里这个积木可以让你检查角色是否碰到了
+
+00:05:47.680 --> 00:05:50.050
+that is a particular color, and you can use
+某种特定颜色的东西，而且你也可以用
+
+00:05:50.050 --> 00:05:54.178
+that to build some interesting interfaces as well.
+它来构建一些有趣的界面。
+
+00:05:54.178 --> 00:05:55.220
+So let's give that a try.
+所以让我们试试看。
+
+00:05:55.220 --> 00:05:59.440
+I'll get rid of the balloon for now, and let's add a backdrop
+我现在先把气球去掉，然后给我们的猫添加一个背景
+
+00:05:59.440 --> 00:06:01.150
+for our cat to play around in.
+让它在里面玩耍。
+
+00:06:01.150 --> 00:06:05.060
+And I want to try the winter backdrop here.
+我想在这里试试冬季背景。
+
+00:06:05.060 --> 00:06:06.580
+So you've got a winter backdrop.
+这样你就有了一个冬季背景。
+
+00:06:06.580 --> 00:06:08.710
+And now the code I'm going to write is this.
+现在我要编写的代码是这样的。
+
+00:06:08.710 --> 00:06:10.900
+We're no longer going to respond to the Space key,
+我们不再对空格键做出响应，
+
+00:06:10.900 --> 00:06:14.360
+so I'll delete that by dragging it off.
+所以我会把它拖走删除。
+
+00:06:14.360 --> 00:06:18.110
+But now, when the right arrow key is pressed,
+但是现在，当按下右箭头键时，
+
+00:06:18.110 --> 00:06:20.000
+I'd like the cat to move to the right.
+我希望这只猫向右移动。
+
+00:06:20.000 --> 00:06:21.500
+This is something we've seen before.
+这是我们之前见过的内容。
+
+00:06:21.500 --> 00:06:24.470
+Moving is controlled by a motion block, and we
+移动是由一个运动积木控制的，而且我们
+
+00:06:24.470 --> 00:06:27.290
+are going to change the x value by 10.
+要把x值增加10。
+
+00:06:27.290 --> 00:06:30.050
+Remember, the x is, how far to the left or to the right
+记住，x值表示这个特定角色在左右方向上的位置，
+
+00:06:30.050 --> 00:06:32.030
+is this particular sprite?
+也就是这个角色离左边或右边有多远？
+
+00:06:32.030 --> 00:06:35.600
+So when the right arrow's pressed, we're going to change the x value by 10,
+所以当按下右箭头键时，我们要把x值增加10，
+
+00:06:35.600 --> 00:06:39.200
+but now what I'd like to do is get the cat to detect somehow
+但现在我想做的是让这只猫以某种方式检测到
+
+00:06:39.200 --> 00:06:41.070
+when it's touching one of the trees.
+它什么时候碰到了其中一棵树。
+
+00:06:41.070 --> 00:06:42.470
+There's a tree off to the right.
+右边有一棵树。
+
+00:06:42.470 --> 00:06:43.762
+There's a tree off to the left.
+左边也有一棵树。
+
+00:06:43.762 --> 00:06:46.850
+If the cat is ever touching a tree, I'd like the cat to know,
+如果这只猫碰到了一棵树，我希望它能知道，
+
+00:06:46.850 --> 00:06:48.360
+so we can report as much.
+这样我们就能进行相应报告。
+
+00:06:48.360 --> 00:06:51.200
+It can say that it found a tree, for instance.
+比如它可以说它找到了一棵树。
+
+00:06:51.200 --> 00:06:52.728
+How could we do that?
+我们要怎么做呢？
+
+00:06:52.728 --> 00:06:54.020
+Well, the tree is not a sprite.
+嗯，树不是一个角色。
+
+00:06:54.020 --> 00:06:57.120
+It's not one of these sprites that I see down below.
+它不是我在下面看到的这些角色之一。
+
+00:06:57.120 --> 00:06:58.520
+It's just part of the backdrop.
+它只是背景的一部分。
+
+00:06:58.520 --> 00:06:59.850
+It's just there.
+它就在那里。
+
+00:06:59.850 --> 00:07:02.360
+And so if I want to detect it, I can detect it
+所以如果我想检测到它，我可以通过
+
+00:07:02.360 --> 00:07:04.790
+by looking for a particular color.
+寻找特定的颜色来检测。
+
+00:07:04.790 --> 00:07:08.100
+So I might say, if--
+所以我可以说，如果——
+
+00:07:08.100 --> 00:07:09.960
+and then going to Sensing--
+然后进入侦测模块——
+
+00:07:09.960 --> 00:07:12.290
+touching color.
+碰到颜色。
+
+00:07:12.290 --> 00:07:15.070
+And if I click on this little color well here in this oval,
+如果我点击这个椭圆里的这个小颜色框，
+
+00:07:15.070 --> 00:07:18.960
+I can control what color I'd like to check to see if I'm touching.
+我就能控制我想要检查是否碰到的颜色。
+
+00:07:18.960 --> 00:07:22.210
+And I could try to come up with a green that looks like the green of the tree,
+我可以试着找出一种看起来和树的绿色一样的绿色，
+
+00:07:22.210 --> 00:07:24.550
+but it'll be difficult for me to get it exactly.
+但要让颜色完全一致对我来说会很困难。
+
+00:07:24.550 --> 00:07:27.580
+And for that reason, there's a great tool down below.
+出于这个原因，下面有一个很棒的工具。
+
+00:07:27.580 --> 00:07:30.880
+If I click on this eyedropper button, that
+如果我点击这个滴管按钮，它
+
+00:07:30.880 --> 00:07:32.800
+lets me pick a color from the stage.
+能让我从舞台上选取一种颜色。
+
+00:07:32.800 --> 00:07:35.590
+You'll notice I can drag my cursor over the stage.
+你会注意到我可以在舞台上拖动光标。
+
+00:07:35.590 --> 00:07:37.660
+It's picking out individual colors.
+它正在挑选出单个的颜色。
+
+00:07:37.660 --> 00:07:41.710
+And I can say, I want you to detect this color right here, this green
+我可以说，我希望你检测这里的这种颜色，这种绿色
+
+00:07:41.710 --> 00:07:43.880
+that my cursor's hovering over now.
+我鼠标指针现在正悬停在上面的那个。
+
+00:07:43.880 --> 00:07:45.950
+And you'll notice that, when I click there,
+你会注意到，当我点击那里时，
+
+00:07:45.950 --> 00:07:48.040
+now the colors automatically update.
+现在颜色会自动更新。
+
+00:07:48.040 --> 00:07:51.070
+Now my cat is going to be checking if it's ever touching
+现在我的猫要去检查它是否碰到了
+
+00:07:51.070 --> 00:07:54.050
+that green that makes up those trees.
+构成那些树的绿色。
+
+00:07:54.050 --> 00:07:56.440
+And if it is touching the green that makes up the trees,
+如果它碰到了构成树的绿色，
+
+00:07:56.440 --> 00:08:00.490
+well, then let's go ahead and have the cat say something.
+那么，就让猫说点什么吧。
+
+00:08:00.490 --> 00:08:05.300
+And the cat's going to say, I found a tree.
+猫会说：“我找到一棵树了。”
+
+00:08:05.300 --> 00:08:09.970
+So now the cat can move to the right every time I press the right key.
+所以现在每次我按右方向键，猫就能向右移动。
+
+00:08:09.970 --> 00:08:10.900
+And it just moves.
+它就这么移动着。
+
+00:08:10.900 --> 00:08:12.012
+That's all it's doing.
+它就只做这件事。
+
+00:08:12.012 --> 00:08:12.970
+But it's also checking.
+但它也在检查。
+
+00:08:12.970 --> 00:08:16.802
+It's asking that question, is the cat touching the green?
+它在问这个问题：猫碰到绿色了吗？
+
+00:08:16.802 --> 00:08:19.510
+And it's not touching the green, so nothing's happening just yet.
+它没碰到绿色，所以目前什么都没发生。
+
+00:08:19.510 --> 00:08:23.110
+Every time I press the arrow key, we're just changing the x value.
+每次我按方向键，我们只是在改变x值。
+
+00:08:23.110 --> 00:08:24.130
+But watch what happens.
+但看看会发生什么。
+
+00:08:24.130 --> 00:08:28.030
+Eventually-- and it'll probably happen right there--
+最终——可能就在那里会发生——
+
+00:08:28.030 --> 00:08:33.530
+the cat touches the green in the tree, and the cat says, I found a tree.
+猫碰到了树上的绿色，然后猫说：“我找到一棵树了。”
+
+00:08:33.530 --> 00:08:36.652
+So these sensing blocks allow us to let our sprites
+所以这些感知积木让我们的角色
+
+00:08:36.652 --> 00:08:38.860
+be a little more intelligent about what's around it--
+能对周围的情况更“聪明”一些——
+
+00:08:38.860 --> 00:08:42.020
+what's in the backdrop, what colors does it happen to be touching,
+背景里有什么，它碰巧碰到了什么颜色，
+
+00:08:42.020 --> 00:08:44.360
+and what spritz does it happen to be touching.
+它碰巧碰到了什么角色。
+
+00:08:44.360 --> 00:08:49.190
+And we can use that to create some interesting programs as well.
+我们也可以用这些来创建一些有趣的程序。
+
+00:08:49.190 --> 00:08:52.243
+But let's now revisit one of the programs that we already made
+但现在让我们回头看看我们已经做过的一个程序，
+
+00:08:52.243 --> 00:08:54.160
+and see if we can make it a little better now.
+看看我们现在能不能把它改进一下。
+
+00:08:54.160 --> 00:08:57.040
+I'll go ahead and delete the cat and change the backdrop.
+我先把猫删掉，然后换个背景。
+
+00:08:57.040 --> 00:09:00.970
+We'll go back to just the plain white backdrop.
+我们换回纯白色的背景。
+
+00:09:00.970 --> 00:09:03.520
+And let's bring back the balloon.
+让我们把气球再弄回来。
+
+00:09:03.520 --> 00:09:06.280
+You might remember from when we were working with the balloon
+你可能还记得我们之前摆弄气球的时候，
+
+00:09:06.280 --> 00:09:09.160
+a little bit earlier that we were making the balloon bigger.
+我们让气球变大了。
+
+00:09:09.160 --> 00:09:11.368
+Every time we blew, for example, into the microphone,
+比如，每次我们对着麦克风吹气，
+
+00:09:11.368 --> 00:09:13.577
+the balloon was getting bigger and bigger and bigger.
+气球就变得越来越大。
+
+00:09:13.577 --> 00:09:15.830
+In reality, you can't make a balloon bigger forever.
+实际上，你不可能让气球一直变大。
+
+00:09:15.830 --> 00:09:18.910
+Eventually, that balloon is going to pop, and so let's
+最终，气球会爆掉，所以让我们
+
+00:09:18.910 --> 00:09:20.620
+get this balloon to eventually pop.
+让这个气球最终爆掉吧。
+
+00:09:20.620 --> 00:09:24.280
+I'll go ahead and center the balloon by changing the x and the y
+我先通过把x值和y值
+
+00:09:24.280 --> 00:09:26.450
+values both to 0.
+都改成0来让气球居中。
+
+00:09:26.450 --> 00:09:30.920
+And now I'll have the balloon respond to me pressing the Space key.
+现在我要让气球对我按空格键做出反应。
+
+00:09:30.920 --> 00:09:34.340
+The Space key is how I'm going to inflate this balloon.
+我要用空格键来给这个气球充气。
+
+00:09:34.340 --> 00:09:43.020
+And when the Space is pressed, I would like to change the size by 10.
+当按下空格键时，我想把大小改变10。
+
+00:09:43.020 --> 00:09:46.110
+This is similar to what we had before where, whenever something happens--
+这和我们之前的情况类似，也就是每当有事情发生时——
+
+00:09:46.110 --> 00:09:48.623
+in this case, I'm pressing the Space key-- the balloon just
+在这个例子里，我按下空格键——气球就会
+
+00:09:48.623 --> 00:09:50.040
+gets bigger and bigger and bigger.
+变得越来越大。
+
+00:09:50.040 --> 00:09:52.590
+And you can see the size down below grow.
+你可以看到下面显示的大小数值在增长。
+
+00:09:52.590 --> 00:09:53.860
+It's 170 now.
+现在是170。
+
+00:09:53.860 --> 00:09:54.880
+Now it's 180.
+现在是180。
+
+00:09:54.880 --> 00:09:55.780
+Now it's 190.
+现在是190。
+
+00:09:55.780 --> 00:09:57.720
+Now it's 200, for example.
+比如，现在是200了。
+
+00:09:57.720 --> 00:10:00.180
+And this maybe feels big enough.
+这也许感觉足够大了。
+
+00:10:00.180 --> 00:10:05.510
+Once it gets to size 200, then I want to have the balloon pop, for example.
+比如，一旦气球大小达到200，我就想让气球爆炸。
+
+00:10:05.510 --> 00:10:10.050
+So let's bring the size back to 100, back to the original size.
+所以让我们把大小调回到100，也就是最初的大小。
+
+00:10:10.050 --> 00:10:11.820
+I can ask a question.
+我可以提个问题。
+
+00:10:11.820 --> 00:10:15.312
+I can go to Control and bring out an if statement.
+我可以到“控制”里，拖出一个“如果”语句。
+
+00:10:15.312 --> 00:10:18.270
+And this time, the question I want to ask is not whether the balloon is
+这次，我想问的问题不是气球是否
+
+00:10:18.270 --> 00:10:22.320
+touching something-- it's whether the size is 100--
+碰到了什么东西——而是大小是否为100——
+
+00:10:22.320 --> 00:10:23.040
+or 200.
+或者是200。
+
+00:10:23.040 --> 00:10:27.120
+And how could I check to see if the size is 200?
+我要怎么检查大小是否为200呢？
+
+00:10:27.120 --> 00:10:30.730
+Well, down here in Operators-- we've seen a couple of operators before.
+嗯，在“运算”这里——我们之前见过几个运算符了。
+
+00:10:30.730 --> 00:10:33.930
+We've seen the operators to do math, like addition, multiplication,
+我们见过用于数学运算的运算符，比如加法、乘法，
+
+00:10:33.930 --> 00:10:35.340
+subtraction, and division.
+减法和除法。
+
+00:10:35.340 --> 00:10:37.740
+We've seen the operator that picks a random number.
+我们见过选取随机数的运算符。
+
+00:10:37.740 --> 00:10:40.530
+And these were all oval-shaped operators.
+这些都是椭圆形的运算符。
+
+00:10:40.530 --> 00:10:44.650
+But now let's take a look at some of these hexagon-shaped operators.
+但现在让我们看看这些六边形的运算符。
+
+00:10:44.650 --> 00:10:48.090
+These hexagon-shaped operators are all Boolean expressions,
+这些六边形的运算符都是布尔表达式，
+
+00:10:48.090 --> 00:10:52.830
+things that can be either true or false, answered yes or no.
+也就是结果要么为真要么为假，可以用是或否来回答的东西。
+
+00:10:52.830 --> 00:10:58.800
+And one of them here is whether something is equal to something else.
+这里面有一个是判断某个东西是否等于另一个东西。
+
+00:10:58.800 --> 00:11:02.650
+So if I have two values and I want to know, are they equal to each other,
+所以如果我有两个值，并且想知道它们是否相等，
+
+00:11:02.650 --> 00:11:06.300
+I can use this check here-- this hexagon-shaped block--
+我可以用这里这个检查——这个六边形的积木——
+
+00:11:06.300 --> 00:11:09.503
+to check to see if those two values are equal to each other.
+来检查这两个值是否相等。
+
+00:11:09.503 --> 00:11:10.920
+And that's what I want to do here.
+这就是我在这里要做的。
+
+00:11:10.920 --> 00:11:13.770
+I want to take my sprite, the balloon, and check
+我想选中我的角色，也就是气球，然后检查
+
+00:11:13.770 --> 00:11:17.640
+to see if the size is equal to 200.
+大小是否等于200。
+
+00:11:17.640 --> 00:11:21.210
+So I'll take this block, drag it into the hexagon area
+所以我要把这个积木拖到
+
+00:11:21.210 --> 00:11:23.220
+next to the if statement.
+“如果”语句旁边的六边形区域。
+
+00:11:23.220 --> 00:11:29.340
+And let me grab the size value, which is under the Looks category.
+让我来获取大小值，它在“外观”类别下面。
+
+00:11:29.340 --> 00:11:36.790
+Here's my size value, and I want to check if the size is equal to 200.
+这就是我的大小值，我想检查大小是否等于200。
+
+00:11:36.790 --> 00:11:39.730
+And if the size is equal to 200, what do I want to do?
+如果大小等于200，我想做什么呢？
+
+00:11:39.730 --> 00:11:42.630
+Well, the first thing I'll have this program do is hide.
+嗯，我要让这个程序做的第一件事是隐藏。
+
+00:11:42.630 --> 00:11:44.550
+The balloon's going to hide.
+气球要隐藏起来。
+
+00:11:44.550 --> 00:11:46.710
+And then, just for fun, let's go into sound
+然后，只是为了好玩，让我们来看看声音方面
+
+00:11:46.710 --> 00:11:51.092
+and have the balloon play the sound pop until it's done.
+并让气球播放“砰”的声音，直到播放完毕。
+
+00:11:51.092 --> 00:11:52.800
+So now, what is the logic of the program?
+那么现在，这个程序的逻辑是什么呢？
+
+00:11:52.800 --> 00:11:56.610
+Well, every time I press the Space key, we're going to run this line--
+嗯，每次我按下空格键，我们就会运行这一行——
+
+00:11:56.610 --> 00:11:58.260
+change the size by 10.
+将大小改变 10。
+
+00:11:58.260 --> 00:12:00.450
+But we're also going to ask that question--
+但我们也要问那个问题——
+
+00:12:00.450 --> 00:12:02.970
+check if the size is equal to 200.
+检查大小是否等于 200。
+
+00:12:02.970 --> 00:12:06.990
+And only if the answer to that question is yes, then we hide the balloon,
+只有当那个问题的答案是“是”时，我们才隐藏气球，
+
+00:12:06.990 --> 00:12:10.240
+and then we play the sound pop until it's done.
+然后让气球播放“砰”的声音，直到播放完毕。
+
+00:12:10.240 --> 00:12:13.020
+So let's give the program a try and see what happens
+所以让我们来试试这个程序，看看会发生什么
+
+00:12:13.020 --> 00:12:15.270
+once I start to inflate this balloon.
+一旦我开始给这个气球充气。
+
+00:12:15.270 --> 00:12:16.980
+It's at size 100 right now.
+它现在的大小是 100。
+
+00:12:16.980 --> 00:12:21.240
+And remember, you can check that just by looking down below here at the size.
+记住，你可以通过看下面这里的大小来确认。
+
+00:12:21.240 --> 00:12:22.950
+And let's press the Space.
+让我们按下空格键。
+
+00:12:22.950 --> 00:12:23.880
+It inflates a little.
+它稍微膨胀了一点。
+
+00:12:23.880 --> 00:12:28.740
+Its size is 110, 120, 130, 140, 150.
+它的大小变成了 110、120、130、140、150。
+
+00:12:28.740 --> 00:12:31.110
+And now it's at 190, and watch what happens
+现在它到了 190，看看接下来会发生什么
+
+00:12:31.110 --> 00:12:33.720
+the next time I try and inflate the balloon one more time,
+下次我再试着给气球充一次气的时候，
+
+00:12:33.720 --> 00:12:37.400
+as by pressing the Space key.
+也就是按下空格键的时候。
+
+00:12:37.400 --> 00:12:39.740
+It goes ahead and it hides.
+它就会直接隐藏起来。
+
+00:12:39.740 --> 00:12:42.640
+And I could try that again.
+我可以再试一次。
+
+00:12:42.640 --> 00:12:44.920
+We'll go ahead and show the balloon again,
+我们接着再把气球显示出来，
+
+00:12:44.920 --> 00:12:47.840
+and I can do that by using this Show block here.
+我可以通过使用这里的“显示”积木来做到。
+
+00:12:47.840 --> 00:12:50.560
+I'll just click on Show, and it will show the balloon.
+我只要点击“显示”，它就会显示气球。
+
+00:12:50.560 --> 00:13:00.600
+And the balloon inflates, and then it disappears with a pop.
+气球膨胀，然后“砰”的一声消失了。
+
+00:13:00.600 --> 00:13:02.540
+So that's how we can use conditions to check
+所以这就是我们如何使用条件来检查
+
+00:13:02.540 --> 00:13:04.430
+if two things are equal to each other.
+两个东西是否彼此相等。
+
+00:13:04.430 --> 00:13:06.557
+But you probably noticed down in Operators
+但你可能注意到在“运算符”里
+
+00:13:06.557 --> 00:13:08.390
+that we don't just have the ability to check
+我们不只是有能力检查
+
+00:13:08.390 --> 00:13:10.200
+if two things are equal to each other.
+两个东西是否彼此相等。
+
+00:13:10.200 --> 00:13:14.270
+We can check if one number is less than another number or greater than another
+例如，我们可以检查一个数字是否小于另一个数字或者大于另一个
+
+00:13:14.270 --> 00:13:15.660
+number, for example.
+数字。
+
+00:13:15.660 --> 00:13:18.080
+And let's give that a try.
+让我们来试试这个。
+
+00:13:18.080 --> 00:13:20.810
+Instead of using the balloon, I'll bring out another sprite.
+我不用气球了，换一个角色。
+
+00:13:20.810 --> 00:13:27.380
+Let's choose the duck this time.
+这次我们选鸭子吧。
+
+00:13:27.380 --> 00:13:32.060
+I'll center the duck by moving it to 0 for x and 0 for y.
+我把鸭子移到 x 坐标为 0、y 坐标为 0 的位置，让它居中。
+
+00:13:32.060 --> 00:13:35.810
+And when I press the green flag to start this program,
+当我按下绿色旗帜来启动这个程序时，
+
+00:13:35.810 --> 00:13:38.030
+the duck is going to ask a question.
+鸭子会问一个问题。
+
+00:13:38.030 --> 00:13:42.040
+And the question might be, type a number.
+问题可能是：输入一个数字。
+
+00:13:42.040 --> 00:13:44.120
+So it's asking me to type in a number.
+所以它在让我输入一个数字。
+
+00:13:44.120 --> 00:13:47.440
+So now, when I press the green flag, the duck asks me to type in a number,
+所以现在，当我按下绿色旗帜时，鸭子让我输入一个数字，
+
+00:13:47.440 --> 00:13:48.820
+and I could type in a number.
+我可以输入一个数字。
+
+00:13:48.820 --> 00:13:52.750
+I could type in the number 1, for example, and press Return.
+比如，我可以输入数字1，然后按回车键。
+
+00:13:52.750 --> 00:13:57.193
+So the duck now has a number, and now we could ask questions about that number.
+现在这只鸭子有了一个数字，我们就可以针对这个数字提问了。
+
+00:13:57.193 --> 00:13:59.110
+So if I want to check to see if that number is
+所以，如果我想查看那个数字是否
+
+00:13:59.110 --> 00:14:03.220
+positive or negative, for example, I could add a condition.
+为正数或负数，比如，我可以添加一个条件。
+
+00:14:03.220 --> 00:14:10.430
+I could say, if, and then take the greater than block out--
+我可以说“如果”，然后把“大于”积木拖出来——
+
+00:14:10.430 --> 00:14:12.230
+which is under Operators.
+它在“运算”分类下。
+
+00:14:12.230 --> 00:14:14.900
+And now I want to say, if the answer--
+现在我想说，如果答案——
+
+00:14:14.900 --> 00:14:19.190
+which is in the Sensing category-- if the answer is greater than 0,
+它在“侦测”分类里——如果答案大于0，
+
+00:14:19.190 --> 00:14:22.800
+well, then whatever number the user typed in-- that's a positive number.
+那么，不管用户输入的是什么数字——那就是一个正数。
+
+00:14:22.800 --> 00:14:25.640
+And so we'll go into the Looks section, and let's go ahead
+所以我们进入“外观”板块，然后我们接着
+
+00:14:25.640 --> 00:14:30.312
+and say positive for two seconds.
+说“正数”两秒钟。
+
+00:14:30.312 --> 00:14:33.520
+So we ask the user for a number, and if the user types in a positive number--
+我们让用户输入一个数字，如果用户输入的是一个正数——
+
+00:14:33.520 --> 00:14:35.740
+something like the number 2--
+比如数字2——
+
+00:14:35.740 --> 00:14:37.260
+well, the duck says positive--
+那么这只鸭子会说“正数”——
+
+00:14:37.260 --> 00:14:37.760
+great.
+很好。
+
+00:14:37.760 --> 00:14:42.070
+And instead, if we typed in a negative number-- let's say negative 2--
+相反，如果我们输入一个负数——比如负2——
+
+00:14:42.070 --> 00:14:43.990
+the duck doesn't say anything at all.
+这只鸭子什么都不会说。
+
+00:14:43.990 --> 00:14:46.790
+So we're able to check to see if their answer is positive,
+所以我们能够查看他们的答案是否为正数，
+
+00:14:46.790 --> 00:14:50.290
+and if what the user typed in was positive-- if that's true, then
+如果用户输入的是正数——如果这是真的，那么
+
+00:14:50.290 --> 00:14:52.780
+we're going to say positive for two seconds.
+我们会说“正数”两秒钟。
+
+00:14:52.780 --> 00:14:56.500
+But oftentimes, we want to be able to make a decision based
+但很多时候，我们希望能够根据
+
+00:14:56.500 --> 00:14:58.490
+on either answer to the question.
+问题的两种答案来做决策。
+
+00:14:58.490 --> 00:15:01.660
+So far, with our if blocks, we've been asking a question,
+到目前为止，使用“如果那么”积木时，我们一直在问一个问题，
+
+00:15:01.660 --> 00:15:03.500
+is the answer to this question yes?
+这个问题的答案是“是”吗？
+
+00:15:03.500 --> 00:15:04.360
+Is it true?
+是真的吗？
+
+00:15:04.360 --> 00:15:07.240
+And if so, then we're going to run some code.
+如果是，那么我们就会运行一些代码。
+
+00:15:07.240 --> 00:15:09.560
+There's one block of code that we're running,
+如果问题的答案是“是”，我们就会运行一段代码。
+
+00:15:09.560 --> 00:15:12.880
+if it's the case that the answer to the question is yes.
+如果问题的答案是“是”，我们就会运行一段代码。
+
+00:15:12.880 --> 00:15:15.100
+But sometimes we want to handle both situations.
+但有时候我们想处理两种情况。
+
+00:15:15.100 --> 00:15:17.830
+If the answer to a question is yes, we want to do one thing,
+如果问题的答案是“是”，我们想做一件事，
+
+00:15:17.830 --> 00:15:22.850
+and if the answer to a question is no, then we want to do something else.
+如果问题的答案是“否”，我们想做另一件事。
+
+00:15:22.850 --> 00:15:25.160
+And so let's give that a try.
+那我们来试试看。
+
+00:15:25.160 --> 00:15:29.500
+Turns out there's another block that we can use-- not just the if then block,
+原来我们还可以使用另一种积木——不只是“如果那么”积木，
+
+00:15:29.500 --> 00:15:34.400
+but another block under Control called if then else.
+还有“控制”分类下的另一种叫做“如果那么否则”的积木。
+
+00:15:34.400 --> 00:15:38.260
+And the if then else block is structured differently than the other blocks
+“如果那么否则”积木的结构和我们目前看到的其他积木不同。
+
+00:15:38.260 --> 00:15:39.220
+we've seen so far.
+和我们目前看到的其他积木不同。
+
+00:15:39.220 --> 00:15:43.030
+The top part looks very much like the if block we were working with before.
+上面部分看起来和我们之前用的“如果”积木很像。
+
+00:15:43.030 --> 00:15:47.350
+There's a hexagon-shaped space for a question, and then an area beneath it
+有一个六边形的区域用来放置问题，然后下面有一个区域
+
+00:15:47.350 --> 00:15:51.280
+where we could add a stack of blocks for what should happen
+我们可以在那里添加一堆积木，来表示应该发生什么。
+
+00:15:51.280 --> 00:15:53.920
+if the answer to that question is yes.
+如果那个问题的答案是肯定的。
+
+00:15:53.920 --> 00:15:57.340
+But this block now has another section called else,
+但这个积木现在有了另一个部分，叫做“否则”，
+
+00:15:57.340 --> 00:16:01.900
+which has what appears to be an area for yet another stack of blocks.
+这里看起来像是另一个积木堆的区域。
+
+00:16:01.900 --> 00:16:05.560
+So inside of this block can be two separate stacks of blocks--
+所以这个积木里面可以有两个独立的积木堆——
+
+00:16:05.560 --> 00:16:09.820
+one stack of blocks that run if the answer to the question is yes,
+一个积木堆在问题答案为肯定时运行，
+
+00:16:09.820 --> 00:16:14.750
+and another stack of blocks that run if the answer to the question is no.
+另一个积木堆在问题答案为否定时运行。
+
+00:16:14.750 --> 00:16:16.840
+So regardless of the answer to the question,
+所以不管问题的答案是什么，
+
+00:16:16.840 --> 00:16:20.330
+we're going to make a decision about which of these two blocks
+我们都要决定这两个积木中的哪一个
+
+00:16:20.330 --> 00:16:21.820
+we're ultimately going to run.
+最终会被运行。
+
+00:16:21.820 --> 00:16:25.750
+And we can use that now to handle both possibilities-- either the number
+现在我们可以用它来处理两种可能性——要么这个数字
+
+00:16:25.750 --> 00:16:29.570
+is greater than 0 or it's not.
+大于 0，要么不是。
+
+00:16:29.570 --> 00:16:32.470
+And so here I'll take this answer greater than 0 block,
+所以在这里我要拿这个“答案大于 0”的积木，
+
+00:16:32.470 --> 00:16:34.610
+drag it into this condition.
+把它拖到这个条件里。
+
+00:16:34.610 --> 00:16:36.730
+And in that case, we're going to say positive.
+在那种情况下，我们要说“正数”。
+
+00:16:36.730 --> 00:16:39.580
+I'll get rid of this if statement, because I no longer need it.
+我要把这个“如果”语句删掉，因为我不再需要它了。
+
+00:16:39.580 --> 00:16:42.550
+Now I'm going to replace it with this if else.
+现在我要用这个“如果……否则”来替换它。
+
+00:16:42.550 --> 00:16:46.870
+If the answer is greater than 0, we're going to say positive for two seconds.
+如果答案大于 0，我们要说“正数”两秒钟。
+
+00:16:46.870 --> 00:16:49.840
+Otherwise-- let's go into Looks--
+否则——我们来看看“外观”模块——
+
+00:16:49.840 --> 00:16:55.630
+let's say negative for two seconds.
+我们说“负数”两秒钟。
+
+00:16:55.630 --> 00:16:59.370
+So now we're making a decision-- running some block of code either time,
+所以现在我们在做一个决定——每次都运行一些代码块，
+
+00:16:59.370 --> 00:17:03.030
+but making a decision about which block of code we would like to run.
+但要决定我们想要运行哪一个代码块。
+
+00:17:03.030 --> 00:17:04.290
+I'll start the program.
+我要启动程序。
+
+00:17:04.290 --> 00:17:05.609
+It's asking me for a number.
+它在问我要一个数字。
+
+00:17:05.609 --> 00:17:08.550
+I'll type in a positive number, like the number 2.
+我要输入一个正数，比如数字 2。
+
+00:17:08.550 --> 00:17:10.980
+And the duck says positive.
+鸭子说“正数”。
+
+00:17:10.980 --> 00:17:12.170
+We'll try it again.
+我们再试一次。
+
+00:17:12.170 --> 00:17:13.170
+Asking me for a number--
+问我要一个数字——
+
+00:17:13.170 --> 00:17:15.300
+I'll type in a negative number-- negative 2.
+我要输入一个负数——负 2。
+
+00:17:15.300 --> 00:17:17.260
+And the duck says negative.
+鸭子说“负数”。
+
+00:17:17.260 --> 00:17:20.290
+So if the answer to the question is yes, we run one block.
+所以如果问题的答案是肯定的，我们运行一个积木。
+
+00:17:20.290 --> 00:17:22.829
+Otherwise, we run another block.
+否则，我们运行另一个积木。
+
+00:17:22.829 --> 00:17:24.780
+And now, there's a slight bug in this program.
+现在，这个程序有个小毛病。
+
+00:17:24.780 --> 00:17:27.089
+You might have noticed that it does well for positive numbers
+你可能已经注意到，它对正数处理得很好，
+
+00:17:27.089 --> 00:17:29.280
+and it does well for negative numbers, but there
+对负数处理得也很好，但是有
+
+00:17:29.280 --> 00:17:33.240
+is one number that's not really positive and it's not really negative,
+一个数字既不是真正的正数，也不是真正的负数，
+
+00:17:33.240 --> 00:17:34.710
+and that's a 0.
+那就是 0。
+
+00:17:34.710 --> 00:17:39.210
+If I type in 0 in press Return, the duck says negative.
+如果我输入 0 并按回车键，鸭子说“负数”。
+
+00:17:39.210 --> 00:17:40.180
+Now, why is that?
+现在，为什么会这样呢？
+
+00:17:40.180 --> 00:17:43.230
+Well, it's asking, is the answer greater than 0?
+嗯，它在问，答案是否大于 0？
+
+00:17:43.230 --> 00:17:44.560
+Is 0 greater than 0?
+0 大于 0 吗？
+
+00:17:44.560 --> 00:17:45.060
+Well, no.
+嗯，不是的。
+
+00:17:45.060 --> 00:17:47.280
+0 is not greater than 0.
+0 并不大于 0。
+
+00:17:47.280 --> 00:17:49.560
+So instead of running the if block, we instead
+所以我们不运行 if 积木，而是
+
+00:17:49.560 --> 00:17:54.793
+run this else block, where we just say negative every time.
+运行这个 else 积木，在这里我们每次都说“负数”。
+
+00:17:54.793 --> 00:17:56.460
+And that's maybe not quite what we want.
+这可能不是我们想要的结果。
+
+00:17:56.460 --> 00:18:00.300
+What I probably want is to ask yet another question-- to ask again,
+我可能想再问一个问题——再问一遍，
+
+00:18:00.300 --> 00:18:02.580
+is the answer less than 0?
+答案小于 0 吗？
+
+00:18:02.580 --> 00:18:03.900
+If so, then it's negative.
+如果是，那么它就是负数。
+
+00:18:03.900 --> 00:18:07.050
+And otherwise, if it's not more than 0 and it's not less than 0,
+否则，如果它不大于 0 也不小于 0，
+
+00:18:07.050 --> 00:18:09.750
+then it must just be 0.
+那么它一定就是 0。
+
+00:18:09.750 --> 00:18:15.390
+And to do that, I could add yet another condition inside of this stack here.
+要做到这一点，我可以在这个积木堆里再添加一个条件。
+
+00:18:15.390 --> 00:18:19.210
+I can add anything if else inside of another if else.
+我可以在一个 if - else 里面再添加另一个 if - else。
+
+00:18:19.210 --> 00:18:24.450
+And to do that, I'll take another if else, drag it here underneath the else.
+要做到这一点，我再拿一个 if - else 积木，把它拖到 else 下面。
+
+00:18:24.450 --> 00:18:26.280
+And so now, if the number's not positive,
+所以现在，如果这个数不是正数，
+
+00:18:26.280 --> 00:18:29.940
+I can ask a second question-- ask yet another question.
+我可以问第二个问题——再问一个问题。
+
+00:18:29.940 --> 00:18:35.520
+Now the question I want to ask is, is my answer--
+现在我想问的问题是，我的答案——
+
+00:18:35.520 --> 00:18:37.710
+the answer's in the Sensing category--
+答案在“感知”类别里——
+
+00:18:37.710 --> 00:18:40.320
+is the answer to less than 0?
+答案小于 0 吗？
+
+00:18:40.320 --> 00:18:44.460
+If the answer is less than 0, then I want to say negative for two seconds,
+如果答案小于 0，那么我想说“负数”两秒钟，
+
+00:18:44.460 --> 00:18:46.020
+but otherwise--
+但否则——
+
+00:18:46.020 --> 00:18:47.860
+let's go into Looks--
+我们来看看“外观”类别——
+
+00:18:47.860 --> 00:18:51.810
+I'm just going to say 0.
+我就说“0”。
+
+00:18:51.810 --> 00:18:54.690
+So this is starting to get more complex I have blocks inside
+所以这开始变得更复杂了，我有一个积木套着
+
+00:18:54.690 --> 00:18:56.460
+of blocks inside of other blocks.
+另一个积木，另一个积木又套着别的积木。
+
+00:18:56.460 --> 00:19:00.010
+And the way to read this now is, what happens if the user types in the number
+现在解读这个的方式是，如果用户输入数字
+
+00:19:00.010 --> 00:19:00.690
+0?
+0 会怎样呢？
+
+00:19:00.690 --> 00:19:02.970
+Well, we start by asking this question here--
+嗯，我们先问这里这个问题——
+
+00:19:02.970 --> 00:19:05.850
+is the answer 0 greater than 0?
+答案 0 大于 0 吗？
+
+00:19:05.850 --> 00:19:09.900
+No, 0 is not greater than 0, so we ignore the if block
+不，0 不大于 0，所以我们忽略 if 积木
+
+00:19:09.900 --> 00:19:12.150
+and we just look to the else section.
+然后我们只看 else 部分。
+
+00:19:12.150 --> 00:19:13.710
+And now we ask another question.
+现在我们问另一个问题。
+
+00:19:13.710 --> 00:19:17.070
+Is the answer 0 less than 0?
+答案 0 小于 0 吗？
+
+00:19:17.070 --> 00:19:18.940
+Well, no, that's not true either.
+嗯，不，这也不成立。
+
+00:19:18.940 --> 00:19:21.850
+So we don't run this block, and we instead go to the else,
+所以我们不运行这个积木，而是转到 else 部分，
+
+00:19:21.850 --> 00:19:26.340
+and we run this block, which says, say 0 for two seconds.
+然后运行这个积木，它说，说“0”两秒钟。
+
+00:19:26.340 --> 00:19:29.170
+And that's exactly the behavior we want for the duck.
+这正是我们希望这只鸭子有的行为。
+
+00:19:29.170 --> 00:19:33.310
+So we can verify now that it works by pressing the green flag.
+所以我们现在可以通过点击绿色旗帜来验证它是否有效。
+
+00:19:33.310 --> 00:19:36.450
+And if I type in 0, the duck reports that I
+如果我输入 0，这只鸭子会报告说我
+
+00:19:36.450 --> 00:19:38.490
+did, in fact, type in the number 0.
+实际上输入的是数字 0。
+
+00:19:38.490 --> 00:19:42.880
+If I instead typed a positive number, the duck's is going to say positive.
+如果我输入的是一个正数，这只鸭子会说“正数”。
+
+00:19:42.880 --> 00:19:45.870
+And if I type the negative number, well, then the duck
+如果我输入负数，那么这只鸭子
+
+00:19:45.870 --> 00:19:48.730
+is going to say negative instead.
+就会说“负数”。
+
+00:19:48.730 --> 00:19:51.960
+And so using that, I have the ability to ask multiple questions
+利用这个功能，我就能问多个问题
+
+00:19:51.960 --> 00:19:56.050
+and make decisions based on the answers to those questions.
+并根据这些问题的答案来做决策。
+
+00:19:56.050 --> 00:19:59.610
+So let's use this ability now to build some interesting games that
+现在让我们利用这个能力来制作一些有趣的游戏，这些游戏
+
+00:19:59.610 --> 00:20:02.870
+use our ability to ask questions and make decisions.
+会用到我们提问和做决策的能力。
+
+00:20:02.870 --> 00:20:05.100
+And for that, I'll bring back one of our animals.
+为此，我要请回我们的一个动物角色。
+
+00:20:05.100 --> 00:20:09.180
+We'll go to Animals, and let's bring back the hedgehog.
+我们到“动物”分类里，把刺猬请回来。
+
+00:20:09.180 --> 00:20:12.840
+And what I'd like for the hedgehog to do is to race across the stage--
+我希望刺猬做的是在舞台上赛跑——
+
+00:20:12.840 --> 00:20:15.300
+start at one point in the stage, try and get all the way
+从舞台的一个点出发，试着一路
+
+00:20:15.300 --> 00:20:19.480
+to the right edge of the stage, and see how quickly we can do that.
+跑到舞台的右边边缘，看看我们能多快完成。
+
+00:20:19.480 --> 00:20:22.120
+So how would I go about creating this game?
+那么我该如何制作这个游戏呢？
+
+00:20:22.120 --> 00:20:25.410
+Well, when the green flag is clicked, when I start the program,
+嗯，当绿色旗帜被点击，也就是我启动程序时，
+
+00:20:25.410 --> 00:20:30.180
+I would like the hedgehog to move to the left side of the stage
+我希望刺猬移动到舞台的左边
+
+00:20:30.180 --> 00:20:33.790
+as a place to begin this particular race.
+作为这场特定赛跑的起点。
+
+00:20:33.790 --> 00:20:36.860
+So we'll have it go to a particular location.
+所以我们让它移动到一个特定的位置。
+
+00:20:36.860 --> 00:20:37.860
+And this is about right.
+差不多就是这里。
+
+00:20:37.860 --> 00:20:41.097
+Maybe I'll say negative 150 and negative 25 for y.
+也许我会把 x 设为 -150，y 设为 -25。
+
+00:20:41.097 --> 00:20:43.930
+And I could play around with that to figure out exactly what I want,
+我可以多试试，找出我确切想要的位置，
+
+00:20:43.930 --> 00:20:47.250
+but I'm just choosing nice looking numbers for now.
+但现在我只是选了看起来合适的数字。
+
+00:20:47.250 --> 00:20:49.050
+And then every time--
+然后每次——
+
+00:20:49.050 --> 00:20:52.150
+not the Space key, but maybe the right key is pressed,
+不是按空格键，而是按右键时，
+
+00:20:52.150 --> 00:20:55.050
+I would like for the hedgehog to move a little bit closer
+我希望刺猬向舞台边缘靠近一点。
+
+00:20:55.050 --> 00:20:57.600
+towards the edge of the stage.
+朝着舞台边缘。
+
+00:20:57.600 --> 00:21:02.560
+So I could have the hedgehog move 10 steps, for example.
+比如，我可以让刺猬移动 10 步。
+
+00:21:02.560 --> 00:21:05.340
+And what I would like for the hedgehog to do
+我希望刺猬做的是
+
+00:21:05.340 --> 00:21:08.757
+is, once it reaches the edge of the stage,
+一旦它到达舞台边缘，
+
+00:21:08.757 --> 00:21:10.840
+it should report back to me, how long did it take?
+它应该向我反馈，用了多长时间？
+
+00:21:10.840 --> 00:21:12.990
+How many seconds did it take for the hedgehog
+刺猬从舞台的一边跑到另一边用了多少秒？
+
+00:21:12.990 --> 00:21:16.630
+to get from one side of the stage to the other?
+为此，我可以问一个问题。
+
+00:21:16.630 --> 00:21:19.740
+And so for that, I can ask a question.
+所以为了做到这一点，我可以提一个问题。
+
+00:21:19.740 --> 00:21:20.910
+We'll go into Control.
+我们到“控制”分类里。
+
+00:21:20.910 --> 00:21:24.480
+I'll drag an if block out, and the question I want to ask--
+我拖出一个“如果”积木，我想问的问题——
+
+00:21:24.480 --> 00:21:26.400
+which will be located under Sensing--
+它在“侦测”分类下——
+
+00:21:26.400 --> 00:21:29.550
+is not whether the hedgehog is touching the mouse pointer,
+不是刺猬是否碰到鼠标指针，
+
+00:21:29.550 --> 00:21:31.740
+but if the hedgehog is touching the edge--
+而是刺猬是否碰到边缘——
+
+00:21:31.740 --> 00:21:33.382
+meaning the edge of the stage.
+也就是舞台的边缘。
+
+00:21:33.382 --> 00:21:36.090
+And if the hedgehog is touching the edge of the stage, what would
+如果刺猬碰到了舞台边缘，我希望
+
+00:21:36.090 --> 00:21:38.010
+I like for the hedgehog to do?
+刺猬做什么呢？
+
+00:21:38.010 --> 00:21:40.650
+Well, I want the hedgehog to say something.
+嗯，我希望刺猬说些话。
+
+00:21:40.650 --> 00:21:42.630
+And what do I wanted to say?
+我想说什么来着？
+
+00:21:42.630 --> 00:21:47.070
+Well, I want the hedgehog to say whatever this timer value is.
+嗯，我想让刺猬说出这个计时器的值。
+
+00:21:47.070 --> 00:21:49.200
+Remember, the timer is a value that keeps
+记住，计时器是一个会持续
+
+00:21:49.200 --> 00:21:53.880
+track of how many seconds have passed since the beginning of my program.
+记录自程序开始以来过去了多少秒的数值。
+
+00:21:53.880 --> 00:21:56.700
+And I could have it say just the timer, but I'm actually
+我可以让它直接说出计时器的值，但实际上
+
+00:21:56.700 --> 00:21:58.200
+going to use an operator first.
+我要先使用一个运算积木。
+
+00:21:58.200 --> 00:22:04.200
+I'm going to have us first round the timer, and then say that result. Why
+我打算先对计时器的值进行取整，然后说出取整后的结果。为什么
+
+00:22:04.200 --> 00:22:04.950
+am I doing that?
+要这么做呢？
+
+00:22:04.950 --> 00:22:07.575
+Well, the timer normally has something after the decimal point.
+嗯，计时器的值通常小数点后面还有数。
+
+00:22:07.575 --> 00:22:10.148
+Maybe like 5.28 seconds have passed or something like that,
+比如可能已经过去了5.28秒之类的，
+
+00:22:10.148 --> 00:22:12.690
+and I don't really care about what's after the decimal point.
+而我其实并不在意小数点后面的数。
+
+00:22:12.690 --> 00:22:16.090
+I just want to know, has it been five seconds, or six, or seven seconds,
+我只想知道，是过去了五秒，还是六秒，或者七秒，
+
+00:22:16.090 --> 00:22:17.440
+for example?
+举个例子？
+
+00:22:17.440 --> 00:22:21.460
+So now we're going to move the hedgehog every time I press the right arrow key,
+所以现在，每次我按下右箭头键，我们就让刺猬移动，
+
+00:22:21.460 --> 00:22:23.430
+and if we're touching the edge, we're going
+如果它碰到了边缘，我们就
+
+00:22:23.430 --> 00:22:27.850
+to say whatever the value of the timer is for two seconds.
+说出计时器的值，持续两秒。
+
+00:22:27.850 --> 00:22:30.430
+So let's give that a try.
+那我们来试试看。
+
+00:22:30.430 --> 00:22:32.190
+We'll start the program, and every time I
+我们启动程序，每次我
+
+00:22:32.190 --> 00:22:35.460
+press the right arrow, the hedgehog moves a little bit.
+按下右箭头，刺猬就会移动一点。
+
+00:22:35.460 --> 00:22:41.080
+And when it reaches the edge, it's going to report how many seconds it took.
+当它到达边缘时，就会报告用了多少秒。
+
+00:22:41.080 --> 00:22:44.050
+In this case, it took nine seconds for the hedgehog
+在这个例子中，刺猬用了九秒
+
+00:22:44.050 --> 00:22:47.980
+to get all the way to the rightmost edge of the stage.
+才一直移动到舞台的最右边。
+
+00:22:47.980 --> 00:22:51.478
+But we can keep asking more questions here, adding more blocks to the program
+但我们还可以在这里提出更多问题，往程序里添加更多积木
+
+00:22:51.478 --> 00:22:53.020
+to make it a little more interesting.
+让它更有趣一点。
+
+00:22:53.020 --> 00:22:57.850
+I'll get rid of this, say, for now, and instead replace it with an if else--
+我先把这个去掉，比如说，现在，用一个“如果……否则……”积木来代替它——
+
+00:22:57.850 --> 00:23:00.610
+an opportunity to ask another question.
+这是一个提出另一个问题的机会。
+
+00:23:00.610 --> 00:23:03.880
+And this time the question I want to ask is this.
+这次我想问的问题是这样的。
+
+00:23:03.880 --> 00:23:09.140
+Under Operators, I'm going to take the less than block out, and I want to ask,
+在运算积木里，我要拿出“小于”积木，我想问，
+
+00:23:09.140 --> 00:23:13.170
+is the timer less than five?
+计时器的值小于五吗？
+
+00:23:13.170 --> 00:23:15.870
+Remember, this question is only ask one time at the edge.
+记住，这个问题只会在边缘处问一次。
+
+00:23:15.870 --> 00:23:19.480
+Once the hedgehog has reached the edge of the stage, we're going to ask,
+一旦刺猬到达了舞台边缘，我们就会问，
+
+00:23:19.480 --> 00:23:21.840
+has it been fewer than five seconds?
+过去了不到五秒吗？
+
+00:23:21.840 --> 00:23:25.860
+And if so, that was pretty fast, so let's go ahead and have the hedgehog
+如果是，那就相当快了，所以我们就让刺猬
+
+00:23:25.860 --> 00:23:30.210
+say fast for two seconds.
+说“快”，持续两秒。
+
+00:23:30.210 --> 00:23:35.587
+And otherwise, if the timer was not less than five, then
+否则，如果计时器的值不小于五，那么
+
+00:23:35.587 --> 00:23:37.920
+we were going kind of slowly, so we'll have the hedgehog
+我们移动得有点慢，所以我们就让刺猬
+
+00:23:37.920 --> 00:23:41.040
+say slow for two seconds instead.
+说“慢”，持续两秒。
+
+00:23:41.040 --> 00:23:43.760
+So now, if I press the green flag and move quickly--
+所以现在，如果我按下绿色旗帜然后快速移动——
+
+00:23:43.760 --> 00:23:47.000
+very quickly try and move the hedgehog across the stage,
+非常快速地试着让刺猬穿过舞台，
+
+00:23:47.000 --> 00:23:48.500
+well, then the hedgehog says fast.
+嗯，那么刺猬就会说“快”。
+
+00:23:48.500 --> 00:23:51.600
+I managed to make it across in fewer than five seconds.
+我成功在不到五秒的时间内通过了。
+
+00:23:51.600 --> 00:23:53.030
+But if I'm going more slowly--
+但如果我移动得更慢些——
+
+00:23:53.030 --> 00:23:59.520
+I'll try it again, and more slowly press the right arrow key.
+我再试一次，更慢地按右箭头键。
+
+00:23:59.520 --> 00:24:03.840
+Well, then it's going to take a little bit longer, and at the end,
+嗯，那花费的时间会稍微长一点，最后，
+
+00:24:03.840 --> 00:24:06.600
+the hedgehog does report that I was slow, that I was not
+刺猬会提示我速度慢，说我
+
+00:24:06.600 --> 00:24:08.760
+very fast at moving across.
+通过得不快。
+
+00:24:08.760 --> 00:24:10.470
+So that's one possible game you could try
+所以这是你可以尝试制作的一种游戏，
+
+00:24:10.470 --> 00:24:13.380
+to build by asking questions-- questions about whether we're touching
+通过提出问题来实现——比如关于是否碰到边缘的问题，
+
+00:24:13.380 --> 00:24:17.730
+the edge, questions about whether the timer is a particular value-- less
+关于计时器是否达到某个特定值的问题——例如，
+
+00:24:17.730 --> 00:24:19.870
+than a particular value, for example.
+是否小于某个特定值。
+
+00:24:19.870 --> 00:24:23.850
+And let's try one more example of a game we could build with the hedgehog.
+我们再来看一个可以用刺猬制作的游戏示例。
+
+00:24:23.850 --> 00:24:26.460
+Go ahead and get rid of these blocks for now.
+现在先把这些积木块删掉。
+
+00:24:26.460 --> 00:24:29.790
+Let's try and build a maze for the hedgehog to try and navigate around,
+我们试着为刺猬建一个迷宫，让它在里面探索，
+
+00:24:29.790 --> 00:24:33.550
+where you're not supposed to hit any of the walls of the maze, for example.
+比如，在这个过程中你不能碰到迷宫的任何墙壁。
+
+00:24:33.550 --> 00:24:36.120
+And I could do that by changing the backdrop.
+我可以通过更改背景来实现这一点。
+
+00:24:36.120 --> 00:24:39.360
+Let's use the backdrop to build a maze for our hedgehog.
+我们用背景为刺猬建一个迷宫。
+
+00:24:39.360 --> 00:24:44.430
+I want the walls to be red maybe, and I'll
+我可能想让墙壁是红色的，然后我
+
+00:24:44.430 --> 00:24:46.650
+go ahead and click on this line tool that's going
+点击这个线条工具，
+
+00:24:46.650 --> 00:24:50.640
+to let me draw lines on the stage.
+这样我就能在舞台上画线条了。
+
+00:24:50.640 --> 00:24:54.430
+Oh, and I should really be changing the outline to make the outline red.
+哦，我真的应该把轮廓颜色改成红色。
+
+00:24:54.430 --> 00:24:57.880
+So let me delete this line for now, and try it again.
+所以我先把这条线删掉，再试一次。
+
+00:24:57.880 --> 00:25:00.970
+I want the outline of this to be red.
+我想让这个的轮廓是红色的。
+
+00:25:00.970 --> 00:25:03.430
+That's going to give me some red lines.
+这样就能得到一些红色的线条。
+
+00:25:03.430 --> 00:25:11.650
+And I'll go ahead and just try and build a little maze for our hedgehog
+我接着试着为刺猬建一个小迷宫，
+
+00:25:11.650 --> 00:25:15.210
+to try to navigate around.
+让它在里面探索。
+
+00:25:15.210 --> 00:25:17.370
+And that looks all right.
+看起来还不错。
+
+00:25:17.370 --> 00:25:19.620
+I'll go back to the code.
+我回到代码区。
+
+00:25:19.620 --> 00:25:20.597
+Here's our hedgehog.
+这是我们的刺猬。
+
+00:25:20.597 --> 00:25:22.680
+It's a bit big for this maze right now, so I might
+现在它对于这个迷宫来说有点大了，所以我可能
+
+00:25:22.680 --> 00:25:24.222
+want to make it a little bit smaller.
+想把它变小一点。
+
+00:25:24.222 --> 00:25:27.660
+I can go in the Size here, change the size to-- let's try 40.
+我可以在这里调整大小，把大小改成——试试40吧。
+
+00:25:27.660 --> 00:25:30.150
+Yeah, that's probably a good size for our hedgehog.
+嗯，这个大小对我们的刺猬来说可能正合适。
+
+00:25:30.150 --> 00:25:32.290
+And now, how do I want this maze to work?
+现在，我想让这个迷宫怎么运作呢？
+
+00:25:32.290 --> 00:25:34.980
+Well, I'll have it move via the arrow keys.
+嗯，我让它通过箭头键来移动。
+
+00:25:34.980 --> 00:25:37.950
+So whenever the right arrow key is pressed,
+所以每当按下右箭头键时，
+
+00:25:37.950 --> 00:25:42.840
+our hedgehog is going to change its x position by, let's say, five.
+我们的刺猬的x坐标会增加，比如说，增加5。
+
+00:25:42.840 --> 00:25:44.730
+10 is maybe a lot for this.
+增加10可能有点多了。
+
+00:25:44.730 --> 00:25:47.340
+So it's going to move five spaces to the right.
+所以它会向右移动五格。
+
+00:25:47.340 --> 00:25:48.600
+And what do I want to do?
+我接下来要做什么呢？
+
+00:25:48.600 --> 00:25:51.750
+I want to check now, is the hedgehog touching a wall?
+我现在想检查一下，刺猬是否碰到墙壁了？
+
+00:25:51.750 --> 00:25:55.240
+Because if it ends up touching a wall, that's no good.
+因为如果它最后碰到了墙，那就不妙了。
+
+00:25:55.240 --> 00:26:02.190
+So I'll ask, if the hedgehog is touching a color--
+所以我要判断，如果刺猬碰到了某种颜色——
+
+00:26:02.190 --> 00:26:04.230
+because the walls are all red.
+因为墙都是红色的。
+
+00:26:04.230 --> 00:26:06.330
+So I'll grab a color using this eyedropper tool,
+所以我要用这个取色工具选取一种颜色，
+
+00:26:06.330 --> 00:26:08.100
+grabbing it from the stage.
+从舞台上取色。
+
+00:26:08.100 --> 00:26:11.280
+Let's grab this red right here.
+咱们就取这里的红色。
+
+00:26:11.280 --> 00:26:14.330
+So if the hedgehog is touching the color red,
+所以如果刺猬碰到了红色，
+
+00:26:14.330 --> 00:26:18.170
+well, then I want the hedgehog to just, for now, let's say, go
+那么目前，我希望刺猬，比如说，移动到
+
+00:26:18.170 --> 00:26:19.760
+to a random position on the stage.
+舞台上的一个随机位置。
+
+00:26:19.760 --> 00:26:23.690
+It's going to somehow magically disappear and reappear somewhere else.
+它会神奇地消失，然后在别的地方重新出现。
+
+00:26:23.690 --> 00:26:26.720
+We'll have it go to a random position.
+我们让它移动到一个随机位置。
+
+00:26:26.720 --> 00:26:29.000
+And that's what happens when I press the right arrow.
+这就是我按下右箭头时会发生的情况。
+
+00:26:29.000 --> 00:26:32.330
+I'm going to duplicate this whole thing by Control clicking and pressing
+我要通过按住Ctrl键点击并按下
+
+00:26:32.330 --> 00:26:36.800
+Duplicate, and do the same thing for the left arrow.
+“复制”来复制这一整段代码，然后对左箭头做同样的操作。
+
+00:26:36.800 --> 00:26:40.610
+But this time, we're going to change x by negative five.
+但这次，我们要将x坐标减去5。
+
+00:26:40.610 --> 00:26:45.020
+And I also want the up and down arrows to work too, so I'll duplicate once.
+我也希望上下箭头能起作用，所以我再复制一次。
+
+00:26:45.020 --> 00:26:47.060
+Let's do this for the up arrow.
+咱们来为上箭头设置一下。
+
+00:26:47.060 --> 00:26:51.800
+When the up arrow happens, I want to not change the x value by something,
+当按下上箭头时，我不想改变x坐标的值，
+
+00:26:51.800 --> 00:26:57.630
+but change the y value by negative five.
+而是要将y坐标减去5。
+
+00:26:57.630 --> 00:27:01.350
+And one more arrow key-- let's duplicate this one more time and use the same
+还有一个方向键——咱们再复制一次，用同样的
+
+00:27:01.350 --> 00:27:04.300
+code for the down arrow--
+代码来控制下箭头——
+
+00:27:04.300 --> 00:27:07.508
+this time, changing the y by--
+这次，改变y坐标的值为——
+
+00:27:07.508 --> 00:27:09.300
+actually, here, it should be negative five,
+实际上，这里应该是减去5，
+
+00:27:09.300 --> 00:27:11.700
+and for up, it should be five-- because when we're going up the,
+而向上移动时，应该是加上5——因为当我们向上移动时，
+
+00:27:11.700 --> 00:27:14.820
+y value's increasing, when we're going down, the y value's decreasing.
+y坐标值会增加，向下移动时，y坐标值会减少。
+
+00:27:14.820 --> 00:27:17.430
+And I could test that out by pressing the up arrow,
+我可以通过按下上箭头来测试一下，
+
+00:27:17.430 --> 00:27:18.930
+and the hedgehog moves up.
+刺猬就会向上移动。
+
+00:27:18.930 --> 00:27:20.440
+I press the down arrow--
+我按下下箭头——
+
+00:27:20.440 --> 00:27:21.552
+the hedgehog moves down.
+刺猬就会向下移动。
+
+00:27:21.552 --> 00:27:23.010
+I press left-- it goes to the left.
+我按下左箭头——它会向左移动。
+
+00:27:23.010 --> 00:27:24.552
+I press right-- it goes to the right.
+我按下右箭头——它会向右移动。
+
+00:27:24.552 --> 00:27:29.030
+But if ever I hit-- watch what happens if I hit a red wall.
+但要是我撞到了——看看我撞到红色的墙会发生什么。
+
+00:27:29.030 --> 00:27:32.250
+The hedgehog magically vanishes from where it was,
+刺猬会神奇地从它原来的位置消失，
+
+00:27:32.250 --> 00:27:33.600
+and it reappears somewhere else.
+然后在别的地方重新出现。
+
+00:27:33.600 --> 00:27:36.740
+And you could decide on your own what happens when the hedgehog hits a wall.
+你可以自己决定刺猬撞到墙时会发生什么。
+
+00:27:36.740 --> 00:27:37.990
+Maybe it plays a sound effect.
+也许它会播放一个音效。
+
+00:27:37.990 --> 00:27:39.978
+Maybe it does something else.
+也许它会做其他事情。
+
+00:27:39.978 --> 00:27:42.020
+But you could make this game however you like it.
+但你可以按照自己的喜好来制作这个游戏。
+
+00:27:42.020 --> 00:27:44.812
+And here I just have a hedgehog that can navigate through the maze,
+在这里，我有一只可以在迷宫中穿梭的刺猬，
+
+00:27:44.812 --> 00:27:49.000
+and whenever it hits a wall, it reappears somewhere else.
+而且每当它撞到墙时，就会在别的地方重新出现。
+
+00:27:49.000 --> 00:27:51.500
+And so these conditions give you a lot of power, the ability
+所以这些条件赋予了你很大的能力，即
+
+00:27:51.500 --> 00:27:55.160
+to ask questions and make decisions inside of your programs
+在你的程序里提出问题并根据问题的答案做出决策的能力。
+
+00:27:55.160 --> 00:27:57.530
+based on the answers to those questions.
+基于这些问题的答案。
+
+00:27:57.530 --> 00:28:00.430
+That's it for today for an introduction to programming with Scratch.
+今天关于用Scratch编程的介绍就到这里。
+
+00:28:00.430 --> 00:28:02.180
+Next time, we'll pick up where we left off
+下次，我们将接着上次停下的地方继续。
+
+00:28:02.180 --> 00:28:05.480
+and see what else we can do in the world of putting together these Scratch
+看看在组合这些Scratch
+
+00:28:05.480 --> 00:28:06.080
+blocks.
+积木的世界里我们还能做些什么。
+
+00:28:06.080 --> 00:28:07.990
+We'll see you then.
+到时候再见。

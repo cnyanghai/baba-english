@@ -1,0 +1,2265 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.451
+[MUSIC PLAYING]
+[音乐播放中]
+
+00:00:17.033 --> 00:00:19.200
+BRIAN YU: Welcome back, everyone, to An Introduction
+布莱恩·余：欢迎大家回到《用Scratch学编程》课程。
+
+00:00:19.200 --> 00:00:20.580
+to Programming with Scratch.
+上节课我们学习了编程的基础知识——
+
+00:00:20.580 --> 00:00:23.880
+And last time we took a look at the fundamentals of programming--
+把一系列指令组合在一起，
+
+00:00:23.880 --> 00:00:26.160
+putting together a sequence of instructions
+我们通过组装这些不同颜色的Scratch积木，将其称为函数。
+
+00:00:26.160 --> 00:00:30.345
+that we called Functions by assembling these different colored Scratch blocks.
+通过组合这些不同颜色的Scratch积木，
+
+00:00:30.345 --> 00:00:32.970
+And by putting together these different colored Scratch blocks,
+我们能够让我们的项目生动起来。
+
+00:00:32.970 --> 00:00:35.220
+we were able to bring our projects to life.
+我们可以让舞台上的角色，也就是角色对象，
+
+00:00:35.220 --> 00:00:38.070
+We were able to take characters, or sprites, on the stage,
+让它们移动、画画、播放声音等等。
+
+00:00:38.070 --> 00:00:42.240
+and have them move around, or draw pictures, and play sound, and more.
+所以今天，让我们进一步拓展这些编程概念。
+
+00:00:42.240 --> 00:00:45.060
+And so today, let's take those concepts of programming
+我这就再次打开Scratch，让我们从一个之前见过的程序开始。
+
+00:00:45.060 --> 00:00:47.440
+and build upon them a little bit more.
+我这就进入积木的“外观”板块，
+
+00:00:47.440 --> 00:00:50.640
+I'll go ahead and open up Scratch again, and let's start with a program
+然后拖出这个“说你好2秒”的积木。
+
+00:00:50.640 --> 00:00:51.820
+that we've seen before.
+大家可能还记得，当我点击这个积木
+
+00:00:51.820 --> 00:00:54.900
+I'll go ahead and go into the Looks section of the blocks
+来运行这组代码，也就是代码脚本时，
+
+00:00:54.900 --> 00:00:58.870
+and pull out this Say Hello For 2 Seconds block.
+你会看到舞台上的猫会说两秒“你好”，
+
+00:00:58.870 --> 00:01:01.290
+And as you might recall, when I click on this block
+然后就停止了。
+
+00:01:01.290 --> 00:01:04.290
+to run this Stack, or script of code, you'll
+看起来运行得不错，但注意，
+
+00:01:04.290 --> 00:01:08.130
+see that my cat over on the stage says "hello" for two seconds,
+为了运行这个程序，我得点击我想让猫执行的代码。
+
+00:01:08.130 --> 00:01:09.510
+and then it stops.
+这也许没问题，但如果你之前在电脑或手机上用过程序，
+
+00:01:09.510 --> 00:01:11.940
+And so that seems to work well, but notice
+那你可能并没有特意告诉程序什么时候运行哪部分代码。
+
+00:01:11.940 --> 00:01:16.110
+that in order to run this program, I had to click on the code
+你打开一个应用程序，有些代码就会运行，或者你点击一个按钮，
+
+00:01:16.110 --> 00:01:18.720
+that I wanted the cat to run.
+有些代码就会运行，或者你在键盘上输入些东西，
+
+00:01:18.720 --> 00:01:21.590
+And that might be fine, but if you've used programs on your computer
+有些代码就会运行——你通常不会特意指出程序里的哪些代码行要运行。
+
+00:01:21.590 --> 00:01:23.760
+or on your phone before, then you probably
+这里还有另一个问题，
+
+00:01:23.760 --> 00:01:26.940
+haven't specifically told the program which part of the code
+如果我在多个角色对象上有多个脚本，会发生什么呢？
+
+00:01:26.940 --> 00:01:28.290
+you want it to run when.
+想象一下，不只是猫在说“你好”，
+
+00:01:28.290 --> 00:01:31.320
+You open up an app and some code runs, or you click a button
+而是猫在和——
+
+00:01:31.320 --> 00:01:34.260
+and some code runs, or you type something onto your keyboard
+我们选另一个角色对象，选恐龙吧。
+
+00:01:34.260 --> 00:01:36.270
+and some code runs-- you're not specifically
+所以我要进入“动物”类别，选择恐龙，
+
+00:01:36.270 --> 00:01:40.950
+pointing to what lines of code in a program you generally want to run.
+也许我想让这两个角色对象互相打招呼。
+
+00:01:40.950 --> 00:01:44.070
+And one other problem here might be what might
+所以我要移动它，让猫和恐龙紧挨着，
+
+00:01:44.070 --> 00:01:47.460
+happen if I have multiple scripts across multiple sprites maybe.
+我还想把恐龙转过来，让它们面对面。
+
+00:01:47.460 --> 00:01:50.160
+Imagine that it's not just the cat saying "hello, "
+想象一下，不只是那只猫在说“你好”
+
+00:01:50.160 --> 00:01:52.080
+but the cat talking to--
+而是那只猫在和——
+
+00:01:52.080 --> 00:01:55.270
+let's pick another sprite, let's pick the dinosaur.
+咱们选另一个角色吧，就选恐龙。
+
+00:01:55.270 --> 00:01:57.630
+So I'll go into Animals and choose the dinosaur,
+所以我要进入“动物”类别，选那个恐龙角色，
+
+00:01:57.630 --> 00:02:00.850
+and maybe I want these two to say hello to each other.
+也许我想让这两个角色互相打个招呼。
+
+00:02:00.850 --> 00:02:04.110
+So I'll move it so that the cat and the dinosaur are next to each other,
+所以我要移动它，让猫和恐龙靠在一起，
+
+00:02:04.110 --> 00:02:07.860
+and I want to turn the dinosaur around so that they're facing each other.
+我想让恐龙转个身，这样它们就能面对面了。
+
+00:02:07.860 --> 00:02:11.490
+And I can do that recall by going into the direction for the dinosaur
+我可以通过设置恐龙的方向来实现这一点
+
+00:02:11.490 --> 00:02:16.050
+and having it face the left instead of facing the right.
+让它面朝左边，而不是右边。
+
+00:02:16.050 --> 00:02:18.390
+And now it seems like the dinosaurs upside down,
+现在看起来恐龙好像倒过来了，
+
+00:02:18.390 --> 00:02:22.350
+so I just need to remember to change the rotation style to left and right
+所以我得记得把旋转方式改成左右旋转
+
+00:02:22.350 --> 00:02:24.720
+instead of all around-- and so now the cat
+而不是全方位旋转——现在猫
+
+00:02:24.720 --> 00:02:26.830
+and the dinosaur are facing each other.
+和恐龙就面对面了。
+
+00:02:26.830 --> 00:02:31.140
+And if I want them both to say hello to each other, well then this dinosaur--
+如果我想让它们互相说你好，那么这只恐龙——
+
+00:02:31.140 --> 00:02:32.970
+notice the dinosaur is now selected--
+注意现在选中的是恐龙——
+
+00:02:32.970 --> 00:02:36.640
+is also going to need a block that lets it say hello.
+也需要一个能让它说你好的积木。
+
+00:02:36.640 --> 00:02:41.430
+So I'll also give it a block that says Say Hello For 2 Seconds--
+所以我也给它加一个“说你好 2 秒”的积木——
+
+00:02:41.430 --> 00:02:44.310
+but now if I want the cat to say hello to the dinosaur,
+但现在如果我想让猫对恐龙说你好，
+
+00:02:44.310 --> 00:02:47.025
+well, then I'll need to go to the cat, click the Say Hello block,
+那么我得选中猫，点击“说你好”积木，
+
+00:02:47.025 --> 00:02:49.650
+but then very quickly click on the dinosaur and click Say Hello
+然后迅速选中恐龙再点击“说你好”
+
+00:02:49.650 --> 00:02:52.970
+too so that they can both say hello to each other.
+这样它们就能互相说你好了。
+
+00:02:52.970 --> 00:02:56.220
+It was a bit tedious for me to have to quickly jump back and forth between two
+在两个角色之间快速来回切换对我来说有点麻烦，
+
+00:02:56.220 --> 00:02:59.730
+sprites, and you could imagine that at a more complex project where
+可以想象在一个更复杂的项目里，
+
+00:02:59.730 --> 00:03:02.760
+a sprite might have multiple different scripts that we want to run,
+一个角色可能有多个不同的脚本需要运行，
+
+00:03:02.760 --> 00:03:04.440
+or you might have many more sprites--
+或者可能有更多的角色——
+
+00:03:04.440 --> 00:03:08.130
+it's not going to be possible for me to, in any reasonable amount of time,
+我不可能在合理的时间内，
+
+00:03:08.130 --> 00:03:12.300
+go to all of the different sprites and start up all of the different blocks
+选中所有不同的角色并启动所有我想运行的积木。
+
+00:03:12.300 --> 00:03:13.410
+that I want to run.
+如果我能直接说，启动项目，
+
+00:03:13.410 --> 00:03:16.510
+It would be better if I could just say, let's start the project,
+然后项目启动时，我希望所有这些代码脚本
+
+00:03:16.510 --> 00:03:21.300
+and when the project starts then that I want all of these scripts of code
+都能自动运行就好了。
+
+00:03:21.300 --> 00:03:22.830
+to run automatically.
+我们可以通过这个按钮来实现——
+
+00:03:22.830 --> 00:03:25.810
+And we can do just that via this button--
+它在 Scratch 窗口的右上角——
+
+00:03:25.810 --> 00:03:27.790
+it's in the upper right of the Scratch window--
+这是旗帜按钮。
+
+00:03:27.790 --> 00:03:28.770
+this is the flag.
+一般来说，当你点击这个绿色旗帜，
+
+00:03:28.770 --> 00:03:30.990
+And generally when you click on this green flag,
+就标志着你的 Scratch 项目开始了。
+
+00:03:30.990 --> 00:03:34.560
+that marks the start of your Scratch project.
+当然，现在我点击这个绿色旗帜——
+
+00:03:34.560 --> 00:03:37.440
+Of course right now, when I click on this green flag--
+什么都没发生，所以这里
+
+00:03:37.440 --> 00:03:39.810
+nothing's happening, and so here is where
+我们要引入编程中的一个新概念
+
+00:03:39.810 --> 00:03:42.240
+we're going to introduce a new concept in programming
+那就是事件的概念。
+
+00:03:42.240 --> 00:03:44.100
+and that's the concept of an Event.
+我们可以在 Scratch 窗口左侧看到事件类积木。
+
+00:03:44.100 --> 00:03:47.460
+And we can see the Event blocks as one of the options along the left hand
+事件就是我们程序里发生的事情，
+
+00:03:47.460 --> 00:03:49.470
+side of the Scratch window.
+我们可以让代码对其做出响应。
+
+00:03:49.470 --> 00:03:53.430
+And an Event is just something that happens inside of our program
+我们可以说，当某件事发生时——
+
+00:03:53.430 --> 00:03:55.710
+that we could have some code respond to.
+例如，当旗帜被点击时——
+
+00:03:55.710 --> 00:03:57.660
+We could say that, when something happens--
+那么我希望猫说两秒钟的你好，
+
+00:03:57.660 --> 00:03:59.850
+for example, when the flag is clicked--
+例如，当点击旗帜时——
+
+00:03:59.850 --> 00:04:02.610
+then I want the cat to say hello for two seconds,
+然后我想让猫说两秒钟“你好”。
+
+00:04:02.610 --> 00:04:07.000
+or I want the dinosaur to say hello for two seconds as well.
+或者我也想让恐龙说两秒“你好”。
+
+00:04:07.000 --> 00:04:11.670
+And so, we do have this very first Event block here, When Flag Clicked,
+所以，我们这里有第一个事件积木，“当绿旗被点击”，
+
+00:04:11.670 --> 00:04:15.000
+and I'm going to take this block and drag it on top
+我要把这个积木拖到
+
+00:04:15.000 --> 00:04:18.510
+of the Say Hello For 2 Seconds block.
+“说你好两秒”积木的上面。
+
+00:04:18.510 --> 00:04:22.950
+And so now I've attached my code to a particular Event--
+现在我已经把代码关联到一个特定的事件上了——
+
+00:04:22.950 --> 00:04:25.320
+this block here is called When Flag Clicked.
+这个积木叫做“当绿旗被点击”。
+
+00:04:25.320 --> 00:04:28.410
+It means that when this Event happens, when the flag is clicked,
+这意味着当这个事件发生，也就是绿旗被点击时，
+
+00:04:28.410 --> 00:04:31.800
+we are going to run all of the code that is attached beneath it.
+我们将运行它下面关联的所有代码。
+
+00:04:31.800 --> 00:04:34.740
+And notice that nothing can be attached on top of this event
+注意，这个事件积木上面不能再关联其他东西——
+
+00:04:34.740 --> 00:04:38.970
+block-- this event is the beginning of the script of these blocks of code
+这个事件是我现在想运行的这些代码积木脚本的开始。
+
+00:04:38.970 --> 00:04:40.110
+that I want to now run.
+现在，当我点击绿旗时，
+
+00:04:40.110 --> 00:04:42.600
+And so now, when I click on the green flag,
+恐龙会回应，说两秒“你好”。
+
+00:04:42.600 --> 00:04:46.530
+the dinosaur is going to respond by saying hello for two seconds.
+所以我回到这个项目，点击绿旗，
+
+00:04:46.530 --> 00:04:49.920
+So I go back to the project here, click on the green flag,
+恐龙说了“你好”。现在如果我也想让猫说“你好”，
+
+00:04:49.920 --> 00:04:54.510
+and the dinosaur says "hello. " And now if I want the cat to say hello too,
+那么，我只需要在下面的角色选择器里点击猫，
+
+00:04:54.510 --> 00:04:57.750
+well, then all I need to do is click on the cat in the sprite chooser down
+然后也给它添加“当绿旗被点击”事件。
+
+00:04:57.750 --> 00:05:01.690
+below, and add the When Flag Clicked Event to it as well.
+所以我要拿“当绿旗被点击”积木，把它拖到“说”积木的上面，
+
+00:05:01.690 --> 00:05:06.240
+So I'll take the When Flag Clicked block, drag it on top of the Say block,
+现在——
+
+00:05:06.240 --> 00:05:07.042
+and now--
+当我点击绿旗时——
+
+00:05:07.042 --> 00:05:08.250
+when I click the green flag--
+我只需要点击一次，猫和恐龙
+
+00:05:08.250 --> 00:05:11.910
+I just have to click once and both the cat and the dinosaur
+都会说“你好”，而不用我快速地先点击一个积木，
+
+00:05:11.910 --> 00:05:15.690
+are going to say hello rather than me having to click one block immediately
+再跳到另一个角色，然后再点击那个积木。
+
+00:05:15.690 --> 00:05:20.140
+very quickly, jump to another sprite, and then click on the block as well.
+现在好的地方在于，有人可以
+
+00:05:20.140 --> 00:05:22.050
+And the nice thing now is that someone can
+在不看我代码的情况下运行我的项目，代码依然能正常工作。
+
+00:05:22.050 --> 00:05:25.668
+run my project without ever looking at my code and the code will still work.
+他们不用知道要点击哪些积木——他们
+
+00:05:25.668 --> 00:05:27.960
+They don't have to know which blocks to click on-- they
+只需要点击绿旗，就能看到项目运行。
+
+00:05:27.960 --> 00:05:30.600
+can just click on the green flag and see the project work.
+事实上，如果你把Scratch项目分享到Scratch网站上就是这样——比如把它发给朋友或家人。
+
+00:05:30.600 --> 00:05:32.433
+And in fact, that's what happens if you were
+他们通常一开始只会看到你的项目，看不到代码，
+
+00:05:32.433 --> 00:05:35.100
+to share your Scratch project on Scratch's website-- sending it
+他们可以运行你的项目，会看到猫——
+
+00:05:35.100 --> 00:05:37.170
+to friends or family for example.
+还有在这个例子里的恐龙，都会说“你好”。
+
+00:05:37.170 --> 00:05:40.470
+They'll usually just see your project without seeing the code at first,
+所以这些就是事件，当项目里发生某些事情时，
+
+00:05:40.470 --> 00:05:43.680
+and they can run your project, and see that both the cat--
+我们可以通过运行一些代码积木来对其做出响应。
+
+00:05:43.680 --> 00:05:47.100
+and the dinosaur, in this case, are going to say hello.
+但我们也可以使用其他事件——
+
+00:05:47.100 --> 00:05:50.550
+So these are Events, where when something happens in the project,
+现在让我们来看看另一个事件。
+
+00:05:50.550 --> 00:05:54.540
+we can respond to that happening by having some blocks of code run.
+我先把猫和恐龙删掉，然后添加一个新角色——
+
+00:05:54.540 --> 00:05:57.368
+But there are other Events that we can use as well--
+我们选一个动物，回到这里选鸭子。
+
+00:05:57.368 --> 00:05:59.160
+and let's take a look at another Event now.
+所以我们有了鸭子，现在来看看我们要研究的事件。
+
+00:05:59.160 --> 00:06:03.330
+I'll delete the cat and the dinosaur for now, and let's add a new sprite--
+我先把猫和恐龙删掉，然后咱们来添加一个新角色——
+
+00:06:03.330 --> 00:06:07.240
+let's pick an animal, and let's go back to the duck here.
+咱们选个动物，就选这里的鸭子吧。
+
+00:06:07.240 --> 00:06:11.040
+So we have the duck and the Event that we'll take a look at now
+现在我们有了鸭子，还有接下来要看看的事件。
+
+00:06:11.040 --> 00:06:14.820
+is this one here-- it's called When This Sprite Clicked.
+就是这里这个——它叫“当点击此角色”。
+
+00:06:14.820 --> 00:06:17.670
+Meaning, when this sprite is clicked on, some code
+意思是，当点击这个角色时，某些代码
+
+00:06:17.670 --> 00:06:20.670
+is going to run in response to the fact that I've
+会因为我
+
+00:06:20.670 --> 00:06:22.683
+clicked on the duck in this case.
+点击了这只鸭子而运行。
+
+00:06:22.683 --> 00:06:24.600
+And I can have anything happen, and maybe what
+我可以让任何事情发生，也许现在
+
+00:06:24.600 --> 00:06:27.540
+I'll have happened just for now is I'll go into Motion,
+我要做的是进入“运动”模块，
+
+00:06:27.540 --> 00:06:31.500
+and I'll have the duck go to a random position.
+让这只鸭子移动到一个随机位置。
+
+00:06:31.500 --> 00:06:36.010
+So every time I click on the duck, it's going to go now to a random position.
+所以每次我点击这只鸭子，它就会移动到一个随机位置。
+
+00:06:36.010 --> 00:06:39.687
+So go into the stage, I'll click on the duck, and the duck moves.
+现在进入舞台，我点击这只鸭子，鸭子就会移动。
+
+00:06:39.687 --> 00:06:42.270
+I'll click the duck again and it moves, I click the duck again
+我再点击一次鸭子，它又移动了，我再点击一次鸭子
+
+00:06:42.270 --> 00:06:45.270
+and it moves-- and If I wanted it to move a little bit more smoothly,
+它还是会移动——如果我想让它移动得更平滑一些，
+
+00:06:45.270 --> 00:06:49.050
+remember that Go To will immediately jump to a random position.
+要记住“移到”会立刻跳到一个随机位置。
+
+00:06:49.050 --> 00:06:53.940
+But I could instead, by removing this block and replacing it with this one,
+但我可以把这个积木块移除，换成这个，
+
+00:06:53.940 --> 00:06:57.480
+have the duck glide to a random position-- take one second
+让鸭子滑行到一个随机位置——用一秒钟
+
+00:06:57.480 --> 00:07:00.030
+and just glide smoothly to a different position.
+平滑地滑行到另一个位置。
+
+00:07:00.030 --> 00:07:02.190
+Now every time I click on the duck, you'll
+现在每次我点击这只鸭子，你会
+
+00:07:02.190 --> 00:07:08.160
+notice the duck glide across the stage to a different random position
+注意到鸭子会在舞台上滑行到另一个随机位置
+
+00:07:08.160 --> 00:07:09.300
+on that stage.
+在那个舞台上。
+
+00:07:09.300 --> 00:07:13.110
+And it's responding, again, not to when I'm clicking on the code itself,
+而且它再次做出响应，不是因为我点击了代码本身，
+
+00:07:13.110 --> 00:07:15.690
+but when I'm clicking on the duck, and the duck
+而是因为我点击了鸭子，并且这只鸭子
+
+00:07:15.690 --> 00:07:17.430
+is responding because it's an Event.
+做出响应是因为这是一个事件。
+
+00:07:17.430 --> 00:07:20.610
+The Event is when the sprite is clicked on, we're going to glide.
+这个事件就是当角色被点击时，我们让它滑行。
+
+00:07:20.610 --> 00:07:25.290
+And what you'll notice too is that, on the left side of the Scratch window,
+你还会注意到，在Scratch窗口的左侧，
+
+00:07:25.290 --> 00:07:26.790
+when the sprite is clicked--
+当角色被点击时——
+
+00:07:26.790 --> 00:07:30.600
+you'll see this script light up to tell us and indicate to us
+你会看到这个脚本亮起，来告诉我们、向我们表明
+
+00:07:30.600 --> 00:07:32.580
+that this script is currently running.
+这个脚本正在运行。
+
+00:07:32.580 --> 00:07:36.120
+Right now it's not running, but notice that as soon as I click on the duck
+现在它没在运行，但注意，我一点击鸭子
+
+00:07:36.120 --> 00:07:40.770
+it lights up for one second as the duck is moving, and then it stops being lit.
+当鸭子移动时它会亮一秒钟，然后就不亮了。
+
+00:07:40.770 --> 00:07:44.490
+And while it's lit, that's when we know that this particular script happens
+当它亮着的时候，我们就知道这个特定的脚本
+
+00:07:44.490 --> 00:07:45.850
+to be running.
+正在运行。
+
+00:07:45.850 --> 00:07:49.740
+And so the ability to have sprites respond when we click on something--
+所以让角色在我们点击某个东西时做出响应的能力——
+
+00:07:49.740 --> 00:07:51.750
+on the stage, when we click on that sprite--
+在舞台上，当我们点击那个角色时——
+
+00:07:51.750 --> 00:07:55.500
+on the stage gives us a lot of flexibility and creative potential
+在舞台上为我们提供了很大的灵活性和创意潜力
+
+00:07:55.500 --> 00:07:58.110
+for creating new types of user interfaces--
+来创建新型的用户界面——
+
+00:07:58.110 --> 00:08:01.790
+for letting the user interact with our project in different ways.
+让用户以不同的方式与我们的项目进行交互。
+
+00:08:01.790 --> 00:08:04.260
+In fact, you might think of this as something like a button
+事实上，你可以把这想象成类似按钮的东西
+
+00:08:04.260 --> 00:08:06.593
+where, when you click on a button on a computer program,
+在电脑程序里，当你点击一个按钮时，
+
+00:08:06.593 --> 00:08:10.180
+something happens in response to clicking on that button.
+点击那个按钮会有相应的事情发生。
+
+00:08:10.180 --> 00:08:12.330
+And now that we have this Event, When Clicked,
+现在我们有了“当被点击”这个事件，
+
+00:08:12.330 --> 00:08:16.860
+we can create buttons of our own inside of our Scratch projects.
+我们就可以在自己的Scratch项目里创建自己的按钮了。
+
+00:08:16.860 --> 00:08:18.210
+And so let's try just that--
+那咱们就来试试这个——
+
+00:08:18.210 --> 00:08:20.730
+I'll get rid of the duck for now, and let's add
+我先把鸭子角色去掉，然后咱们添加
+
+00:08:20.730 --> 00:08:23.550
+some backdrops that we might want for our project.
+一些这个项目可能会用到的背景。
+
+00:08:23.550 --> 00:08:26.430
+I'll add a new backdrop and--
+我来添加一个新背景，然后——
+
+00:08:26.430 --> 00:08:29.578
+I like the Arctic backdrop, so we'll pick that one first--
+我喜欢北极背景，所以咱们先选这个——
+
+00:08:29.578 --> 00:08:32.370
+and let's choose a couple that I might like to use in this project.
+再选几个我可能想在这个项目里用的背景。
+
+00:08:32.370 --> 00:08:36.360
+So I'll choose another one, and let's go now to the jungle--
+我再选一个，现在咱们选丛林背景——
+
+00:08:36.360 --> 00:08:39.090
+that one seems interesting, slightly different.
+那个看起来挺有意思，有点不一样。
+
+00:08:39.090 --> 00:08:43.289
+And we'll do one more, and we'll go back to the underwater one
+咱们再选一个，回到之前和鱼一起用的水下背景。
+
+00:08:43.289 --> 00:08:45.960
+that we were using with the fish before.
+就是之前和鱼搭配用的那个。
+
+00:08:45.960 --> 00:08:49.410
+And so I've got three different backdrops that are part of my project--
+这样我的项目就有三个不同的背景了——
+
+00:08:49.410 --> 00:08:51.960
+I've got the Arctic backdrop, I've got the jungle backdrop,
+有北极背景，有丛林背景，
+
+00:08:51.960 --> 00:08:53.940
+and I've got the underwater backdrop here.
+还有这里的水下背景。
+
+00:08:53.940 --> 00:08:57.090
+Of course, only one backdrop can be active at one time--
+当然，同一时间只能有一个背景是激活的——
+
+00:08:57.090 --> 00:08:58.470
+we can switch between them--
+我们可以在它们之间切换——
+
+00:08:58.470 --> 00:09:01.150
+but only one can be there at any given time.
+但在任何给定的时间，只能有一个背景显示。
+
+00:09:01.150 --> 00:09:04.830
+So let's add some buttons to let the user control which
+所以咱们添加一些按钮，让用户可以控制选择哪个
+
+00:09:04.830 --> 00:09:07.650
+backdrop is going to be selected.
+背景。
+
+00:09:07.650 --> 00:09:10.370
+I will add a sprite, and notice that there
+我来添加一个角色，注意这里
+
+00:09:10.370 --> 00:09:13.380
+are a couple of different types of buttons that I can choose from--
+有几种不同类型的按钮可供我选择——
+
+00:09:13.380 --> 00:09:16.360
+I'll go ahead and choose this button, Button2.
+我就选这个按钮，按钮2。
+
+00:09:16.360 --> 00:09:22.070
+And I'll drag the button down to maybe the left side of the screen--
+我把按钮拖到屏幕左侧试试——
+
+00:09:22.070 --> 00:09:23.720
+and let's first modify the button--
+咱们先修改一下这个按钮——
+
+00:09:23.720 --> 00:09:27.630
+I'll go to the Costumes and I'll add some text to the button.
+我去造型界面，给按钮添加一些文字。
+
+00:09:27.630 --> 00:09:32.220
+I'll add some text and the text will say Arctic, for example--
+我添加一些文字，比如文字写“北极”——
+
+00:09:32.220 --> 00:09:37.510
+I'll select the text, change its color, and I'll make sure
+我选中文字，改变它的颜色，然后确保
+
+00:09:37.510 --> 00:09:40.060
+that this is by clicking on the arrow.
+通过点击箭头来操作。
+
+00:09:40.060 --> 00:09:43.620
+Make the text a little bit bigger and center
+把文字放大一点，然后大致把文字
+
+00:09:43.620 --> 00:09:46.750
+the text approximately on the button--
+居中显示在按钮上——
+
+00:09:46.750 --> 00:09:50.620
+and so now I have one button that says Arctic on my project.
+现在我的项目里就有一个写着“北极”的按钮了。
+
+00:09:50.620 --> 00:09:53.440
+But of course, when I click on the Arctic button,
+但当然啦，我点击“北极”按钮的时候，
+
+00:09:53.440 --> 00:09:55.580
+nothing's happening just yet.
+目前还没什么反应。
+
+00:09:55.580 --> 00:09:58.652
+So let's add an Event such that, when I click on this button,
+所以咱们添加一个事件，这样当我点击这个按钮时，
+
+00:09:58.652 --> 00:09:59.860
+something is going to happen.
+就会有事情发生。
+
+00:09:59.860 --> 00:10:04.300
+I'll go back into Events, the Event I want is When This Sprite Clicked.
+我回到事件模块，我想要的事件是“当此角色被点击”。
+
+00:10:04.300 --> 00:10:07.240
+And when this sprite is clicked, what do I want to happen?
+当这个角色被点击时，我希望发生什么呢？
+
+00:10:07.240 --> 00:10:10.660
+Well, I want the backdrop to change to the Arctic backdrop.
+嗯，我希望背景切换到北极背景。
+
+00:10:10.660 --> 00:10:13.710
+The backdrop changing, that has to do with the look of the project,
+背景切换和项目的外观有关，
+
+00:10:13.710 --> 00:10:16.060
+so we'll go to the Look section of blocks
+所以咱们去外观类积木模块
+
+00:10:16.060 --> 00:10:22.300
+and let's switch backdrop to Arctic.
+把背景切换到北极背景。
+
+00:10:22.300 --> 00:10:26.350
+And now when I click on the button, you'll notice the backdrop change.
+现在，当我点击这个按钮时，你会注意到背景发生了变化。
+
+00:10:26.350 --> 00:10:28.840
+I clicked on the button and, because we have that Event,
+我点击了按钮，因为我们设置了那个事件，
+
+00:10:28.840 --> 00:10:31.550
+it's responding to us as well.
+它也会对我们的操作做出响应。
+
+00:10:31.550 --> 00:10:34.880
+And so now let's add buttons for each of the other backdrops
+那么现在，让我们为其他我可能想在这个项目中切换到的背景都添加按钮。
+
+00:10:34.880 --> 00:10:36.880
+that I might want to switch to in this project--
+我可以通过完全重复我刚才的操作来实现这一点，
+
+00:10:36.880 --> 00:10:39.255
+and I could do that by doing exactly what I've just done,
+也就是添加一个新角色，再次选择按钮造型，再添加一些文字。
+
+00:10:39.255 --> 00:10:42.250
+by adding a new sprite, choosing the button again, adding some text.
+但实际上，目前
+
+00:10:42.250 --> 00:10:44.710
+But it'll be a little bit easier actually for now
+直接复制我现有的这个角色——也就是这里的这个按钮——会更简单一些。
+
+00:10:44.710 --> 00:10:49.520
+to just duplicate the sprite that I already have-- this button here.
+所以我要继续操作，右键点击或者按住Control键点击这个角色，然后点击
+
+00:10:49.520 --> 00:10:53.110
+So I'll go ahead and Right-click or Control-click on the sprite and click
+复制——
+
+00:10:53.110 --> 00:10:54.160
+Duplicate--
+我就有了另一个按钮，目前它们就叫Button2和Button3。
+
+00:10:54.160 --> 00:10:58.180
+I've got another button, these are just called Button2 and Button3 for now.
+如果我给它们起个名字会更好一些——
+
+00:10:58.180 --> 00:11:00.290
+It'll be a little bit nicer if I give them names--
+我把这个按钮叫做“北极按钮”，把这个按钮叫做“丛林按钮”。
+
+00:11:00.290 --> 00:11:07.820
+I'll call this button Arctic Button, and I'll call this button Jungle Button.
+我需要做什么呢？
+
+00:11:07.820 --> 00:11:09.090
+What do I need to do?
+嗯，让我们进入造型界面，先更改一下这段文字。
+
+00:11:09.090 --> 00:11:12.510
+Well, let's go into Costumes and first change this text.
+我们把文字改成“丛林”，再把文字稍微居中一点，
+
+00:11:12.510 --> 00:11:18.990
+Let's change the text to Jungle, recenter the text a little bit there,
+现在，当点击这个角色——也就是点击丛林按钮时——
+
+00:11:18.990 --> 00:11:23.080
+and now when this sprite is clicked-- when the jungle button is clicked--
+我就可以把背景切换到丛林背景了。
+
+00:11:23.080 --> 00:11:27.330
+I can switch the backdrop to the jungle instead.
+注意在代码编辑器的右上角，
+
+00:11:27.330 --> 00:11:30.090
+And notice that in the upper right portion of the Code Editor,
+你总能看到一个有点透明的图像，显示你当前正在操作的是哪个角色。
+
+00:11:30.090 --> 00:11:34.020
+you'll always see a slightly transparent image of what sprite you're currently
+以防你忘记，下面也会显示它是被选中状态的。
+
+00:11:34.020 --> 00:11:37.500
+working on-- in case you ever forget, it's also selected down below--
+但现在我能知道，因为我看到这个有点模糊的丛林按钮，
+
+00:11:37.500 --> 00:11:41.400
+but right now I can tell because I see this slightly faded Jungle Button
+说明我现在正在编辑这个丛林按钮的代码。
+
+00:11:41.400 --> 00:11:45.370
+that right now I'm editing the code for this Jungle Button.
+现在，当我点击这个按钮时，背景就会切换到丛林背景——
+
+00:11:45.370 --> 00:11:49.050
+And now when I click on the button, the backdrop changes to the jungle--
+我还可以拖动它，让它放在北极按钮的下面。
+
+00:11:49.050 --> 00:11:54.450
+and I can drag this so that it's underneath the Arctic Button.
+让我们再添加一个按钮，按住Control键点击并复制这个
+
+00:11:54.450 --> 00:11:58.980
+And let's add one more button by Control-click and duplicate this
+按钮——
+
+00:11:58.980 --> 00:11:59.650
+button--
+我把这个按钮的名字改成“水下按钮”，
+
+00:11:59.650 --> 00:12:03.810
+I'll change the name of the button to Underwater Button,
+现在我们进入造型界面——然后更改文字，
+
+00:12:03.810 --> 00:12:07.290
+and now we'll go into costumes-- and change the text,
+把它改成“水下”。
+
+00:12:07.290 --> 00:12:08.815
+change this to Underwater.
+文字有点太长了，所以我得把它改小一点，才能放在按钮上——没关系——
+
+00:12:08.815 --> 00:12:11.940
+The text is a little too long, so I'll need to make it a bit smaller to fit
+我只要点击箭头，这样就能
+
+00:12:11.940 --> 00:12:13.290
+on the button-- that's OK--
+拖动并调整我造型上各种不同元素的大小了。
+
+00:12:13.290 --> 00:12:15.750
+I can just click on the arrow and that will
+所以现在我有了一个写着“水下”的按钮，
+
+00:12:15.750 --> 00:12:21.820
+let me drag and resize various different elements on my costume.
+现在我要从造型标签页切换回代码标签页。
+
+00:12:21.820 --> 00:12:24.130
+So now I've got a button that says Underwater,
+现在，当点击这个角色时，我们
+
+00:12:24.130 --> 00:12:27.430
+and I'll switch back to the Code tab now instead of the Costumes tab.
+把背景切换到“水下1”，这是那个背景的名称。
+
+00:12:27.430 --> 00:12:29.470
+And now, when this sprite is clicked, let's
+现在，当我点击“水下”按钮时，我们就切换到水下背景了。
+
+00:12:29.470 --> 00:12:34.480
+switch the backdrop to Underwater 1, which was the name of that backdrop.
+将背景切换到“Underwater 1”，这是那个背景的名称。
+
+00:12:34.480 --> 00:12:38.930
+And now when I click Underwater, we switch to the underwater backdrop.
+现在当我点击“Underwater”时，我们就会切换到水下背景。
+
+00:12:38.930 --> 00:12:41.130
+I'll stack these buttons on top of each other--
+我要把这些按钮堆叠起来——
+
+00:12:41.130 --> 00:12:44.330
+and now what I have are three buttons that the user can click on
+现在我就有了三个用户可以点击的按钮
+
+00:12:44.330 --> 00:12:46.610
+to switch between the various different backdrops.
+用来在各种不同的背景之间切换。
+
+00:12:46.610 --> 00:12:49.780
+Depending on which button they click, they'll
+根据他们点击的是哪个按钮，他们会
+
+00:12:49.780 --> 00:12:53.830
+be able to see the backdrop respond to the buttons
+能够看到背景对他们点击的按钮做出响应
+
+00:12:53.830 --> 00:12:57.070
+that they're clicking on as well.
+他们点击按钮时也是如此。
+
+00:12:57.070 --> 00:12:59.010
+And so using this we really have the ability
+所以利用这个，我们真的有能力
+
+00:12:59.010 --> 00:13:02.280
+to let the user interact with the stage-- click on the stage
+让用户与舞台进行交互——点击舞台
+
+00:13:02.280 --> 00:13:04.107
+and see something actually happen.
+然后看到真的有事情发生。
+
+00:13:04.107 --> 00:13:05.940
+And I'll show you one more example of this--
+我再给你们展示一个这样的例子——
+
+00:13:05.940 --> 00:13:09.210
+I'll get rid of our buttons for now, and I'll go back to backdrops,
+我先把这些按钮去掉，然后回到背景设置
+
+00:13:09.210 --> 00:13:12.720
+and go ahead and switch us back to the plain white backdrop.
+接着把背景切换回纯白色的。
+
+00:13:12.720 --> 00:13:16.290
+But let's add some sprites that the user might interact with,
+但我们来添加一些用户可以与之交互的角色
+
+00:13:16.290 --> 00:13:17.740
+I'll go ahead and add sprites.
+我这就去添加角色。
+
+00:13:17.740 --> 00:13:19.650
+And so far I've mostly been using animals,
+到目前为止，我大多用的是动物角色
+
+00:13:19.650 --> 00:13:24.810
+but let's jump to the Music tab for now and add a few instruments.
+但我们现在跳到“音乐”选项卡，添加一些乐器。
+
+00:13:24.810 --> 00:13:28.300
+Let's add a snare drum, and let's add one more--
+我们添加一个小军鼓，再添加一个——
+
+00:13:28.300 --> 00:13:34.210
+let's add the conga drums, and let's add one more--
+我们添加康加鼓，再添加一个——
+
+00:13:34.210 --> 00:13:38.040
+let's add the cymbal.
+我们添加钹。
+
+00:13:38.040 --> 00:13:40.000
+So we'll go ahead and move these around--
+那我们来移动一下这些乐器——
+
+00:13:40.000 --> 00:13:42.720
+I've got three different drums.
+我有三种不同的鼓。
+
+00:13:42.720 --> 00:13:46.260
+And now, when I click on each of them-- let me go to Events
+现在，当我点击它们中的每一个时——我去“事件”板块
+
+00:13:46.260 --> 00:13:50.880
+and drag out this When This Sprite Clicked button.
+把“当此角色被点击”这个积木拖出来。
+
+00:13:50.880 --> 00:13:55.050
+We'll go into Sound and we can play a sound,
+我们进入“声音”板块，然后可以播放一个声音
+
+00:13:55.050 --> 00:13:57.360
+and I'll play-- we have a bunch of different snare
+我来播放——我们有很多不同的小军鼓
+
+00:13:57.360 --> 00:14:00.580
+drum sounds I can choose from-- which is like the tap snare, for example.
+声音可供选择——比如“轻击小军鼓”的声音。
+
+00:14:00.580 --> 00:14:04.440
+And let's add a sound to each of these various different drums
+我们给这些不同的鼓都添加一个声音
+
+00:14:04.440 --> 00:14:07.470
+for when I click on that sprite-- so for the conga drums,
+当我点击那个角色的时候——所以对于康加鼓，
+
+00:14:07.470 --> 00:14:12.540
+I'll go back to Events, When This Sprite Clicked, I go back to Sounds
+我回到“事件”板块，选“当此角色被点击”，再回到“声音”板块
+
+00:14:12.540 --> 00:14:14.340
+and say let's play a sound.
+然后说我们来播放一个声音。
+
+00:14:14.340 --> 00:14:17.700
+Let's play the-- let's go with the high conga sound--
+我们播放——就选高音康加鼓的声音——
+
+00:14:17.700 --> 00:14:22.800
+and finally we go into the cymbal, and say-- now when the cymbal is clicked,
+最后我们来看钹，然后说——现在当钹被点击时
+
+00:14:22.800 --> 00:14:28.230
+let's go ahead and play the sound crash cymbal.
+我们来播放钹的撞击声。
+
+00:14:28.230 --> 00:14:32.340
+And just with that, with two blocks of code for each of my three drums--
+就这样，我为三个鼓每个都用了两块代码积木——
+
+00:14:32.340 --> 00:14:35.200
+one Event and one block that plays a sound--
+一个“事件”积木和一个播放声音的积木——
+
+00:14:35.200 --> 00:14:38.250
+now I have a drum kit that I've built just using Scratch.
+现在我用Scratch搭建了一套架子鼓。
+
+00:14:38.250 --> 00:14:48.707
+When I click on any one of these drums, you hear some sounds,
+当我点击这些鼓中的任何一个时，你会听到声音
+
+00:14:48.707 --> 00:14:51.040
+and you can have fun with that adding other instruments,
+你可以通过添加其他乐器来玩得开心
+
+00:14:51.040 --> 00:14:54.130
+playing music-- remember we have that music extension that we took
+演奏音乐——记得我们上次看的那个音乐扩展插件
+
+00:14:54.130 --> 00:14:57.430
+a look at last time that gives you various different options for playing
+它为你提供了各种不同的演奏选项
+
+00:14:57.430 --> 00:15:00.130
+notes and playing other instrumental sounds.
+音符以及演奏其他乐器音效。
+
+00:15:00.130 --> 00:15:04.480
+And so you could create some music, and let the user create some music just
+这样你就可以创作一些音乐，还能让用户仅仅通过
+
+00:15:04.480 --> 00:15:08.150
+by clicking on things inside of their Scratch project.
+点击他们Scratch项目里的东西来创作音乐。
+
+00:15:08.150 --> 00:15:12.080
+And so that then is the power of responding to a Click Event--
+所以这就是响应点击事件的强大之处——
+
+00:15:12.080 --> 00:15:15.290
+clicking is an Event, the user clicking somewhere on the stage.
+点击是一种事件，也就是用户在舞台上的某个地方点击一下。
+
+00:15:15.290 --> 00:15:18.260
+And just by adding this one block, When This Sprite Clicked,
+仅仅通过添加这一个积木“当此角色被点击”，
+
+00:15:18.260 --> 00:15:21.650
+we were able to add functionality-- some behavior that happens,
+我们就能添加功能——也就是会发生的一些行为，
+
+00:15:21.650 --> 00:15:26.030
+some functions that run when we click on a particular sprite.
+当我们点击某个特定角色时会运行的一些函数。
+
+00:15:26.030 --> 00:15:29.150
+But clicking isn't the only way that users can interact with a project,
+但点击并不是用户与项目交互的唯一方式，
+
+00:15:29.150 --> 00:15:31.790
+they might also, for example, type something
+比如，他们可能也会输入一些内容
+
+00:15:31.790 --> 00:15:35.552
+onto the keyboard-- press a key, for example, and that too is an Event.
+到键盘上——比如按下某个键，这同样也是一种事件。
+
+00:15:35.552 --> 00:15:37.760
+We've seen a couple of different types of Events now,
+我们现在已经见过几种不同类型的事件了，
+
+00:15:37.760 --> 00:15:41.060
+but pressing a key on the keyboard is absolutely an Event too
+但在键盘上按键绝对也是一种事件，
+
+00:15:41.060 --> 00:15:44.640
+that we might want our Scratch projects to be able to respond to.
+我们可能希望我们的Scratch项目能够对其做出响应。
+
+00:15:44.640 --> 00:15:45.960
+So let's give that a try--
+那我们来试试看——
+
+00:15:45.960 --> 00:15:52.640
+I'll get rid of our drums for now, and let's add a fish.
+我先把鼓的部分去掉，然后添加一条鱼。
+
+00:15:52.640 --> 00:16:00.200
+We'll go back to the fish and we'll bring the fish into our project,
+我们回到鱼的造型那里，把鱼添加到我们的项目中，
+
+00:16:00.200 --> 00:16:03.768
+and I would like for the fish to do something when I press a key.
+我希望当我按下某个键时，这条鱼能做点什么。
+
+00:16:03.768 --> 00:16:06.560
+So let's start simple-- let's first figure out what Event do I need
+那我们从简单的开始——首先我们要弄清楚我需要使用哪种事件
+
+00:16:06.560 --> 00:16:07.670
+to use--
+去使用——
+
+00:16:07.670 --> 00:16:12.020
+and well we have this block here that is When Space Key Pressed.
+这里有个积木是“当按下空格键时”。
+
+00:16:12.020 --> 00:16:15.440
+Which I guess would mean that, when I press the space bar on my keyboard,
+我猜这意味着，当我按下键盘上的空格键时，
+
+00:16:15.440 --> 00:16:17.210
+something's going to happen.
+会有事情发生。
+
+00:16:17.210 --> 00:16:18.540
+What do I want to have happen?
+我希望发生什么事情呢？
+
+00:16:18.540 --> 00:16:25.440
+Well, let's go into sound, and let's Play the Sound Bubbles Until Done.
+嗯，我们来看看声音板块，然后“播放声音‘泡泡声’直到播放完毕”。
+
+00:16:25.440 --> 00:16:28.535
+And so now, I'll go ahead and press the Space key--
+现在，我来按下空格键——
+
+00:16:33.090 --> 00:16:36.090
+and when I press Space key, you hear the bubbles-- and every time
+当我按下空格键时，你能听到泡泡声——而且每次
+
+00:16:36.090 --> 00:16:38.100
+I press this Space key, that's a different Event
+我按下空格键，这都是一个不同的事件
+
+00:16:38.100 --> 00:16:41.310
+and that's going to trigger the running of that code.
+并且会触发那段代码的运行。
+
+00:16:44.930 --> 00:16:48.490
+But notice too that this block is actually customizable--
+但也要注意，这个积木实际上是可以自定义的——
+
+00:16:48.490 --> 00:16:51.010
+I can change it, parameterize it slightly,
+我可以对它做一些修改，对它进行参数化设置，
+
+00:16:51.010 --> 00:16:52.960
+just by clicking on this arrow.
+只要点击这个箭头就行。
+
+00:16:52.960 --> 00:16:55.420
+And this opens up a menu where I can choose
+这样就会弹出一个菜单，我可以从中选择
+
+00:16:55.420 --> 00:16:58.090
+what key it's going to respond to-- it doesn't just
+它要响应哪个键——它不只是
+
+00:16:58.090 --> 00:17:01.130
+have to be when the Space bar on my keyboard is pressed.
+必须在我按下键盘上的空格键时才起作用。
+
+00:17:01.130 --> 00:17:05.410
+I can have it respond to, let's say, the Right arrow or the Left arrow.
+我可以让它响应，比如说，右箭头键或者左箭头键。
+
+00:17:05.410 --> 00:17:08.150
+So I go to Right arrow, and instead of playing
+所以我选择右箭头键，并且不播放
+
+00:17:08.150 --> 00:17:10.710
+a sound, when you get the right arrow--
+声音了，当你按下右箭头键时——
+
+00:17:10.710 --> 00:17:14.990
+let's go ahead and change the x value by 10.
+我们直接把x坐标值增加10。
+
+00:17:14.990 --> 00:17:18.020
+Remember that each sprite exists in this xy
+要记得每个角色都存在于这个x - y坐标体系中
+
+00:17:18.020 --> 00:17:21.710
+coordinate grid on the stage, where x refers to how far to the left
+舞台上的坐标网格，其中x表示某个角色向左
+
+00:17:21.710 --> 00:17:25.099
+or to the right a particular sprite is-- and y refers to how
+或向右移动的距离 —— 而y表示某个角色
+
+00:17:25.099 --> 00:17:27.770
+far up or down a particular sprite is.
+向上或向下移动的距离。
+
+00:17:27.770 --> 00:17:32.540
+And so now, the Right arrow key is going to move the fish to the right
+现在，右方向键将使鱼向右移动
+
+00:17:32.540 --> 00:17:33.660
+by 10 spaces.
+10个单位。
+
+00:17:33.660 --> 00:17:35.670
+So I'll press the Right arrow key and you'll
+所以我按下右方向键，你会
+
+00:17:35.670 --> 00:17:37.670
+see the fish move a little bit-- press it again,
+看到鱼移动一点 —— 再按一次，
+
+00:17:37.670 --> 00:17:43.530
+and it moves, and it keeps moving every time I press that key.
+它会继续移动，每次我按下那个键它都会移动。
+
+00:17:43.530 --> 00:17:47.007
+Let's now add the ability for this Right to respond to the Left arrow key.
+现在让我们添加这个角色对左方向键做出响应的功能。
+
+00:17:47.007 --> 00:17:48.840
+And this is going to be very similar, I just
+这会非常相似，我只是
+
+00:17:48.840 --> 00:17:50.520
+want to move in the opposite direction--
+想朝相反的方向移动 ——
+
+00:17:50.520 --> 00:17:52.800
+I want to go left instead of going right.
+我想向左而不是向右移动。
+
+00:17:52.800 --> 00:17:56.910
+And I could drag the event out and then drag another change x by and change it
+我可以把事件积木拖出来，然后再拖一个“将x坐标增加”积木，然后把它
+
+00:17:56.910 --> 00:17:59.117
+to negative 10 instead of 10 this time.
+这次改成 -10 而不是 10。
+
+00:17:59.117 --> 00:18:01.950
+But in this case, because it's very similar to the code I've already
+但在这种情况下，因为它和我已经
+
+00:18:01.950 --> 00:18:06.330
+written, I can actually Control-click or Right-click on this script
+写好的代码非常相似，我实际上可以按住Control键点击或右键点击这个脚本
+
+00:18:06.330 --> 00:18:08.580
+and just say Duplicate.
+然后选择“复制”。
+
+00:18:08.580 --> 00:18:13.660
+And when I Duplicate, I get a copy of what it is that I've just written
+当我复制时，我得到了我刚刚写的代码的副本
+
+00:18:13.660 --> 00:18:14.730
+and now I can modify it.
+现在我可以修改它。
+
+00:18:14.730 --> 00:18:17.320
+Instead of responding to the Right arrow,
+不要对右方向键做出响应，
+
+00:18:17.320 --> 00:18:20.010
+let's have this script respond to the Left arrow.
+让这个脚本对左方向键做出响应。
+
+00:18:20.010 --> 00:18:24.300
+And instead of changing x by 10, let's change x by negative 10
+不要将x坐标增加 10，而是将x坐标增加 -10
+
+00:18:24.300 --> 00:18:27.660
+to have the fish move in the negative direction instead.
+让鱼朝相反方向移动。
+
+00:18:27.660 --> 00:18:30.870
+And just for fun, let's go ahead and click on the stage
+只是为了好玩，让我们点击舞台
+
+00:18:30.870 --> 00:18:34.590
+and change the backdrop to underwater so that it actually feels like the fish is
+把背景换成水下场景，这样就真的感觉鱼在
+
+00:18:34.590 --> 00:18:37.682
+swimming around underwater.
+水下游动了。
+
+00:18:37.682 --> 00:18:39.640
+And so now when I press the Right arrow, you'll
+所以现在当我按下右方向键，你会
+
+00:18:39.640 --> 00:18:43.600
+see the fish moving to the right, and when I press the Left arrow,
+看到鱼向右移动，当我按下左方向键，
+
+00:18:43.600 --> 00:18:46.240
+the fish is moving backwards?
+鱼是在往后退吗？
+
+00:18:46.240 --> 00:18:49.750
+That may not be exactly what I want, but it is moving to the left at least.
+这可能不是我想要的效果，但至少它是在向左移动。
+
+00:18:49.750 --> 00:18:51.580
+And I can make this a little better maybe
+也许我可以让它变得更好一点
+
+00:18:51.580 --> 00:18:53.697
+by allowing its rotation to change--
+允许它的旋转方向改变 ——
+
+00:18:53.697 --> 00:18:55.780
+let it face the left when it's moving to the left,
+当它向左移动时让它面朝左，
+
+00:18:55.780 --> 00:18:58.300
+let it face the right when it's moving to the right.
+当它向右移动时让它面朝右。
+
+00:18:58.300 --> 00:19:02.540
+And remember I can do that just by using this Point In Direction block.
+记得我可以通过使用“面向”积木来做到这一点。
+
+00:19:02.540 --> 00:19:05.020
+So when the Right arrow is pressed, let's go ahead
+所以当按下右方向键时，让我们
+
+00:19:05.020 --> 00:19:08.740
+and Point In Direction 90 degrees, meaning facing the right,
+面向 90 度方向，也就是朝右，
+
+00:19:08.740 --> 00:19:10.490
+and move 10 steps.
+然后移动 10 步。
+
+00:19:10.490 --> 00:19:14.923
+And if the Left arrow key is pressed, let's Point In Direction negative 90.
+如果按下左方向键，让我们面向 -90 度方向。
+
+00:19:14.923 --> 00:19:16.840
+And if you didn't remember what number it was,
+如果你不记得是哪个数字了，
+
+00:19:16.840 --> 00:19:20.330
+you could use this dial of course to change the value as well
+当然，你也可以用这个转盘来改变数值
+
+00:19:20.330 --> 00:19:22.720
+and then change x by negative 10.
+然后将 x 坐标减去 10。
+
+00:19:22.720 --> 00:19:25.000
+And this might be closer, let's try it out--
+这可能更接近了，让我们试试看——
+
+00:19:25.000 --> 00:19:28.360
+I press Right and the fish moves to the right.
+我按右方向键，鱼就向右移动。
+
+00:19:28.360 --> 00:19:32.580
+Now I press the Left arrow key and the fish turns upside down--
+现在我按左方向键，鱼就倒过来了——
+
+00:19:32.580 --> 00:19:34.090
+OK, not quite what I wanted.
+好吧，这不是我想要的效果。
+
+00:19:34.090 --> 00:19:36.820
+Again, by default-- when you rotate a sprite,
+同样，默认情况下——当你旋转一个角色时，
+
+00:19:36.820 --> 00:19:38.540
+it's just going to rotate in a circle--
+它只会绕着一个圈旋转——
+
+00:19:38.540 --> 00:19:40.300
+which means it might end up upside down.
+这意味着它最终可能会倒过来。
+
+00:19:40.300 --> 00:19:43.480
+If you just want it to be able to go back and forth between left and right,
+如果你只想让它能在左右方向上来回移动，
+
+00:19:43.480 --> 00:19:48.190
+be sure to go to Direction and change the fish's rotation style
+一定要到“方向”那里去改变鱼的旋转方式
+
+00:19:48.190 --> 00:19:49.750
+to left and right.
+改为左右翻转。
+
+00:19:49.750 --> 00:19:53.950
+And now, when it goes right, it faces the right, and when it goes left,
+现在，当它向右移动时，它面朝右边；当它向左移动时，
+
+00:19:53.950 --> 00:19:56.120
+it faces the left.
+它面朝左边。
+
+00:19:56.120 --> 00:19:58.640
+Notice too that, if you wanted to change this with code,
+也要注意，如果想用代码来改变这个设置，
+
+00:19:58.640 --> 00:20:00.080
+you also have this block here--
+这里还有一个积木——
+
+00:20:00.080 --> 00:20:03.380
+Set Rotation Style-- that will let you using a block of code
+“设置旋转方式”——它能让你用一块代码积木
+
+00:20:03.380 --> 00:20:08.370
+decide what rotation style that particular sprite should have.
+来决定某个特定角色应该采用哪种旋转方式。
+
+00:20:08.370 --> 00:20:12.843
+And so now I have the ability to let this fish move left and right--
+所以现在我能让这条鱼左右移动了——
+
+00:20:12.843 --> 00:20:14.010
+and I could add to this too.
+我还可以在此基础上进行扩展。
+
+00:20:14.010 --> 00:20:18.030
+If I want to let it move up and down, then I'll add one more Event, and say--
+如果我想让它能上下移动，那我就再添加一个事件，然后说——
+
+00:20:18.030 --> 00:20:21.570
+not when the Space key is pressed, but when the Up arrow is pressed.
+不是当按下空格键时，而是当按下上方向键时。
+
+00:20:21.570 --> 00:20:23.520
+Let's go ahead and have it move--
+我们接着让它移动——
+
+00:20:23.520 --> 00:20:25.470
+we're not changing x anymore, we're instead
+我们不再改变 x 坐标了，而是
+
+00:20:25.470 --> 00:20:31.020
+changing y because y refers to the up and down direction of the sprite.
+改变 y 坐标，因为 y 坐标代表角色的上下方向。
+
+00:20:31.020 --> 00:20:35.010
+So when the Up arrow key is pressed, we're going to change y by 10,
+所以当按下上方向键时，我们将 y 坐标增加 10，
+
+00:20:35.010 --> 00:20:37.620
+and I'll duplicate this by going to the Event block
+我要通过进入事件积木区
+
+00:20:37.620 --> 00:20:41.740
+Control- or Right-clicking, clicking Duplicate.
+按 Ctrl 键或右键点击，然后点击“复制”来复制这个积木。
+
+00:20:41.740 --> 00:20:48.310
+And now, when the Down arrow is pressed, let's change y by negative 10.
+现在，当按下下方向键时，我们将 y 坐标减去 10。
+
+00:20:48.310 --> 00:20:51.060
+And so now I can get my fish to move to the right,
+所以现在我能让我的鱼向右移动，
+
+00:20:51.060 --> 00:20:56.050
+I can get my fish to move to the left, I can get it to move up or down as well.
+能让我的鱼向左移动，也能让它上下移动。
+
+00:20:56.050 --> 00:20:58.560
+And I can get it to move across the stage all just
+而且我只要
+
+00:20:58.560 --> 00:21:00.930
+by pressing keys on the keyboard.
+通过按键盘上的键，就能让它在舞台上四处移动。
+
+00:21:00.930 --> 00:21:02.682
+And using that ability, you could imagine
+利用这种能力，你可以想象
+
+00:21:02.682 --> 00:21:04.140
+trying to create some sort of game.
+尝试创建某种游戏。
+
+00:21:04.140 --> 00:21:06.600
+Maybe you've played a game on a computer before where
+也许你以前在电脑上玩过这样的游戏，在游戏里
+
+00:21:06.600 --> 00:21:08.790
+you use the arrow keys or other keys on the keyboard
+你用键盘上的方向键或其他键
+
+00:21:08.790 --> 00:21:10.590
+to move some character around.
+来移动某个角色。
+
+00:21:10.590 --> 00:21:14.190
+Now we have that exact same ability within Scratch itself too.
+现在在 Scratch 里我们也有了完全相同的能力。
+
+00:21:14.190 --> 00:21:17.350
+By clicking and by pressing various different keys on the keyboard,
+通过点击以及按下键盘上各种不同的键，
+
+00:21:17.350 --> 00:21:21.250
+we can get our sprite to respond to that as well.
+我们也能让角色对其做出响应。
+
+00:21:21.250 --> 00:21:23.400
+And it's not just the Space and the arrow keys--
+而且不只是空格键和方向键——
+
+00:21:23.400 --> 00:21:25.980
+it's letters of the alphabet that you could have be pressed,
+你还可以设置字母键被按下时的响应，
+
+00:21:25.980 --> 00:21:29.250
+or numbers on the keypad for example that might be pressed.
+比如小键盘上的数字键被按下时也能有响应。
+
+00:21:29.250 --> 00:21:31.460
+And so let's give that a try too just for fun--
+那我们也来试试，就当好玩——
+
+00:21:31.460 --> 00:21:33.270
+I'll add a few more blocks here.
+我在这里再添加几个积木。
+
+00:21:33.270 --> 00:21:35.730
+Let's let the fish change in size--
+让这条鱼可以改变大小——
+
+00:21:35.730 --> 00:21:39.330
+maybe I want to be able to choose between how big or small the fish is
+也许我想能选择这条鱼要变大还是变小。
+
+00:21:39.330 --> 00:21:40.600
+going to be.
+将会是。
+
+00:21:40.600 --> 00:21:44.610
+And so when the 1 key is pressed--
+当按下数字1键时——
+
+00:21:44.610 --> 00:21:46.200
+let's make it small when you press 1.
+按下1时让它变小。
+
+00:21:46.200 --> 00:21:53.150
+So we'll go into Looks and let's set the size to maybe 50%.
+我们到“外观”分类里，把大小设为50%吧。
+
+00:21:53.150 --> 00:21:55.940
+And I'll duplicate this block again by clicking,
+我再通过点击来复制这个积木，
+
+00:21:55.940 --> 00:22:00.220
+or Right-clicking or Control-clicking on the Event block, clicking Duplicate.
+或者右键点击，或者按住Ctrl点击事件积木，然后点击“复制”。
+
+00:22:00.220 --> 00:22:04.870
+Now when the 2 key is pressed, let's make it normal size 100,
+现在，当按下数字2键时，让它恢复正常大小100，
+
+00:22:04.870 --> 00:22:06.670
+and we'll duplicate one more time.
+我们再复制一次。
+
+00:22:06.670 --> 00:22:09.310
+Now, when the 3 key is pressed--
+现在，当按下数字3键时——
+
+00:22:09.310 --> 00:22:13.220
+let's add the size to be bigger, we'll set it to be 200%.
+让它变得更大，我们把大小设为200%。
+
+00:22:13.220 --> 00:22:15.230
+And so now, watch what happens--
+现在，看看会发生什么——
+
+00:22:15.230 --> 00:22:21.370
+I can still move the fish around, it's still responding to the arrow keys,
+我仍然可以移动这条鱼，它仍然会对方向键做出响应，
+
+00:22:21.370 --> 00:22:23.578
+but now I can also use the numbers to control how
+但现在我还可以用数字键来控制这条鱼的
+
+00:22:23.578 --> 00:22:25.120
+big or small the fish is going to be.
+大小。
+
+00:22:25.120 --> 00:22:29.680
+If I press 1, the fish shrinks-- it's now 50% of the usual size.
+如果我按下1，鱼会变小——现在它是正常大小的50%。
+
+00:22:29.680 --> 00:22:32.680
+When I press 2, it goes back to normal size--
+当我按下2，它会恢复正常大小——
+
+00:22:32.680 --> 00:22:36.100
+and when I press 3, the fish gets much larger--
+当我按下3，鱼会变得大很多——
+
+00:22:36.100 --> 00:22:39.790
+it goes to 200% of its original size.
+它会变成原来大小的200%。
+
+00:22:39.790 --> 00:22:43.210
+And so by putting together these various different scripts, each of which
+通过把这些不同的脚本组合在一起，每个脚本
+
+00:22:43.210 --> 00:22:45.980
+is responding to a different key on the keyboard,
+都对应键盘上不同的按键做出响应，
+
+00:22:45.980 --> 00:22:49.630
+you can allow the user to control your sprites in any number of ways.
+你就能让用户以各种方式控制你的角色。
+
+00:22:49.630 --> 00:22:53.290
+Allowing them to interact with the stage by telling them what to click on,
+让他们通过点击、按键与舞台进行交互，
+
+00:22:53.290 --> 00:22:57.340
+what to press, in order to see a particular response appear on the stage
+从而在舞台上看到特定的响应。
+
+00:22:57.340 --> 00:22:58.913
+as well.
+也一样。
+
+00:22:58.913 --> 00:23:01.330
+And so now we have the ability within our Scratch programs
+现在，在我们的Scratch程序里，我们有能力
+
+00:23:01.330 --> 00:23:04.570
+to respond to a number of Events that can respond to the flag Being Clicked,
+对多种事件做出响应，比如点击绿旗，
+
+00:23:04.570 --> 00:23:09.460
+to a click of something on the stage, also responding to a press of a key.
+点击舞台上的某个东西，还有按下按键。
+
+00:23:09.460 --> 00:23:12.040
+But there are a couple of other fun Events
+但还有一些有趣的事件，
+
+00:23:12.040 --> 00:23:15.520
+that we might let our sprites respond to, so let's try one of them now.
+我们可以让角色对其做出响应，现在我们来试试其中一个。
+
+00:23:15.520 --> 00:23:18.860
+I'll go ahead and get rid of the fish, and let's
+我先把鱼删掉，然后
+
+00:23:18.860 --> 00:23:23.060
+change the backdrop-- we'll go back to the plain white backdrop,
+换个背景——我们换回纯白色背景，
+
+00:23:23.060 --> 00:23:25.178
+and let's add a new sprite.
+再添加一个新角色。
+
+00:23:25.178 --> 00:23:28.220
+And the sprite I want to add this time is the balloon-- we haven't really
+这次我想添加的角色是气球——我们还没真正
+
+00:23:28.220 --> 00:23:29.380
+played around with that.
+用过这个角色呢。
+
+00:23:29.380 --> 00:23:33.300
+I'll go ahead and center the balloon and I'll go into Events,
+我先把气球放到舞台中央，然后我要进入“事件”模块，
+
+00:23:33.300 --> 00:23:36.720
+and the Event I'm curious about now is this one here--
+现在我感兴趣的事件是这个——
+
+00:23:36.720 --> 00:23:39.870
+When Loudness Is Greater Than 10--
+当音量大于 10 时——
+
+00:23:39.870 --> 00:23:43.920
+and loudness refers to input coming in from your computer's microphone.
+这里的音量指的是从你电脑麦克风输入的声音。
+
+00:23:43.920 --> 00:23:45.930
+So when you use this block for the first time,
+所以当你第一次使用这个积木时，
+
+00:23:45.930 --> 00:23:47.820
+your browser might ask you for permission
+你的浏览器可能会请求你授权
+
+00:23:47.820 --> 00:23:49.778
+to use your microphone because Scratch is going
+使用你的麦克风，因为 Scratch 要
+
+00:23:49.778 --> 00:23:51.760
+to be listening to that microphone.
+监听那个麦克风。
+
+00:23:51.760 --> 00:23:54.990
+And what it's going to be doing is calculating how loudly
+它要做的是计算它听到声音的音量大小，
+
+00:23:54.990 --> 00:23:56.580
+it hears something, for example--
+比如说——
+
+00:23:56.580 --> 00:23:59.010
+it's all going to be on a 0 to 100 scale where
+音量范围是 0 到 100，
+
+00:23:59.010 --> 00:24:03.240
+0 is like complete silence and 100 is very, very loud.
+0 表示完全安静，100 表示非常非常大声。
+
+00:24:03.240 --> 00:24:09.000
+And so if I set this to maybe 30 or so, then this code is going to respond,
+所以如果我把这个值设为 30 左右，那么这段代码就会响应，
+
+00:24:09.000 --> 00:24:14.410
+and it's going to run some code whenever the loudness gets above 30 for example.
+例如，每当音量超过 30 时，它就会运行一些代码。
+
+00:24:14.410 --> 00:24:18.480
+And what I'm going to do is, when the loudness gets above 30,
+我要做的是，当音量超过 30 时，
+
+00:24:18.480 --> 00:24:22.380
+let's go to Looks and change the size by 10.
+我们去“外观”模块，将大小改变 10。
+
+00:24:22.380 --> 00:24:25.077
+We're going to increase the size of the balloon by 10--
+我们要把气球的大小增加 10——
+
+00:24:25.077 --> 00:24:28.410
+and I haven't connected them yet because I don't want this code to start running
+我还没把它们连接起来，因为我不想让这段代码现在就开始运行
+
+00:24:28.410 --> 00:24:32.640
+just yet-- but once I connect it, what's going to happen is that whenever
+——但一旦我把它们连接起来，接下来会发生的是，每当
+
+00:24:32.640 --> 00:24:35.235
+Scratch detects that the loudness has gone above 30--
+Scratch 检测到音量超过 30——
+
+00:24:35.235 --> 00:24:37.860
+and I might have to play around with that number a little bit--
+我可能得稍微调整一下这个数值——
+
+00:24:37.860 --> 00:24:40.653
+then the size of the balloon is going to change by 10.
+那么气球的大小就会改变 10。
+
+00:24:40.653 --> 00:24:42.570
+And so this lets me have a little bit of fun--
+这样我就能玩得开心点了——
+
+00:24:42.570 --> 00:24:44.820
+I can try and blow up the balloon, for example.
+比如，我可以试着把气球吹大。
+
+00:24:44.820 --> 00:24:54.950
+I'll connect these two blocks and every time I blow,
+我把这两个积木连接起来，每次我吹气，
+
+00:24:54.950 --> 00:24:57.860
+that triggers the loudness threshold-- it goes above the 30--
+就会触发音量阈值——音量超过 30——
+
+00:24:57.860 --> 00:25:00.260
+and I've disconnected it for now so that the balloon doesn't get bigger
+我现在把它们断开了，这样在我说话的时候气球就不会越变越大
+
+00:25:00.260 --> 00:25:01.885
+and bigger while I'm talking right now.
+了。
+
+00:25:01.885 --> 00:25:04.850
+But every time the loudness goes above a particular threshold,
+但每次音量超过某个特定阈值时，
+
+00:25:04.850 --> 00:25:07.130
+well then the size of the balloon is going to change--
+那么气球的大小就会改变——
+
+00:25:07.130 --> 00:25:10.160
+and you probably saw that balloon get a little bit bigger and bigger
+你可能每次都看到气球变得越来越大了。
+
+00:25:10.160 --> 00:25:10.730
+every time.
+每次。
+
+00:25:10.730 --> 00:25:13.813
+And you can have fun with this playing around with that threshold deciding
+你可以通过调整这个阈值来玩得开心，决定
+
+00:25:13.813 --> 00:25:17.000
+how loud something needs to be, or how quiet something needs to be in order
+声音要多大，或者多小才能得到特定的结果。
+
+00:25:17.000 --> 00:25:19.680
+to get a particular result to happen.
+为了让特定结果出现。
+
+00:25:19.680 --> 00:25:24.170
+And so loudness is another type of Event that Scratch will let you respond to.
+所以音量是 Scratch 允许你响应的另一种事件。
+
+00:25:24.170 --> 00:25:27.980
+And just for one final example, notice here too that this loudness is
+再举最后一个例子，注意这里的音量是
+
+00:25:27.980 --> 00:25:31.640
+a dropdown menu-- in the same way that pressing a key on the keyboard had
+一个下拉菜单——就像按下键盘上的某个键一样
+
+00:25:31.640 --> 00:25:33.290
+a dropdown menu where I could say--
+一个下拉菜单，我可以在这里选择——
+
+00:25:33.290 --> 00:25:35.480
+I don't just want the Scratch project to respond
+我不只想让Scratch项目在按下空格键时做出响应
+
+00:25:35.480 --> 00:25:37.430
+to when the space key is pressed, but I want
+我还想让它在按下箭头键、字母键或数字键时做出响应。
+
+00:25:37.430 --> 00:25:40.310
+it to respond to an arrow key, or a letter, or a number.
+它能响应箭头键、字母或者数字。
+
+00:25:40.310 --> 00:25:42.620
+I have another option here--
+我这里还有另一个选项——
+
+00:25:42.620 --> 00:25:45.440
+I can choose when loudness is greater than 30,
+我可以选择当音量大于30时
+
+00:25:45.440 --> 00:25:48.590
+or when Timer is greater than a particular number.
+或者当计时器超过某个特定数字时。
+
+00:25:48.590 --> 00:25:51.530
+And so every Scratch project, though we haven't seen it just yet,
+所以每个Scratch项目，虽然我们还没看到，
+
+00:25:51.530 --> 00:25:54.410
+has a built-in timer and the timer is keeping
+都有一个内置的计时器，这个计时器会记录
+
+00:25:54.410 --> 00:25:58.832
+track of how much time has passed since we started the project.
+从我们启动项目开始过去了多少时间。
+
+00:25:58.832 --> 00:26:01.790
+So when the project starts, we start counting how much time has passed,
+所以当项目启动时，我们开始计算过去了多少时间，
+
+00:26:01.790 --> 00:26:04.680
+and that timer is keeping track of that for us.
+那个计时器会帮我们记录这个时间。
+
+00:26:04.680 --> 00:26:07.460
+And so originally, if you think back to our first program
+所以回想一下我们之前做的第一个程序，
+
+00:26:07.460 --> 00:26:10.370
+that we made earlier, where we had the cat and the dinosaur talking
+当时猫和恐龙在互相交谈，
+
+00:26:10.370 --> 00:26:13.190
+to each other and they both said hello at the same time,
+它们同时说了“你好”，
+
+00:26:13.190 --> 00:26:15.450
+why did they both say hello at the same time?
+为什么它们会同时说“你好”呢？
+
+00:26:15.450 --> 00:26:18.350
+They both said hello at the same time because they
+它们同时说“你好”是因为它们
+
+00:26:18.350 --> 00:26:21.260
+were both responding to the same event, the When Flag
+都对同一个事件做出了响应，即“当旗帜被点击”
+
+00:26:21.260 --> 00:26:23.000
+Clicked Event that happened once.
+这个只触发一次的事件。
+
+00:26:23.000 --> 00:26:27.440
+And as soon as I pressed the green flag, then both the cat and the dinosaur
+我一按下绿色旗帜，猫和恐龙
+
+00:26:27.440 --> 00:26:28.392
+said hello.
+就都说了“你好”。
+
+00:26:28.392 --> 00:26:31.100
+In an actual conversation, of course, they probably wouldn't both
+在实际的对话中，当然，它们可能不会都
+
+00:26:31.100 --> 00:26:32.570
+say hello at the same time--
+同时说“你好”——
+
+00:26:32.570 --> 00:26:37.310
+the cat might say hello and the dinosaur might respond a few seconds later.
+猫可能会先说“你好”，恐龙可能会在几秒钟后回应。
+
+00:26:37.310 --> 00:26:39.650
+And we can take advantage now of this Timer--
+现在我们可以利用这个计时器了——
+
+00:26:39.650 --> 00:26:43.410
+the ability to wait for the Timer to reach a particular number.
+等待计时器达到某个特定数字的功能。
+
+00:26:43.410 --> 00:26:46.820
+And when the Timer reaches that number, then an Event
+当计时器达到那个数字时，就会触发一个事件——
+
+00:26:46.820 --> 00:26:51.660
+is triggered-- that will let us time sprites a little bit more precisely.
+这能让我们更精确地控制角色的时间。
+
+00:26:51.660 --> 00:26:53.660
+And so let's give that a try by going back
+那我们来试试看，回到
+
+00:26:53.660 --> 00:26:56.690
+to the project we created at the beginning of today.
+我们今天一开始创建的项目。
+
+00:26:56.690 --> 00:27:02.420
+I'll delete the balloon, go into my sprites, and let's add our cat back--
+我会删除气球，进入我的角色列表，然后把猫再加回来——
+
+00:27:02.420 --> 00:27:04.490
+we'll bring our cat over to the left.
+我们把猫移到左边。
+
+00:27:04.490 --> 00:27:07.130
+And I'll add one more sprite, I'll go ahead
+我再添加一个角色，我接着
+
+00:27:07.130 --> 00:27:10.070
+and bring our dinosaur back as well--
+也把恐龙加回来——
+
+00:27:10.070 --> 00:27:13.022
+that dinosaur is going to have a rotation style of left right
+那只恐龙的旋转方式设为左右旋转
+
+00:27:13.022 --> 00:27:15.230
+because I only want it to face the left or the right.
+因为我只想让它面向左边或右边。
+
+00:27:15.230 --> 00:27:18.690
+And I'll change the direction to negative 90
+我把方向改成 -90 度
+
+00:27:18.690 --> 00:27:22.240
+so that the cat and the dinosaur are facing each other.
+这样猫和恐龙就会面对面了。
+
+00:27:22.240 --> 00:27:24.610
+And for the cat, the code is going to be the same--
+对于猫来说，代码还是一样的——
+
+00:27:24.610 --> 00:27:29.410
+we'll have the cat respond to an Event, the Event will be When Flag Is Clicked,
+我们让猫对一个事件做出响应，这个事件就是“当旗帜被点击”
+
+00:27:29.410 --> 00:27:33.870
+I want the cat to say hello for two seconds.
+我想让猫说两秒的“你好”。
+
+00:27:33.870 --> 00:27:36.330
+But I want the dinosaur not to immediately say hello
+但我不想让恐龙在旗帜被点击后立刻说“你好”
+
+00:27:36.330 --> 00:27:39.720
+when the flag is clicked, but to wait for the cat-- let the cat say hello
+而是等猫——让猫先说完“你好”
+
+00:27:39.720 --> 00:27:42.420
+and then the dinosaur can respond.
+然后恐龙再回应。
+
+00:27:42.420 --> 00:27:44.650
+So under the dinosaur, instead of using the
+所以在恐龙角色这里，我不使用
+
+00:27:44.650 --> 00:27:48.150
+When Flag Clicked Event which would happen right away,
+旗帜被点击事件，因为这个事件会立刻触发，
+
+00:27:48.150 --> 00:27:55.150
+I'm instead going to use them When Timer Is Greater Than 2.
+我要使用“当计时器的值大于2”事件。
+
+00:27:55.150 --> 00:27:57.350
+In other words, after the Timer reaches 2,
+换句话说，当计时器达到2之后，
+
+00:27:57.350 --> 00:28:00.910
+in other words, after two seconds have passed in my project--
+也就是在我的项目开始两秒之后——
+
+00:28:00.910 --> 00:28:06.730
+we'll then and only then should the dinosaur say hello for two seconds
+只有到那时，恐龙才应该说两秒的“你好”
+
+00:28:06.730 --> 00:28:07.827
+as well.
+也是两秒。
+
+00:28:07.827 --> 00:28:09.160
+And so now notice what happens--
+现在注意看会发生什么——
+
+00:28:09.160 --> 00:28:15.890
+I'll press the green flag, the cat says "hello" for two seconds,
+我点击绿色旗帜，猫会说两秒“你好”，
+
+00:28:15.890 --> 00:28:20.248
+and only once the cat is done the dinosaur then says "hello" as well.
+只有等猫说完，恐龙才会接着说“你好”。
+
+00:28:20.248 --> 00:28:22.040
+And that's because the dinosaur is waiting,
+这是因为恐龙在等待，
+
+00:28:22.040 --> 00:28:25.370
+it's not going right when the project starts, it's waiting for the Timer
+项目开始时它不会马上行动，它在等计时器
+
+00:28:25.370 --> 00:28:26.300
+to reach 2.
+达到2。
+
+00:28:26.300 --> 00:28:30.530
+And the Timer, again, begins every time we click on the green flag--
+再说一次，每次我们点击绿色旗帜，计时器就会开始计时——
+
+00:28:30.530 --> 00:28:33.200
+but when the green flag is clicked, the Timer resets back to 0,
+但当绿色旗帜被点击时，计时器会重置为0，
+
+00:28:33.200 --> 00:28:36.770
+and it's counting up in terms of how many seconds have passed
+它会从项目开始起开始计算过去了多少秒
+
+00:28:36.770 --> 00:28:39.530
+since the beginning of the project.
+从项目开始算起。
+
+00:28:39.530 --> 00:28:42.773
+And there are other events that we can use inside of Scratch as well that we
+在Scratch里还有其他我们可以使用的事件，
+
+00:28:42.773 --> 00:28:43.940
+haven't yet taken a look at.
+我们还没看过。
+
+00:28:43.940 --> 00:28:47.450
+There's one here, for example, that checks when the backdrop switches
+比如这里有一个事件，它能检测背景何时切换
+
+00:28:47.450 --> 00:28:48.800
+to a particular backdrop.
+到特定的背景。
+
+00:28:48.800 --> 00:28:52.010
+So recall before we had those various different backdrops with the Arctic,
+还记得之前我们有北极、
+
+00:28:52.010 --> 00:28:53.540
+and the jungle, and underwater?
+丛林和水下等不同的背景吗？
+
+00:28:53.540 --> 00:28:57.770
+You could add Events that say, as soon as the backdrop switches to underwater,
+你可以添加事件，比如当背景切换到水下时，
+
+00:28:57.770 --> 00:29:00.480
+then play those bubbles or the ocean sounds for example,
+就播放泡泡声或者海洋音效，
+
+00:29:00.480 --> 00:29:02.810
+or do some other action depending on what
+或者根据切换到的
+
+00:29:02.810 --> 00:29:04.520
+backdrop happens to be switched to.
+背景执行其他操作。
+
+00:29:04.520 --> 00:29:07.670
+But you can hopefully now start to see how these events really
+希望你现在能开始明白这些事件是如何
+
+00:29:07.670 --> 00:29:10.970
+start to make our Scratch projects more powerful and more interactive.
+让我们的Scratch项目变得更强大、更具交互性的。
+
+00:29:10.970 --> 00:29:14.990
+We no longer need to say, run this block of code now, run that block of code
+我们不再需要说“现在运行这段代码，现在运行那段代码”
+
+00:29:14.990 --> 00:29:15.500
+now--
+现在——
+
+00:29:15.500 --> 00:29:18.590
+we can add Events to our project and let our project
+我们可以在项目中添加事件，让项目
+
+00:29:18.590 --> 00:29:20.300
+decide when to run that code.
+自己决定何时运行代码。
+
+00:29:20.300 --> 00:29:24.320
+Letting it respond to when the project begins, or when we click on something,
+让项目对项目开始、点击某个东西
+
+00:29:24.320 --> 00:29:27.830
+or when we press a key on the keyboard, or when the loudness changes,
+按下键盘上的某个键、音量变化等情况做出响应，
+
+00:29:27.830 --> 00:29:30.050
+or any number of other different types of events
+或者对其他各种不同类型的事件做出响应
+
+00:29:30.050 --> 00:29:32.630
+that Scratch now gives us the ability to use.
+现在Scratch让我们具备了使用的能力。
+
+00:29:32.630 --> 00:29:36.230
+And hopefully now using Events, we'll be able to create all the more interesting
+希望现在通过使用事件，我们能够创造出更有趣的
+
+00:29:36.230 --> 00:29:38.297
+and interactive projects as well.
+以及交互式的项目。
+
+00:29:38.297 --> 00:29:41.130
+That's it for An Introduction to Programming with Scratch for today.
+今天的《用Scratch学编程入门》就讲到这里。
+
+00:29:41.130 --> 00:29:44.210
+Next time, we'll take these ideas and build up on them even more,
+下次，我们会基于这些想法进一步拓展，
+
+00:29:44.210 --> 00:29:46.000
+see you then.
+到时候见。

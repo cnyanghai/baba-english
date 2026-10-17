@@ -45,3 +45,6 @@ data/ecdict/
 data/etymonline/
 data/harry-potter/
 data/movies/
+
+# Claude Code worktrees
+.claude/worktrees/

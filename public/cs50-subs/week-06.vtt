@@ -1,0 +1,2057 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.976
+[MUSIC PLAYING]
+[音乐播放中]
+
+00:00:17.065 --> 00:00:19.190
+SPEAKER: Welcome back, everyone, to an introduction
+讲解人：欢迎大家回到《用Scratch学编程》入门课程。
+
+00:00:19.190 --> 00:00:20.510
+to Programming with Scratch.
+到目前为止，我们已经了解了各种不同类型的Scratch积木。
+
+00:00:20.510 --> 00:00:24.170
+And so far we've seen a variety of different types of Scratch blocks.
+我们看到过能执行某种任务的函数。
+
+00:00:24.170 --> 00:00:27.020
+We've seen functions that perform some sort of task.
+我们也看到过存储信息的值，比如角色的朝向，
+
+00:00:27.020 --> 00:00:30.290
+We've seen values that hold information, like what direction the sprite is
+或者它的位置，又或者它的大小，诸如此类。
+
+00:00:30.290 --> 00:00:34.350
+facing, or what position it is, or how big or how small it is, for example.
+上次我们学习了条件判断，也就是让Scratch程序
+
+00:00:34.350 --> 00:00:38.090
+And last time we took a look at conditions, the ability for our Scratch
+提出问题，然后根据问题的答案做出决策的能力。
+
+00:00:38.090 --> 00:00:41.510
+programs to ask questions and then make decisions based
+但到目前为止，每次我们运行代码，
+
+00:00:41.510 --> 00:00:43.340
+on the answers to those questions.
+每次我们按下绿色旗帜，
+
+00:00:43.340 --> 00:00:45.380
+But through all of this, every time we run
+或者在Scratch程序中按下空格键，
+
+00:00:45.380 --> 00:00:47.450
+the code, every time we press the green flag
+每一段代码都只会运行一次。
+
+00:00:47.450 --> 00:00:50.330
+or press the space bar inside of our Scratch program,
+我们会从头到尾把代码运行一遍。
+
+00:00:50.330 --> 00:00:53.660
+everything, every block of code, is just running one time.
+如果我们想再次看到程序运行，
+
+00:00:53.660 --> 00:00:56.490
+We're running through the code, top to bottom, one time.
+就必须再次按下绿色旗帜，或者再次按下空格键，
+
+00:00:56.490 --> 00:00:58.490
+And if we want to see the program run again,
+或者触发其他积木来让程序运行。
+
+00:00:58.490 --> 00:01:01.700
+we have to press the green flag again, or press the space bar again,
+这次我们要学习的是
+
+00:01:01.700 --> 00:01:05.507
+or make something else to trigger the rest of the blocks to run.
+Scratch程序的循环能力，
+
+00:01:05.507 --> 00:01:07.340
+This time what we're going to take a look at
+也就是像计算机经常做的那样，多次重复执行某些积木。
+
+00:01:07.340 --> 00:01:10.070
+is the ability of Scratch programs to loop,
+那我们举个简单的例子。
+
+00:01:10.070 --> 00:01:15.070
+to repeat some blocks multiple times, as computers will do quite often.
+现在我们有常见的Scratch猫角色。
+
+00:01:15.070 --> 00:01:17.060
+And so let's take a simple example.
+如果我说，当点击绿色旗帜时，
+
+00:01:17.060 --> 00:01:19.800
+Right now we have our usual Scratch cat.
+让Scratch猫移动10步。
+
+00:01:19.800 --> 00:01:22.940
+And if I say, when the green flag is clicked,
+这个程序我们之前见过。
+
+00:01:22.940 --> 00:01:26.720
+let's have the Scratch cat move 10 steps.
+当我按下绿色旗帜，猫就会移动。
+
+00:01:26.720 --> 00:01:28.250
+This program we've seen before.
+如果我想让猫再次移动，
+
+00:01:28.250 --> 00:01:31.160
+When I press the green flag the cat moves.
+我就得再次按下绿色旗帜，然后它再移动，再移动，
+
+00:01:31.160 --> 00:01:33.140
+And if I want the cat to move again, I have
+再移动，而且每次都得由我来控制
+
+00:01:33.140 --> 00:01:36.890
+to press the green flag again, and then move again, and then move again,
+猫的移动。
+
+00:01:36.890 --> 00:01:39.500
+and then move again, and I have to be the one controlling
+所以如果我想让猫持续移动，
+
+00:01:39.500 --> 00:01:41.560
+every single time, the cat's movement.
+我就得不断地反复按下绿色旗帜。
+
+00:01:41.560 --> 00:01:44.240
+So if I want the cat to keep moving continuously,
+理想情况下，我希望猫能够自己完成这一切。
+
+00:01:44.240 --> 00:01:48.770
+I have to keep pressing the green flag again and again.
+我把猫移回它原来的位置。
+
+00:01:48.770 --> 00:01:52.760
+Ideally, I'd like for the cat to be able to do all of this on its own.
+现在我要介绍一个新的积木。
+
+00:01:52.760 --> 00:01:56.460
+I'll move the cat back to its original position.
+它同样在“控制”分类里，上次我们在这儿看到过“如果……那么”积木，
+
+00:01:56.460 --> 00:01:58.470
+And I'm going to introduce a new block now.
+这次我们要用的积木叫做“永远”。
+
+00:01:58.470 --> 00:02:02.370
+It's also under Control, where we saw the if-thens last time,
+“永远”积木的形状
+
+00:02:02.370 --> 00:02:07.200
+and this time the block we're going to use is this block called "forever".
+和“如果……那么”积木有点类似。
+
+00:02:07.200 --> 00:02:10.320
+The forever block looks similar, in terms of its shape,
+无限循环积木从形状上看很相似，
+
+00:02:10.320 --> 00:02:11.700
+to the if-then block.
+和条件判断积木相似。
+
+00:02:11.700 --> 00:02:14.910
+The forever block also has a container inside of it
+“永远”积木里面也有一个容器
+
+00:02:14.910 --> 00:02:18.540
+where I could add another stack of blocks inside of the forever,
+我可以在“永远”积木里面再添加一摞积木，
+
+00:02:18.540 --> 00:02:20.460
+but there's no question to ask.
+但这里没有问题需要询问。
+
+00:02:20.460 --> 00:02:24.450
+The forever block's role is just to run the blocks of code that
+“永远”积木的作用就是运行其内部的代码积木，然后，就像这个小箭头所表示的，
+
+00:02:24.450 --> 00:02:27.810
+are inside of it and then, as this little arrow suggests,
+回到“永远”积木的开头，再把它们全部运行一遍。
+
+00:02:27.810 --> 00:02:31.410
+go back to the beginning of the forever block and run it all again.
+然后再运行一遍，一遍又一遍，永远如此，直到我停止程序。
+
+00:02:31.410 --> 00:02:36.160
+And then run it all again, over and over forever, until I stop the program.
+在计算机科学里，这就是一个
+
+00:02:36.160 --> 00:02:38.160
+This is an example of what, in computer science,
+我们所说的循环的例子，循环能让多个积木
+
+00:02:38.160 --> 00:02:41.550
+we would call a loop, something that allows for multiple blocks
+重复执行若干次，在这个例子里，是永远重复。
+
+00:02:41.550 --> 00:02:45.580
+to repeat some number of times, in this case, forever.
+所以我接下来要做的是，我要拿起“移动 10 步”积木，
+
+00:02:45.580 --> 00:02:50.220
+And so what I'm going to do is I'm going to take the move 10 steps block,
+把它拖到“永远”积木里面，然后把它
+
+00:02:50.220 --> 00:02:55.570
+and drag it inside of the forever block, and connect that
+和“当绿旗被点击”积木连接起来。
+
+00:02:55.570 --> 00:02:57.790
+to when the green flag is clicked.
+现在这个程序的行为是
+
+00:02:57.790 --> 00:02:59.710
+Now the behavior of this program is going
+当我按下绿旗，我们会看到小猫移动 10 步，
+
+00:02:59.710 --> 00:03:03.858
+to be when I press the green flag, we're going to see the cat move 10 steps,
+但随后循环会再次执行。
+
+00:03:03.858 --> 00:03:05.650
+but then the loop is going to happen again.
+它会再移动 10 步，然后
+
+00:03:05.650 --> 00:03:07.330
+It's going to move 10 steps again, and then
+再移动 10 步，如此反复，你会看到发生了什么。
+
+00:03:07.330 --> 00:03:10.540
+move 10 steps again, and then again and again, and you'll see what happens.
+我按下绿旗，小猫开始移动
+
+00:03:10.540 --> 00:03:13.970
+I press the green flag, and the cat moves
+直到它碰到边缘，这时它就卡住了，
+
+00:03:13.970 --> 00:03:16.280
+until it hits the edge, at which point it's stuck,
+并且不能再继续移动了。
+
+00:03:16.280 --> 00:03:19.040
+and it can't move any further than that.
+我可以把它拖回到起点，然后再看看它移动的情况。
+
+00:03:19.040 --> 00:03:22.280
+I can drag it back to the beginning, and we can watch it go again.
+我按下绿旗，小猫开始移动，而且我只需要按一次绿旗，
+
+00:03:22.280 --> 00:03:27.460
+I'll press the flag, the cat moves, and I only had to press the flag once,
+小猫就会一直移动到舞台边缘。
+
+00:03:27.460 --> 00:03:31.000
+and the cat went all the way to the edge of the stage.
+它看起来像是停止了。
+
+00:03:31.000 --> 00:03:32.440
+It appears to be stopping.
+其实它并没有真正停止。
+
+00:03:32.440 --> 00:03:33.700
+It's not really stopping.
+实际情况是它试图移动 10 步，
+
+00:03:33.700 --> 00:03:36.220
+What's happening is that it's trying to move 10 steps,
+但因为它已经在舞台边缘了，
+
+00:03:36.220 --> 00:03:38.470
+but because it's already at the edge of the stage,
+小猫已经无处可移了。
+
+00:03:38.470 --> 00:03:41.320
+there's nowhere left for the cat to move.
+所以我可以通过再添加一个积木来解决这个问题。
+
+00:03:41.320 --> 00:03:45.380
+And so I could fix this by adding yet another block.
+我通过按下停止标志来停止程序，
+
+00:03:45.380 --> 00:03:47.290
+I stop the program by pressing the stop sign,
+否则小猫会一直移动下去。
+
+00:03:47.290 --> 00:03:48.970
+otherwise the cat would keep moving.
+我把小猫拖回到外面。
+
+00:03:48.970 --> 00:03:51.190
+I'm dragging the cat back out.
+在“运动”类积木里有这样一个积木，
+
+00:03:51.190 --> 00:03:57.660
+And under the Motion section of blocks there is this block here,
+“碰到边缘就反弹”。
+
+00:03:57.660 --> 00:04:00.510
+"if on edge, bounce".
+“碰到边缘就反弹”的意思正如其名。
+
+00:04:00.510 --> 00:04:04.240
+And the idea of "if on edge, bounce" is exactly as the name might suggest.
+如果小猫到达边缘，它会从边缘反弹回来。
+
+00:04:04.240 --> 00:04:07.930
+If the cat reaches the edge, it's going to bounce off the edge.
+它会转身朝另一个方向。
+
+00:04:07.930 --> 00:04:11.730
+It's going to turn around and face the other direction.
+所以我现在按下绿旗，现在注意看发生了什么。
+
+00:04:11.730 --> 00:04:17.329
+So I'll press the green flag now, and now notice what's happening.
+小猫在持续移动。
+
+00:04:17.329 --> 00:04:19.279
+The cat's moving continuously.
+这只猫在持续移动。
+
+00:04:19.279 --> 00:04:21.320
+I only press the green flag once, but we're
+我只点击了一次绿旗，但我们现在
+
+00:04:21.320 --> 00:04:24.450
+running this loop where the loop is saying move 10 steps,
+正在运行这个循环，循环里的指令是移动10步，
+
+00:04:24.450 --> 00:04:28.185
+and if it's at the edge of the stage, then bounce and go the other way.
+并且如果角色到了舞台边缘，就反弹然后朝另一个方向走。
+
+00:04:28.185 --> 00:04:31.310
+And now you might recall when we were talking about directions that sprites
+现在你可能还记得，我们之前讨论过角色
+
+00:04:31.310 --> 00:04:32.150
+can be facing.
+可以朝向的方向。
+
+00:04:32.150 --> 00:04:35.810
+By default, sprites in Scratch have all-around rotation,
+默认情况下，Scratch里的角色是全方位旋转的，
+
+00:04:35.810 --> 00:04:37.910
+meaning that if you tell it to face the other way,
+这意味着如果你让它转向另一个方向，
+
+00:04:37.910 --> 00:04:40.202
+it's going to end up upside down as if it had just been
+它最终会颠倒过来，就好像刚被
+
+00:04:40.202 --> 00:04:42.380
+rotated to face the other direction.
+旋转到另一个方向一样。
+
+00:04:42.380 --> 00:04:44.510
+There is a fix to that though, and the fix to that
+不过有个解决办法，解决办法就是
+
+00:04:44.510 --> 00:04:48.320
+is to change the rotation style of the cat, that we've seen a couple of times
+改变这只猫的旋转方式，我们已经见过几次了
+
+00:04:48.320 --> 00:04:49.520
+now.
+现在。
+
+00:04:49.520 --> 00:04:53.630
+I can do that by going to direction here, changing the rotation
+我可以通过点击这里的方向，改变旋转方式
+
+00:04:53.630 --> 00:04:56.120
+from all-around, which is the first option,
+从第一个选项全方位旋转，
+
+00:04:56.120 --> 00:05:00.460
+to just left and right, which is the second option.
+改成第二个选项左右旋转。
+
+00:05:00.460 --> 00:05:04.470
+And now when I run this program, you'll notice the cat bounce a little bit
+现在我运行这个程序，你会注意到这只猫反弹得更自然了
+
+00:05:04.470 --> 00:05:07.380
+more nicely, going back and forth forever,
+永远地来回移动，
+
+00:05:07.380 --> 00:05:13.470
+at least until I press the red stop sign to stop the program from running.
+至少在我按下红色停止标志停止程序运行之前是这样。
+
+00:05:13.470 --> 00:05:15.840
+And now if you're really paying attention to this,
+现在如果你真的在仔细观察这个，
+
+00:05:15.840 --> 00:05:18.660
+trying to see if it looks at all realistic,
+想看看它看起来是否逼真，
+
+00:05:18.660 --> 00:05:22.260
+you'll notice the Scratch cat, its legs aren't moving.
+你会注意到Scratch猫的腿没有动。
+
+00:05:22.260 --> 00:05:26.820
+Its legs are just straight, and it's effectively gliding along the stage.
+它的腿是直的，实际上它是在舞台上滑行。
+
+00:05:26.820 --> 00:05:30.880
+Doesn't really look like it's walking or running across the stage, for example.
+比如说，它看起来并不像在舞台上行走或奔跑。
+
+00:05:30.880 --> 00:05:33.570
+And we can fix that with a little bit of animation.
+我们可以用一点动画来解决这个问题。
+
+00:05:33.570 --> 00:05:37.290
+Animation the same way you might see a television show or a movie be animated.
+动画的原理和你在电视节目或电影里看到的动画一样。
+
+00:05:37.290 --> 00:05:38.910
+And how does animation work?
+那动画是怎么运作的呢？
+
+00:05:38.910 --> 00:05:41.177
+Well, animation, when you're watching anything on TV,
+嗯，当你在电视上看任何东西时，
+
+00:05:41.177 --> 00:05:43.260
+or watching anything on a movie or on your screen,
+或者在电影里或屏幕上看任何东西时，
+
+00:05:43.260 --> 00:05:46.890
+it's really just a whole bunch of images one image after another image.
+实际上只是一连串的图片，一张接着一张。
+
+00:05:46.890 --> 00:05:49.710
+And the images are moving so quickly by your eyes
+这些图片在你眼前移动得非常快，
+
+00:05:49.710 --> 00:05:53.665
+that your eyes just process that and think of it as actual movement.
+以至于你的眼睛会把它们处理成实际的运动。
+
+00:05:53.665 --> 00:05:55.290
+And that's what we can try and do here.
+这就是我们在这里可以尝试做的。
+
+00:05:55.290 --> 00:05:58.510
+Have a couple different images that look very similar to each other,
+准备几张看起来非常相似的图片，
+
+00:05:58.510 --> 00:06:01.620
+but are slightly different, and by moving back and forth between them
+但又有细微的差别，通过在它们之间快速切换
+
+00:06:01.620 --> 00:06:04.980
+very quickly we can create the illusion of motion the same way
+我们可以创造出运动的错觉，就像
+
+00:06:04.980 --> 00:06:09.170
+you might do so if you're animating something like a movie.
+你在制作像电影这样的动画时可能会做的那样。
+
+00:06:09.170 --> 00:06:12.230
+So if we go into Costumes here, you'll notice that the Scratch
+所以如果我们进入这里的造型选项，你会注意到Scratch
+
+00:06:12.230 --> 00:06:14.340
+cat does have two costumes.
+猫确实有两个造型。
+
+00:06:14.340 --> 00:06:17.700
+It has one costume here where the legs are straight.
+这里有一个造型，它的腿是直的。
+
+00:06:17.700 --> 00:06:20.150
+And it has a second costume here, costume2,
+这里还有第二个造型，造型2。
+
+00:06:20.150 --> 00:06:22.400
+where the cat's legs are bent.
+也就是猫腿弯曲的造型。
+
+00:06:22.400 --> 00:06:24.620
+And if we switch back and forth between them,
+如果我们在这两个造型之间来回切换，
+
+00:06:24.620 --> 00:06:29.240
+you notice it kind of looks like the cat's walking.
+你会发现这看起来就像猫在走路。
+
+00:06:29.240 --> 00:06:32.390
+And so we can achieve this this way.
+我们可以用这种方法来实现。
+
+00:06:32.390 --> 00:06:37.650
+I'll go into Looks, and I'll just add a "next costume" block
+我要到“外观”类别里，添加一个“换成下一个造型”积木
+
+00:06:37.650 --> 00:06:39.300
+into the forever loop.
+到“永远”循环里。
+
+00:06:39.300 --> 00:06:42.480
+We're going to move 10 steps, if we're on the edge, we're going to bounce,
+我们要移动 10 步，如果碰到边缘，就反弹，
+
+00:06:42.480 --> 00:06:46.670
+and then we're going to switch the cat to the next costume.
+然后把猫换成下一个造型。
+
+00:06:46.670 --> 00:06:50.390
+Now watch what happens when I press the green flag.
+现在看看我按下绿旗后会发生什么。
+
+00:06:50.390 --> 00:06:53.790
+Now the cat's legs appear to be moving.
+现在猫的腿看起来在动了。
+
+00:06:53.790 --> 00:06:57.170
+They're moving very quickly because the forever loop is happening very quickly,
+它们动得非常快，因为“永远”循环执行得很快，
+
+00:06:57.170 --> 00:06:59.630
+going very quickly through the movement, through the bouncing,
+快速地完成移动、反弹，
+
+00:06:59.630 --> 00:07:01.588
+and then through the switching of the costumes.
+然后切换造型。
+
+00:07:01.588 --> 00:07:04.760
+But we've animated this cat just by moving it back and forth
+但我们只是通过在这两个不同造型之间来回切换，就让这只猫动起来了。
+
+00:07:04.760 --> 00:07:07.070
+between these two different costumes.
+就是在这两个不同造型之间切换。
+
+00:07:07.070 --> 00:07:08.750
+Now its legs are moving rather quickly.
+现在它的腿动得相当快。
+
+00:07:08.750 --> 00:07:10.760
+Maybe I want to slow this down a little bit.
+也许我想让它慢一点。
+
+00:07:10.760 --> 00:07:14.420
+And I can do that just by going into Control and waiting a little bit.
+我可以到“控制”类别里，加个等待指令来实现。
+
+00:07:14.420 --> 00:07:16.430
+One second is maybe a long time to wait.
+等 1 秒可能太久了。
+
+00:07:16.430 --> 00:07:20.390
+Let's wait 0.1 seconds, just a fraction of a second,
+我们等 0.1 秒，就零点几秒，
+
+00:07:20.390 --> 00:07:23.520
+to slow down the cat just a little bit.
+让猫的动作稍微慢一点。
+
+00:07:23.520 --> 00:07:26.490
+And now the cat's walking in a little more of a leisurely pace.
+现在猫走得悠闲多了。
+
+00:07:26.490 --> 00:07:28.500
+It's repeating this process over and over,
+它在一遍又一遍地重复这个过程，
+
+00:07:28.500 --> 00:07:31.560
+moving 10 steps, if it's on the edge, it's going to bounce,
+移动 10 步，如果碰到边缘就反弹，
+
+00:07:31.560 --> 00:07:35.670
+switching to the next costume between whether its legs are straight or bent,
+在猫腿伸直和弯曲的造型之间切换，
+
+00:07:35.670 --> 00:07:38.460
+and then waiting just a fraction of a second so that we
+然后等待零点几秒，这样我们
+
+00:07:38.460 --> 00:07:40.440
+can slow the cat down a little bit.
+就能让猫的动作慢一点。
+
+00:07:40.440 --> 00:07:43.320
+And you could play around with this value determining
+你可以调整这个等待时间的值，
+
+00:07:43.320 --> 00:07:47.280
+how long you want the cat to wait for to determine how quickly
+来决定你想让猫等待多久，从而决定猫
+
+00:07:47.280 --> 00:07:51.360
+or how slowly the cat's going to move across the screen.
+在屏幕上移动的速度是快还是慢。
+
+00:07:51.360 --> 00:07:53.640
+But using that loop we now have the ability
+但通过使用这个循环，我们现在有能力
+
+00:07:53.640 --> 00:07:57.270
+to create some effect that's happening inside of our program forever,
+在程序里创建一个永远执行的效果，
+
+00:07:57.270 --> 00:08:00.083
+that keeps going on and on.
+让它一直持续下去。
+
+00:08:00.083 --> 00:08:01.500
+So what's another example of this?
+那么还有什么例子呢？
+
+00:08:01.500 --> 00:08:04.320
+What else could we do with this idea?
+用这个思路我们还能做什么呢？
+
+00:08:04.320 --> 00:08:06.390
+Well, let's get rid of the cat for now.
+好吧，我们先把猫去掉。
+
+00:08:06.390 --> 00:08:09.270
+And let's bring back our underwater backdrop.
+让我们把水下背景再调出来。
+
+00:08:09.270 --> 00:08:11.010
+Here's Underwater 1.
+这是“水下 1”背景。
+
+00:08:11.010 --> 00:08:17.050
+And let's add the fish back into our program.
+让我们把鱼再添加到程序里。
+
+00:08:17.050 --> 00:08:18.750
+Here's that fish.
+这就是那条鱼。
+
+00:08:18.750 --> 00:08:20.310
+And let's try something else.
+咱们再试试别的。
+
+00:08:20.310 --> 00:08:24.390
+When the green flag is clicked, I also want something to happen forever.
+当绿色旗帜被点击时，我还希望有件事能一直发生。
+
+00:08:24.390 --> 00:08:25.840
+What do I want to have happen?
+我希望发生什么事呢？
+
+00:08:25.840 --> 00:08:30.820
+Well, let's go to Motion, and let's have it point in a particular direction.
+嗯，咱们到“运动”板块，让它指向一个特定的方向。
+
+00:08:30.820 --> 00:08:33.520
+Now if it were always pointing in the same direction,
+现在，如果它总是指向同一个方向，
+
+00:08:33.520 --> 00:08:35.700
+then it wouldn't really matter if it was inside of a loop or not.
+那么它是否在循环里面其实就无关紧要了。
+
+00:08:35.700 --> 00:08:38.100
+It's just always going to face the right, face the right, face the right,
+它就会一直朝右，朝右，朝右，
+
+00:08:38.100 --> 00:08:40.049
+face the right, again and again.
+一次又一次地朝右。
+
+00:08:40.049 --> 00:08:43.140
+But I could have it point in a particular direction,
+但我可以让它指向一个特定的方向，
+
+00:08:43.140 --> 00:08:48.080
+and I'll go ahead and choose a block like this instead.
+我这就去选一个像这样的积木。
+
+00:08:48.080 --> 00:08:50.630
+Instead of pointing in a direction with a number,
+不用数字来指定方向，
+
+00:08:50.630 --> 00:08:53.330
+let's have the fish point towards something.
+咱们让鱼指向某个东西。
+
+00:08:53.330 --> 00:08:55.190
+Let's have it point towards the mouse.
+让它指向鼠标。
+
+00:08:55.190 --> 00:08:58.530
+It's pointing towards the mouse pointer.
+它正指向鼠标指针。
+
+00:08:58.530 --> 00:09:02.140
+So now watch what happens when I press the flag.
+所以现在看看我点击旗帜后会发生什么。
+
+00:09:02.140 --> 00:09:05.480
+You'll notice that immediately when I press the flag the fish turned.
+你会注意到，我一点击旗帜，鱼就转了方向。
+
+00:09:05.480 --> 00:09:10.600
+It's now facing my cursor, which is up in the upper left corner of the stage.
+它现在正对着我的光标，光标在舞台的左上角。
+
+00:09:10.600 --> 00:09:14.870
+But watch what happens as I move the cursor.
+但看看我移动光标时会发生什么。
+
+00:09:14.870 --> 00:09:18.800
+Every time I move the cursor you'll notice the fish is moving, as well.
+每次我移动光标，你会注意到鱼也在动。
+
+00:09:18.800 --> 00:09:23.570
+Because it's constantly, over and over forever, following this instruction
+因为它一直在不断地、永远地重复这条指令，
+
+00:09:23.570 --> 00:09:26.510
+to point towards the mouse pointer.
+即指向鼠标指针。
+
+00:09:26.510 --> 00:09:31.030
+So wherever the cursor goes, the fish is going to be looking in that direction
+所以无论光标移到哪里，鱼都会朝那个方向看，
+
+00:09:31.030 --> 00:09:33.490
+because it's pointing towards the mouse pointer.
+因为它正指向鼠标指针。
+
+00:09:33.490 --> 00:09:37.010
+Now it's looking at the cursor, though it's not really moving yet.
+现在它正看着光标，不过还没真正移动。
+
+00:09:37.010 --> 00:09:39.310
+So let's add one more thing to this program.
+咱们给这个程序再加点东西。
+
+00:09:39.310 --> 00:09:41.800
+In addition to pointing towards the mouse pointer,
+除了指向鼠标指针之外，
+
+00:09:41.800 --> 00:09:47.042
+let's then have the fish move five steps.
+咱们再让鱼移动五步。
+
+00:09:47.042 --> 00:09:48.750
+So now what's going to happen is wherever
+所以现在会出现的情况是，无论
+
+00:09:48.750 --> 00:09:51.870
+the cursor is, the fish is going to look at the cursor
+光标在哪里，鱼都会看着光标，
+
+00:09:51.870 --> 00:09:54.430
+and then move a little bit closer to that cursor.
+然后朝光标靠近一点。
+
+00:09:54.430 --> 00:09:57.360
+So using the cursor will effectively be able to control
+所以通过使用光标，我们就能有效地控制
+
+00:09:57.360 --> 00:10:00.010
+the movement of the fish.
+鱼的移动。
+
+00:10:00.010 --> 00:10:03.660
+I'll press the green flag again, and you'll notice the fish start
+我再点击一次绿色旗帜，你会注意到鱼开始
+
+00:10:03.660 --> 00:10:06.450
+to move after the cursor.
+跟着光标移动。
+
+00:10:06.450 --> 00:10:09.840
+Wherever I move the cursor, the fish is pointing in that direction
+无论我把光标移到哪里，鱼都会朝那个方向，
+
+00:10:09.840 --> 00:10:12.797
+and then swimming in my direction.
+然后朝我这边游过来。
+
+00:10:16.132 --> 00:10:18.090
+And we can use "forever" for other things, too.
+我们也可以把“永远”用于其他事情。
+
+00:10:18.090 --> 00:10:21.890
+Any time I want something to continue to happen during my program,
+任何时候，我想让某件事在我的程序运行期间持续发生，
+
+00:10:21.890 --> 00:10:24.710
+a forever loop is often the way that I want to achieve that.
+“永远”循环通常就是我实现这一目的的方法。
+
+00:10:24.710 --> 00:10:27.350
+Right now, my backdrop, I can click on the backdrop,
+现在，我的背景，我可以点击背景，
+
+00:10:27.350 --> 00:10:30.770
+is just showing me this underwater scene.
+它只是给我展示了这个水下场景。
+
+00:10:30.770 --> 00:10:33.110
+But I can add some blocks to the backdrop,
+但我也可以给背景添加一些积木，
+
+00:10:33.110 --> 00:10:35.270
+as well, telling the backdrop what to do.
+告诉背景该做什么。
+
+00:10:35.270 --> 00:10:38.930
+And maybe I'll have the backdrop say, when the green flag is clicked,
+也许我会让背景在点击绿旗时说，
+
+00:10:38.930 --> 00:10:42.735
+let's forever play a sound.
+让它永远播放一个声音。
+
+00:10:45.400 --> 00:10:48.960
+The default sound is "pop", but I can change those sounds.
+默认声音是“啵”声，但我可以更改这些声音。
+
+00:10:48.960 --> 00:10:52.870
+Let's find a sound that's appropriate for being underwater.
+让我们找一个适合水下场景的声音。
+
+00:10:52.870 --> 00:10:57.310
+And if I scroll down through this long list of sounds, I can try them out,
+如果我在这个长长的声音列表中往下滚动，我可以试听一下，
+
+00:10:57.310 --> 00:11:01.736
+but I think there's one called--
+但我觉得有一个叫——
+
+00:11:01.736 --> 00:11:04.030
+Let's search for water maybe?
+也许我们搜索一下“水”？
+
+00:11:04.030 --> 00:11:04.757
+"Ocean Wave".
+“海浪声”。
+
+00:11:04.757 --> 00:11:06.340
+Here's "Ocean Wave", related to water.
+这里有“海浪声”，和水有关。
+
+00:11:09.840 --> 00:11:11.670
+I can sample hear what that sounds like.
+我可以在这里试听一下它的声音。
+
+00:11:11.670 --> 00:11:13.570
+I like that one.
+我喜欢这个声音。
+
+00:11:13.570 --> 00:11:18.250
+And so let's have the backdrop play this "Ocean Wave" sound forever.
+所以让背景永远播放这个“海浪声”。
+
+00:11:18.250 --> 00:11:21.740
+It's going to play the sound until it's done, and then play it again.
+它会播放这个声音直到结束，然后再重新播放。
+
+00:11:21.740 --> 00:11:25.690
+And so now when I run the program, notice what you see and hear.
+现在当我运行程序时，注意你看到和听到的内容。
+
+00:11:33.480 --> 00:11:36.570
+I have the fish following the cursor, and I just stopped the program.
+我让鱼跟着光标移动，然后我停止了程序。
+
+00:11:36.570 --> 00:11:39.990
+But because I had multiple forever loops, I had a loop on the backdrop,
+但因为我有多个无限循环，我在背景上也有一个循环，
+
+00:11:39.990 --> 00:11:44.108
+as well, we were just playing this "Ocean Wave" sound over and over again.
+所以我们一直在反复播放这个“海浪声”。
+
+00:11:44.108 --> 00:11:46.650
+And you could use this if you wanted a sound to play forever.
+如果你想让一个声音永远播放，你可以用这个方法。
+
+00:11:46.650 --> 00:11:48.567
+You could add music to your programs, as well.
+你也可以给你的程序添加音乐。
+
+00:11:48.567 --> 00:11:52.080
+If you wanted music to be playing in the background of your Scratch program,
+如果你想让音乐在你的Scratch程序背景中播放，
+
+00:11:52.080 --> 00:11:55.060
+you might have that music sound play until it's done,
+你可以让这个音乐声音播放直到结束，
+
+00:11:55.060 --> 00:11:58.350
+and then the song starts right back up again as soon as the song is over.
+然后歌曲一结束就马上重新开始播放。
+
+00:11:58.350 --> 00:12:02.070
+So you can continue to have music in the background of your Scratch program
+所以你可以让音乐在你的Scratch程序背景中永远反复播放。
+
+00:12:02.070 --> 00:12:04.170
+going over and over forever.
+所以这些无限循环对于帮助
+
+00:12:04.170 --> 00:12:06.660
+So these forever loops can be quite useful for helping
+营造这种连续性的感觉非常有用，这种持续的
+
+00:12:06.660 --> 00:12:10.590
+to create this sense of continuity, this continued
+声音或动作的存在，在我们的应用程序中发生。
+
+00:12:10.590 --> 00:12:16.770
+presence of sounds or movement that are happening inside of our applications.
+所以现在让我们试着创建另一个程序。
+
+00:12:16.770 --> 00:12:20.630
+And so let's try now to create another program.
+我会去掉鱼，我们也去掉水下背景。
+
+00:12:20.630 --> 00:12:24.860
+I'll get rid of the fish, and we'll get rid of the underwater backdrop.
+让我们回到这个纯色背景。
+
+00:12:24.860 --> 00:12:28.160
+Let's go back to this plain backdrop.
+我也会去掉这段代码。
+
+00:12:28.160 --> 00:12:30.760
+And I'll get rid of this code, too.
+让我们把猫加回来。
+
+00:12:30.760 --> 00:12:32.140
+Let's bring back the cat.
+现在我只是为了好玩，想让猫做的是，
+
+00:12:34.870 --> 00:12:38.620
+And what I want the cat to do now, just for fun,
+不让我离猫太近。
+
+00:12:38.620 --> 00:12:41.290
+is to not let me get too close to the cat.
+如果我的光标离猫太近，我希望猫
+
+00:12:41.290 --> 00:12:44.380
+If my cursor gets too close to the cat, I would like for the cat
+喵喵叫之类的，或者以其他方式表明它不
+
+00:12:44.380 --> 00:12:47.380
+to meow or something, or otherwise indicate that it doesn't
+希望我离得太近，举个例子。
+
+00:12:47.380 --> 00:12:50.330
+want me to get too close, for example.
+比如，不想让我靠得太近。
+
+00:12:50.330 --> 00:12:52.130
+And so how might this work?
+那么这要如何实现呢？
+
+00:12:52.130 --> 00:12:53.260
+Well, let's try this.
+嗯，让我们试试这个办法。
+
+00:12:53.260 --> 00:12:55.300
+When the green flag is clicked, my instinct
+当点击绿色旗帜时，我的直觉是
+
+00:12:55.300 --> 00:12:57.220
+might be to say, well, if I want to check
+可能会说，如果我想检查
+
+00:12:57.220 --> 00:13:01.420
+to make sure that I'm not too close to the cat, that sounds like a condition.
+确保我离猫不太近，这听起来像是个条件。
+
+00:13:01.420 --> 00:13:02.710
+It sounds like an if-then.
+听起来像是个“如果……那么……”语句。
+
+00:13:02.710 --> 00:13:05.710
+If I'm getting too close to the cat, then have the cat meow
+如果我离猫太近了，那么就让猫发出喵叫声
+
+00:13:05.710 --> 00:13:07.760
+because it's unhappy, for example.
+例如，因为它不高兴了。
+
+00:13:07.760 --> 00:13:11.040
+And so I might add an if-then.
+所以我可能会添加一个“如果……那么……”语句。
+
+00:13:11.040 --> 00:13:13.080
+And here I can use an operator.
+在这里我可以使用一个运算符。
+
+00:13:13.080 --> 00:13:15.180
+I can use the less than operator, because I
+我可以使用小于运算符，因为
+
+00:13:15.180 --> 00:13:19.230
+want to check if the distance between the cat and the mouse pointer
+我想检查猫和鼠标指针之间的距离
+
+00:13:19.230 --> 00:13:22.230
+is less than some value, we'll say 100.
+是否小于某个值，我们就设为100吧。
+
+00:13:22.230 --> 00:13:23.550
+And how do I find the distance?
+那我要如何计算距离呢？
+
+00:13:23.550 --> 00:13:25.410
+That's under the Sensing category.
+这在“感知”类别里。
+
+00:13:25.410 --> 00:13:29.220
+It turns out there's a block here called "distance to mouse pointer",
+原来这里有个名为“到鼠标指针的距离”的积木，
+
+00:13:29.220 --> 00:13:29.970
+so I can check.
+所以我可以进行检查。
+
+00:13:29.970 --> 00:13:35.000
+Is the distance between the cat and the mouse less than 100?
+猫和鼠标之间的距离是否小于100呢？
+
+00:13:35.000 --> 00:13:42.630
+And if so, let's go ahead and play the meow sound until it's done.
+如果是，那就播放喵叫声音，直到播放完毕。
+
+00:13:42.630 --> 00:13:45.950
+So the idea of this code now, what I would like for this code to do,
+所以这段代码现在的思路，我希望这段代码实现的功能是，
+
+00:13:45.950 --> 00:13:51.260
+is to say if I'm less than 100 spaces away from the cat,
+就是说如果我离猫不到100个单位的距离，
+
+00:13:51.260 --> 00:13:53.480
+then go ahead and play the meow sound.
+那就播放喵叫声音。
+
+00:13:53.480 --> 00:13:55.760
+And that's what I want the cat to do, but watch what
+这就是我想让猫做的事，但看看如果我
+
+00:13:55.760 --> 00:13:58.880
+happens if I try and run this program.
+尝试运行这个程序会发生什么。
+
+00:13:58.880 --> 00:14:00.200
+I'll run the program.
+我来运行这个程序。
+
+00:14:00.200 --> 00:14:04.890
+And my cursor starts out pretty far away from the cat, but as I bring the cursor
+我的光标一开始离猫挺远的，但当我把光标
+
+00:14:04.890 --> 00:14:08.800
+closer nothing seems to be happening.
+移近时，好像什么都没发生。
+
+00:14:08.800 --> 00:14:11.980
+I'm pretty close to the cat right now, I'm even touching the cat now,
+我现在离猫已经很近了，现在甚至都碰到猫了，
+
+00:14:11.980 --> 00:14:15.640
+and yet still, I'm not hearing the cat meow.
+但我还是没听到猫叫。
+
+00:14:15.640 --> 00:14:16.360
+Why is that?
+这是为什么呢？
+
+00:14:16.360 --> 00:14:18.430
+What's going on?
+怎么回事呢？
+
+00:14:18.430 --> 00:14:20.530
+Well, it has to do with the fact that by default,
+嗯，这和默认情况下的一个事实有关，
+
+00:14:20.530 --> 00:14:22.900
+when you're running code inside of a program,
+当你在程序里运行代码时，
+
+00:14:22.900 --> 00:14:25.810
+that code is only going to run once.
+那段代码只会运行一次。
+
+00:14:25.810 --> 00:14:27.730
+What happened when I pressed the green flag?
+我点击绿色旗帜时发生了什么呢？
+
+00:14:27.730 --> 00:14:31.870
+When I took my cursor, and I dragged my cursor over the green flag right there,
+当我移动光标，把光标拖到那里的绿色旗帜上，
+
+00:14:31.870 --> 00:14:34.810
+and then I clicked on it, what was happening inside of the program?
+然后点击它，程序内部发生了什么呢？
+
+00:14:34.810 --> 00:14:37.240
+Well, immediately, Scratch checks.
+嗯，Scratch 会立刻进行检查。
+
+00:14:37.240 --> 00:14:38.560
+It checks this question.
+它会检查这个问题。
+
+00:14:38.560 --> 00:14:41.680
+Is the distance to the mouse pointer less than 100?
+到鼠标指针的距离是否小于100呢？
+
+00:14:41.680 --> 00:14:42.430
+Well, no it's not.
+不，不是这样的。
+
+00:14:42.430 --> 00:14:46.810
+This is more than 100 spaces in the world of Scatch's coordinate system,
+在Scratch坐标系里，这超过了100个单位的距离，
+
+00:14:46.810 --> 00:14:48.740
+so we didn't play the meow sound.
+所以我们没听到猫叫的声音。
+
+00:14:48.740 --> 00:14:51.880
+And at that point, this stack of blocks was over.
+到那时，这组积木就执行完了。
+
+00:14:51.880 --> 00:14:55.150
+Nothing else happened because we ran through all of these blocks
+没有其他事情发生，因为我们从上到下把这些积木都执行了一遍，
+
+00:14:55.150 --> 00:14:59.320
+from top to bottom, and that was the end of the stack of blocks.
+这组积木就执行完了。
+
+00:14:59.320 --> 00:15:02.950
+What I really wanted to have happen is for this check for this question
+我真正希望发生的是，对这个问题的检查
+
+00:15:02.950 --> 00:15:05.590
+to be asked not once, but for the question
+不是只进行一次，而是这个问题
+
+00:15:05.590 --> 00:15:08.020
+to constantly be asked all the time.
+要一直不断地被检查。
+
+00:15:08.020 --> 00:15:10.660
+I want the cat to be checking, is the distance
+我希望这只猫一直检查，鼠标指针的距离
+
+00:15:10.660 --> 00:15:12.640
+of the mouse pointer less than 100?
+是否小于100？
+
+00:15:12.640 --> 00:15:15.370
+And any time it turns out that I get to close,
+只要发现我靠得太近了，
+
+00:15:15.370 --> 00:15:18.100
+then I want for the cat to play the meow sound.
+我就希望这只猫发出猫叫的声音。
+
+00:15:18.100 --> 00:15:21.050
+And that's another case where a forever loop is quite helpful.
+这就是“无限循环”非常有用的另一个例子。
+
+00:15:21.050 --> 00:15:23.620
+I don't just want to ask this question one time.
+我不想只问一次这个问题。
+
+00:15:23.620 --> 00:15:28.100
+I want to ask the question forever as long as this program's running.
+只要这个程序在运行，我就想一直不断地问这个问题。
+
+00:15:28.100 --> 00:15:31.120
+And so I can go into Control, grab a forever block
+所以我可以进入“控制”模块，拖出一个“无限循环”积木
+
+00:15:31.120 --> 00:15:34.420
+and put it around the condition just like that.
+就像这样把它套在条件判断外面。
+
+00:15:34.420 --> 00:15:37.720
+And now this question, am I getting too close to the cat,
+现在，“我离猫是不是太近了”这个问题
+
+00:15:37.720 --> 00:15:40.120
+it's going to be asked not once, but over and over again.
+就不是只问一次，而是会反复问。
+
+00:15:40.120 --> 00:15:43.550
+Every time we ask the question, we'll then ask it again.
+每次问完这个问题后，还会再次问。
+
+00:15:43.550 --> 00:15:44.950
+I'll click on the flag.
+我点击绿旗。
+
+00:15:44.950 --> 00:15:46.070
+The program's now started.
+程序现在开始运行了。
+
+00:15:46.070 --> 00:15:48.243
+We still don't hear anything, but now watch
+我们还是什么都没听到，但现在看
+
+00:15:48.243 --> 00:15:50.410
+what happens as my cursor gets too close to the cat.
+当我的光标离猫太近时会发生什么。
+
+00:15:55.920 --> 00:15:57.810
+So it's further away, we hear nothing.
+离得远的时候，我们什么都听不到。
+
+00:15:57.810 --> 00:16:03.540
+But when I get too close, then you start to hear the cat meow.
+但当我靠得太近时，你就会开始听到猫叫。
+
+00:16:03.540 --> 00:16:07.920
+And you hear that happen because this condition is now inside of a loop.
+你听到猫叫是因为这个条件判断现在在一个循环里面。
+
+00:16:07.920 --> 00:16:10.350
+It's repeating over and over again forever,
+它会永远一遍又一遍地重复，
+
+00:16:10.350 --> 00:16:15.620
+checking to see if the distance is less than 100.
+检查距离是否小于100。
+
+00:16:15.620 --> 00:16:17.470
+And so that then is a forever loop, a loop
+这就是“无限循环”，一种循环
+
+00:16:17.470 --> 00:16:20.110
+that's going to run some code over and over again, forever,
+它会一遍又一遍地运行某些代码，直到程序结束。
+
+00:16:20.110 --> 00:16:21.357
+until the end of the program.
+你也经常会听到它被叫做“无限循环”，也就是
+
+00:16:21.357 --> 00:16:24.190
+And you'll often hear this also called an infinite loop, a loop that
+会无限次重复的循环。
+
+00:16:24.190 --> 00:16:26.990
+repeats infinitely again and again.
+但在我们的程序里重复代码时，
+
+00:16:26.990 --> 00:16:29.050
+But when we repeat code inside of our programs
+我们不一定总是希望它无限次地执行。
+
+00:16:29.050 --> 00:16:31.880
+we don't necessarily always want for it to happen infinitely.
+我们并不总是希望代码永远运行。
+
+00:16:31.880 --> 00:16:34.810
+We don't always want for code to run forever.
+有时候我们确实希望代码重复执行，但不是无限次，而是执行很多次。
+
+00:16:34.810 --> 00:16:38.740
+Sometimes we do want the code to repeat, but not infinitely, many times.
+比如只执行5次、10次或者20次。
+
+00:16:38.740 --> 00:16:42.680
+Just five times, or 10 times, or 20 times, for example.
+比如，就循环五次、十次或者二十次。
+
+00:16:42.680 --> 00:16:45.400
+And so how could we do that instead?
+那我们该怎么做呢？
+
+00:16:45.400 --> 00:16:47.620
+Well, for that we're going to need another block.
+嗯，为此我们需要另一个积木。
+
+00:16:47.620 --> 00:16:53.330
+Not the forever block, which I'll get rid of now, but this block here.
+不是“永远”积木，我现在把它去掉，而是这个积木。
+
+00:16:53.330 --> 00:16:57.310
+This block is "repeat" and then 10, and this is also a loop.
+这个积木是“重复”然后是10，这也是一个循环。
+
+00:16:57.310 --> 00:16:59.060
+It's going to take some code and repeat it
+它会获取一些代码并重复执行
+
+00:16:59.060 --> 00:17:03.020
+multiple times, which is implied by this arrow here at the bottom right.
+多次，右下角的这个箭头暗示了这一点。
+
+00:17:03.020 --> 00:17:07.640
+But we get to specify, by typing in here, how many times I
+但我们可以通过在这里输入来指定，我希望
+
+00:17:07.640 --> 00:17:10.287
+would like for that code to repeat.
+这段代码重复执行多少次。
+
+00:17:10.287 --> 00:17:11.579
+And so when can this be useful?
+那么，什么时候这个会有用呢？
+
+00:17:11.579 --> 00:17:14.180
+When might I want to use a repeat block?
+我什么时候会想使用“重复”积木呢？
+
+00:17:14.180 --> 00:17:18.060
+Well, imagine I wanted the cat to meow three times, for example.
+嗯，比如说，我想让猫叫三次。
+
+00:17:18.060 --> 00:17:21.230
+I could go to Sounds, and just play sound meow until done,
+我可以转到“声音”，然后播放“喵”的声音直到结束，
+
+00:17:21.230 --> 00:17:24.740
+and then play sound meow until done, and then play sound meow until done.
+然后再播放“喵”的声音直到结束，接着再播放“喵”的声音直到结束。
+
+00:17:24.740 --> 00:17:31.640
+And now when I press the flag I do hear three meows,
+现在我点击旗帜，确实能听到三声猫叫，
+
+00:17:31.640 --> 00:17:33.830
+but this is repetitive code.
+但这是重复的代码。
+
+00:17:33.830 --> 00:17:37.340
+I find myself repeating the same blocks again and again and again.
+我发现自己一遍又一遍地重复使用相同的积木。
+
+00:17:37.340 --> 00:17:42.500
+And I could arguably improve the design of my program by using a loop instead.
+可以说，我可以通过使用循环来改进程序的设计。
+
+00:17:42.500 --> 00:17:46.370
+Instead of repeating myself again and again, I'll just have a loop.
+我不用一遍又一遍地重复，只用一个循环就行。
+
+00:17:46.370 --> 00:17:49.160
+Not repeat 10, but repeat three.
+不是重复10次，而是重复3次。
+
+00:17:49.160 --> 00:17:51.650
+And what am I repeating three times?
+我要重复三次的是什么呢？
+
+00:17:51.650 --> 00:17:54.560
+Let's play the sound meow until done.
+让我们播放“喵”的声音直到结束。
+
+00:17:54.560 --> 00:18:00.870
+Now I press the flag, and it still meows three times,
+现在我点击旗帜，猫还是叫了三次，
+
+00:18:00.870 --> 00:18:03.420
+but this is better than the program I had before.
+但这比我之前的程序要好。
+
+00:18:03.420 --> 00:18:05.320
+It's better for a couple of reasons.
+有几个原因说明它更好。
+
+00:18:05.320 --> 00:18:08.070
+One, I'm being more efficient with my use of blocks.
+其一，我在使用积木方面更高效了。
+
+00:18:08.070 --> 00:18:11.310
+Before, I needed three blocks to say meow three times.
+之前，我需要三个积木来让猫叫三次。
+
+00:18:11.310 --> 00:18:13.830
+Now I just have one block that says meow,
+现在我只有一个让猫叫的积木，
+
+00:18:13.830 --> 00:18:16.540
+plus one block that's handling the repeating.
+再加上一个处理重复的积木。
+
+00:18:16.540 --> 00:18:18.900
+So I'm being more efficient with my use of blocks.
+所以我在使用积木方面更高效了。
+
+00:18:18.900 --> 00:18:21.600
+And also, it's going to be easier later for me
+而且，之后如果我想改变程序的行为，
+
+00:18:21.600 --> 00:18:25.110
+to modify this program if I want to change the way it behaves.
+修改这个程序也会更容易。
+
+00:18:25.110 --> 00:18:29.670
+Say that I later wanted this to say meow not three times, but 30 times.
+比如说，之后我想让猫叫30次，而不是3次。
+
+00:18:29.670 --> 00:18:32.010
+In my old version I would have to just drag out
+在我之前的版本中，我得拖出
+
+00:18:32.010 --> 00:18:34.890
+an additional 27 additional play meow blocks
+另外27个播放“喵”的积木
+
+00:18:34.890 --> 00:18:36.750
+until we were able to get to that point.
+直到能实现这个效果。
+
+00:18:36.750 --> 00:18:40.560
+Now I just change the number that appears inside of that oval.
+现在我只需要更改那个椭圆里显示的数字。
+
+00:18:40.560 --> 00:18:43.860
+And by changing that value I change the number of times
+通过更改那个值，我就能改变
+
+00:18:43.860 --> 00:18:46.290
+that the cat is going to meow.
+猫叫的次数。
+
+00:18:46.290 --> 00:18:49.110
+And this doesn't just have to be a number that I type in.
+而且这不一定非得是我输入的数字。
+
+00:18:49.110 --> 00:18:52.360
+I can drag in any value into that oval, as well,
+我也可以把任何值拖到那个椭圆里，
+
+00:18:52.360 --> 00:18:55.740
+which means I could do something like ask the user how many times
+这意味着我可以做类似这样的事，询问用户希望某件事发生多少次
+
+00:18:55.740 --> 00:18:58.450
+the user wants something to happen.
+用户希望某件事发生的次数。
+
+00:18:58.450 --> 00:19:00.010
+So let's give that a try.
+那我们来试试看。
+
+00:19:00.010 --> 00:19:04.300
+I can go into the Sensing category of blocks and ask a question.
+我可以进入积木的“侦测”类别并询问一个问题。
+
+00:19:04.300 --> 00:19:07.810
+The question I'll ask is, type in a number.
+我要问的问题是，输入一个数字。
+
+00:19:07.810 --> 00:19:13.780
+And then instead of repeating three times, let's repeat answer times.
+然后，不要重复三次，而是重复“回答”次。
+
+00:19:13.780 --> 00:19:17.650
+Whatever the answer is that's how many times I want the cat to meow.
+不管回答是什么，那就是我希望猫叫的次数。
+
+00:19:17.650 --> 00:19:20.150
+I press the flag and I type 3, for example.
+我点击旗帜，比如我输入3。
+
+00:19:20.150 --> 00:19:25.270
+And then you'll hear three meows.
+然后你会听到三声猫叫。
+
+00:19:25.270 --> 00:19:35.220
+But if I press the flag and this time try 5, for example,
+但如果我点击旗帜，这次比如输入5，
+
+00:19:35.220 --> 00:19:36.820
+then you hear it five times.
+那你会听到它叫五次。
+
+00:19:36.820 --> 00:19:39.600
+So the user controls how many times this happens
+所以用户可以控制这件事发生的次数
+
+00:19:39.600 --> 00:19:43.770
+because the answer block I've plugged into that open space
+因为我把“回答”积木插入到了
+
+00:19:43.770 --> 00:19:46.372
+inside of the repeat block.
+“重复”积木的空白处。
+
+00:19:46.372 --> 00:19:47.830
+And so the repeat block is helpful.
+所以“重复”积木很有用。
+
+00:19:47.830 --> 00:19:50.970
+Now, any time I want something not to happen forever,
+现在，每当我不想让某件事永远持续下去，
+
+00:19:50.970 --> 00:19:53.790
+but still to happen multiple times.
+但又希望它发生多次时。
+
+00:19:53.790 --> 00:19:55.390
+What's another example of that?
+还有什么其他例子呢？
+
+00:19:55.390 --> 00:19:57.840
+Well, way back when we first introduced motion
+嗯，早在我们第一次介绍移动的时候
+
+00:19:57.840 --> 00:20:00.750
+I showed you how you can get the cat to move in a circle.
+我给你们展示过如何让猫绕圈移动。
+
+00:20:00.750 --> 00:20:05.220
+I said you could do something like move, let's say, 30 steps.
+我说过你可以做类似这样的事，比如移动30步。
+
+00:20:05.220 --> 00:20:08.370
+And then turn 15 degrees, just turn a little bit.
+然后旋转15度，就稍微转一点。
+
+00:20:08.370 --> 00:20:10.920
+And that had the effect, if I bring the cat up to the top,
+这样就会有这样的效果，如果我把猫移到顶部，
+
+00:20:10.920 --> 00:20:14.430
+where whenever I press the flag you'll see the cat move
+每当我点击旗帜，你就会看到猫移动
+
+00:20:14.430 --> 00:20:19.620
+and rotate a little bit, and the cat moves in a circle.
+并稍微旋转，猫就会绕圈移动。
+
+00:20:19.620 --> 00:20:24.840
+But in order for that to work I had to keep pressing the green flag every time
+但为了让它动起来，我每次都得点击绿色旗帜
+
+00:20:24.840 --> 00:20:26.960
+I want the cat to move.
+我想让猫移动的时候。
+
+00:20:26.960 --> 00:20:30.950
+And every time it moved 30 steps and then turned 15 degrees.
+每次它移动30步然后旋转15度。
+
+00:20:30.950 --> 00:20:33.560
+This is a great opportunity to use a loop so that I don't
+这是使用循环的好机会，这样我就不用
+
+00:20:33.560 --> 00:20:35.120
+have to keep doing all the clicking.
+一直不停地点击了。
+
+00:20:35.120 --> 00:20:38.630
+The loop will just take care of repeating this process again
+循环会自动重复这个过程
+
+00:20:38.630 --> 00:20:39.710
+and again and again.
+一遍又一遍。
+
+00:20:39.710 --> 00:20:43.130
+So I can go to Control, repeat a certain number of times
+所以我可以到“控制”类别，选择“重复执行指定的次数”
+
+00:20:43.130 --> 00:20:47.190
+and, I counted, to get all the way around I had to click 24 times.
+我数过了，要让猫绕一圈，我得点击24次。
+
+00:20:47.190 --> 00:20:50.270
+So go ahead and repeat this code 24 times
+所以继续，把这段代码重复执行24次
+
+00:20:50.270 --> 00:20:54.230
+where now when I press the green flag, you'll see the cat
+现在当我点击绿色旗帜，你会看到猫
+
+00:20:54.230 --> 00:20:57.120
+move all the way around in a circle.
+绕着圈移动一整圈。
+
+00:20:57.120 --> 00:20:59.480
+Very quickly, it's moving all the way around in a circle
+很快，每次我点击旗帜，它都会绕圈移动一整圈。
+
+00:20:59.480 --> 00:21:01.010
+every time I click on the flag.
+每次我点击旗帜的时候。
+
+00:21:01.010 --> 00:21:03.110
+And the reason for that is because it's taking
+原因是它正在
+
+00:21:03.110 --> 00:21:07.310
+every small movement, that movement of just moving 30 steps and then rotating,
+每一个小的动作，就是移动30步然后旋转的那个动作
+
+00:21:07.310 --> 00:21:09.560
+and it's repeating that again and again and again very
+而且它在一遍又一遍地重复这个动作，速度非常
+
+00:21:09.560 --> 00:21:13.790
+quickly, faster than I could ever click on buttons on the Scratch interface.
+快，比我在Scratch界面上点击按钮的速度都快。
+
+00:21:13.790 --> 00:21:16.580
+And the effect of that is that you're able to see this cat now
+这样做的效果就是，你现在能看到这只猫
+
+00:21:16.580 --> 00:21:20.890
+move in a circle, as well.
+也在做圆周运动。
+
+00:21:20.890 --> 00:21:24.840
+And so with that in mind, let's revisit one final program
+考虑到这一点，让我们再看一个之前看过的程序。
+
+00:21:24.840 --> 00:21:26.040
+that we've seen before.
+就是我们之前看过几次的气球程序。
+
+00:21:26.040 --> 00:21:28.830
+And that's the balloon program we've seen a couple of times now.
+之前，上一次我们看到那个气球的时候，
+
+00:21:28.830 --> 00:21:31.170
+Where before, last time we saw the balloon,
+我是通过按空格键来给气球充气
+
+00:21:31.170 --> 00:21:33.900
+I was pressing the space bar to try and inflate
+直到最后气球爆炸。
+
+00:21:33.900 --> 00:21:36.960
+the balloon until eventually it popped.
+但现在我们有了这些循环来反复执行某些操作，
+
+00:21:36.960 --> 00:21:40.740
+But now that we have these loops to repeat something again and again,
+我可以让气球自己充气，而不需要我
+
+00:21:40.740 --> 00:21:43.500
+I can have the balloon inflate itself without me
+一遍又一遍地按按钮来给气球充气。
+
+00:21:43.500 --> 00:21:47.900
+having to press buttons again and again to get the balloon to inflate.
+我把气球放到中心位置。
+
+00:21:47.900 --> 00:21:49.590
+I'll center the balloon.
+我们来试试这个。
+
+00:21:49.590 --> 00:21:51.820
+And let's try this.
+当点击绿旗时，我们来重复
+
+00:21:51.820 --> 00:21:55.920
+When the flag is clicked, let's go ahead and repeat
+某个操作若干次。
+
+00:21:55.920 --> 00:22:00.230
+something some number of times.
+我想做的是改变气球的大小
+
+00:22:00.230 --> 00:22:03.670
+And what I want to do is I want to change the size
+每次改变10，这和我们之前做的一样。
+
+00:22:03.670 --> 00:22:05.740
+by 10, which is what we did before.
+然后为了让这个过程慢一点，我们
+
+00:22:05.740 --> 00:22:08.830
+And then just to make this happen a little more slowly, let's
+等待一下，不用等整整一秒，也许等0.2秒，就一小段时间。
+
+00:22:08.830 --> 00:22:14.870
+wait, not a full second, but maybe 0.2 seconds, just a fraction of a second.
+所以它会先变大一点，然后等待，再变大一点
+
+00:22:14.870 --> 00:22:17.620
+So it's going to grow a little then wait, grow a little
+然后再等待，在我们重复10次之后，
+
+00:22:17.620 --> 00:22:20.110
+and then wait, and then after we repeat 10 times,
+在完成所有这些循环之后，我们把气球隐藏起来。
+
+00:22:20.110 --> 00:22:27.250
+after we're done with all of that looping, let's hide the balloon.
+然后我们播放一个声音。
+
+00:22:27.250 --> 00:22:29.380
+And we'll play a sound.
+我们播放这个爆炸的声音。
+
+00:22:29.380 --> 00:22:32.750
+We'll play this pop sound.
+现在我点击绿旗。
+
+00:22:32.750 --> 00:22:35.630
+So now I'll press the flag.
+气球变得越来越大，然后“砰”的一声消失了。
+
+00:22:35.630 --> 00:22:41.048
+It gets bigger and bigger, and then it disappears with a pop.
+我们再试一次。
+
+00:22:41.048 --> 00:22:41.840
+Let's try it again.
+我点击绿旗。
+
+00:22:41.840 --> 00:22:44.380
+I'll press the flag.
+好吧，什么都没发生。
+
+00:22:44.380 --> 00:22:45.610
+OK, nothing happened.
+气球没有再出现，这有点奇怪。
+
+00:22:45.610 --> 00:22:49.750
+The balloon didn't come back, which is a little bit strange.
+但如果你留意我的代码，就会明白为什么会这样。
+
+00:22:49.750 --> 00:22:52.720
+But if you pay attention to my code, you'll see why that's happening.
+我把每次改变大小10然后等待0.2秒的过程重复了10次。
+
+00:22:52.720 --> 00:22:56.860
+I repeated 10 times this process of change the size by 10
+然后在重复完之后，我们决定把气球隐藏起来
+
+00:22:56.860 --> 00:22:58.820
+then wait 0.2 seconds.
+并播放爆炸的声音。
+
+00:22:58.820 --> 00:23:02.620
+And then after that repeated we decided to hide the balloon
+但因为我们用了隐藏积木来隐藏气球，
+
+00:23:02.620 --> 00:23:04.510
+and play the pop sound.
+气球就消失了，而且再也不会出现。
+
+00:23:04.510 --> 00:23:07.450
+But because we use this hide block to hide the balloon,
+但由于我们用这个隐藏积木来隐藏气球，
+
+00:23:07.450 --> 00:23:11.630
+the balloon's disappeared, and then it never really comes back.
+气球就消失了，而且之后也不会再出现。
+
+00:23:11.630 --> 00:23:15.280
+So if ever I want something to reset whenever I start the program again,
+所以如果我想让某些东西在每次重新启动程序时都重置，
+
+00:23:15.280 --> 00:23:19.600
+I often need to add blocks immediately after the green flag is clicked to say,
+我通常需要在点击绿旗后马上添加积木来表示，
+
+00:23:19.600 --> 00:23:23.170
+when you press the green flag let's be sure to show the balloon.
+当你按下绿旗时，一定要显示气球。
+
+00:23:23.170 --> 00:23:26.770
+Because otherwise, the balloon is going to stay hidden from the last time
+否则，气球会一直保持上一次运行程序时被隐藏的状态。
+
+00:23:26.770 --> 00:23:29.720
+I hid the balloon when I ran the program.
+我上次运行程序时把气球隐藏起来了。
+
+00:23:29.720 --> 00:23:32.410
+And so I can use the "show" block for that.
+所以我可以用“显示”积木来实现这一点。
+
+00:23:32.410 --> 00:23:38.480
+Going into Looks, dragging out this block that says "show",
+进入“外观”分类，拖出这个写着“显示”的积木，
+
+00:23:38.480 --> 00:23:45.640
+and because I've been changing the size I better change the size back to 100%.
+因为我之前改变了大小，所以最好把大小改回100%。
+
+00:23:45.640 --> 00:23:47.890
+So now I see the balloon.
+现在我能看到气球了。
+
+00:23:47.890 --> 00:23:50.420
+It gets bigger and then it disappears.
+它会变大，然后消失。
+
+00:23:50.420 --> 00:23:55.030
+And I can press the green flag, and I see the same thing happen again.
+我可以按下绿旗，然后会看到同样的事情再次发生。
+
+00:23:55.030 --> 00:23:57.820
+Every time I click the green flag, we show the balloon again,
+每次我点击绿旗，我们都会再次显示气球，
+
+00:23:57.820 --> 00:24:01.750
+set its size back to 100%, then we let it repeat, growing and growing
+把它的大小恢复到100%，然后让它不断重复，越变越大
+
+00:24:01.750 --> 00:24:05.410
+and growing before we hide the balloon and play the sound "pop"
+在我们隐藏气球并播放“砰”的声音之前一直变大
+
+00:24:05.410 --> 00:24:08.320
+until that sound is done.
+直到那个声音播放完毕。
+
+00:24:08.320 --> 00:24:12.170
+And this allows me to repeat the process of growing the balloon.
+这样我就可以重复让气球变大的过程。
+
+00:24:12.170 --> 00:24:14.230
+And to what size does it grow?
+它会变大到什么尺寸呢？
+
+00:24:14.230 --> 00:24:17.350
+Well, we're changing the size by 10 every time,
+嗯，我们每次把大小改变10，
+
+00:24:17.350 --> 00:24:20.013
+and we're repeating that process 10 times,
+并且我们要重复这个过程10次，
+
+00:24:20.013 --> 00:24:22.180
+so I could do the math in my head and say, OK, we're
+所以我可以在脑子里算一下，然后说，好的，我们
+
+00:24:22.180 --> 00:24:24.220
+going to get up to a size of 200.
+会把大小增加到200。
+
+00:24:24.220 --> 00:24:26.110
+What if I wanted the size to be bigger?
+如果我想让气球变得更大呢？
+
+00:24:26.110 --> 00:24:31.000
+What if I wanted to let the balloon grow up to size 250, for example?
+比如说，如果我想让气球变大到尺寸250呢？
+
+00:24:31.000 --> 00:24:34.720
+Well, I could do the math again and say, all right, we're starting at size 100.
+嗯，我可以再算一下，然后说，好吧，我们从尺寸100开始。
+
+00:24:34.720 --> 00:24:36.970
+I want to get up to 250.
+我想让它达到250。
+
+00:24:36.970 --> 00:24:39.700
+And if we're changing the size by 10 every time,
+如果我们每次把大小改变10，
+
+00:24:39.700 --> 00:24:43.240
+then I'm going to calculate that's 15 repetitions to get it up there.
+那么我要算出需要重复15次才能达到那个尺寸。
+
+00:24:43.240 --> 00:24:44.050
+And I can try that.
+我可以试试看。
+
+00:24:47.750 --> 00:24:52.220
+And yeah, it does seem to get to 250, but I had to do a lot of math on my own
+没错，它似乎确实能达到250，但我得自己做很多计算
+
+00:24:52.220 --> 00:24:54.860
+to figure that out, to figure out, OK, 15, that's
+才能弄明白，好的，15次，这就是
+
+00:24:54.860 --> 00:24:57.890
+the number of times I would like for this code to repeat.
+我希望这段代码重复的次数。
+
+00:24:57.890 --> 00:25:00.620
+There is one other type of loop that I'll introduce finally
+最后我要介绍另一种循环
+
+00:25:00.620 --> 00:25:03.440
+as one final block for today that can sometimes
+作为今天最后一个积木，它有时能
+
+00:25:03.440 --> 00:25:05.330
+make our logic a little bit easier.
+让我们的逻辑稍微简单一些。
+
+00:25:05.330 --> 00:25:08.750
+And that's this block here, "repeat until",
+就是这个“重复直到”积木，
+
+00:25:08.750 --> 00:25:14.090
+and this block effectively tries to combine a loop and a condition.
+这个积木实际上是把循环和条件结合在了一起。
+
+00:25:14.090 --> 00:25:16.850
+We're going to repeat some blocks, not a fixed number of times,
+我们要重复一些积木，不是固定的次数，
+
+00:25:16.850 --> 00:25:22.850
+not five times, 10 times, 20 times, but until some question is answered true.
+不是5次、10次、20次，而是直到某个问题的答案为真。
+
+00:25:22.850 --> 00:25:26.600
+And notice this hexagon-shaped opening is the same as the shape that we saw
+注意这个六边形的开口和我们看到的
+
+00:25:26.600 --> 00:25:29.820
+in those "if" blocks and the "if-else" blocks, for example.
+比如那些“如果”积木和“如果-否则”积木的形状是一样的。
+
+00:25:29.820 --> 00:25:32.750
+So what this is going to do is repeat some code
+这段代码的作用是重复执行某些代码
+
+00:25:32.750 --> 00:25:36.660
+until the answer to some question is true.
+直到某个问题的答案为真。
+
+00:25:36.660 --> 00:25:41.480
+So if I want the balloon to keep growing until it gets to a size of 250,
+所以，如果我想让气球一直变大，直到尺寸达到250，
+
+00:25:41.480 --> 00:25:44.630
+then I don't have to do the math and say, OK, that's going to be 15.
+那我就不用去算，然后说“好的，那要执行15次”。
+
+00:25:44.630 --> 00:25:49.280
+I can just say repeat until, drag the equals sign out,
+我只要说“重复直到”，把等号拖出来，
+
+00:25:49.280 --> 00:25:58.950
+and I'm going to repeat until the size is equal to 250.
+然后我要重复执行，直到尺寸等于250。
+
+00:25:58.950 --> 00:26:02.200
+And now I'll take this code that was in the old loop, bring it into the repeat
+现在我把旧循环里的代码拿出来，放到“重复直到”
+
+00:26:02.200 --> 00:26:06.660
+until block, get rid of my old repeat.
+积木里，去掉原来的“重复”积木。
+
+00:26:06.660 --> 00:26:09.170
+And this is my new code.
+这就是我的新代码。
+
+00:26:09.170 --> 00:26:12.680
+I show the balloon, set its size to 100%,
+我显示气球，把它的尺寸设为100%，
+
+00:26:12.680 --> 00:26:15.470
+we're going to keep repeating until the size is 250.
+我们会一直重复，直到尺寸达到250。
+
+00:26:15.470 --> 00:26:18.620
+I don't know in advance necessarily how long that's going to take,
+我不一定事先知道这要花多长时间，
+
+00:26:18.620 --> 00:26:21.950
+but we're going to just keep repeating the code until that's true.
+但我们会一直重复执行代码，直到条件为真。
+
+00:26:21.950 --> 00:26:26.300
+We're going to change the size, wait 0.2 seconds, and then at the very end
+我们要改变尺寸，等待0.2秒，然后最后
+
+00:26:26.300 --> 00:26:30.390
+hide our balloon and play that pop sound.
+隐藏气球并播放爆炸音效。
+
+00:26:30.390 --> 00:26:37.660
+And so I can press the flag, and you see the balloon grow and grow,
+我点击绿旗，你会看到气球越变越大，
+
+00:26:37.660 --> 00:26:42.080
+and once it reaches 250, at that point the balloon disappears.
+一旦它达到250，这时气球就消失了。
+
+00:26:42.080 --> 00:26:45.890
+So three different types of loops that we've been able to explore today.
+所以今天我们探索了三种不同类型的循环。
+
+00:26:45.890 --> 00:26:49.510
+One is the forever loop, that takes some blocks and repeats them over and over,
+一种是“无限循环”，它会把一些积木反复执行，
+
+00:26:49.510 --> 00:26:51.940
+infinitely, until we stop the program.
+无限次，直到我们停止程序。
+
+00:26:51.940 --> 00:26:55.150
+One is the repeat block, which repeats a fixed number of times.
+一种是“重复”积木，它会重复固定的次数。
+
+00:26:55.150 --> 00:26:57.910
+I can say do this five times or 10 times or 20 times.
+我可以说执行这个操作五次、十次或者二十次。
+
+00:26:57.910 --> 00:27:01.987
+And then, finally, the repeat until block that combines some of the ideas
+最后，是“重复直到”积木，它结合了一些
+
+00:27:01.987 --> 00:27:04.570
+that we've been taking a look at today, looking at the ability
+我们今天看到的概念，也就是具备
+
+00:27:04.570 --> 00:27:08.470
+to repeat until a particular question is answered true.
+重复执行直到某个特定问题的答案为真的能力。
+
+00:27:08.470 --> 00:27:10.480
+And using those loops, we have the ability
+通过使用这些循环，我们能够
+
+00:27:10.480 --> 00:27:12.730
+to make our programs even more interesting.
+让我们的程序变得更有趣。
+
+00:27:12.730 --> 00:27:15.010
+Rather than have to click a button multiple times
+而不是要多次点击按钮，
+
+00:27:15.010 --> 00:27:17.080
+and repeat ourselves with code multiple times,
+多次重复编写相同的代码，
+
+00:27:17.080 --> 00:27:21.537
+we can let the code repeat itself just via the use of these loops.
+我们可以通过使用这些循环让代码自动重复执行。
+
+00:27:21.537 --> 00:27:24.370
+That's it for an introduction to Programming with Scratch for today.
+今天的Scratch编程入门就讲到这里。
+
+00:27:24.370 --> 00:27:26.995
+We have a couple more opportunities to take a look at what else
+我们还有几次机会来看看
+
+00:27:26.995 --> 00:27:28.150
+we can do with Scratch.
+用Scratch还能做些什么。
+
+00:27:28.150 --> 00:27:30.450
+So we'll see you next time.
+那我们下次再见。

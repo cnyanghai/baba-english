@@ -1,0 +1,2577 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.960
+[MUSIC PLAYING]
+[音乐播放中]
+
+00:00:17.033 --> 00:00:19.200
+BRIAN YU: Welcome back, everyone, to An Introduction
+布莱恩·余：欢迎大家回到《用Scratch学编程》课程。
+
+00:00:19.200 --> 00:00:20.430
+to Programming with Scratch.
+到目前为止，在Scratch里，我们已经看到Scratch程序
+
+00:00:20.430 --> 00:00:23.220
+And so far, in Scratch, we've seen our Scratch programs
+会使用各种各样不同的值。
+
+00:00:23.220 --> 00:00:25.350
+use a variety of different values.
+这些值可以记录角色的朝向，或者角色的大小。
+
+00:00:25.350 --> 00:00:28.890
+Values that keep track of what direction a sprite is pointing in, or how big,
+比如，它的位置。
+
+00:00:28.890 --> 00:00:30.420
+or how small the sprite is.
+这些都是存储在我们Scratch程序里的信息片段，
+
+00:00:30.420 --> 00:00:31.930
+Where it is, for example.
+我们可以在程序里稍后用这些信息来做决策，
+
+00:00:31.930 --> 00:00:35.940
+And these are all pieces of information stored inside of our Scratch program
+或者让程序表现出不同的行为。
+
+00:00:35.940 --> 00:00:39.210
+that we can use later in our program to make decisions,
+但有时候，随着我们的程序变得更复杂一些，
+
+00:00:39.210 --> 00:00:42.150
+or to make our program behave in different ways.
+我们也会想在程序里存储其他信息，
+
+00:00:42.150 --> 00:00:45.070
+But sometimes, as our programs get a little bit more complex,
+由我们来决定要在程序里存储哪些信息，
+
+00:00:45.070 --> 00:00:48.540
+we will want to store other pieces of information inside of our program
+以及之后如何使用这些信息。
+
+00:00:48.540 --> 00:00:52.320
+as well where we decide what information gets stored in our program,
+在编程领域，我们会开始把这些叫做变量。
+
+00:00:52.320 --> 00:00:55.320
+and how we use that information later on.
+今天，我们会在Scratch里探索变量，
+
+00:00:55.320 --> 00:00:58.680
+And we're going to start to call these variables in the world of programming.
+以及我们该如何使用它们。
+
+00:00:58.680 --> 00:01:01.140
+And today, we'll explore variables in Scratch,
+所以我像之前一样，先打开Scratch。
+
+00:01:01.140 --> 00:01:03.460
+and how it is that we can use them.
+这里有一个我们还没看过的标签页，
+
+00:01:03.460 --> 00:01:06.142
+So I'll go ahead and open up Scratch here as we have before.
+也就是这个“变量”标签页。
+
+00:01:06.142 --> 00:01:08.100
+And there's one tab here that we haven't looked
+你可以把变量想成一个值。
+
+00:01:08.100 --> 00:01:11.220
+at yet, which is this Variables tab.
+它是我们Scratch程序里的一个容器，
+
+00:01:11.220 --> 00:01:14.220
+And a variable you can think of as just some value.
+用来存储一些信息。
+
+00:01:14.220 --> 00:01:16.710
+Some container inside of our Scratch program
+这些信息我们之后在程序里也可能会用到。
+
+00:01:16.710 --> 00:01:18.990
+that's going to store some information.
+那么，举个例子，假设我想
+
+00:01:18.990 --> 00:01:24.130
+Information that we might be able to use later inside of our program as well.
+创建一个程序来记录我点击这只猫的次数。
+
+00:01:24.130 --> 00:01:26.310
+And so, for example, let's imagine I was trying
+要做到这一点，我需要一些信息，
+
+00:01:26.310 --> 00:01:31.740
+to create a program that kept track of how many times I've clicked on the cat.
+也就是我Scratch程序里的一个容器，
+
+00:01:31.740 --> 00:01:34.350
+So to do that, I want some piece of information,
+来记录我点击这只猫的次数。
+
+00:01:34.350 --> 00:01:37.320
+some container inside of my Scratch program, that's keeping
+要做到这一点，我会点击这个“新建变量”按钮，
+
+00:01:37.320 --> 00:01:40.500
+track of how many times I've clicked on the cat.
+这样就能创建一个新的变量，一条新的信息，
+
+00:01:40.500 --> 00:01:43.800
+And to do that, I'll click on this Make a Variable button
+我想把它存储在我的程序里。
+
+00:01:43.800 --> 00:01:47.190
+that will let me create a new variable, a new piece of information,
+当我创建一个新变量时，我需要做两个决定。
+
+00:01:47.190 --> 00:01:49.598
+that I would like to store inside of my program.
+一个是这个变量的名称。
+
+00:01:49.598 --> 00:01:51.390
+And when I create a new variable, there are
+比如，我把它叫做“count”，因为我
+
+00:01:51.390 --> 00:01:53.700
+two things that I need to decide on.
+要统计我点击这只猫的次数。
+
+00:01:53.700 --> 00:01:55.650
+One is the name of that variable.
+我需要做的第二个决定是，这个变量是供所有角色使用，
+
+00:01:55.650 --> 00:01:58.590
+And I'll call this, count, for example because I'm
+还是仅供这个角色使用？
+
+00:01:58.590 --> 00:02:02.190
+going to be counting how many times I've clicked on the cat.
+我要统计我点击这只猫的次数。
+
+00:02:02.190 --> 00:02:06.570
+And the second decision I need to make is is this variable for all sprites,
+我需要做的第二个决定是，这个变量是供所有角色使用，
+
+00:02:06.570 --> 00:02:08.310
+or for this sprite only?
+还是仅供这个角色使用？
+
+00:02:08.310 --> 00:02:10.479
+So there are two different types of variables.
+所以有两种不同类型的变量。
+
+00:02:10.479 --> 00:02:13.110
+If I have a variable that's for all sprites,
+如果我有一个供所有角色使用的变量，
+
+00:02:13.110 --> 00:02:17.580
+that means that any sprite is allowed to use or modify that variable.
+这意味着任何角色都可以使用或修改这个变量。
+
+00:02:17.580 --> 00:02:19.440
+We often call this a global variable.
+我们通常把这叫做全局变量。
+
+00:02:19.440 --> 00:02:21.870
+Everyone can use that variable.
+每个角色都可以使用这个变量。
+
+00:02:21.870 --> 00:02:24.420
+Or we can have a variable that's for this sprite only.
+或者我们可以有一个仅供这个角色使用的变量。
+
+00:02:24.420 --> 00:02:25.560
+That's only for the cat.
+这只供这只猫使用。
+
+00:02:25.560 --> 00:02:27.750
+Nobody else is going to get to touch it.
+其他角色都不能碰它。
+
+00:02:27.750 --> 00:02:29.790
+That's what we often call a local variable.
+这就是我们通常所说的局部变量。
+
+00:02:29.790 --> 00:02:32.550
+Other sprites don't have the ability to use it.
+其他角色没有使用它的权限。
+
+00:02:32.550 --> 00:02:34.840
+For now, we'll go ahead and use for all spites only.
+目前，我们先只使用供所有角色使用的变量。
+
+00:02:34.840 --> 00:02:36.520
+And we'll see why in just a moment.
+我们马上就会明白为什么要这样。
+
+00:02:36.520 --> 00:02:39.540
+And that is the default. When you normally create a variable in Scratch,
+这是默认设置。当你在Scratch里正常创建一个变量时，
+
+00:02:39.540 --> 00:02:43.600
+any sprite is going to have the ability to use it.
+任何角色都可以使用它。
+
+00:02:43.600 --> 00:02:46.200
+So I've created a new variable called, count.
+所以我创建了一个新变量，叫做“count”（计数）。
+
+00:02:46.200 --> 00:02:48.960
+And you'll notice that by default it's checked here.
+你会注意到默认情况下这里是勾选状态。
+
+00:02:48.960 --> 00:02:51.490
+You see the little mark on the left hand side.
+你看左边的小标记。
+
+00:02:51.490 --> 00:02:54.270
+And what you might have noticed is that on the stage
+你可能已经注意到，在舞台上
+
+00:02:54.270 --> 00:02:58.260
+we see something appear in the upper left portion of the stage that's
+舞台左上角出现了一些东西，它
+
+00:02:58.260 --> 00:03:01.800
+just reporting to me what the current value of the count is.
+只是在向我报告“count”的当前值是多少。
+
+00:03:01.800 --> 00:03:05.880
+What information is stored inside of that container.
+也就是那个容器里存储了什么信息。
+
+00:03:05.880 --> 00:03:09.360
+And right now, I see that's stored inside of my count variable
+现在，我看到存储在我的“count”变量里的
+
+00:03:09.360 --> 00:03:10.710
+is the number 0.
+是数字0。
+
+00:03:10.710 --> 00:03:13.090
+That's what happens to be there to begin with.
+一开始就是这个值。
+
+00:03:13.090 --> 00:03:15.090
+If I don't want to see that, I could uncheck it.
+如果我不想看到它，我可以取消勾选。
+
+00:03:15.090 --> 00:03:19.320
+And then I wouldn't see the count appear on the stage at all.
+那样我就完全看不到“count”在舞台上显示了。
+
+00:03:19.320 --> 00:03:21.570
+But here's what I want to have happen.
+但我希望发生下面这种情况。
+
+00:03:21.570 --> 00:03:23.590
+Every time the cat is clicked--
+每次点击这只猫时——
+
+00:03:23.590 --> 00:03:26.370
+so when this sprite clicked, that's the event that I want--
+也就是当这个角色被点击时，这就是我想要的事件——
+
+00:03:26.370 --> 00:03:31.800
+I'm going to go into variables and change the count by one.
+我要进入变量模块，让“count”的值加1。
+
+00:03:31.800 --> 00:03:34.440
+Change count by one means take that variable count
+“让count加1”的意思是，针对“count”这个变量
+
+00:03:34.440 --> 00:03:37.170
+and add 1 to whatever number is currently
+给当前存储在这个变量里的任何数字
+
+00:03:37.170 --> 00:03:41.070
+being stored inside of that variable.
+都加上1。
+
+00:03:41.070 --> 00:03:45.510
+And then let's not say, hello, for two seconds.
+然后我们先不说“你好”两秒钟了。
+
+00:03:45.510 --> 00:03:47.640
+But whenever you create a variable, you suddenly
+但每当你创建一个变量时，你会突然
+
+00:03:47.640 --> 00:03:49.770
+get this variable block that appears here
+看到这里出现一个变量积木，
+
+00:03:49.770 --> 00:03:52.330
+that you can drag into your program.
+你可以把它拖到你的程序里。
+
+00:03:52.330 --> 00:03:54.270
+Let's say the count for--
+让它说出“count”的值持续——
+
+00:03:54.270 --> 00:03:54.960
+not two seconds.
+不是两秒钟。
+
+00:03:54.960 --> 00:03:57.610
+Let's say for one second, for example.
+比如说持续一秒钟。
+
+00:03:57.610 --> 00:04:01.260
+So now, when I click on the cat, the cat says one.
+所以现在，当我点击这只猫时，猫会说“一”。
+
+00:04:01.260 --> 00:04:04.020
+Click again, the cat says two.
+再点击一次，猫会说“二”。
+
+00:04:04.020 --> 00:04:05.230
+Now it says three.
+现在它说“三”。
+
+00:04:05.230 --> 00:04:10.020
+Every time I click on it, we're updating the value of that count variable.
+每次我点击它，我们都在更新那个计数变量的值。
+
+00:04:10.020 --> 00:04:13.112
+And the cat is saying whatever its value is.
+然后猫会说出它的值是多少。
+
+00:04:13.112 --> 00:04:14.820
+And I can check this count checkbox to be
+我可以勾选这个计数复选框，以便
+
+00:04:14.820 --> 00:04:19.529
+able to see right now count happens to be equal to the number seven.
+能看到现在计数恰好等于数字“七”。
+
+00:04:19.529 --> 00:04:21.360
+And when I click the count Again, now you
+当我再次点击计数，现在你
+
+00:04:21.360 --> 00:04:24.360
+see the count update to be the number eight.
+会看到计数更新为数字“八”。
+
+00:04:24.360 --> 00:04:28.320
+And so these variables give you the ability to keep track of information.
+所以这些变量让你能够记录信息。
+
+00:04:28.320 --> 00:04:30.880
+And you might keep track of information in a number of ways.
+你可以用很多种方式来记录信息。
+
+00:04:30.880 --> 00:04:33.490
+And we'll explore some of those ways today.
+今天我们将探索其中的一些方式。
+
+00:04:33.490 --> 00:04:36.780
+But right now, every time I click on the cat, the count is going up, and up,
+但现在，每次我点击这只猫，计数就会一直往上，往上，
+
+00:04:36.780 --> 00:04:37.320
+and up.
+再往上。
+
+00:04:37.320 --> 00:04:40.050
+And there is no way for me to reset this thing.
+我没办法重置这个东西。
+
+00:04:40.050 --> 00:04:43.350
+If I keep pressing the count, the count is going to keep going up.
+如果我一直点击计数，计数会一直往上增加。
+
+00:04:43.350 --> 00:04:45.330
+But it's never going back to 0.
+但它永远不会回到 0。
+
+00:04:45.330 --> 00:04:48.240
+So let's add the ability to reset my program.
+所以让我们添加重置程序的功能。
+
+00:04:48.240 --> 00:04:52.620
+Maybe a button that lets me reset the count back to 0.
+也许弄个按钮，让我能把计数重置回 0。
+
+00:04:52.620 --> 00:04:53.940
+And how would that work?
+那该怎么做呢？
+
+00:04:53.940 --> 00:04:57.180
+Well, a button is going to be a new sprite.
+嗯，按钮会是一个新角色。
+
+00:04:57.180 --> 00:05:01.040
+So I go down below, and choose a new sprite to add.
+所以我往下，选择添加一个新角色。
+
+00:05:01.040 --> 00:05:04.760
+And let's add this button here.
+我们就添加这里这个按钮。
+
+00:05:04.760 --> 00:05:07.010
+I'll drag it to the corner.
+我把它拖到角落里。
+
+00:05:07.010 --> 00:05:09.220
+And I want to change what the button says.
+我想改一下按钮上的文字。
+
+00:05:09.220 --> 00:05:13.190
+So we'll go into costumes, and let's add some text.
+所以我们进入造型，然后添加一些文字。
+
+00:05:13.190 --> 00:05:17.960
+And the text is going to say, "Reset."
+文字要写成“重置”。
+
+00:05:17.960 --> 00:05:21.200
+It should change the color of that text.
+应该改变一下文字的颜色。
+
+00:05:21.200 --> 00:05:24.390
+We;ll make it black text.
+我们把它改成黑色文字。
+
+00:05:24.390 --> 00:05:25.890
+And let's make it a little larger.
+再把它放大一点。
+
+00:05:30.100 --> 00:05:33.720
+So now I have a button to reset the count.
+所以现在我有了一个重置计数的按钮。
+
+00:05:33.720 --> 00:05:37.950
+And now what do I want to have happen when this sprite is clicked on?
+现在，当点击这个角色时，我希望发生什么呢？
+
+00:05:37.950 --> 00:05:39.780
+When the reset button is clicked?
+当点击重置按钮时呢？
+
+00:05:39.780 --> 00:05:45.920
+Let's go into variables, and let's set the count to 0.
+我们进入变量，把计数设为 0。
+
+00:05:45.920 --> 00:05:48.740
+And so because this variable I said should
+因为我设置的这个变量
+
+00:05:48.740 --> 00:05:52.440
+be accessible by all of the sprite, it's a global variable,
+所有角色都能访问，它是一个全局变量，
+
+00:05:52.440 --> 00:05:55.910
+it means both the cat sprite and the button sprite
+这意味着猫角色和按钮角色
+
+00:05:55.910 --> 00:05:57.710
+are allowed to use that variable.
+都可以使用那个变量。
+
+00:05:57.710 --> 00:06:01.620
+They can both make reference to that count variable.
+它们都可以引用那个计数变量。
+
+00:06:01.620 --> 00:06:04.160
+And here, I'm using set count to 0.
+在这里，我用的是将计数设为 0。
+
+00:06:04.160 --> 00:06:08.420
+Meaning take the number 0, and put that inside of the container.
+意思是取数字0，然后把它放进这个容器里。
+
+00:06:08.420 --> 00:06:12.530
+That's different from change count by, which adds or subtracts
+这和“将计数增加”不同，“将计数增加”是进行加或减操作。
+
+00:06:12.530 --> 00:06:15.440
+a number from one particular variable.
+对某一个特定变量加上或减去一个数字。
+
+00:06:15.440 --> 00:06:19.610
+Here, I'm just saying whatever value the count has now, ignore that and instead
+在这里，我只是说不管计数现在的值是多少，都忽略它，然后
+
+00:06:19.610 --> 00:06:24.010
+put the value 0 inside of the count instead.
+把值0放进计数这个变量里。
+
+00:06:24.010 --> 00:06:28.990
+And so now at this point, I can keep clicking on the cat.
+所以现在，我可以继续点击这只猫。
+
+00:06:28.990 --> 00:06:31.840
+Count goes up to 9, and then to 10.
+计数增加到9，然后到10。
+
+00:06:31.840 --> 00:06:34.460
+But watch what happens when I click the Reset button.
+但是看看我点击重置按钮时会发生什么。
+
+00:06:34.460 --> 00:06:38.320
+When I click Reset, you'll notice the count goes back to 0.
+当我点击重置时，你会注意到计数回到了0。
+
+00:06:38.320 --> 00:06:41.170
+And now the next time that I click on the cat, now the cat
+现在，下次我点击这只猫时，这只猫
+
+00:06:41.170 --> 00:06:45.830
+is going to say one, and then two, and then three.
+会说1，然后是2，然后是3。
+
+00:06:45.830 --> 00:06:49.680
+So these variables now give us the ability to keep track of information.
+所以这些变量现在让我们能够跟踪信息。
+
+00:06:49.680 --> 00:06:50.990
+But what can we use that for?
+但我们能用它来做什么呢？
+
+00:06:50.990 --> 00:06:52.640
+How is that helpful to us?
+这对我们有什么帮助呢？
+
+00:06:52.640 --> 00:06:55.340
+Well, you might imagine that we could use this inside of a game.
+嗯，你可以想象我们可以在游戏里使用这个。
+
+00:06:55.340 --> 00:06:58.722
+In many games you might have played, for example, on a phone or on a computer,
+在你玩过的很多游戏中，比如在手机或电脑上玩的游戏，
+
+00:06:58.722 --> 00:07:00.680
+you might have had the game keep score for you.
+游戏可能会为你记录分数。
+
+00:07:00.680 --> 00:07:04.170
+It's keeping track of how many points you've earned in the game for example.
+例如，它会跟踪你在游戏中获得了多少分。
+
+00:07:04.170 --> 00:07:06.470
+And it goes up, and up, and up as you earn points.
+随着你得分，分数会一直往上涨。
+
+00:07:06.470 --> 00:07:09.110
+We can achieve that by using a variable.
+我们可以通过使用变量来实现这一点。
+
+00:07:09.110 --> 00:07:12.830
+We can have a variable that's keeping track of what score we have in a game.
+我们可以有一个变量来跟踪我们在游戏中的分数。
+
+00:07:12.830 --> 00:07:16.860
+And we update that variable as the score changes.
+并且随着分数变化，我们更新这个变量。
+
+00:07:16.860 --> 00:07:17.840
+So let's build a game.
+那么让我们来制作一个游戏。
+
+00:07:17.840 --> 00:07:20.660
+I'm going to delete these sprites for now.
+我现在要删除这些角色。
+
+00:07:20.660 --> 00:07:22.940
+And I'm also going to delete the count variable, which
+我也要删除计数这个变量，
+
+00:07:22.940 --> 00:07:24.980
+I can do by control clicking on Count.
+我可以通过按住Ctrl键点击“计数”来操作。
+
+00:07:24.980 --> 00:07:27.690
+And just saying delete the count variable.
+然后选择删除计数变量。
+
+00:07:27.690 --> 00:07:29.270
+Now that goes away.
+现在它就没了。
+
+00:07:29.270 --> 00:07:34.590
+Let's create a game using the hedgehog.
+让我们用刺猬来制作一个游戏。
+
+00:07:34.590 --> 00:07:36.270
+So here's our hedgehog.
+这就是我们的刺猬。
+
+00:07:36.270 --> 00:07:40.500
+And I'll do something similar to what I did with the fish last time.
+我要做一些和上次对鱼做的类似的事情。
+
+00:07:40.500 --> 00:07:43.380
+I'll say when the green flag is clicked, let's
+我说当点击绿色旗帜时，让我们
+
+00:07:43.380 --> 00:07:50.940
+have it forever point towards the mouse pointer, and move five steps.
+让它永远指向鼠标指针，然后移动5步。
+
+00:07:50.940 --> 00:07:52.680
+We've seen this kind of code before.
+我们之前见过这种代码。
+
+00:07:52.680 --> 00:07:55.290
+What this is going to do is when I press the green flag,
+这会产生的效果是，当我按下绿色旗帜时，
+
+00:07:55.290 --> 00:07:57.000
+the hedgehog is going to start moving.
+刺猬会开始移动。
+
+00:07:57.000 --> 00:08:00.480
+And it's just constantly going to be following the cursor forever.
+并且它会永远持续跟踪光标。
+
+00:08:00.480 --> 00:08:02.820
+It's going to point towards my mouse cursor,
+它会指向我的鼠标光标，
+
+00:08:02.820 --> 00:08:07.290
+and then it's going to move five steps towards me.
+然后朝我移动5步。
+
+00:08:07.290 --> 00:08:08.498
+So that works well.
+这样效果不错。
+
+00:08:08.498 --> 00:08:09.790
+But let's now make this a game.
+但现在让我们把它变成一个游戏。
+
+00:08:09.790 --> 00:08:11.340
+What is the hedgehog trying to do?
+刺猬想要做什么呢？
+
+00:08:11.340 --> 00:08:13.390
+Well, maybe it's trying to chase after something.
+嗯，也许它想追逐某个东西。
+
+00:08:13.390 --> 00:08:15.210
+What's it going to chase after?
+它要去追什么呢？
+
+00:08:15.210 --> 00:08:17.280
+Let me choose a new sprite.
+让我选一个新角色。
+
+00:08:17.280 --> 00:08:23.740
+Let's go ahead and pick the star.
+我们就选星星吧。
+
+00:08:23.740 --> 00:08:28.100
+We'll have the hedgehog chasing after this star here.
+我们让刺猬来追这里的这颗星星。
+
+00:08:28.100 --> 00:08:30.410
+And how is the star going to work?
+那星星要怎么运作呢？
+
+00:08:30.410 --> 00:08:34.429
+Well, the star is going to work where if the hedgehog is ever touching the star,
+嗯，星星的运作方式是，如果刺猬碰到了星星，
+
+00:08:34.429 --> 00:08:37.070
+then we're going to increase our score by one.
+那么我们就把分数加一。
+
+00:08:37.070 --> 00:08:39.289
+We're keeping track of how many points we've earned.
+我们要记录自己得了多少分。
+
+00:08:39.289 --> 00:08:41.240
+So to do that, I need a new variable.
+所以要做到这一点，我需要一个新变量。
+
+00:08:41.240 --> 00:08:46.010
+I'll go into Variables, I'll make a new variable that I will call Score.
+我要进入“变量”，创建一个新变量，我把它叫做“分数”。
+
+00:08:46.010 --> 00:08:47.120
+And press OK.
+然后点击“确定”。
+
+00:08:47.120 --> 00:08:50.810
+So I now have this new variable called Score.
+现在我有了这个叫“分数”的新变量。
+
+00:08:50.810 --> 00:08:55.230
+And for the star I'm going to say, when the green flag is clicked,
+对于星星，我要说，当点击绿色旗帜时，
+
+00:08:55.230 --> 00:09:01.690
+I want the star to forever be checking if we're touching the hedgehog.
+我希望星星一直检查是否碰到了刺猬。
+
+00:09:01.690 --> 00:09:03.280
+Side add an if statement.
+旁边添加一个“如果”语句。
+
+00:09:03.280 --> 00:09:07.760
+And then under sensing, check not if we're touching the mouse pointer,
+然后在“侦测”里，不是检查是否碰到鼠标指针，
+
+00:09:07.760 --> 00:09:10.430
+but if we're touching the hedgehog.
+而是检查是否碰到刺猬。
+
+00:09:10.430 --> 00:09:13.430
+So the star is going to constantly check if we're touching the hedgehog.
+所以星星会不断检查是否碰到了刺猬。
+
+00:09:13.430 --> 00:09:17.120
+And if we are touching the hedgehog, then under variables,
+如果碰到了刺猬，那么在“变量”里，
+
+00:09:17.120 --> 00:09:19.598
+I'm going to change not my variable, which
+我不会改变我的变量，那个变量是
+
+00:09:19.598 --> 00:09:21.890
+is a variable that's created for you automatically when
+你第一次创建Scratch程序时自动为你创建的，我要把分数加一。
+
+00:09:21.890 --> 00:09:28.000
+you first create your Scratch program, but I want to change the score by one.
+把分数加一之后，让星星移动到一个随机位置。
+
+00:09:28.000 --> 00:09:33.430
+And after you change the score by one, let's go to a random position.
+为了让游戏更有趣，每次分数加一之后，星星就会移动。
+
+00:09:33.430 --> 00:09:35.890
+To keep things interesting, the star will just move around
+现在我们可以试试玩这个游戏了。
+
+00:09:35.890 --> 00:09:39.390
+after we increase the score by one.
+我来玩这个游戏。
+
+00:09:39.390 --> 00:09:41.640
+So now we can try playing the game.
+刺猬在跟着我跑。
+
+00:09:41.640 --> 00:09:42.840
+I'll play the game.
+看看我碰到星星时会发生什么。
+
+00:09:42.840 --> 00:09:44.790
+The hedgehog's following me around.
+你会发现分数马上就加一了。
+
+00:09:44.790 --> 00:09:49.560
+And watch what happens when I end up going to the star.
+你还会发现星星移动到了另一个随机位置。
+
+00:09:49.560 --> 00:09:52.770
+You'll notice that immediately the score went up by one.
+现在我再碰到星星时，分数就变成两分了。
+
+00:09:52.770 --> 00:09:56.910
+And you'll also notice that the star moved to a different random location.
+星星又移动了。
+
+00:09:56.910 --> 00:09:59.610
+Now when I get to the star again, the score goes up to two.
+我这儿就有了一个小游戏。
+
+00:09:59.610 --> 00:10:01.320
+And the star moves.
+每次我四处移动，最后碰到星星，
+
+00:10:01.320 --> 00:10:02.820
+And I have a little game here.
+分数就会增加。
+
+00:10:02.820 --> 00:10:10.010
+Every time I move around, we end up going to the star
+那么我还想给这个游戏添加点什么呢？
+
+00:10:10.010 --> 00:10:13.220
+and increasing the number of points.
+并增加积分数量。
+
+00:10:13.220 --> 00:10:14.650
+So what do I want to add to this?
+那么我想给这个添加些什么呢？
+
+00:10:14.650 --> 00:10:16.580
+What should I change about this?
+我该对这个做些什么改变呢？
+
+00:10:16.580 --> 00:10:18.670
+Well, one thing I should probably change is
+嗯，我可能要改变的一件事是
+
+00:10:18.670 --> 00:10:20.890
+that when the program begins, when I press
+当程序开始时，当我第一次按下
+
+00:10:20.890 --> 00:10:23.560
+the green flag for the very first time, I probably
+绿色旗帜时，我可能
+
+00:10:23.560 --> 00:10:25.900
+want to reset the score back to 0.
+想把分数重置回0。
+
+00:10:25.900 --> 00:10:29.260
+In most games you play when you play it again, the score goes back to 0,
+在大多数游戏里，当你重新玩时，分数会回到0，
+
+00:10:29.260 --> 00:10:32.000
+and you have to start earning points from the beginning again.
+你就得重新从一开始赚取分数。
+
+00:10:32.000 --> 00:10:34.450
+So I can say when the green flag is clicked,
+所以我可以说当绿色旗帜被点击时，
+
+00:10:34.450 --> 00:10:40.090
+before the forever loop happens I want to set the score to 0.
+在无限循环开始之前，我想把分数设为0。
+
+00:10:40.090 --> 00:10:43.160
+Notice this line should not be inside of the forever loop.
+注意这一行不应该在无限循环里面。
+
+00:10:43.160 --> 00:10:46.300
+Otherwise, it's going to forever be resetting the score back to 0,
+否则，它会一直把分数重置回0，
+
+00:10:46.300 --> 00:10:47.540
+which is not what I want.
+这不是我想要的。
+
+00:10:47.540 --> 00:10:51.040
+I want the score to be set to 0 at the very beginning of the program.
+我想在程序刚开始时把分数设为0。
+
+00:10:51.040 --> 00:10:54.670
+But after that, then I want to go into this forever loop
+但在那之后，我就想进入这个无限循环
+
+00:10:54.670 --> 00:10:56.830
+where the hedgehog is going to be following me.
+让刺猬跟着我。
+
+00:10:56.830 --> 00:10:59.980
+So now the score goes back to 0 when I press the green flag.
+所以现在我按下绿色旗帜时分数会回到0。
+
+00:10:59.980 --> 00:11:04.650
+And I can start earning points again.
+我又可以开始赚取分数了。
+
+00:11:04.650 --> 00:11:06.002
+Now how do I win this game?
+现在我怎么赢这个游戏呢？
+
+00:11:06.002 --> 00:11:08.460
+Now I'm just earning points and nothing's really happening.
+现在我只是在赚取分数，没什么实际的事情发生。
+
+00:11:08.460 --> 00:11:12.082
+Well, maybe I win the game once I get to a certain number of points.
+嗯，也许我拿到一定分数时就算赢了游戏。
+
+00:11:12.082 --> 00:11:13.290
+That sounds like a condition.
+这听起来像个条件。
+
+00:11:13.290 --> 00:11:17.310
+Once I get to a situation where I have maybe 10 points,
+一旦我达到比如有10分的情况，
+
+00:11:17.310 --> 00:11:19.980
+we can call that winning the game.
+我们就可以说那是赢了游戏。
+
+00:11:19.980 --> 00:11:21.570
+And what happens when I win the game?
+那我赢了游戏会怎样呢？
+
+00:11:21.570 --> 00:11:22.920
+I have to decide.
+我得做个决定。
+
+00:11:22.920 --> 00:11:25.110
+Maybe the backdrop changes.
+也许背景会改变。
+
+00:11:25.110 --> 00:11:26.760
+I can take a backdrop.
+我可以选个背景。
+
+00:11:26.760 --> 00:11:29.250
+Add a new backdrop.
+添加一个新背景。
+
+00:11:29.250 --> 00:11:31.680
+Well, instead of picking an existing backdrop actually,
+嗯，实际上我不选现有的背景了，
+
+00:11:31.680 --> 00:11:33.860
+let me paint a new backdrop.
+让我画个新背景。
+
+00:11:33.860 --> 00:11:35.330
+Paint a new backdrop.
+画个新背景。
+
+00:11:35.330 --> 00:11:41.880
+We'll go ahead and just create a green background
+我们直接画个绿色矩形来创建一个绿色背景
+
+00:11:41.880 --> 00:11:44.960
+by drawing a green rectangle.
+就好了。
+
+00:11:44.960 --> 00:11:47.030
+And we'll add some text.
+然后我们加些文字。
+
+00:11:47.030 --> 00:11:48.350
+The text will say, you win.
+文字就写“你赢了”。
+
+00:11:48.350 --> 00:11:50.850
+I need to change the color of that.
+我得改一下文字的颜色。
+
+00:11:50.850 --> 00:11:53.310
+Make it black.
+把它改成黑色。
+
+00:11:53.310 --> 00:11:54.510
+And make the text bigger.
+再把文字变大点。
+
+00:11:58.420 --> 00:12:01.090
+So that'll be the backdrop that shows up when we win.
+所以这就是我们赢了时会出现的背景。
+
+00:12:01.090 --> 00:12:02.780
+I'll give you the backdrop a name.
+我给这个背景取个名字。
+
+00:12:02.780 --> 00:12:05.200
+I'll call it Win. .
+我把它命名为“胜利”。
+
+00:12:05.200 --> 00:12:08.450
+And the other backdrop is just backdrop one for now.
+另一个背景目前就叫背景一。
+
+00:12:08.450 --> 00:12:10.480
+And so what do I need to change here?
+那么我这里需要改什么呢？
+
+00:12:10.480 --> 00:12:14.140
+Well, when the program first starts, I want to set the score to 0.
+嗯，程序刚开始运行时，我想把分数设为0。
+
+00:12:14.140 --> 00:12:19.640
+But I also want to make sure that the backdrop is backdrop one.
+但我也想确保当前背景是背景一。
+
+00:12:19.640 --> 00:12:23.080
+The default plain white backdrop to begin with.
+一开始是默认的纯白色背景。
+
+00:12:23.080 --> 00:12:25.830
+But now let's add some code.
+但现在让我们添加一些代码。
+
+00:12:25.830 --> 00:12:31.630
+And I would like to say maybe when we change
+我想说，也许当我们改变
+
+00:12:31.630 --> 00:12:36.040
+the score I want to ask the question, have we won the game yet?
+分数时，我想问个问题，我们赢了这场游戏吗？
+
+00:12:36.040 --> 00:12:43.730
+I can add another condition by going to if here after we change the score.
+在改变分数后，我可以在这里点击“如果”来添加另一个条件。
+
+00:12:43.730 --> 00:12:46.940
+And random position that's going to be outside of this if statement.
+随机位置，这将在这个“如果”语句之外。
+
+00:12:46.940 --> 00:12:53.000
+But if the score is equal to 10--
+但如果分数等于10——
+
+00:12:53.000 --> 00:12:54.190
+so something is equal to 10.
+也就是某个东西等于10。
+
+00:12:54.190 --> 00:12:55.060
+And how do I get the score?
+我要怎么获取分数呢？
+
+00:12:55.060 --> 00:12:55.970
+That's a variable.
+那是个变量。
+
+00:12:55.970 --> 00:12:57.890
+So I go into variables.
+所以我进入变量板块。
+
+00:12:57.890 --> 00:13:01.880
+If the score is equal to 10, well, then I want to display this backdrop.
+如果分数等于10，那么我想显示这个背景。
+
+00:13:01.880 --> 00:13:05.230
+The backdrop that says that I've now won the game.
+显示我已赢得游戏的那个背景。
+
+00:13:05.230 --> 00:13:06.650
+So we'll go into looks.
+所以我们进入外观板块。
+
+00:13:06.650 --> 00:13:08.880
+We'll switch the backdrop to Win.
+我们把背景切换为“胜利”。
+
+00:13:08.880 --> 00:13:12.230
+But at this point, I also just want to stop the entire game.
+但在这一步，我也只想停止整个游戏。
+
+00:13:12.230 --> 00:13:13.980
+I don't want the hedgehog to move anymore.
+我不想让刺猬再移动了。
+
+00:13:13.980 --> 00:13:16.670
+I don't want to have the star keep going to random positions.
+我不想让星星继续随机移动位置了。
+
+00:13:16.670 --> 00:13:19.820
+And it turns out that under control, there's one block we haven't used yet
+结果发现，在控制板块，有一个积木我们还没用过
+
+00:13:19.820 --> 00:13:23.120
+which is just called stop all that has the effect of stopping
+它叫“停止全部”，作用是停止
+
+00:13:23.120 --> 00:13:27.260
+all of the sprites that are in this program.
+这个程序里的所有角色。
+
+00:13:27.260 --> 00:13:28.962
+So we'll switch the backdrop to Win.
+所以我们把背景切换为“胜利”。
+
+00:13:28.962 --> 00:13:30.170
+And then we'll just stop all.
+然后我们就停止全部。
+
+00:13:30.170 --> 00:13:32.500
+We'll stop everything.
+我们停止一切。
+
+00:13:32.500 --> 00:13:34.500
+So this program's getting a little more complex.
+所以这个程序变得有点复杂了。
+
+00:13:34.500 --> 00:13:36.542
+But let's try and understand now what's happening
+但现在让我们试着理解一下
+
+00:13:36.542 --> 00:13:38.360
+inside the logic for the star.
+星星的逻辑里在发生什么。
+
+00:13:38.360 --> 00:13:41.540
+We're constantly going to be checking are we touching the hedgehog.
+我们会不断检查是否碰到了刺猬。
+
+00:13:41.540 --> 00:13:44.550
+If we're touching the hedgehog, we change the score by one.
+如果我们碰到了刺猬，就把分数加1。
+
+00:13:44.550 --> 00:13:47.170
+And if now the score is 10, well, now we've won the game.
+如果现在分数是10，那么我们就赢了这场游戏。
+
+00:13:47.170 --> 00:13:50.730
+So we switch the backdrop, and then we stop all the sprites.
+所以我们切换背景，然后停止所有角色。
+
+00:13:50.730 --> 00:13:54.860
+But otherwise, the star just goes to a new random position
+否则，星星就移动到一个新的随机位置
+
+00:13:54.860 --> 00:13:58.100
+to let the game keep going.
+让游戏继续进行。
+
+00:13:58.100 --> 00:14:02.200
+So we can try the game now, and see what happens when I get to 10 points.
+所以我们现在可以试试这个游戏，看看我得到10分时会发生什么。
+
+00:14:02.200 --> 00:14:03.790
+I'll press the flag.
+我点击旗帜。
+
+00:14:03.790 --> 00:14:04.660
+The scores of 0.
+分数为0。
+
+00:14:04.660 --> 00:14:07.630
+The backdrops gone back to this plain white background.
+背景变回了这个纯白色的背景。
+
+00:14:07.630 --> 00:14:10.810
+And now every time I touch the star, it goes to a new random position.
+现在每次我碰到星星，它就会跳到一个新的随机位置。
+
+00:14:10.810 --> 00:14:13.810
+And you can watch my score in the upper left increase.
+你可以看到我左上角的分数在增加。
+
+00:14:13.810 --> 00:14:17.740
+I'm at 6.7 points, 8 points, 9 points.
+我现在有6.7分、8分、9分了。
+
+00:14:17.740 --> 00:14:20.050
+And watch what happens now as I get the 10th star.
+看看我拿到第10颗星星时会发生什么。
+
+00:14:22.760 --> 00:14:24.020
+Everything freezes.
+一切都静止了。
+
+00:14:24.020 --> 00:14:25.760
+The hedgehog's no longer following me.
+刺猬不再跟着我了。
+
+00:14:25.760 --> 00:14:28.970
+But we change the backdrop to this green backdrop
+但我们把背景换成了这个绿色背景。
+
+00:14:28.970 --> 00:14:31.850
+that now just says that we win.
+上面现在只写着我们赢了。
+
+00:14:31.850 --> 00:14:35.210
+So one common use of variables is to keep track of your score
+所以变量的一个常见用途是记录得分。
+
+00:14:35.210 --> 00:14:38.840
+in a game in something like this for example.
+比如在这样的游戏里。
+
+00:14:38.840 --> 00:14:41.840
+Let's take a look at another use that we might use for variables.
+让我们来看看变量的另一个可能用途。
+
+00:14:41.840 --> 00:14:44.330
+I'll go ahead and get rid of these sprites for now.
+我现在先把这些角色去掉。
+
+00:14:44.330 --> 00:14:46.130
+And I'll get rid of the you win backdrop.
+我也把“你赢了”的背景去掉。
+
+00:14:46.130 --> 00:14:49.670
+And we'll just go back to the plain white backdrop.
+我们就回到纯白色的背景。
+
+00:14:49.670 --> 00:14:55.110
+And I'll also delete that score variable, which I don't want any more.
+我也会删掉那个分数变量，我不再需要它了。
+
+00:14:55.110 --> 00:14:56.640
+Let's choose a new backdrop.
+让我们选一个新背景。
+
+00:14:56.640 --> 00:14:59.040
+Let's choose Blue Sky, which is nice.
+我们选“蓝天”，这个不错。
+
+00:14:59.040 --> 00:15:01.510
+We've got the sky and we've got the ground for example.
+比如，这里有天空和地面。
+
+00:15:01.510 --> 00:15:03.960
+And let's imagine that we wanted a ball, for example,
+我们来想象一下，比如我们想要一个球。
+
+00:15:03.960 --> 00:15:07.600
+to be bouncing on the stage.
+在舞台上弹跳。
+
+00:15:07.600 --> 00:15:10.200
+Well, let's add a sprite.
+好吧，我们来添加一个角色。
+
+00:15:10.200 --> 00:15:12.910
+And let's add the ball.
+我们添加这个球。
+
+00:15:12.910 --> 00:15:14.280
+Here's the ball.
+这就是球。
+
+00:15:14.280 --> 00:15:15.998
+And what do I want the ball to do?
+我想让球做什么呢？
+
+00:15:15.998 --> 00:15:17.790
+Well, if it's in the air, the ball is going
+嗯，如果球在空中，它会。
+
+00:15:17.790 --> 00:15:21.190
+to start falling until it hits the ground.
+开始下落，直到碰到地面。
+
+00:15:21.190 --> 00:15:22.440
+So how do I achieve that idea?
+那么我要怎么实现这个想法呢？
+
+00:15:22.440 --> 00:15:25.920
+The ball is going to keep falling until it hits the ground.
+球会一直下落，直到碰到地面。
+
+00:15:25.920 --> 00:15:29.070
+Well, when the green flag is clicked, I would like
+嗯，当点击绿旗时，我希望。
+
+00:15:29.070 --> 00:15:32.811
+to forever keep repeating something.
+永远不断重复某件事。
+
+00:15:35.630 --> 00:15:37.380
+And what do I want to have happen forever?
+我希望永远发生什么事呢？
+
+00:15:37.380 --> 00:15:46.452
+Well, I want to have happen for motion to change the y value by negative 5.
+嗯，我希望在运动方面，把y值减去5。
+
+00:15:46.452 --> 00:15:48.910
+Negative 5 is going to mean the ball is going to move down,
+减去5意味着球会向下移动。
+
+00:15:48.910 --> 00:15:51.590
+and we're forever going to keep repeating that process.
+我们会永远不断重复这个过程。
+
+00:15:51.590 --> 00:15:55.610
+So now when I press the flag, the ball falls
+所以现在我点击旗帜时，球会下落。
+
+00:15:55.610 --> 00:15:57.940
+and eventually it hits the ground.
+最终它会碰到地面。
+
+00:15:57.940 --> 00:16:00.230
+And if I bring it back up again, it keeps falling
+如果我再把它往上移，它又会一直下落。
+
+00:16:00.230 --> 00:16:02.716
+because it's inside of a forever loop.
+因为它在一个无限循环里面。
+
+00:16:02.716 --> 00:16:04.270
+It's inside of a forever loop.
+它在一个无限循环里面。
+
+00:16:04.270 --> 00:16:07.793
+So every time it's going to keep falling until it hits the ground.
+所以每次它都会一直下落，直到碰到地面。
+
+00:16:07.793 --> 00:16:09.960
+And right now, it's kind of getting past the ground.
+而现在，它有点穿过地面了。
+
+00:16:09.960 --> 00:16:13.900
+So maybe I want it to stop if it ever hits the ground itself.
+所以也许我想让它一旦碰到地面就停下来。
+
+00:16:13.900 --> 00:16:17.443
+So how can I detect when the ball is touching the ground?
+那么我要怎么检测球什么时候碰到地面呢？
+
+00:16:17.443 --> 00:16:19.860
+Well, you'll notice that the ground is a particular color.
+嗯，你会注意到地面是一种特定的颜色。
+
+00:16:19.860 --> 00:16:21.450
+It's this brown color here.
+就是这里这种棕色。
+
+00:16:21.450 --> 00:16:29.430
+And I can check for that color by saying if we're touching that color.
+我可以通过判断是否碰到那种颜色来检查。
+
+00:16:29.430 --> 00:16:32.070
+Using if and touching color, which we've used before,
+用之前用过的“如果”和“碰到颜色”积木，
+
+00:16:32.070 --> 00:16:34.260
+I can check to see if we're touching the ground.
+我就能检查是否碰到地面了。
+
+00:16:34.260 --> 00:16:36.630
+I'll grab a color from the stage.
+我从舞台上取一种颜色。
+
+00:16:36.630 --> 00:16:39.240
+Let's grab this brown for the ground.
+咱们取地面的这种棕色。
+
+00:16:39.240 --> 00:16:46.110
+And if we're touching brown, let's go ahead and stop everything.
+如果我们碰到棕色，那就直接停止所有动作。
+
+00:16:46.110 --> 00:16:49.130
+The ball is going to stop moving.
+球会停止移动。
+
+00:16:49.130 --> 00:16:50.990
+So now I press the flag.
+现在我点击绿旗。
+
+00:16:50.990 --> 00:16:51.950
+The ball falls.
+球开始下落。
+
+00:16:51.950 --> 00:16:53.690
+And now as soon as it touches the ground,
+现在只要它碰到地面，
+
+00:16:53.690 --> 00:16:57.500
+as soon as it just reaches the beginning of that brown section,
+只要它刚到达那个棕色区域的边缘，
+
+00:16:57.500 --> 00:16:59.210
+the ball is going to stop moving.
+球就会停止移动。
+
+00:16:59.210 --> 00:17:02.060
+And if I wanted to go again, I press the green flag.
+如果我想再试一次，我就点击绿旗。
+
+00:17:02.060 --> 00:17:07.395
+And you notice the ball fall until it hits the ground, and then it stops.
+你会注意到球一直下落到碰到地面，然后就停了。
+
+00:17:07.395 --> 00:17:09.520
+And as we're watching this, I can drag the ball out
+我们看着的时候，我可以把球拖出来，
+
+00:17:09.520 --> 00:17:11.510
+and let it fall over and over again.
+让它反复下落。
+
+00:17:11.510 --> 00:17:14.319
+You might notice that it doesn't look very realistic.
+你可能会注意到这看起来不太真实。
+
+00:17:14.319 --> 00:17:16.730
+And why isn't this falling very realistic?
+为什么它下落得不太真实呢？
+
+00:17:16.730 --> 00:17:18.650
+Well, I have a ball here with me now.
+嗯，我现在手里有个球。
+
+00:17:18.650 --> 00:17:21.310
+And what happens if I toss the ball, and let it fall?
+如果我把球抛出去再让它落下，会发生什么呢？
+
+00:17:21.310 --> 00:17:23.140
+How quickly does it fall?
+它下落得有多快呢？
+
+00:17:23.140 --> 00:17:26.920
+Well, you'll notice as I let that ball fall, that it actually
+嗯，你会注意到我让球落下时，实际上它
+
+00:17:26.920 --> 00:17:28.420
+starts a little more slowly.
+一开始速度慢一些。
+
+00:17:28.420 --> 00:17:30.250
+At the top, it's more slow.
+在顶部时，速度更慢。
+
+00:17:30.250 --> 00:17:33.370
+And then as it falls, over time, it gets faster and faster.
+然后随着下落，它会越来越快。
+
+00:17:33.370 --> 00:17:36.160
+And it falls faster as it gets closer to the ground.
+越接近地面，下落速度越快。
+
+00:17:36.160 --> 00:17:38.650
+It's slow, and then it gets faster.
+先慢，然后变快。
+
+00:17:38.650 --> 00:17:41.950
+And right now, that's not what my ball here is doing.
+而现在，我这里的球不是这样的。
+
+00:17:41.950 --> 00:17:46.300
+Right now, my ball is just moving by five units every time
+现在，每次我们执行一次这个循环，我的球只移动五个单位。
+
+00:17:46.300 --> 00:17:50.300
+we run through an iteration of this loop.
+所以如果我真的想让球的移动更真实，
+
+00:17:50.300 --> 00:17:54.430
+And so if I really wanted for the ball to be moving realistically,
+它一开始应该移动得慢些，然后
+
+00:17:54.430 --> 00:17:57.460
+it should be moving slower at first, and then
+越接近地面就变得越快。
+
+00:17:57.460 --> 00:18:01.660
+get faster as it gets closer to the ground.
+当它越接近地面时速度越快。
+
+00:18:01.660 --> 00:18:03.110
+So how could we achieve that?
+那么我们要如何实现这一点呢？
+
+00:18:03.110 --> 00:18:06.250
+Well, rather than move by five steps every time,
+嗯，与其每次都移动五格，
+
+00:18:06.250 --> 00:18:09.220
+we could move by a variable number of steps every time.
+我们可以每次移动不同数量的格数。
+
+00:18:09.220 --> 00:18:13.720
+A variable that's keeping track of how many steps should we be moving.
+用一个变量来记录我们应该移动多少格。
+
+00:18:13.720 --> 00:18:16.450
+And then we can update that variable so that the ball moves
+然后我们可以更新这个变量，这样球在
+
+00:18:16.450 --> 00:18:20.560
+faster as it gets closer to the ground.
+接近地面时就会移动得更快。
+
+00:18:20.560 --> 00:18:21.950
+So how do we achieve that?
+那么我们要如何实现这一点呢？
+
+00:18:21.950 --> 00:18:25.070
+Well, the first thing we need is we need a new variable.
+嗯，我们首先需要创建一个新变量。
+
+00:18:25.070 --> 00:18:28.870
+So I'm going to go into variables here, and create a new variable.
+所以我要到这里的变量板块，创建一个新变量。
+
+00:18:28.870 --> 00:18:31.300
+And I'll just call the variable, speed.
+我就把这个变量命名为“速度”。
+
+00:18:31.300 --> 00:18:33.640
+And now I have a decision to make as I usually do.
+现在和往常一样，我要做一个决定。
+
+00:18:33.640 --> 00:18:35.440
+Is this for all sprites?
+这个变量是供所有角色使用吗？
+
+00:18:35.440 --> 00:18:37.390
+Or for this sprite only?
+还是仅供这个角色使用？
+
+00:18:37.390 --> 00:18:40.570
+And for this variable, I'm actually going to make it for this sprite only.
+对于这个变量，我实际上打算让它仅供这个角色使用。
+
+00:18:40.570 --> 00:18:42.580
+This speed is only going to be a variable
+这个“速度”只会是一个
+
+00:18:42.580 --> 00:18:46.150
+that this ball is going to get to use, because no other sprite needs
+供这个球使用的变量，因为没有其他角色需要
+
+00:18:46.150 --> 00:18:49.060
+to use or access the speed of the ball.
+使用或访问这个球的速度。
+
+00:18:49.060 --> 00:18:51.400
+And that's going to be helpful because maybe later I
+这会很有用，因为也许之后我
+
+00:18:51.400 --> 00:18:54.350
+might want to have a second ball that's bouncing up and down too.
+可能还想有第二个球也在上下弹跳。
+
+00:18:54.350 --> 00:18:56.953
+And then each ball should have its own speed.
+那么每个球都应该有自己的速度。
+
+00:18:56.953 --> 00:18:58.870
+I don't want them to be sharing the same speed
+我不希望它们共享相同的速度，
+
+00:18:58.870 --> 00:19:03.500
+because one ball might be moving more slowly or more quickly than the other.
+因为一个球可能比另一个球移动得更慢或更快。
+
+00:19:03.500 --> 00:19:06.250
+So this variable is going to be a local variable.
+所以这个变量将是一个局部变量。
+
+00:19:06.250 --> 00:19:10.793
+Only this ball is going to get to modify this speed variable.
+只有这个球可以修改这个“速度”变量。
+
+00:19:10.793 --> 00:19:13.210
+And you'll notice that now, in this reporting block that's
+你会注意到，现在在这个显示数值的积木里，它
+
+00:19:13.210 --> 00:19:15.640
+telling me what the speed of the ball is, it's telling me
+告诉我球的速度是多少，它显示的是
+
+00:19:15.640 --> 00:19:19.600
+it's the speed variable that is associated with the ball sprite.
+与球这个角色关联的“速度”变量。
+
+00:19:19.600 --> 00:19:24.410
+It's telling me what sprite the variable belongs to.
+它会告诉我这个变量属于哪个角色。
+
+00:19:24.410 --> 00:19:27.300
+And so now, what do I do here?
+那么现在，我在这里要做什么呢？
+
+00:19:27.300 --> 00:19:30.350
+Well, initially, when I press the green flag for the first time,
+嗯，最初，当我第一次按下绿旗时，
+
+00:19:30.350 --> 00:19:33.670
+let's set the speed to 0.
+我们把速度设为0。
+
+00:19:33.670 --> 00:19:41.110
+Then instead of changing y by negative 5, let's change y by the speed.
+然后，不要把y坐标减去5，而是把y坐标加上“速度”的值。
+
+00:19:41.110 --> 00:19:43.175
+Changing it by a variable amount.
+以一个可变的量来改变它。
+
+00:19:43.175 --> 00:19:44.800
+And then what do I want to have happen?
+然后我希望接下来发生什么呢？
+
+00:19:44.800 --> 00:19:48.430
+Every time the loop goes through, every time time passes,
+每次循环执行，每过一段时间，
+
+00:19:48.430 --> 00:19:53.410
+I want to move faster down the stage, which means
+我希望球在舞台上向下移动得更快，这意味着
+
+00:19:53.410 --> 00:19:55.480
+I want this value to be more negative.
+我希望这个值变得更负。
+
+00:19:55.480 --> 00:20:01.140
+So I'm going to change the speed by negative 1.
+所以我要把“速度”减去1。
+
+00:20:01.140 --> 00:20:02.160
+What does that mean?
+这意味着什么呢？
+
+00:20:02.160 --> 00:20:04.670
+That means the speed is going to start at 0.
+这意味着速度将从0开始。
+
+00:20:04.670 --> 00:20:07.760
+And the first time we run through the loop, we're going to change y by 0.
+我们第一次执行循环时，要把 y 值改变 0。
+
+00:20:07.760 --> 00:20:09.325
+We're not changing it at all.
+也就是完全不改变它。
+
+00:20:09.325 --> 00:20:11.450
+Then we're going to change the speed by negative 1.
+然后我们要把速度改变 -1。
+
+00:20:11.450 --> 00:20:13.190
+Now the speed is negative 1.
+现在速度变成 -1 了。
+
+00:20:13.190 --> 00:20:15.245
+We're going to change y by negative 1.
+我们要把 y 值改变 -1。
+
+00:20:15.245 --> 00:20:17.120
+Then we change the speed by negative 1 again.
+接着我们再把速度改变 -1。
+
+00:20:17.120 --> 00:20:18.650
+Now it's negative 2.
+现在速度是 -2 了。
+
+00:20:18.650 --> 00:20:21.920
+And the next time the loop runs we change y by negative 2,
+下一次循环执行时，我们把 y 值改变 -2，
+
+00:20:21.920 --> 00:20:22.850
+and then negative 3.
+再下一次改变 -3。
+
+00:20:22.850 --> 00:20:25.125
+And every time we run through the loop, the ball
+每次执行循环时，球
+
+00:20:25.125 --> 00:20:27.500
+is going to be moving more, and more, and more each time.
+每次都会移动得越来越多。
+
+00:20:27.500 --> 00:20:34.290
+Effectively, moving faster as time goes on until it's touching the ground.
+实际上，随着时间推移，它会移动得越来越快，直到碰到地面。
+
+00:20:34.290 --> 00:20:40.460
+And so let's give that a try now, and see what happens.
+现在我们来试试看，看看会发生什么。
+
+00:20:40.460 --> 00:20:42.730
+Bring the ball up.
+把球往上移。
+
+00:20:42.730 --> 00:20:43.300
+And it falls.
+然后它就掉下来了。
+
+00:20:43.300 --> 00:20:45.670
+And you'll notice that it does exactly what I want.
+你会注意到它完全符合我的预期。
+
+00:20:45.670 --> 00:20:49.722
+At the very beginning, it's falling fairly slowly.
+刚开始的时候，它下落得相当慢。
+
+00:20:49.722 --> 00:20:51.180
+But then it speeds up near the end.
+但到快结束时就加速了。
+
+00:20:51.180 --> 00:20:54.300
+You notice near the end the ball speed is all the way up to negative 24,
+你会注意到快结束时，球的速度达到了 -24，
+
+00:20:54.300 --> 00:20:55.140
+for example.
+举个例子。
+
+00:20:55.140 --> 00:20:58.800
+It's getting faster and faster.
+它变得越来越快。
+
+00:20:58.800 --> 00:21:00.470
+And so that's working pretty well.
+所以效果还不错。
+
+00:21:00.470 --> 00:21:04.430
+It's more realistic now because at the very beginning,
+现在更逼真了，因为在刚开始的时候，
+
+00:21:04.430 --> 00:21:05.810
+the ball is moving slowly.
+球移动得很慢。
+
+00:21:05.810 --> 00:21:08.010
+And then over time it's getting faster and faster.
+然后随着时间推移，它变得越来越快。
+
+00:21:08.010 --> 00:21:10.760
+Of course, the thing that it's not doing that a real ball would do
+当然，它和真正的球不同的地方在于
+
+00:21:10.760 --> 00:21:12.110
+is it's not bouncing.
+它不会反弹。
+
+00:21:12.110 --> 00:21:14.270
+Normally, when I bounce a ball, it hits the ground
+通常情况下，我拍球时，球碰到地面
+
+00:21:14.270 --> 00:21:16.070
+and then it bounces back up to me.
+然后会反弹回我这里。
+
+00:21:16.070 --> 00:21:17.270
+So how could I do that?
+那么我要怎么做才能实现这个效果呢？
+
+00:21:17.270 --> 00:21:19.070
+What do I need to change?
+我需要改变什么呢？
+
+00:21:19.070 --> 00:21:23.190
+Well, this variable speed, that's controlling
+嗯，这个变量“速度”，它控制着
+
+00:21:23.190 --> 00:21:28.420
+how many steps the ball is moving every time I run through this loop.
+每次执行这个循环时球移动的步数。
+
+00:21:28.420 --> 00:21:32.760
+And so when the speed is negative, that means the y value is going to decrease.
+所以当速度为负时，意味着 y 值会减小。
+
+00:21:32.760 --> 00:21:36.270
+Meaning we're going to be moving down on the stage.
+也就是球会在舞台上向下移动。
+
+00:21:36.270 --> 00:21:39.900
+If I instead wanted the ball to start moving up once it reached the bottom,
+如果我想让球到达底部后开始向上移动，
+
+00:21:39.900 --> 00:21:43.890
+then I want the speed to not be negative, but to instead be positive.
+那么我希望速度不是负的，而是正的。
+
+00:21:43.890 --> 00:21:47.980
+And how do I change the speed from a negative number into a positive number?
+那我要怎么把速度从负数变成正数呢？
+
+00:21:47.980 --> 00:21:51.000
+Well, I can multiply the speed by negative 1.
+嗯，我可以把速度乘以 -1。
+
+00:21:51.000 --> 00:21:54.270
+Then the speed will go from being negative moving down quickly to being
+这样速度就会从快速向下的负数变成
+
+00:21:54.270 --> 00:21:57.180
+a positive number moving up quickly.
+一个正数，让角色快速向上移动。
+
+00:21:57.180 --> 00:22:01.020
+And so let's give that a try now as well.
+那么现在我们也来试试看。
+
+00:22:01.020 --> 00:22:05.310
+Once I'm touching the ground, rather than stopping everything,
+一旦角色碰到地面，与其让一切都停下来，
+
+00:22:05.310 --> 00:22:07.330
+let's do something else.
+我们做点别的事。
+
+00:22:07.330 --> 00:22:12.040
+Let's set the speed to a particular value.
+我们把速度设为一个特定的值。
+
+00:22:12.040 --> 00:22:15.640
+And I want it to be the speed multiplied by negative 1.
+我想让它是当前速度乘以 -1。
+
+00:22:15.640 --> 00:22:16.750
+So going to operations.
+所以我们到运算积木这里。
+
+00:22:16.750 --> 00:22:18.510
+We'll do multiply.
+我们用乘法。
+
+00:22:18.510 --> 00:22:24.350
+And we'll calculate what a speed times negative 1.
+我们来计算速度乘以 -1 的结果。
+
+00:22:24.350 --> 00:22:28.970
+And let's set the speed to that.
+然后把速度设为这个结果。
+
+00:22:28.970 --> 00:22:34.365
+So now every time we change the speed we check are we touching the ground.
+所以现在每次改变速度时，我们都会检查是否碰到地面。
+
+00:22:34.365 --> 00:22:36.990
+And if we are touching the ground, the speed's going to invert.
+如果碰到地面，速度就会反转。
+
+00:22:36.990 --> 00:22:41.135
+Moving the opposite direction and start moving up now instead.
+朝相反方向移动，现在开始向上移动。
+
+00:22:41.135 --> 00:22:44.650
+So if I drag the ball up and let it go, watch what happens.
+所以如果我把球往上拖然后松开，看看会发生什么。
+
+00:22:44.650 --> 00:22:47.490
+It falls and then it bounces.
+它落下然后反弹。
+
+00:22:47.490 --> 00:22:48.750
+And it bounces.
+它会一直反弹。
+
+00:22:48.750 --> 00:22:51.900
+And it keeps bouncing.
+它持续反弹。
+
+00:22:51.900 --> 00:22:54.990
+And the reason that's happening is because it's getting negative speed
+之所以会这样，是因为它下落时速度为负。
+
+00:22:54.990 --> 00:22:56.280
+as it's going down.
+当它向下运动时。
+
+00:22:56.280 --> 00:22:59.410
+And then as soon as it touches the ground, the speed becomes positive.
+一旦它碰到地面，速度就变为正。
+
+00:22:59.410 --> 00:23:02.040
+And then it goes back up again.
+然后它又会向上运动。
+
+00:23:02.040 --> 00:23:04.160
+Now the one thing this isn't doing if we really
+现在，如果我们真的
+
+00:23:04.160 --> 00:23:06.035
+wanted to make this even more realistic, just
+想让这个效果更逼真，只是
+
+00:23:06.035 --> 00:23:08.210
+to add one final touch to this program, is
+给这个程序再添最后一笔，就是
+
+00:23:08.210 --> 00:23:11.250
+that when I throw the ball on the ground,
+当我把球扔到地上时，
+
+00:23:11.250 --> 00:23:13.040
+it doesn't come up to the same place.
+它不会弹回到原来的高度。
+
+00:23:13.040 --> 00:23:14.720
+It's a little bit lower every time.
+每次反弹的高度都会低一点。
+
+00:23:14.720 --> 00:23:16.797
+Every time the ball bounces it starts high.
+每次球反弹时，起始高度都很高。
+
+00:23:16.797 --> 00:23:19.380
+Then it might be a little lower then a little lower than that.
+然后可能会低一点，再之后会更低一点。
+
+00:23:19.380 --> 00:23:22.847
+It loses a little bit of speed every time I bounce the ball.
+每次球反弹都会损失一点速度。
+
+00:23:22.847 --> 00:23:24.680
+But this is the great thing about variables.
+但这就是变量的妙处。
+
+00:23:24.680 --> 00:23:27.320
+I can set this variable to be whatever I want.
+我可以把这个变量设成我想要的任何值。
+
+00:23:27.320 --> 00:23:30.060
+And I can use these operators-- adding, and subtracting,
+我可以用这些运算符——加、减，
+
+00:23:30.060 --> 00:23:34.070
+and multiplying, and dividing to figure out exactly what I want for a variable
+乘、除来精确算出我想要变量
+
+00:23:34.070 --> 00:23:34.740
+to be.
+变成的值。
+
+00:23:34.740 --> 00:23:38.850
+So maybe I want the speed to decrease by a little every time.
+所以也许我想让速度每次都稍微降低一点。
+
+00:23:38.850 --> 00:23:43.790
+Don't just make the speed positive, but subtract 1 or subtract 2 from the speed
+不要只是让速度变为正，而是从速度里减去 1 或者减去 2
+
+00:23:43.790 --> 00:23:48.980
+so that now it's moving a little more slowly every time the ball bounces.
+这样每次球反弹时移动速度就会慢一点。
+
+00:23:48.980 --> 00:23:51.800
+So I can go back into operators, and let's
+所以我可以回到运算积木这里，然后我们
+
+00:23:51.800 --> 00:23:57.740
+subtract 2 from whatever that new speed was supposed to be.
+从新速度里减去 2。
+
+00:23:57.740 --> 00:23:58.790
+We invert the speed.
+我们把速度取反。
+
+00:23:58.790 --> 00:23:59.930
+We subtract 2.
+我们减去2。
+
+00:23:59.930 --> 00:24:04.670
+And now it's going to go from a higher bounce to a lower bounce.
+现在它会从高弹变成低弹。
+
+00:24:04.670 --> 00:24:08.210
+And every time you'll notice that it decreases a little until it
+每次你都会注意到它的弹起高度会降低一点，直到
+
+00:24:08.210 --> 00:24:10.750
+kind of gets stuck at the bottom there.
+有点像是卡在了下面。
+
+00:24:10.750 --> 00:24:11.750
+But we can try it again.
+但我们可以再试一次。
+
+00:24:15.130 --> 00:24:17.635
+It's going lower and lower each time.
+它每次弹得越来越低。
+
+00:24:17.635 --> 00:24:19.510
+And eventually, it's going to hit the bottom.
+最终，它会停在底部。
+
+00:24:19.510 --> 00:24:21.820
+And you might have to play around with it a little bit.
+你可能得稍微调整一下。
+
+00:24:21.820 --> 00:24:23.710
+Once it gets to a speed that's low enough,
+一旦它的速度足够低，
+
+00:24:23.710 --> 00:24:25.720
+the ball should eventually just stop moving.
+球最终应该会停止移动。
+
+00:24:25.720 --> 00:24:29.770
+But this is approximating that idea-- of a ball that's bouncing again and again.
+但这是在近似模拟一个球不断弹跳的情况。
+
+00:24:29.770 --> 00:24:32.410
+And we're able to use variables to control the speed
+我们能够使用变量来控制速度
+
+00:24:32.410 --> 00:24:36.990
+to make this much more realistic.
+让这个效果更加真实。
+
+00:24:36.990 --> 00:24:37.490
+All right.
+好的。
+
+00:24:37.490 --> 00:24:38.948
+What else can we do with variables?
+我们还能用变量做什么呢？
+
+00:24:38.948 --> 00:24:41.610
+We'll take a look at a couple other final examples.
+我们来看几个其他的最终示例。
+
+00:24:41.610 --> 00:24:45.740
+One is we can let the user have control over the variable itself.
+其一，我们可以让用户来控制变量本身。
+
+00:24:45.740 --> 00:24:46.700
+What you'll notice--
+你会注意到——
+
+00:24:46.700 --> 00:24:49.220
+I'll go ahead and get rid of the ball, and go back
+我先把球去掉，然后回到
+
+00:24:49.220 --> 00:24:51.860
+to the plain white backdrop.
+纯白色的背景。
+
+00:24:51.860 --> 00:24:55.040
+Let's go back to the balloon example that we've seen a couple of times
+我们回到之前看过几次的气球示例。
+
+00:24:55.040 --> 00:24:56.840
+now where the balloon was inflating.
+就是那个气球在充气的例子。
+
+00:24:56.840 --> 00:24:59.600
+And it was inflating either when we blew at the microphone,
+它会在我们对着麦克风吹气时充气，
+
+00:24:59.600 --> 00:25:04.410
+or press the spacebar, or we just let it go automatically via a loop.
+或者按下空格键，又或者通过循环让它自动充气。
+
+00:25:04.410 --> 00:25:08.840
+Let's let the user now control how big or small the balloon should be.
+现在让用户来控制气球的大小。
+
+00:25:08.840 --> 00:25:13.170
+Let the user control how much air is inside of the balloon.
+让用户控制气球里有多少空气。
+
+00:25:13.170 --> 00:25:17.240
+Let's create a variable that I'm just going to call, air.
+我们创建一个变量，我就叫它“空气”。
+
+00:25:17.240 --> 00:25:20.510
+And now what is this air variable going to do?
+那么这个“空气”变量要怎么用呢？
+
+00:25:20.510 --> 00:25:25.010
+Well, if I Control click on this area here where
+嗯，如果我按住Control键点击这里的区域，在这个区域
+
+00:25:25.010 --> 00:25:27.410
+I can see what the value of a variable is,
+我可以看到变量的值，
+
+00:25:27.410 --> 00:25:30.170
+I can change what the readout looks like.
+我可以改变显示样式。
+
+00:25:30.170 --> 00:25:31.520
+This is a normal readout.
+这是普通的显示样式。
+
+00:25:31.520 --> 00:25:34.100
+If I change it to a large readout, you just
+如果我把它改成大字体显示，你就会
+
+00:25:34.100 --> 00:25:36.110
+see the number a little bit bigger.
+看到数字大一点。
+
+00:25:36.110 --> 00:25:38.420
+But I can also change it to a slider.
+但我也可以把它改成滑块样式。
+
+00:25:38.420 --> 00:25:41.510
+And when it's a slider, the user of the program
+当它是滑块样式时，程序的用户
+
+00:25:41.510 --> 00:25:45.350
+can just move the slider to control what the value of the variable
+就可以移动滑块来控制变量的值
+
+00:25:45.350 --> 00:25:46.310
+is going to be.
+是多少。
+
+00:25:46.310 --> 00:25:50.580
+I can change air to be 0 all the way up to 100 for example.
+比如，我可以把“空气”的值从0调整到100。
+
+00:25:50.580 --> 00:25:55.310
+And that lets the user have some control over the variables in the program.
+这就让用户能够对程序中的变量进行一定的控制。
+
+00:25:55.310 --> 00:25:57.440
+And how big was this balloon before?
+这个气球之前有多大呢？
+
+00:25:57.440 --> 00:26:01.790
+Well, usually, it was somewhere between like size 100 and 200.
+嗯，通常它的大小在100到200之间。
+
+00:26:01.790 --> 00:26:04.550
+So let me edit the slider range.
+那我来编辑一下滑块的范围。
+
+00:26:04.550 --> 00:26:06.590
+Set the minimum value to 100.
+把最小值设为100。
+
+00:26:06.590 --> 00:26:08.310
+And the maximum value to 200.
+最大值设为200。
+
+00:26:08.310 --> 00:26:11.210
+I did that by Control clicking on the slider.
+我是通过按住Control键点击滑块来完成的。
+
+00:26:11.210 --> 00:26:15.050
+And then changing the slider range to now range between 100
+然后把滑块范围改成现在从最小值100
+
+00:26:15.050 --> 00:26:18.560
+at a minimum and 200 at a maximum.
+到最大值200。
+
+00:26:18.560 --> 00:26:21.570
+So I can go back and forth between those two values.
+这样我就能在这两个值之间来回调整了。
+
+00:26:21.570 --> 00:26:24.140
+And now what do I want the balloon to do?
+现在我希望气球做什么呢？
+
+00:26:24.140 --> 00:26:27.590
+Well, when the flag is clicked, we'll just
+嗯，当点击旗帜时，我们就
+
+00:26:27.590 --> 00:26:36.290
+add a few blocks that say forever I want the balloon to set it size not to 100%,
+添加几个积木，让气球永远将自身大小设置为，不是100%，
+
+00:26:36.290 --> 00:26:38.720
+but to air percent.
+而是空气百分比。
+
+00:26:38.720 --> 00:26:42.980
+Whatever the value of the air variable is.
+也就是空气变量的当前值。
+
+00:26:42.980 --> 00:26:45.860
+That is what I want the size of the balloon to be.
+这就是我希望气球达到的大小。
+
+00:26:45.860 --> 00:26:47.990
+I press the flag to start the program.
+我点击旗帜来启动程序。
+
+00:26:47.990 --> 00:26:50.330
+And so now this balloon is constantly going
+现在这个气球会不断地
+
+00:26:50.330 --> 00:26:53.150
+to be checking what is the value of the air variable.
+检查空气变量的值是多少。
+
+00:26:53.150 --> 00:26:55.570
+And depending upon the value of the air variable,
+根据空气变量的值，
+
+00:26:55.570 --> 00:26:57.320
+that's how big the balloon is going to be.
+气球就会呈现相应的大小。
+
+00:26:57.320 --> 00:27:00.170
+So I can now just drag along the slider.
+现在我可以拖动滑块了。
+
+00:27:00.170 --> 00:27:03.680
+And as I drag along the slider, you'll see the balloon grow and shrink.
+当我拖动滑块时，你会看到气球变大变小。
+
+00:27:03.680 --> 00:27:06.170
+I'm changing the value of the air variable,
+我在改变空气变量的值，
+
+00:27:06.170 --> 00:27:10.010
+and constantly forever the balloon is updating its size
+气球会一直不断地更新自身大小，
+
+00:27:10.010 --> 00:27:13.700
+to be whatever the value of that variable should be.
+以匹配该变量的当前值。
+
+00:27:13.700 --> 00:27:17.450
+And so variables don't just have to be set by these like set variable to,
+所以变量不只是能通过“将变量设为”
+
+00:27:17.450 --> 00:27:19.790
+or change variable by values.
+或者“将变量改变多少”这样的操作来设置。
+
+00:27:19.790 --> 00:27:22.790
+You can also just let the user control a variable directly
+你也可以让用户直接控制变量，
+
+00:27:22.790 --> 00:27:25.410
+to let them interact with your Scratch project.
+让他们与你的Scratch项目进行交互。
+
+00:27:25.410 --> 00:27:30.110
+Let them decide how things should behave or what a particular sprite should
+让他们决定事物应该如何表现，或者某个特定角色应该
+
+00:27:30.110 --> 00:27:32.760
+look like for example.
+是什么样子，举个例子。
+
+00:27:32.760 --> 00:27:35.090
+And let's do one final example with variables.
+我们再用变量做一个最后的例子。
+
+00:27:35.090 --> 00:27:39.050
+This time taking advantage of the Pen tool to draw some shapes.
+这次利用画笔工具来绘制一些形状。
+
+00:27:39.050 --> 00:27:41.210
+And so I'll bring back the cat.
+那我把小猫角色再调出来。
+
+00:27:44.540 --> 00:27:46.100
+Here's our cat again.
+我们的小猫又回来了。
+
+00:27:46.100 --> 00:27:50.120
+And you might recall from before that we could get the cat to move in a circle
+你可能还记得，之前我们可以让小猫画圈移动，
+
+00:27:50.120 --> 00:27:55.170
+by doing something like when the green flag is clicked, then
+方法是，比如当点击绿色旗帜时，然后
+
+00:27:55.170 --> 00:28:01.350
+forever have the cat move a certain number of steps
+让小猫永远向前移动一定的步数，
+
+00:28:01.350 --> 00:28:04.030
+and then turn a certain number of degrees.
+然后转动一定的角度。
+
+00:28:04.030 --> 00:28:06.630
+And that had the effect of moving the cat in a circle
+这样做的效果是让猫绕着圈移动
+
+00:28:06.630 --> 00:28:11.810
+over and over just by moving, and then turning a little bit every time.
+只是通过移动，然后每次转动一点点，就能反复这样。
+
+00:28:11.810 --> 00:28:15.770
+And if we wanted to draw that, we could use the Pen tool to try and draw that.
+如果我们想把它画出来，我们可以用画笔工具来试着画一画。
+
+00:28:15.770 --> 00:28:18.580
+I'll have the Scratch cat start in a particular place
+我会让Scratch猫在一个特定的位置开始
+
+00:28:18.580 --> 00:28:19.960
+when the green flag is clicked.
+当绿色旗帜被点击时。
+
+00:28:19.960 --> 00:28:22.210
+Let's go ahead and go to 0, 0.
+我们直接让它移动到坐标(0, 0)。
+
+00:28:22.210 --> 00:28:25.405
+And be sure you're pointing 90 degrees-- meaning to the right.
+并且确保它指向90度方向——也就是向右。
+
+00:28:25.405 --> 00:28:28.030
+And that's going to start the Scratch cut off in the same place
+这样每次Scratch猫都会从同一个位置开始
+
+00:28:28.030 --> 00:28:32.060
+every time so we get a consistent circle.
+这样我们就能得到一个大小一致的圆圈。
+
+00:28:32.060 --> 00:28:35.900
+But what I can do is add the pen extension, which we've seen before,
+但我可以做的是添加画笔扩展，我们之前见过这个，
+
+00:28:35.900 --> 00:28:38.140
+to do a little bit of drawing.
+来进行一些绘制。
+
+00:28:38.140 --> 00:28:41.250
+We're going to erase everything.
+我们要把所有东西都擦除。
+
+00:28:41.250 --> 00:28:47.360
+And then put the pen down to let the cat start drawing.
+然后放下画笔，让猫开始画画。
+
+00:28:47.360 --> 00:28:50.730
+And now what you're noticing is the cat's moving in a circle.
+现在你会注意到猫正在绕着圈移动。
+
+00:28:50.730 --> 00:28:53.120
+And as it moves in that circle, it's drawing.
+当它绕着圈移动时，它也在绘制。
+
+00:28:53.120 --> 00:28:56.680
+It's using the pen to draw the circle that it's moving in.
+它用画笔绘制它正在移动的圆圈。
+
+00:28:56.680 --> 00:28:59.210
+And if I want to make the cat move a little bit more slowly,
+如果我想让猫移动得慢一点，
+
+00:28:59.210 --> 00:29:01.040
+I might have the cat wait a little bit.
+我可以让猫等待一会儿。
+
+00:29:01.040 --> 00:29:02.998
+Let's just have it wait a fraction of a second.
+就让它等待零点几秒吧。
+
+00:29:02.998 --> 00:29:04.940
+Maybe 0.05 seconds.
+也许0.05秒。
+
+00:29:04.940 --> 00:29:07.880
+And now the cat's moving a little more slowly.
+现在猫移动得更慢了。
+
+00:29:07.880 --> 00:29:13.073
+And you can actually see it drawing that circle just by drawing it like that.
+实际上你可以看到它这样绘制出那个圆圈。
+
+00:29:13.073 --> 00:29:14.990
+But we're not really using any variables here.
+但我们在这里实际上没有用到任何变量。
+
+00:29:14.990 --> 00:29:17.690
+The reason why variables can be helpful is because we
+变量之所以有用，是因为我们
+
+00:29:17.690 --> 00:29:19.520
+can change the cat's behavior.
+可以改变猫的行为。
+
+00:29:19.520 --> 00:29:22.460
+Maybe not have it move by 10 steps every time.
+也许不让它每次都移动10步。
+
+00:29:22.460 --> 00:29:26.120
+But have it move by a different number of steps every time.
+而是让它每次移动不同的步数。
+
+00:29:26.120 --> 00:29:28.200
+So I'll create a new variable.
+所以我要创建一个新变量。
+
+00:29:28.200 --> 00:29:30.420
+I'll call it steps.
+我把它叫做“步数”。
+
+00:29:30.420 --> 00:29:35.310
+And we'll start by setting steps equal to 0.
+我们先把“步数”的值设为0。
+
+00:29:35.310 --> 00:29:39.880
+And instead of moving 10 steps, let's move steps steps.
+不要移动10步了，让它移动“步数”那么多步。
+
+00:29:39.880 --> 00:29:43.560
+Whatever the value of that variable is, that's how far I would like to move.
+无论这个变量的值是多少，我就想移动那么远。
+
+00:29:43.560 --> 00:29:47.400
+But then every time you move, we're going to change the number of steps
+但每次移动后，我们要改变“步数”的数值
+
+00:29:47.400 --> 00:29:50.190
+by something like 0.5.
+比如改变0.5。
+
+00:29:50.190 --> 00:29:53.740
+A small number just to make a very small change.
+一个小数字，这样只会产生很小的变化。
+
+00:29:53.740 --> 00:29:56.190
+So what's going on now with all of these blocks?
+那么现在这些积木块都在做什么呢？
+
+00:29:56.190 --> 00:29:57.390
+We'll try and recap.
+我们来总结一下。
+
+00:29:57.390 --> 00:29:59.753
+At the very beginning, when we first start the program,
+在最开始，当我们刚启动程序时，
+
+00:29:59.753 --> 00:30:01.170
+we're doing a little bit of setup.
+我们做了一些初始化设置。
+
+00:30:01.170 --> 00:30:03.210
+We're saying have the cat go back to 0, 0.
+我们让猫回到坐标(0, 0)。
+
+00:30:03.210 --> 00:30:04.920
+Just to the center of the stage.
+移到舞台正中央。
+
+00:30:04.920 --> 00:30:06.300
+Have it point in 90 degrees.
+让它指向90度方向。
+
+00:30:06.300 --> 00:30:07.620
+Meaning point to the right.
+也就是指向右边。
+
+00:30:07.620 --> 00:30:09.125
+And erase everything.
+然后清除所有内容。
+
+00:30:09.125 --> 00:30:11.250
+So if there were already things drawn on the stage,
+所以如果舞台上已经画了东西，
+
+00:30:11.250 --> 00:30:13.650
+just erase them so that we can start fresh.
+就把它们清除掉，这样我们就可以重新开始。
+
+00:30:13.650 --> 00:30:15.690
+And now put the pen down.
+现在把画笔放下。
+
+00:30:15.690 --> 00:30:18.960
+Meaning wherever the Scratch cat moves, the pen is going to follow.
+这意味着无论Scratch猫移到哪里，画笔都会跟着移动。
+
+00:30:18.960 --> 00:30:21.210
+And it's going to trace those shapes.
+并且会描绘出那些形状。
+
+00:30:21.210 --> 00:30:24.030
+And we have a variable keeping track of how far
+我们有一个变量来记录每次
+
+00:30:24.030 --> 00:30:26.790
+the cat's going to move every time.
+猫要移动多远。
+
+00:30:26.790 --> 00:30:28.470
+Right now, it's starts at 0.
+现在，它从0开始。
+
+00:30:28.470 --> 00:30:30.120
+So we move that number of steps.
+所以我们移动相应步数。
+
+00:30:30.120 --> 00:30:33.420
+But over time, we're going to increase the number of steps the cats moving.
+但随着时间推移，我们会增加猫移动的步数。
+
+00:30:33.420 --> 00:30:36.220
+Increase it by a little bit, and then rotate.
+稍微增加一点步数，然后旋转。
+
+00:30:36.220 --> 00:30:39.702
+And if we keep increasing how much the cat's moving and then rotating,
+如果我们不断增加猫移动的距离，然后旋转，
+
+00:30:39.702 --> 00:30:41.910
+what you're going to see is a more interesting shape.
+你会看到一个更有趣的形状。
+
+00:30:41.910 --> 00:30:44.730
+It's not going to draw a perfect circle.
+它不会画出一个完美的圆。
+
+00:30:44.730 --> 00:30:49.485
+But it's instead going to draw something like this spiral.
+而是会画出像这样的螺旋线。
+
+00:30:49.485 --> 00:30:52.410
+Notice it's moving by more and more every time.
+注意它每次移动的距离越来越远。
+
+00:30:52.410 --> 00:30:54.750
+And as it moves more and more with the pen down,
+当它带着放下的画笔移动得越来越远时，
+
+00:30:54.750 --> 00:30:58.380
+we're able to see this interesting spiral result from it.
+我们就能看到这样有趣的螺旋线效果。
+
+00:30:58.380 --> 00:31:01.050
+Because it started by moving very little every single time.
+因为一开始它每次只移动很小的距离。
+
+00:31:01.050 --> 00:31:02.910
+Just moving by a few steps.
+只移动几步。
+
+00:31:02.910 --> 00:31:06.300
+And over time it's moving more, and more, and more every time it rotates.
+随着时间推移，每次旋转时它移动得越来越远。
+
+00:31:06.300 --> 00:31:09.932
+And that's creating the shape that you're able to see here.
+这就形成了你在这里看到的形状。
+
+00:31:09.932 --> 00:31:12.390
+And so by taking advantage of the pen, and taking advantage
+所以，利用画笔，以及
+
+00:31:12.390 --> 00:31:14.580
+of variables and loops, you're able to create
+变量和循环，你就能创造出
+
+00:31:14.580 --> 00:31:16.200
+some really interesting works of art.
+一些非常有趣的艺术作品。
+
+00:31:16.200 --> 00:31:19.530
+Shapes that can be drawn just by sprites on the stage
+仅通过舞台上的角色就能画出的形状
+
+00:31:19.530 --> 00:31:22.020
+by calculating, by modifying some variables
+通过计算、修改一些变量，
+
+00:31:22.020 --> 00:31:25.650
+and adjusting what those variables should do in order to create
+并调整这些变量的作用，就能创造出
+
+00:31:25.650 --> 00:31:27.880
+more and more interesting programs.
+越来越有趣的程序。
+
+00:31:27.880 --> 00:31:30.330
+And you can see up here in the upper left
+你可以在左上角看到
+
+00:31:30.330 --> 00:31:34.350
+this keeping track of how many steps it is that we've
+这里记录了我们在这个程序中
+
+00:31:34.350 --> 00:31:37.750
+taken so far inside of this program.
+到目前为止移动的步数。
+
+00:31:37.750 --> 00:31:40.380
+So variables add a lot of power to the programs
+所以变量为我们在Scratch里创建的程序增添了强大的功能。
+
+00:31:40.380 --> 00:31:42.330
+that we can create inside of Scratch.
+它们让我们能够创建更复杂的程序。
+
+00:31:42.330 --> 00:31:45.480
+They give us the ability to keep track of whatever information we want.
+它们让我们能够记录任何我们想要的信息。
+
+00:31:45.480 --> 00:31:48.870
+And then to use that information later on in our programs
+然后在程序中后续使用这些信息。
+
+00:31:48.870 --> 00:31:52.830
+to create even more exciting games, and animations, and stories
+去创造更精彩的游戏、动画和故事
+
+00:31:52.830 --> 00:31:55.590
+all just through the use of the Scratch box.
+这一切都只需通过使用Scratch软件来实现。
+
+00:31:55.590 --> 00:31:58.660
+That's it for an Introduction to Programming with Scratch for today.
+今天的《用Scratch学编程入门》就到这里。
+
+00:31:58.660 --> 00:32:00.680
+We'll see you next time.
+我们下次再见。
