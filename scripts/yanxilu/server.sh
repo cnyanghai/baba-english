@@ -239,7 +239,8 @@ step "验证"
 for u in / /english /api/yxl/english /vendor/pdfjs/pdf.mjs "/reports/wealth.html"; do
   printf '  %-28s %s\n' "$u" "$(curl -s -o /dev/null -w '%{http_code}' --max-time 10 "http://127.0.0.1:3001$u")"
 done
-curl -s --max-time 10 http://127.0.0.1:3001/ | grep -q 'YXL_SERVER' && echo "  首页是研习录服务器版 ✓" || echo "  !! 首页内容不像研习录"
+home=$(curl -s --max-time 10 http://127.0.0.1:3001/ || true)   # 不用 curl | grep -q：pipefail 下 grep 提前退出会让 curl 报错，误判
+case "$home" in *YXL_SERVER*) echo "  首页是研习录服务器版 ✓";; *) echo "  !! 首页内容不像研习录";; esac
 printf '  %-28s %s\n' "studio 本机 3002" "$(curl -s -o /dev/null -w '%{http_code}' --max-time 10 http://127.0.0.1:3002/)"
 df -h / | tail -1 | awk '{print "  磁盘：已用 "$5"，剩 "$4}'
 free -m | awk '/Mem:/{print "  内存：可用 "$7" MB"}'
