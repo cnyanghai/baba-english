@@ -70,7 +70,7 @@ export default async function DramaPage({
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8">
-      <Link href="/" className="text-sm text-muted-foreground hover:underline">
+      <Link href="/english" className="text-sm text-muted-foreground hover:underline">
         ← 内容库
       </Link>
 

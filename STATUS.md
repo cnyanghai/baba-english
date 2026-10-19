@@ -16,6 +16,7 @@ updated: 2026-10-17
 - 2026-08-06 从「麦哲学院」多学院回退到 v0.1「Baba 英语」：看剧学英语（哈利波特、老友记）+ 生词本 + 付费。数学、深讲、ELA 归档在 `archive/magic-school-math` 分支
 - 2026-08-07 上线「英语绘本」书本阅读器 `/books`，首本哈利波特开篇
 - 少儿编程学习路线：CS50 九集自托管视频已上 R2，公网可播
+- **2026-10-19 研习录搬进来（分支 `yanxilu`，待部署）**：首页 `/` 换成研习录，原首页挪到 `/english`；看剧逐句学、生词本、学习进度成了研习录书架「英语」一层的功能。部署步骤见 `docs/yanxilu.md`
 - **2026-10-17 已推上 GitHub**：https://github.com/cnyanghai/baba-english （Public，119 个文件，HEAD `2ccfa9e`）
   - 自 2026-05-11 以来积压的改动（绘本阅读器 + 少儿编程路线 + 样式调整，38 个文件）已提交为 `1c0c66a`
   - `.gitignore` 增补 `.claude/worktrees/`（89M 本地产物）
@@ -46,6 +47,7 @@ updated: 2026-10-17
 
 ## 日志
 
+- 2026-10-19 研习录搬进 Baba：新表 YxlDoc / YxlFile，接口 /api/yxl/*，首页换成研习录（分支 yanxilu）
 - 2026-10-17 代码推上 GitHub（Public），洗掉历史里的微信商户号，本地 main 与远端对齐
 - 2026-09-15 建立 STATUS.md
 - 2026-08-07 英语绘本上线

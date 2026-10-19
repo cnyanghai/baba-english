@@ -65,7 +65,7 @@ export function UpgradeClient({ plans, promo }: Props) {
   useEffect(() => {
     if (state.phase !== "paid") return;
     const t = setTimeout(() => {
-      router.push("/");
+      router.push("/english");
       router.refresh();
     }, 3000);
     return () => clearTimeout(t);
@@ -75,9 +75,9 @@ export function UpgradeClient({ plans, promo }: Props) {
     return (
       <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-12 text-center">
         <p className="font-serif text-2xl text-emerald-400 mb-4">支付成功 ✓</p>
-        <p className="text-sm text-muted-foreground mb-6">已解锁全部内容，3 秒后返回首页…</p>
+        <p className="text-sm text-muted-foreground mb-6">已解锁全部内容，3 秒后回到英语内容库…</p>
         <a
-          href="/"
+          href="/english"
           className="inline-flex h-11 items-center rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground hover:bg-primary/90"
         >
           立即返回

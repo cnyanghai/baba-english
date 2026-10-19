@@ -131,7 +131,7 @@ export default async function ProgressPage() {
         <div className="rounded-lg border border-dashed p-12 text-center">
           <p className="text-sm text-muted-foreground mb-3">还没有学习记录</p>
           <Button asChild>
-            <Link href="/">去内容库开始学习</Link>
+            <Link href="/english">去内容库开始学习</Link>
           </Button>
         </div>
       ) : (
