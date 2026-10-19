@@ -27,7 +27,7 @@ RESTARTED=0
 CHANGED=0
 
 step() { printf '\n== %s  [%s]\n' "$*" "$(date +%H:%M:%S)"; }
-done_rc() { echo; echo "==DONE rc=$1"; exit "$1"; }
+
 
 studio_back() {
   if [ ${#STOPPED[@]} -gt 0 ]; then
@@ -46,6 +46,7 @@ studio_back() {
   fi
 }
 trap studio_back EXIT
+done_rc() { studio_back; echo; echo "==DONE rc=$1"; exit "$1"; }
 
 rollback() {
   echo "!! $*"
@@ -82,8 +83,11 @@ echo "  nginx 配置：${NGX:-没找到}"
 
 echo
 echo "  服务器上的代码和 GitHub main 比（不一样就说明服务器上有没推上去的改动，不能直接覆盖）："
-DIFF=$(diff -rq "$APP/src" "$D/base/src" 2>&1; diff -q "$APP/next.config.mjs" "$D/base/next.config.mjs" 2>&1; diff -q "$APP/prisma/schema.prisma" "$D/base/prisma/schema.prisma" 2>&1)
-if [ -n "$DIFF" ]; then
+cmp_to() { diff -rq "$APP/src" "$1/src" 2>&1; diff -q "$APP/next.config.mjs" "$1/next.config.mjs" 2>&1; diff -q "$APP/prisma/schema.prisma" "$1/prisma/schema.prisma" 2>&1; }
+DIFF=$(cmp_to "$D/base")
+if [ -n "$DIFF" ] && [ -z "$(cmp_to "$D/new")" ]; then
+  echo "    已经是分支 yanxilu 的代码（这是重跑），照常继续"
+elif [ -n "$DIFF" ]; then
   echo "$DIFF" | sed 's/^/    /' | head -40
   [ "${FORCE:-0}" = 1 ] || { echo "!! 有差异。看清楚以后，确定可以覆盖再加 FORCE=1 重跑"; done_rc 1; }
   echo "  FORCE=1：照样覆盖（旧文件在备份里）"
@@ -187,7 +191,7 @@ if [ -n "$NGX" ] && ! grep -q 'client_max_body_size' "$NGX"; then
     echo "  !! nginx -t 不通过，已还原原文件；电子书大于 1 MB 会传不上去，需要手动看一下"
   fi
 else
-  echo "  ${NGX:+已经有 client_max_body_size，不动}${NGX:-没找到配置文件，跳过}"
+  if [ -n "$NGX" ]; then echo "  已经有 client_max_body_size，不动"; else echo "  !! 没找到 baba 的 nginx 配置，跳过（电子书大于 1 MB 会传不上去）"; fi
 fi
 
 # ---------------------------------------------------------------- 验证

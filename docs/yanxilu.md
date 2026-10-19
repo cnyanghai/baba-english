@@ -24,39 +24,51 @@ Baba 的「看剧逐句学」「生词本和复习」「学习进度」成了研
 
 研习录的页面不在这个仓库里：服务器上另放一份 yanxilu 仓库的克隆，cron 定时 `git pull`，Baba 每次请求现读，所以研习录更新不用重新部署 Baba。
 
-## 部署（DMIT2）
+## 部署（dmit2）
+
+按《服务器交接简报：dmit2》的规矩写成了脚本：服务器上的 `/opt/baba-english` 不是 git 仓库，代码从本地传上去；
+1.9 G 内存，构建前要停掉 ai-studio；表结构走幂等 SQL，不用 `prisma db push` / `migrate deploy`。
+
+在 WSL 里（用 `~/.ssh/config` 里已经配好的 `dmit2`）：
 
 ```bash
-# 1. 研习录的克隆 + 定时更新（公开仓库，不用凭证）
-cd /opt && git clone https://github.com/cnyanghai/yanxilu.git yanxilu
-( crontab -l 2>/dev/null; echo '*/5 * * * * cd /opt/yanxilu && git pull -q --ff-only' ) | crontab -
-
-# 2. 电子书目录（给跑 pm2 的那个用户写权限）
-mkdir -p /opt/yanxilu-files
-
-# 3. /opt/baba-english/.env 里加两行
-#    YXL_DIR=/opt/yanxilu
-#    YXL_FILES_DIR=/opt/yanxilu-files
-
-# 4. 更新 Baba（PR 合并后在 main 上；没合并也可以先 git checkout yanxilu）
-cd /opt/baba-english
-git pull
-npm ci
-npx prisma generate
-npx prisma db push      # 只应该新建 YxlDoc、YxlFile 两张表；如果提示会丢数据，先停下来
-npm run build
-pm2 ls                  # 找到 Baba 的进程名
-pm2 restart <进程名>
-
-# 5. nginx：电子书最大 48 MB，默认 1 MB 会被挡
-#    在 baba.wogucloud.cn 的 server { } 里加：client_max_body_size 50m;
-nginx -t && systemctl reload nginx
+cd ~/brain/1-Projects/baba-english
+git fetch origin +refs/heads/yanxilu:refs/remotes/origin/yanxilu
+git show origin/yanxilu:scripts/deploy-yanxilu.sh > /tmp/deploy-yanxilu.sh
+bash /tmp/deploy-yanxilu.sh check     # 先只检查，不改任何东西
+bash /tmp/deploy-yanxilu.sh deploy    # 再部署
 ```
+
+`deploy-yanxilu.sh` 只在本地取代码（分支 yanxilu 和 main，用 `git archive`，不动工作区），打包传到服务器 `/opt/yxl-deploy/<时间>/`，
+然后在服务器上后台跑 `scripts/yanxilu/server.sh`，本地看日志。全程复用一条 ssh 连接（服务器有 fail2ban，不连续重试）。
+
+`server.sh` 依次做：
+
+1. **检查**：主机名、pm2 里有 baba-english、磁盘内存、nginx 配置；把服务器上的 `src/`、`next.config.mjs`、`schema.prisma` 和 GitHub main 比，
+   有差异（服务器上有没推上去的改动）就停下，确认后用 `FORCE=1` 重跑才覆盖。`check` 模式到这里就结束。
+2. `docker builder prune -af && docker image prune -f` 腾盘，剩余不到 2 GB 就停。
+3. 克隆研习录到 `/opt/yanxilu`，crontab 加每 5 分钟 `git pull`；建 `/opt/yanxilu-files`（电子书）。
+4. `docker exec -i baba-pg psql` 跑 `scripts/yanxilu/schema.sql`（只新建 YxlDoc、YxlFile，可重复执行）。
+5. 备份 `src/`、`next.config.mjs`、`schema.prisma` 到 `/opt/baba-english.bak-yxl-<时间>/`，换上新代码，删掉挪走的 `src/app/page.tsx`，`npx prisma generate`。
+6. 停 `ai-studio-app-1`、`ai-studio-db-1` 腾内存，备份 `.next`，`npm run build`。
+   失败：源码和 `.next` 还原，**不重启进程**，旧版本继续服务。
+7. `pm2 restart baba-english`，等 `/english` 返回 200；不是 200 就整套还原再重启旧版本。
+8. `docker start` 把 ai-studio 两个容器起回来（不用 compose，免得重建容器丢端口映射）。
+9. 只在 `server_name baba.wogucloud.cn` 的 server 块里加 `client_max_body_size 50m;`，`nginx -t` 通过才 reload，不通过就还原（不动 80/443 的监听）。
+10. 验证：本机 3001 的 `/`、`/english`、`/api/yxl/english`、`/vendor/...`、`/reports/...`，studio 3002，磁盘、内存、容器、pm2。
+
+`.env` 不用改：`YXL_DIR`、`YXL_FILES_DIR` 默认就是 `/opt/yanxilu`、`/opt/yanxilu-files`。依赖没变，不用 `npm install`。
+
+**回退**：`/opt/baba-english.bak-yxl-<时间>/` 里是旧的 `src/`、`next.config.mjs`、`schema.prisma`，`/opt/baba-english/.next.bak-yxl` 是旧的构建产物；
+拷回去、`npx prisma generate`、`pm2 restart baba-english` 即可。新建的两张表留着不影响旧版本。
+
+**以后照旧的部署流程（rsync src/ 上去）要注意**：本地源码先切到包含这次改动的版本（PR 合并后的 main），
+否则 rsync 不带 `--delete` 时服务器上会同时留着 `src/app/route.ts` 和本地旧的 `src/app/page.tsx`，构建会因为 `/` 冲突失败。
 
 可选：家里的账号开会员（不受每集 10 分钟试看限制）：
 
 ```bash
-docker exec -it <pg 容器> psql -U <用户> -d <库> -c "UPDATE \"User\" SET \"paidUntil\" = '2099-12-31' WHERE phone = '<手机号>';"
+ssh dmit2 "docker exec baba-pg psql -U baba -d baba_english -c \"UPDATE \\\"User\\\" SET \\\"paidUntil\\\" = '2099-12-31' WHERE phone = '<手机号>';\""
 ```
 
 ## 部署后检查
@@ -70,7 +82,7 @@ docker exec -it <pg 容器> psql -U <用户> -d <库> -c "UPDATE \"User\" SET \"
 
 ## 备份
 
-除了 Postgres，`/opt/yanxilu-files`（电子书文件）也要一起备份。
+除了 Postgres（`baba-pg`），`/opt/yanxilu-files`（电子书文件）也要一起备份。
 
 ## 可选：定时任务直接写进来
 

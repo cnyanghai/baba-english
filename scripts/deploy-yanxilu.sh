@@ -29,11 +29,12 @@ trap cleanup EXIT
 # ---- 1. 取代码：优先用本地仓库 fetch + archive（不动你的工作区），不行再从 GitHub 克隆
 echo; echo "== 取代码"
 mkdir -p "$WORK/up/new" "$WORK/up/base"
-if git -C "$LOCAL" rev-parse --git-dir >/dev/null 2>&1 && git -C "$LOCAL" fetch -q origin "$BRANCH" main 2>/dev/null; then
+if git -C "$LOCAL" rev-parse --git-dir >/dev/null 2>&1 && git -C "$LOCAL" fetch -q origin "+refs/heads/$BRANCH:refs/remotes/origin/$BRANCH" "+refs/heads/main:refs/remotes/origin/main" 2>/dev/null; then
   SRC=$LOCAL
 else
   echo "  本地仓库 $LOCAL 取不到，改从 GitHub 克隆"
   git clone -q --no-checkout "$REPO" "$WORK/repo"
+  git -C "$WORK/repo" fetch -q origin "+refs/heads/$BRANCH:refs/remotes/origin/$BRANCH"
   SRC=$WORK/repo
 fi
 NEW=origin/$BRANCH; BASE=origin/main
@@ -49,8 +50,7 @@ if ! ssh "${SSHO[@]}" "$HOST" 'echo "  已连上 $(hostname)"'; then
   echo "!! ssh 连不上。不要马上重试（fail2ban）：等 10 分钟再跑，或者先看交接简报里的代理说明。"; exit 1
 fi
 R=/opt/yxl-deploy/$TAG
-ssh "${SSHO[@]}" "$HOST" "mkdir -p $R"
-rsync -az --no-perms --omit-dir-times -e "ssh ${SSHO[*]}" "$WORK/up/" "$HOST:$R/"
+tar -C "$WORK/up" -czf - . | ssh "${SSHO[@]}" "$HOST" "mkdir -p $R && tar -xzf - -C $R"
 echo "  已上传到 $R"
 
 # ---- 3. 服务器上后台跑，这边看日志
