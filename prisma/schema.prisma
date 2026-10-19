@@ -108,6 +108,8 @@ model User {
   vocabulary UserVocabulary[]
   progress   EpisodeProgress[]
   wxOrders   WxOrder[]
+  yxlDocs    YxlDoc[]
+  yxlFiles   YxlFile[]
 }
 
 // 短信验证码（注册 / 登录 / 找回密码 共用）
@@ -174,5 +176,36 @@ model UserVocabulary {
   word Word @relation(fields: [wordLemma], references: [lemma])
 
   @@unique([userId, wordLemma])
+  @@index([userId])
+}
+
+// ─── 研习录 ────────────────────────────────────────
+// 研习录（网站首页）的个人记录：进度、批注、足迹、阅读进度、划线……
+// 一类记录一个 coll（progress / notes / journal / reading / marks / mybooks / domains ...），
+// 一条记录一个 docId，内容原样存成 JSON，和研习录前端的数据结构一一对应。
+model YxlDoc {
+  userId    String
+  coll      String
+  docId     String
+  data      Json
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, coll, docId])
+  @@index([userId, updatedAt])
+}
+
+// 研习录书架上挂的电子书（PDF / EPUB）。文件存在服务器磁盘 YXL_FILES_DIR 下，只有本人能读。
+model YxlFile {
+  id        String   @id @default(cuid())
+  userId    String
+  name      String
+  type      String
+  size      Int
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
   @@index([userId])
 }

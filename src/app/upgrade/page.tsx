@@ -59,7 +59,7 @@ export default async function UpgradePage() {
 
           <div className="flex gap-3">
             <Link
-              href="/"
+              href="/english"
               className="flex-1 inline-flex h-11 items-center justify-center rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition active:scale-[0.97]"
             >
               开始观看

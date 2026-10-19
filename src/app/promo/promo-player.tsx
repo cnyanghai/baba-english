@@ -603,7 +603,7 @@ function SceneCTA({ finished }: { finished: boolean }) {
           className="mt-10"
         >
           <Link
-            href="/"
+            href="/english"
             className="inline-flex h-12 items-center rounded-lg bg-amber-500 px-8 text-base font-medium text-black hover:bg-amber-400 transition active:scale-[0.97] shadow-lg shadow-amber-500/40"
           >
             立即开始 →

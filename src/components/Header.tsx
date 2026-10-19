@@ -26,9 +26,9 @@ export async function Header() {
     (user?.email ? user.email.split("@")[0] : null);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 h-14 border-b border-border/50 bg-background/80 backdrop-blur-xl supports-backdrop-filter:bg-background/60">
+    <header data-site-header className="fixed top-0 left-0 right-0 z-40 h-14 border-b border-border/50 bg-background/80 backdrop-blur-xl supports-backdrop-filter:bg-background/60">
       <div className="mx-auto flex h-full max-w-5xl items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-2.5 text-lg font-semibold tracking-tight hover:opacity-80 transition">
+        <Link href="/english" className="flex items-center gap-2.5 text-lg font-semibold tracking-tight hover:opacity-80 transition">
           <span
             aria-hidden
             className="relative inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-amber-400 to-amber-600 shadow-md shadow-amber-500/40"
@@ -43,6 +43,17 @@ export async function Header() {
           </span>
         </Link>
         <div className="flex items-center gap-1">
+          {/* 研习录：网站首页（静态页面，用普通 a 标签整页跳过去） */}
+          <Button asChild variant="ghost" size="sm" title="研习录">
+            <a href="/">
+              {/* 研习录的站标：红圈加一道横杠（像地铁站牌） */}
+              <svg viewBox="0 0 24 24" aria-hidden className="mr-1 h-4 w-4">
+                <circle cx="12" cy="12" r="8" fill="none" stroke="#C8372D" strokeWidth="3.2" />
+                <rect x="1.5" y="9.6" width="21" height="4.8" rx="0.6" className="fill-current" />
+              </svg>
+              <span className="hidden sm:inline">研习录</span>
+            </a>
+          </Button>
           <ThemeToggle />
 
           {/* 升级 / 会员入口 */}

@@ -409,3 +409,7 @@
 @media (prefers-reduced-motion: reduce) {
   .bookwrap * { transition: none !important; animation: none !important; }
 }
+
+/* 在研习录的浮层里打开时（html[data-embed]）：不要 Baba 自己的顶栏 */
+html[data-embed] [data-site-header] { display: none; }
+html[data-embed] [data-site-main] { padding-top: 0; }

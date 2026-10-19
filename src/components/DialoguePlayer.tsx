@@ -574,7 +574,7 @@ export function DialoguePlayer({
                 立即升级 → ¥168 / 年
               </a>
               <a
-                href="/"
+                href="/english"
                 className="mt-3 inline-block text-xs text-muted-foreground hover:text-foreground underline"
               >
                 返回首页
