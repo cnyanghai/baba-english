@@ -44,12 +44,14 @@ bash /tmp/deploy-yanxilu.sh deploy    # 再部署
 
 `server.sh` 依次做：
 
-1. **检查**：主机名、pm2 里有 baba-english、磁盘内存、nginx 配置；把服务器上的 `src/`、`next.config.mjs`、`schema.prisma` 和 GitHub main 比，
-   有差异（服务器上有没推上去的改动）就停下，确认后用 `FORCE=1` 重跑才覆盖。`check` 模式到这里就结束。
+1. **检查**：主机名、pm2 里有 baba-english、磁盘内存、nginx 配置；列出服务器上和 GitHub main 不一样的文件
+   （实际有三个：`wxpay.ts` 里没洗掉的商户号注释、`next.config.mjs`、`schema.prisma`），
+   然后在副本上把这次的改动（main → yanxilu 的补丁）打到服务器现有的文件上，服务器自己的改动原样保留；
+   补丁对不上就停下。会打印 next.config.mjs 和 schema.prisma 将怎么改。`check` 模式到这里就结束。
 2. `docker builder prune -af && docker image prune -f` 腾盘，剩余不到 2 GB 就停。
 3. 克隆研习录到 `/opt/yanxilu`，crontab 加每 5 分钟 `git pull`；建 `/opt/yanxilu-files`（电子书）。
 4. `docker exec -i baba-pg psql` 跑 `scripts/yanxilu/schema.sql`（只新建 YxlDoc、YxlFile，可重复执行）。
-5. 备份 `src/`、`next.config.mjs`、`schema.prisma` 到 `/opt/baba-english.bak-yxl-<时间>/`，换上新代码，删掉挪走的 `src/app/page.tsx`，`npx prisma generate`。
+5. 备份 `src/`、`next.config.mjs`、`schema.prisma` 到 `/opt/baba-english.bak-yxl-<时间>/`，换上打过补丁的版本（`src/app/page.tsx` 挪到了 `src/app/english/`），`npx prisma generate`。
 6. 停 `ai-studio-app-1`、`ai-studio-db-1` 腾内存，备份 `.next`，`npm run build`。
    失败：源码和 `.next` 还原，**不重启进程**，旧版本继续服务。
 7. `pm2 restart baba-english`，等 `/english` 返回 200；不是 200 就整套还原再重启旧版本。

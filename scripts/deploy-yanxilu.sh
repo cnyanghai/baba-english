@@ -3,7 +3,6 @@
 #
 #   bash deploy-yanxilu.sh check     只检查（服务器状态、代码有没有分叉），不改任何东西
 #   bash deploy-yanxilu.sh deploy    部署
-#   FORCE=1 bash deploy-yanxilu.sh deploy   服务器上的代码和 GitHub main 不一致时，确认过后照样覆盖
 #
 # 本地只做两件事：从 GitHub 取代码（分支 yanxilu 和 main），传到服务器的 /opt/yxl-deploy/<时间>/；
 # 真正的部署在服务器上后台跑（scripts/yanxilu/server.sh），所以 ssh 断了也不会半途而废。
@@ -41,6 +40,7 @@ NEW=origin/$BRANCH; BASE=origin/main
 git -C "$SRC" archive "$NEW" src next.config.mjs prisma/schema.prisma scripts/yanxilu | tar -x -C "$WORK/up/new"
 git -C "$SRC" archive "$BASE" src next.config.mjs prisma/schema.prisma | tar -x -C "$WORK/up/base"
 mv "$WORK/up/new/scripts/yanxilu" "$WORK/up/yanxilu"; rm -rf "$WORK/up/new/scripts"
+git -C "$SRC" diff --no-renames --no-color --no-ext-diff "$BASE" "$NEW" -- src next.config.mjs prisma/schema.prisma > "$WORK/up/yanxilu.patch"
 echo "  分支 $BRANCH：$(git -C "$SRC" log -1 --format='%h %s' "$NEW")"
 echo "  main：$(git -C "$SRC" log -1 --format='%h %s' "$BASE")"
 
@@ -55,7 +55,7 @@ echo "  已上传到 $R"
 
 # ---- 3. 服务器上后台跑，这边看日志
 echo; echo "== 服务器上执行（$MODE）"
-ssh "${SSHO[@]}" "$HOST" "cd $R && FORCE=${FORCE:-0} setsid nohup bash yanxilu/server.sh $R $MODE > $R/server.log 2>&1 < /dev/null & echo '  已在后台开始'"
+ssh "${SSHO[@]}" "$HOST" "cd $R && setsid nohup bash yanxilu/server.sh $R $MODE > $R/server.log 2>&1 < /dev/null & echo '  已在后台开始'"
 n=0; rc=""
 while :; do
   sleep 8
