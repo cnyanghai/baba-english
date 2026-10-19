@@ -40,7 +40,7 @@ NEW=origin/$BRANCH; BASE=origin/main
 git -C "$SRC" archive "$NEW" src next.config.mjs prisma/schema.prisma scripts/yanxilu | tar -x -C "$WORK/up/new"
 git -C "$SRC" archive "$BASE" src next.config.mjs prisma/schema.prisma | tar -x -C "$WORK/up/base"
 mv "$WORK/up/new/scripts/yanxilu" "$WORK/up/yanxilu"; rm -rf "$WORK/up/new/scripts"
-git -C "$SRC" diff --no-renames --no-color --no-ext-diff "$BASE" "$NEW" -- src next.config.mjs prisma/schema.prisma > "$WORK/up/yanxilu.patch"
+git -C "$SRC" diff --no-renames --no-color --no-ext-diff "$BASE" "$NEW" -- src next.config.mjs > "$WORK/up/yanxilu.patch"   # schema.prisma 在服务器上单独处理
 echo "  分支 $BRANCH：$(git -C "$SRC" log -1 --format='%h %s' "$NEW")"
 echo "  main：$(git -C "$SRC" log -1 --format='%h %s' "$BASE")"
 

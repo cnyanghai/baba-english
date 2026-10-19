@@ -108,12 +108,29 @@ else
   echo "$out" | grep -viE '^(checking|patching|applied) ' | sed 's/^/    /'
   echo "    $(echo "$out" | grep -ciE '^(checking|patching|applied) ') 个文件"
   [ "$prc" = 0 ] || { echo "!! 补丁有地方对不上，停下（服务器没有任何改动）"; done_rc 1; }
+
+  # schema.prisma 服务器上的版本和 GitHub 差得多（多出好几个模型），不用补丁：
+  # 在 model User { … } 的右括号前加两行关系字段，文件末尾接上 YxlDoc、YxlFile 两个模型（已有就不加）
+  SP=$W/prisma/schema.prisma
+  if ! grep -q '^model YxlDoc' "$SP"; then
+    awk '
+      /^model[ \t]+User[ \t]*[{]/ { inu = 1 }
+      inu && /yxlDocs/ { has = 1 }
+      inu && /^[}]/ { if (!has) { print "  yxlDocs    YxlDoc[]"; print "  yxlFiles   YxlFile[]" } inu = 0; done = 1 }
+      { print }
+      END { if (!done) exit 3 }
+    ' "$SP" > "$SP.new" || { echo "!! schema.prisma 里没找到 model User，停下（服务器没有任何改动）"; done_rc 1; }
+    { cat "$SP.new"; echo; sed -n '/^\/\/ ─── 研习录/,$p' "$D/new/prisma/schema.prisma"; } > "$SP" && rm -f "$SP.new"
+  fi
+  grep -q '^model YxlFile' "$SP" && awk '/^model[ \t]+User[ \t]*[{]/{u=1} u&&/yxlFiles/{f=1} u&&/^[}]/{exit} END{exit !f}' "$SP" \
+    || { echo "!! schema.prisma 没改对，停下（服务器没有任何改动）"; done_rc 1; }
   echo
   echo "  next.config.mjs 会这样改："
   diff -u "$APP/next.config.mjs" "$W/next.config.mjs" | tail -n +3 | sed 's/^/    /'
-  echo "  schema.prisma 会这样改："
-  diff -U2 "$APP/prisma/schema.prisma" "$W/prisma/schema.prisma" | tail -n +3 | head -16 | sed 's/^/    /'
-  echo "    ……（后面是 YxlDoc、YxlFile 两个模型）"
+  echo "  schema.prisma 会这样改（model User 末尾加两行，文件末尾加两个模型）："
+  diff -U2 "$APP/prisma/schema.prisma" "$W/prisma/schema.prisma" | tail -n +3 | head -12 | sed 's/^/    /'
+  echo "    ……"
+  echo "  数据库里 \"User\".id 的类型（新表的外键要指向它，应该是 text）：$(docker exec "$PG" psql -At -U baba -d baba_english -c "SELECT data_type FROM information_schema.columns WHERE table_name='User' AND column_name='id'" 2>&1)"
   [ ! -f "$W/src/app/page.tsx" ] && [ -f "$W/src/app/route.ts" ] && [ -f "$W/src/app/english/page.tsx" ] || { echo "!! 打完补丁首页文件不对，停下"; done_rc 1; }
 fi
 
