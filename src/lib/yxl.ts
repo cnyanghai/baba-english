@@ -48,8 +48,18 @@ export function okId(id: unknown): id is string {
 // 单条记录最大 256 KB（讲义 md 最长的也就几十 KB）
 export const YXL_DOC_MAX = 256 * 1024;
 
-// 电子书：单个文件最大 48 MB（EPUB 前端会包成 base64 文本再传，体积大三分之一）
-export const YXL_FILE_MAX = 48 * 1024 * 1024;
+// 电子书：单本上限默认 600 MB（环境变量 YXL_FILE_MAX_MB 可改）。大文件走 PUT，边收边写盘，不进内存
+export const YXL_FILE_MAX = (Number(process.env.YXL_FILE_MAX_MB) || 600) * 1024 * 1024;
+// 旧的表单上传（POST multipart）要把整个文件读进内存，服务器只有 2 G 内存，只给小文件用
+export const YXL_FORM_MAX = 48 * 1024 * 1024;
+// 写电子书时磁盘至少留 1 GB，免得把 Postgres 挤得写不了盘（交接简报铁律 2）
+export const YXL_DISK_RESERVE = 1024 * 1024 * 1024;
+
+export async function freeBytes(dir: string): Promise<number> {
+  const { statfs } = await import("node:fs/promises");
+  const s = await statfs(dir);
+  return Number(s.bavail) * Number(s.bsize);
+}
 export const YXL_FILE_TYPES: Record<string, string> = {
   "application/pdf": "pdf",
   "application/epub+zip": "epub",

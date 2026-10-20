@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # 研习录并入 Baba：服务器（dmit2）上的那一半。由 scripts/deploy-yanxilu.sh 传上来、在后台跑，不要手动直接跑。
 #   用法：bash server.sh <上传目录> <模式>        模式 = check（只检查，不改任何东西）| deploy
-#   上传目录里有：yanxilu.patch（main → 分支 yanxilu 的改动，只含 src、next.config.mjs、prisma/schema.prisma）
-#               base/（main 分支的这几样，用来列出服务器上和 GitHub 不一样的地方）
-#               new/（分支 yanxilu 的这几样，用来识别重跑）
+#   上传目录里有：yanxilu.patch（服务器上现在的版本 base.sha → 这次的版本 new.sha 的改动，只含 src、next.config.mjs）
+#               base/（服务器上现在那个版本的这几样，用来列出服务器上和 GitHub 不一样的地方）
+#               new/（这次的版本）
+#   部署成功后把 new.sha 写进 /opt/baba-english/.yxl-deployed，下次从它算改动。
 #               yanxilu/（这个目录：server.sh、schema.sql）
 #   服务器上的代码和 GitHub 不完全一样（wxpay.ts 里没洗掉的注释、next.config.mjs 里的图片域名、schema 里的字段……），
 #   所以不整份覆盖，而是把这次的改动当补丁打到服务器现有的文件上：服务器自己的改动原样保留。
@@ -71,7 +72,7 @@ step "检查"
 echo "  主机：$(hostname)"
 case "$(hostname)" in DMIT-*) ;; *) echo "!! 主机名不对，停下"; done_rc 1;; esac
 [ -d "$APP/src/app" ] && [ -f "$APP/.env" ] && [ -d "$APP/node_modules" ] || { echo "!! $APP 不完整，停下"; done_rc 1; }
-for f in "$D/yanxilu.patch" "$D/new/src/app/route.ts" "$D/yanxilu/schema.sql"; do
+for f in "$D/yanxilu.patch" "$D/new.sha" "$D/new/src/app/route.ts" "$D/yanxilu/schema.sql"; do
   [ -f "$f" ] || { echo "!! 上传的文件不全：$f"; done_rc 1; }
 done
 pm2 describe baba-english >/dev/null 2>&1 || { echo "!! pm2 里没有 baba-english，停下"; done_rc 1; }
@@ -94,14 +95,17 @@ DIFF=$(cmp_to "$D/base")
 W=$D/work
 rm -rf "$W" && mkdir -p "$W/prisma" && cp -a "$APP/src" "$W/src" && cp -a "$APP/next.config.mjs" "$W/" && cp -a "$APP/prisma/schema.prisma" "$W/prisma/"
 echo
-if [ -z "$(cmp_to "$D/new")" ] || [ -f "$APP/src/lib/yxl.ts" ]; then
+NEW=$(cat "$D/new.sha"); CUR=$(cat "$APP/.yxl-deployed" 2>/dev/null || true)
+echo "  服务器上现在：${CUR:-（没有记录，按 2026-10-19 部署的 91be47b 算）}；这次：$NEW"
+if [ "$CUR" = "$NEW" ] || { [ -z "$CUR" ] && [ -z "$(cmp_to "$D/new")" ]; }; then
   echo "  服务器上已经是这次的代码（重跑），不再打补丁"
   RERUN=1
 else
   RERUN=0
   echo "  把这次的改动打到服务器现有的文件上（先在副本上试）："
+  [ -s "$D/yanxilu.patch" ] || echo "    （src 和 next.config.mjs 没有改动）"
   if command -v patch >/dev/null; then
-    out=$(patch -p1 -d "$W" --forward --no-backup-if-mismatch -r - < "$D/yanxilu.patch" 2>&1); prc=$?
+    if [ -s "$D/yanxilu.patch" ]; then out=$(patch -p1 -d "$W" --forward --no-backup-if-mismatch -r - < "$D/yanxilu.patch" 2>&1); prc=$?; else out=""; prc=0; fi
   else
     out=$(cd "$W" && git apply --verbose "$D/yanxilu.patch" 2>&1); prc=$?
   fi
@@ -220,18 +224,30 @@ pm2 save >/dev/null 2>&1 || true
 studio_back
 
 # ---------------------------------------------------------------- nginx
-step "nginx：baba 的 server 块里允许最大 50 MB 上传"
-if [ -n "$NGX" ] && ! grep -q 'client_max_body_size' "$NGX"; then
-  cp -a "$NGX" "/root/nginx-baba-english.bak-$TAG"
-  sed -i --follow-symlinks '/server_name[^;]*baba\.wogucloud\.cn[^;]*;/a\    client_max_body_size 50m;' "$NGX"
-  if nginx -t >/dev/null 2>&1; then
-    systemctl reload nginx && echo "  已加上并 reload（原文件备份在 /root/nginx-baba-english.bak-$TAG）"
+step "nginx：baba 的 server 块里上传上限至少 700 MB（电子书单本最多 600 MB）"
+mb_of() { case "$1" in *[gG]) echo $(( ${1%?} * 1024 ));; *[mM]) echo "${1%?}";; *[kK]) echo $(( ${1%?} / 1024 ));; *) echo $(( $1 / 1048576 ));; esac; }
+if [ -n "$NGX" ]; then
+  vals=$(grep -oE 'client_max_body_size[[:space:]]+[0-9]+[kKmMgG]?' "$NGX" | awk '{print $2}')
+  need=0
+  if [ -z "$vals" ]; then need=1; else for v in $vals; do [ "$(mb_of "$v")" -lt 700 ] && need=1; done; fi
+  if [ "$need" = 1 ]; then
+    cp -a "$NGX" "/root/nginx-baba-english.bak-$TAG"
+    if [ -z "$vals" ]; then
+      sed -i --follow-symlinks '/server_name[^;]*baba\.wogucloud\.cn[^;]*;/a\    client_max_body_size 700m;' "$NGX"
+    else
+      sed -i --follow-symlinks -E 's/client_max_body_size[[:space:]]+[0-9]+[kKmMgG]?;/client_max_body_size 700m;/g' "$NGX"
+    fi
+    if nginx -t >/dev/null 2>&1; then
+      systemctl reload nginx && echo "  已改成 700m 并 reload（原来：${vals:-没有}；原文件备份在 /root/nginx-baba-english.bak-$TAG）"
+    else
+      cp -a "/root/nginx-baba-english.bak-$TAG" "$NGX"
+      echo "  !! nginx -t 不通过，已还原原文件；大电子书会传不上去，需要手动看一下"
+    fi
   else
-    cp -a "/root/nginx-baba-english.bak-$TAG" "$NGX"
-    echo "  !! nginx -t 不通过，已还原原文件；电子书大于 1 MB 会传不上去，需要手动看一下"
+    echo "  已经是 ${vals//$'\n'/ }，不动"
   fi
 else
-  if [ -n "$NGX" ]; then echo "  已经有 client_max_body_size，不动"; else echo "  !! 没找到 baba 的 nginx 配置，跳过（电子书大于 1 MB 会传不上去）"; fi
+  echo "  !! 没找到 baba 的 nginx 配置，跳过"
 fi
 
 # ---------------------------------------------------------------- 验证
@@ -246,5 +262,6 @@ df -h / | tail -1 | awk '{print "  磁盘：已用 "$5"，剩 "$4}'
 free -m | awk '/Mem:/{print "  内存：可用 "$7" MB"}'
 docker ps --format '  容器 {{.Names}}  {{.Status}}'
 pm2 list 2>/dev/null | grep -E 'baba-english' | sed 's/^/  /'
+echo "$NEW" > "$APP/.yxl-deployed" && echo "  记下服务器上的版本：$NEW"
 echo "  回退：源码 $BK，构建 $APP/.next.bak-yxl"
 done_rc 0
