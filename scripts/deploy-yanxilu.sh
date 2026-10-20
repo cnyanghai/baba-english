@@ -49,7 +49,7 @@ if ! ssh "${SSHO[@]}" "$HOST" 'echo "  已连上 $(hostname)"'; then
 fi
 # 服务器上现在跑的是哪个提交（每次部署成功写在 /opt/baba-english/.yxl-deployed）。
 # 第一次部署研习录（2026-10-19）之前没有这个记录，那次部署的是 91be47b。
-BASE=$(ssh "${SSHO[@]}" "$HOST" 'cat /opt/baba-english/.yxl-deployed 2>/dev/null' | tr -d '[:space:]')
+BASE=$(ssh "${SSHO[@]}" "$HOST" 'cat /opt/baba-english/.yxl-deployed 2>/dev/null || true' | tr -d '[:space:]')
 [ -n "$BASE" ] || BASE=$(git -C "$SRC" rev-parse 91be47b)
 git -C "$SRC" cat-file -e "$BASE^{commit}" 2>/dev/null || { echo "!! 本地仓库里找不到服务器上的版本 $BASE，先 git fetch 一下"; exit 1; }
 echo "  服务器上现在是：$(git -C "$SRC" log -1 --format='%h %s' "$BASE")"

@@ -129,11 +129,16 @@ else
   grep -q '^model YxlFile' "$SP" && awk '/^model[ \t]+User[ \t]*[{]/{u=1} u&&/yxlFiles/{f=1} u&&/^[}]/{exit} END{exit !f}' "$SP" \
     || { echo "!! schema.prisma 没改对，停下（服务器没有任何改动）"; done_rc 1; }
   echo
-  echo "  next.config.mjs 会这样改："
-  diff -u "$APP/next.config.mjs" "$W/next.config.mjs" | tail -n +3 | sed 's/^/    /'
-  echo "  schema.prisma 会这样改（model User 末尾加两行，文件末尾加两个模型）："
-  diff -U2 "$APP/prisma/schema.prisma" "$W/prisma/schema.prisma" | tail -n +3 | head -12 | sed 's/^/    /'
-  echo "    ……"
+  if ! cmp -s "$APP/next.config.mjs" "$W/next.config.mjs"; then
+    echo "  next.config.mjs 会这样改："
+    diff -u "$APP/next.config.mjs" "$W/next.config.mjs" | tail -n +3 | sed 's/^/    /'
+  fi
+  if ! cmp -s "$APP/prisma/schema.prisma" "$W/prisma/schema.prisma"; then
+    echo "  schema.prisma 会这样改（model User 末尾加两行，文件末尾加两个模型）："
+    diff -U2 "$APP/prisma/schema.prisma" "$W/prisma/schema.prisma" | tail -n +3 | head -12 | sed 's/^/    /'
+    echo "    ……"
+  fi
+  echo "  会改动的文件："; { diff -rq "$APP/src" "$W/src" 2>&1 | sed "s#$APP/##; s#$W/##" | sed -E 's/^Files (.*) and .* differ$/改 \1/; s/^Only in ([^:]*): (.*)$/有 \1\/\2（新的或删掉的）/'; } | sed 's/^/    /' | head -30
   echo "  数据库里 \"User\".id 的类型（新表的外键要指向它，应该是 text）：$(docker exec "$PG" psql -At -U baba -d baba_english -c "SELECT data_type FROM information_schema.columns WHERE table_name='User' AND column_name='id'" 2>&1)"
   [ ! -f "$W/src/app/page.tsx" ] && [ -f "$W/src/app/route.ts" ] && [ -f "$W/src/app/english/page.tsx" ] || { echo "!! 打完补丁首页文件不对，停下"; done_rc 1; }
 fi
@@ -238,7 +243,7 @@ if [ -n "$NGX" ]; then
       sed -i --follow-symlinks -E 's/client_max_body_size[[:space:]]+[0-9]+[kKmMgG]?;/client_max_body_size 700m;/g' "$NGX"
     fi
     if nginx -t >/dev/null 2>&1; then
-      systemctl reload nginx && echo "  已改成 700m 并 reload（原来：${vals:-没有}；原文件备份在 /root/nginx-baba-english.bak-$TAG）"
+      systemctl reload nginx && echo "  已改成 700m 并 reload（原来：$(echo ${vals:-没有} | tr '\n' ' ')；原文件备份在 /root/nginx-baba-english.bak-$TAG）"
     else
       cp -a "/root/nginx-baba-english.bak-$TAG" "$NGX"
       echo "  !! nginx -t 不通过，已还原原文件；大电子书会传不上去，需要手动看一下"
