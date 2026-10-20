@@ -36,10 +36,14 @@ cd ~/brain/1-Projects/baba-english
 git fetch origin +refs/heads/yanxilu:refs/remotes/origin/yanxilu
 git show origin/yanxilu:scripts/deploy-yanxilu.sh > /tmp/deploy-yanxilu.sh
 bash /tmp/deploy-yanxilu.sh check     # 先只检查，不改任何东西
-bash /tmp/deploy-yanxilu.sh deploy    # 再部署
+bash /tmp/deploy-yanxilu.sh deploy    # 再部署（默认部署 GitHub 上的 main）
 ```
 
-`deploy-yanxilu.sh` 只在本地取代码（分支 yanxilu 和 main，用 `git archive`，不动工作区），打包传到服务器 `/opt/yxl-deploy/<时间>/`，
+以后 Baba 的改动也用这个脚本部署：服务器上记着现在跑的是哪个提交（`/opt/baba-english/.yxl-deployed`），
+脚本取「那个提交 → 这次的提交」的改动当补丁，打到服务器现有的文件上；改了 `schema.prisma` 的会先停下，要另写幂等 SQL。
+电子书单本上限 600 MB（`.env` 里 `YXL_FILE_MAX_MB` 可改），脚本会把 nginx 的上传上限调到至少 700m。
+
+`deploy-yanxilu.sh` 只在本地取代码（用 `git archive`，不动工作区），打包传到服务器 `/opt/yxl-deploy/<时间>/`，
 然后在服务器上后台跑 `scripts/yanxilu/server.sh`，本地看日志。全程复用一条 ssh 连接（服务器有 fail2ban，不连续重试）。
 
 `server.sh` 依次做：

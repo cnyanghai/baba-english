@@ -86,7 +86,7 @@ echo "  nginx 配置：${NGX:-没找到}"
 [ -n "$NGX" ] && grep -n 'server_name\|listen\|client_max_body_size' "$NGX" | sed 's/^/    /'
 
 echo
-echo "  服务器上和 GitHub main 不一样的地方（会原样保留，只把这次的改动打上去）："
+echo "  服务器上和 GitHub 上同一个版本不一样的地方（会原样保留，只把这次的改动打上去）："
 cmp_to() { diff -rq "$APP/src" "$1/src" 2>&1; diff -q "$APP/next.config.mjs" "$1/next.config.mjs" 2>&1; diff -q "$APP/prisma/schema.prisma" "$1/prisma/schema.prisma" 2>&1; }
 DIFF=$(cmp_to "$D/base")
 [ -n "$DIFF" ] && echo "$DIFF" | sed "s#$APP/##; s#$D/base/##; s/^/    /" | head -40 || echo "    没有"
