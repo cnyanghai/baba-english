@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
 import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
-import { yxlUser, okColl, okId, YXL_DOC_MAX } from "@/lib/yxl";
+import { yxlUser, okColl, okId, docMax, YXL_HEAVY_MAX } from "@/lib/yxl";
 
 export const dynamic = "force-dynamic";
 
-/** GET /api/yxl/doc?coll=lessons&id=2026-10-19 —— 取一条记录（讲义按需读） */
+/** GET /api/yxl/doc?coll=lessons&id=2026-10-19 —— 取一条记录（讲义、剪报正文这类大件按需读） */
 export async function GET(req: Request) {
   const user = await yxlUser(req);
   if (!user) return NextResponse.json({ error: "请先登录" }, { status: 401 });
@@ -23,8 +23,9 @@ export async function PUT(req: Request) {
   let body: { coll?: unknown; id?: unknown; data?: unknown };
   try {
     const text = await req.text();
-    if (text.length > YXL_DOC_MAX) return NextResponse.json({ error: "这条记录太大了" }, { status: 413 });
+    if (text.length > YXL_HEAVY_MAX) return NextResponse.json({ error: "这条记录太大了" }, { status: 413 });
     body = JSON.parse(text);
+    if (typeof body.coll === "string" && text.length > docMax(body.coll)) return NextResponse.json({ error: "这条记录太大了" }, { status: 413 });
   } catch {
     return NextResponse.json({ error: "请求格式错误" }, { status: 400 });
   }

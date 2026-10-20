@@ -31,22 +31,27 @@ export async function yxlUser(req?: Request): Promise<YxlUser | null> {
   return u ?? null;
 }
 
-// 研习录前端用到的记录类别。只收这些，防止乱写。
-export const YXL_COLLS = [
-  "progress", "notes", "journal", "cards", "study", "film", "ebooks",
-  "mybooks", "hidden", "reading", "marks", "domains", "lessons",
-] as const;
-
+// 研习录前端的记录类别（progress / notes / journal / marks / clips ……）。
+// 只收小写字母和数字的名字（2—24 位），以后研习录加新的记录类别不用再改服务器。
 export function okColl(c: unknown): c is string {
-  return typeof c === "string" && (YXL_COLLS as readonly string[]).includes(c);
+  return typeof c === "string" && /^[a-z][a-z0-9]{1,23}$/.test(c);
+}
+
+// “大件”：每条可能很长（讲义、剪报正文），不随 /api/yxl/state 一起发，前端用 /api/yxl/doc 按需取
+export function heavyColl(c: string): boolean {
+  return c === "lessons" || /body$/.test(c);
 }
 
 export function okId(id: unknown): id is string {
   return typeof id === "string" && id.length > 0 && id.length <= 160 && !/[\u0000-\u001f]/.test(id);
 }
 
-// 单条记录最大 256 KB（讲义 md 最长的也就几十 KB）
+// 单条记录最大 256 KB；大件（剪报正文这类）最大 2 MB
 export const YXL_DOC_MAX = 256 * 1024;
+export const YXL_HEAVY_MAX = 2 * 1024 * 1024;
+export function docMax(c: string): number {
+  return heavyColl(c) ? YXL_HEAVY_MAX : YXL_DOC_MAX;
+}
 
 // 电子书：单本上限默认 600 MB（环境变量 YXL_FILE_MAX_MB 可改）。大文件走 PUT，边收边写盘，不进内存
 export const YXL_FILE_MAX = (Number(process.env.YXL_FILE_MAX_MB) || 600) * 1024 * 1024;

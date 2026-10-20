@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
-import { yxlUser, okColl, okId, YXL_DOC_MAX } from "@/lib/yxl";
+import { yxlUser, okColl, okId, docMax } from "@/lib/yxl";
 
 export const dynamic = "force-dynamic";
 
@@ -21,7 +21,7 @@ export async function POST(req: Request) {
   const ok: { coll: string; id: string; data: Prisma.InputJsonValue }[] = [];
   let skipped = 0;
   for (const d of list as { coll?: unknown; id?: unknown; data?: unknown }[]) {
-    if (!d || !okColl(d.coll) || !okId(d.id) || !d.data || typeof d.data !== "object" || JSON.stringify(d.data).length > YXL_DOC_MAX) { skipped++; continue; }
+    if (!d || !okColl(d.coll) || !okId(d.id) || !d.data || typeof d.data !== "object" || JSON.stringify(d.data).length > docMax(d.coll)) { skipped++; continue; }
     ok.push({ coll: d.coll, id: d.id, data: d.data as Prisma.InputJsonValue });
   }
   for (let i = 0; i < ok.length; i += 200) {
