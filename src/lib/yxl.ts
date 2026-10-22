@@ -97,6 +97,7 @@ export const STATIC_TYPES: Record<string, string> = {
   ".csv": "text/csv; charset=utf-8",
   ".txt": "text/plain; charset=utf-8",
   ".svg": "image/svg+xml",
+  ".woff2": "font/woff2", // 研习录自带的字体分片（vendor/fonts）
   ".png": "image/png",
   ".jpg": "image/jpeg",
   ".webp": "image/webp",
