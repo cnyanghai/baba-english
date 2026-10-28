@@ -100,6 +100,7 @@ export const STATIC_TYPES: Record<string, string> = {
   ".woff2": "font/woff2", // 研习录自带的字体分片（vendor/fonts）
   ".png": "image/png",
   ".jpg": "image/jpeg",
+  ".wasm": "application/wasm", // 研习录自带的 three.js 解码器（Draco、KTX2）
   ".webp": "image/webp",
 };
 
