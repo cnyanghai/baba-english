@@ -2,8 +2,8 @@
 type: status
 status: active
 cluster: product
-stage: 研习录已是首页；2026-10-28 加了 /world 路由（研习录版本 2 小世界），已推送未部署
-next: 人跑 scripts/deploy-yanxilu.sh 把 /world 路由部署上线；其余见研习录 STATUS
+stage: 研习录已是首页；2026-10-28 改成通配路由（克隆里带 index.html 的顶层目录直接对外），已部署
+next: 以后研习录新目录不用再部署 Baba；未匹配路径现在返回纯文本 404，想要好看的 404 页再说
 blocked_by:
 updated: 2026-10-28
 ---
@@ -12,6 +12,7 @@ updated: 2026-10-28
 
 ## 现在停在哪
 
+- **2026-10-28 通配路由（2497f4a）**：`src/app/[...path]/route.ts` 取代 `/room`、`/world` 专用路由，研习录克隆里任何带 `index.html` 的顶层目录直接对外，DENY 列表挡住 server/src/tools/study/dist/design/data。用户授权后由 Claude 跑 `deploy-yanxilu.sh`：check 通过（服务器在 cc7f941，磁盘剩 4.1G，内存可用 1.1G），deploy 完成（rc=0，备份在 /opt/baba-english.bak-yxl-20261028-183212）；线上 /、/english、/world、/room 都 200，/src、/server、/tools 404。
 - **2026-10-28 /world 路由（f25dc6c）**：`src/app/world/route.ts` 和 `world/[...path]/route.ts`，照 `/room` 的写法用 serveYxl 读研习录克隆里的 `world/`；`STATIC_TYPES` 加 `.wasm`。已推 GitHub，**未部署**，等人跑 `scripts/deploy-yanxilu.sh`。本地克隆当天从落后 15 个提交 ff 到最新。
 - 线上：https://baba.wogucloud.cn（DMIT2，/opt/baba-english，pm2 + 宿主 nginx + docker pg）
 - 2026-08-06 从「麦哲学院」多学院回退到 v0.1「Baba 英语」：看剧学英语（哈利波特、老友记）+ 生词本 + 付费。数学、深讲、ELA 归档在 `archive/magic-school-math` 分支
@@ -48,6 +49,7 @@ updated: 2026-10-28
 
 ## 日志
 
+- 2026-10-28 通配路由提交推送；deploy check 通过；deploy 完成并线上验证（用户授权）
 - 2026-10-28 本地克隆 ff 更新；加 /world 两条路由并推送 → 待部署
 - 2026-10-19 研习录搬进 Baba：新表 YxlDoc / YxlFile，接口 /api/yxl/*，首页换成研习录（分支 yanxilu）
 - 2026-10-19 用 scripts/deploy-yanxilu.sh 部署到 dmit2：服务器上的 wxpay.ts、next.config.mjs、schema.prisma 和 GitHub 不一样，脚本改成打补丁保留；构建通过，/、/english、/api/yxl/english 均 200，studio 正常起回。回退：/opt/baba-english.bak-yxl-20261019-012154、.next.bak-yxl

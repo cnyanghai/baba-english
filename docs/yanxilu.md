@@ -24,6 +24,8 @@ Baba 的「看剧逐句学」「生词本和复习」「学习进度」成了研
 
 研习录的页面不在这个仓库里：服务器上另放一份 yanxilu 仓库的克隆，cron 定时 `git pull`，Baba 每次请求现读，所以研习录更新不用重新部署 Baba。
 
+2026-10-28 起路由是通配的（`src/app/[...path]/route.ts`）：研习录克隆里任何带 `index.html` 的顶层目录都直接对外（`/room`、`/world`、以后的新目录），不用再为每个目录加 route、再部署。不对外的目录在该文件的 DENY 里；`/vendor`、`/reports` 仍是各自的路由。
+
 ## 部署（dmit2）
 
 按《服务器交接简报：dmit2》的规矩写成了脚本：服务器上的 `/opt/baba-english` 不是 git 仓库，代码从本地传上去；
