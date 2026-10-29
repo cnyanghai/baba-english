@@ -3,7 +3,7 @@ type: status
 status: active
 cluster: product
 stage: 研习录已是首页；2026-10-28 改成通配路由（克隆里带 index.html 的顶层目录直接对外），已部署
-next: 以后研习录新目录不用再部署 Baba；未匹配路径现在返回纯文本 404，想要好看的 404 页再说
+next: 下次部署把 base 注入（12cbf4e）带上；未匹配路径现在返回纯文本 404，想要好看的 404 页再说
 blocked_by:
 updated: 2026-10-28
 ---
@@ -49,6 +49,7 @@ updated: 2026-10-28
 
 ## 日志
 
+- 2026-10-28 通配路由加 `<base>` 注入（12cbf4e）：/<目录> 下相对路径按目录解析；已推送、未部署，下次部署带上
 - 2026-10-28 通配路由提交推送；deploy check 通过；deploy 完成并线上验证（用户授权）
 - 2026-10-28 本地克隆 ff 更新；加 /world 两条路由并推送 → 待部署
 - 2026-10-19 研习录搬进 Baba：新表 YxlDoc / YxlFile，接口 /api/yxl/*，首页换成研习录（分支 yanxilu）
