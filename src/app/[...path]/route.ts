@@ -21,7 +21,14 @@ export async function GET(_req: Request, { params }: { params: { path: string[] 
   } catch {
     return new Response("Not found", { status: 404 });
   }
-  if (parts.length === 1) return serveYxl([top, "index.html"], "no-cache");
+  if (parts.length === 1) {
+    // 这页的地址是 /<目录>（没有尾斜杠），页面里的相对路径会解析到根上去；给它补一个 <base>，让 ./x.js、../vendor 都按 /<目录>/ 算
+    const r = await serveYxl([top, "index.html"], "no-cache");
+    if (r.status !== 200) return r;
+    const html = (await r.text()).replace(/<head([^>]*)>/i, (m) => m + `<base href="/${top}/">`);
+    const headers = new Headers(r.headers); headers.delete("content-length");
+    return new Response(html, { status: 200, headers });
+  }
   const last = parts[parts.length - 1];
   // 页面和脚本不缓存（研习录随时在改）；别的静态文件缓一天
   const cache = /\.(html?|m?js|json)$/i.test(last) ? "no-cache" : "public, max-age=86400";
