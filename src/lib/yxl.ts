@@ -101,6 +101,10 @@ export const STATIC_TYPES: Record<string, string> = {
   ".png": "image/png",
   ".jpg": "image/jpeg",
   ".wasm": "application/wasm", // 研习录自带的 three.js 解码器（Draco、KTX2）
+  ".glb": "model/gltf-binary", // 研习录小世界的烘焙模型
+  ".gltf": "model/gltf+json",
+  ".ktx2": "image/ktx2",
+  ".bin": "application/octet-stream",
   ".webp": "image/webp",
 };
 
